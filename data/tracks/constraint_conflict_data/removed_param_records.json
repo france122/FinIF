@@ -1,0 +1,2110 @@
+{
+  "records": [
+    {
+      "sample_id": "test-mixed_track-0016",
+      "query_id": "qpv2-0072",
+      "split": "test",
+      "track": "Mixed-track",
+      "constraint_id": "FN-17",
+      "params": {
+        "condition": "阿里巴巴集团宣布分拆旗下云计算业务独立上市"
+      },
+      "rendered_text": "在阿里巴巴集团宣布分拆旗下云计算业务独立上市这一假设下进行分析",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"condition\": \"阿里巴巴集团宣布分拆旗下云计算业务独立上市\"}"
+    },
+    {
+      "sample_id": "test-mixed_track-0016",
+      "query_id": "qpv2-0072",
+      "split": "test",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "yfinance"
+      },
+      "rendered_text": "不得出现“yfinance”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"yfinance\"}"
+    },
+    {
+      "sample_id": "test-mixed_track-0024",
+      "query_id": "qpv2-0120",
+      "split": "test",
+      "track": "Mixed-track",
+      "constraint_id": "FN-14",
+      "params": {
+        "market_env": "港股科技板块估值修复期"
+      },
+      "rendered_text": "假设当前处于港股科技板块估值修复期下进行分析",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"market_env\": \"港股科技板块估值修复期\"}"
+    },
+    {
+      "sample_id": "test-mixed_track-0024",
+      "query_id": "qpv2-0120",
+      "split": "test",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "游戏"
+      },
+      "rendered_text": "不得出现“游戏”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"游戏\"}"
+    },
+    {
+      "sample_id": "test-mixed_track-0027",
+      "query_id": "qpv2-0127",
+      "split": "test",
+      "track": "Mixed-track",
+      "constraint_id": "FN-16",
+      "params": {
+        "doc_style": "机构投资者每日简报"
+      },
+      "rendered_text": "以机构投资者每日简报的风格撰写",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"doc_style\": \"机构投资者每日简报\"}"
+    },
+    {
+      "sample_id": "test-mixed_track-0027",
+      "query_id": "qpv2-0127",
+      "split": "test",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "金融科技"
+      },
+      "rendered_text": "不得出现“金融科技”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"金融科技\"}"
+    },
+    {
+      "sample_id": "test-mixed_track-0116",
+      "query_id": "qpv2-0790",
+      "split": "test",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "稳健"
+      },
+      "rendered_text": "不得出现“稳健”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"稳健\"}"
+    },
+    {
+      "sample_id": "test-mixed_track-0117",
+      "query_id": "qpv2-0793",
+      "split": "test",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "稳健增值"
+      },
+      "rendered_text": "不得出现“稳健增值”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"稳健增值\"}"
+    },
+    {
+      "sample_id": "test-mixed_track-0123",
+      "query_id": "qpv2-0812",
+      "split": "test",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "稳健"
+      },
+      "rendered_text": "不得出现“稳健”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"稳健\"}"
+    },
+    {
+      "sample_id": "test-v_track-0015",
+      "query_id": "qpv2-0069",
+      "split": "test",
+      "track": "V-track",
+      "constraint_id": "FV-4",
+      "params": {
+        "order_field": "周收盘价"
+      },
+      "rendered_text": "按周收盘价从高到低排序输出",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"order_field\": \"周收盘价\"}"
+    },
+    {
+      "sample_id": "test-v_track-0015",
+      "query_id": "qpv2-0069",
+      "split": "test",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "收盘价"
+      },
+      "rendered_text": "不得出现“收盘价”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"收盘价\"}"
+    },
+    {
+      "sample_id": "test-v_track-0023",
+      "query_id": "qpv2-0116",
+      "split": "test",
+      "track": "V-track",
+      "constraint_id": "GV-13",
+      "params": {
+        "first_line": "## 盘后点评：物流科技企业Q3业绩分析",
+        "last_line": "以上内容基于公开信息整理，仅供机构客户内部参考。"
+      },
+      "rendered_text": "第一行必须为“## 盘后点评：物流科技企业Q3业绩分析”，最后一行为“以上内容基于公开信息整理，仅供机构客户内部参考。”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"first_line\": \"## 盘后点评：物流科技企业Q3业绩分析\", \"last_line\": \"以上内容基于公开信息整理，仅供机构客户内部参考。\"}"
+    },
+    {
+      "sample_id": "test-v_track-0023",
+      "query_id": "qpv2-0116",
+      "split": "test",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "增长"
+      },
+      "rendered_text": "不得出现“增长”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"增长\"}"
+    },
+    {
+      "sample_id": "test-v_track-0054",
+      "query_id": "qpv2-0271",
+      "split": "test",
+      "track": "V-track",
+      "constraint_id": "GV-2",
+      "params": {
+        "n": 5
+      },
+      "rendered_text": "至少包含5个句子",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"n\": 5}"
+    },
+    {
+      "sample_id": "test-v_track-0054",
+      "query_id": "qpv2-0271",
+      "split": "test",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "方案"
+      },
+      "rendered_text": "不得出现“方案”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"方案\"}"
+    },
+    {
+      "sample_id": "test-v_track-0068",
+      "query_id": "qpv2-0338",
+      "split": "test",
+      "track": "V-track",
+      "constraint_id": "GV-4b",
+      "params": {
+        "n": 3
+      },
+      "rendered_text": "包含至少3级标题层级",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"n\": 3}"
+    },
+    {
+      "sample_id": "test-v_track-0068",
+      "query_id": "qpv2-0338",
+      "split": "test",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "风险点"
+      },
+      "rendered_text": "不得出现“风险点”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"风险点\"}"
+    },
+    {
+      "sample_id": "test-v_track-0079",
+      "query_id": "qpv2-0391",
+      "split": "test",
+      "track": "V-track",
+      "constraint_id": "FV-4",
+      "params": {
+        "order_field": "风险等级"
+      },
+      "rendered_text": "按风险等级从高到低排序输出",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"order_field\": \"风险等级\"}"
+    },
+    {
+      "sample_id": "test-v_track-0079",
+      "query_id": "qpv2-0391",
+      "split": "test",
+      "track": "V-track",
+      "constraint_id": "GV-1",
+      "params": {
+        "n": 220
+      },
+      "rendered_text": "回答不超过220个字",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"n\": 220}"
+    },
+    {
+      "sample_id": "test-v_track-0079",
+      "query_id": "qpv2-0391",
+      "split": "test",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "风险点"
+      },
+      "rendered_text": "不得出现“风险点”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"风险点\"}"
+    },
+    {
+      "sample_id": "test-v_track-0085",
+      "query_id": "qpv2-0428",
+      "split": "test",
+      "track": "V-track",
+      "constraint_id": "GV-1",
+      "params": {
+        "n": 220
+      },
+      "rendered_text": "回答不超过220个字",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"n\": 220}"
+    },
+    {
+      "sample_id": "test-v_track-0085",
+      "query_id": "qpv2-0428",
+      "split": "test",
+      "track": "V-track",
+      "constraint_id": "GV-10",
+      "params": {
+        "word": "诊断"
+      },
+      "rendered_text": "开头第一个词必须是“诊断”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"诊断\"}"
+    },
+    {
+      "sample_id": "test-v_track-0085",
+      "query_id": "qpv2-0428",
+      "split": "test",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "风险点"
+      },
+      "rendered_text": "不得出现“风险点”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"风险点\"}"
+    },
+    {
+      "sample_id": "test-v_track-0120",
+      "query_id": "qpv2-0798",
+      "split": "test",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "稳健"
+      },
+      "rendered_text": "不得出现“稳健”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"稳健\"}"
+    },
+    {
+      "sample_id": "test-v_track-0125",
+      "query_id": "qpv2-0829",
+      "split": "test",
+      "track": "V-track",
+      "constraint_id": "FV-1",
+      "params": {
+        "risk_line": "基金投资有风险，过往业绩不代表未来表现，请谨慎决策。"
+      },
+      "rendered_text": "末尾必须包含风险提示声明：基金投资有风险，过往业绩不代表未来表现，请谨慎决策。",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"risk_line\": \"基金投资有风险，过往业绩不代表未来表现，请谨慎决策。\"}"
+    },
+    {
+      "sample_id": "test-v_track-0125",
+      "query_id": "qpv2-0829",
+      "split": "test",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "稳健"
+      },
+      "rendered_text": "不得出现“稳健”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"稳健\"}"
+    },
+    {
+      "sample_id": "test-v_track-0133",
+      "query_id": "qpv2-0974",
+      "split": "test",
+      "track": "V-track",
+      "constraint_id": "GV-4b",
+      "params": {
+        "n": 3
+      },
+      "rendered_text": "包含至少3级标题层级",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"n\": 3}"
+    },
+    {
+      "sample_id": "test-v_track-0133",
+      "query_id": "qpv2-0974",
+      "split": "test",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "定投"
+      },
+      "rendered_text": "不得出现“定投”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"定投\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0029",
+      "query_id": "qpv2-0037",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "FN-13",
+      "params": {
+        "n": 3
+      },
+      "rendered_text": "至少包含3个专业金融术语",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"n\": 3}"
+    },
+    {
+      "sample_id": "train-mixed_track-0029",
+      "query_id": "qpv2-0037",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "FV-4",
+      "params": {
+        "order_field": "宏观经济因素对投资影响的直接程度"
+      },
+      "rendered_text": "按宏观经济因素对投资影响的直接程度从高到低排序输出",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"order_field\": \"宏观经济因素对投资影响的直接程度\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0029",
+      "query_id": "qpv2-0037",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "银行"
+      },
+      "rendered_text": "不得出现“银行”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"银行\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0036",
+      "query_id": "qpv2-0044",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "房地产"
+      },
+      "rendered_text": "不得出现“房地产”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"房地产\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0088",
+      "query_id": "qpv2-0110",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "营销"
+      },
+      "rendered_text": "不得出现“营销”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"营销\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0091",
+      "query_id": "qpv2-0113",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-2",
+      "params": {
+        "n": 4
+      },
+      "rendered_text": "至少包含4个句子",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"n\": 4}"
+    },
+    {
+      "sample_id": "train-mixed_track-0091",
+      "query_id": "qpv2-0113",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "增长"
+      },
+      "rendered_text": "不得出现“增长”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"增长\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0107",
+      "query_id": "qpv2-0135",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "半导体"
+      },
+      "rendered_text": "不得出现“半导体”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"半导体\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0110",
+      "query_id": "qpv2-0138",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "游戏"
+      },
+      "rendered_text": "不得出现“游戏”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"游戏\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0117",
+      "query_id": "qpv2-0147",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "游戏"
+      },
+      "rendered_text": "不得出现“游戏”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"游戏\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0119",
+      "query_id": "qpv2-0149",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-8",
+      "params": {
+        "kw1": "创新药管线",
+        "kw2": "估值消化"
+      },
+      "rendered_text": "必须包含关键词：创新药管线、估值消化",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"kw1\": \"创新药管线\", \"kw2\": \"估值消化\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0119",
+      "query_id": "qpv2-0149",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "增长"
+      },
+      "rendered_text": "不得出现“增长”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"增长\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0130",
+      "query_id": "qpv2-0166",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "增长"
+      },
+      "rendered_text": "不得出现“增长”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"增长\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0140",
+      "query_id": "qpv2-0178",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "FN-15",
+      "params": {
+        "goal": "渠道扩张对短期业绩的潜在影响"
+      },
+      "rendered_text": "以渠道扩张对短期业绩的潜在影响为首要考量",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"goal\": \"渠道扩张对短期业绩的潜在影响\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0140",
+      "query_id": "qpv2-0178",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "新能源"
+      },
+      "rendered_text": "不得出现“新能源”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"新能源\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0153",
+      "query_id": "qpv2-0193",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "高端制造"
+      },
+      "rendered_text": "不得出现“高端制造”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"高端制造\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0162",
+      "query_id": "qpv2-0202",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "增长"
+      },
+      "rendered_text": "不得出现“增长”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"增长\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0163",
+      "query_id": "qpv2-0203",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "增长"
+      },
+      "rendered_text": "不得出现“增长”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"增长\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0164",
+      "query_id": "qpv2-0204",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "FV-5",
+      "params": {
+        "currency_rule": "人民币，格式为XX.X亿元或XX.X万元"
+      },
+      "rendered_text": "若出现货币金额，统一使用 人民币，格式为XX.X亿元或XX.X万元 表示",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"currency_rule\": \"人民币，格式为XX.X亿元或XX.X万元\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0164",
+      "query_id": "qpv2-0204",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "增长"
+      },
+      "rendered_text": "不得出现“增长”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"增长\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0165",
+      "query_id": "qpv2-0205",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "新能源"
+      },
+      "rendered_text": "不得出现“新能源”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"新能源\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0186",
+      "query_id": "qpv2-0231",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "FN-16",
+      "params": {
+        "doc_style": "财富管理配置建议书"
+      },
+      "rendered_text": "以财富管理配置建议书的风格撰写",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"doc_style\": \"财富管理配置建议书\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0186",
+      "query_id": "qpv2-0231",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "稳健"
+      },
+      "rendered_text": "不得出现“稳健”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"稳健\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0198",
+      "query_id": "qpv2-0246",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "流动性"
+      },
+      "rendered_text": "不得出现“流动性”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"流动性\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0206",
+      "query_id": "qpv2-0257",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "流动性"
+      },
+      "rendered_text": "不得出现“流动性”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"流动性\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0213",
+      "query_id": "qpv2-0264",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "流动性"
+      },
+      "rendered_text": "不得出现“流动性”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"流动性\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0225",
+      "query_id": "qpv2-0281",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "流动性"
+      },
+      "rendered_text": "不得出现“流动性”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"流动性\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0226",
+      "query_id": "qpv2-0282",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "流动性"
+      },
+      "rendered_text": "不得出现“流动性”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"流动性\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0252",
+      "query_id": "qpv2-0312",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "流动性"
+      },
+      "rendered_text": "不得出现“流动性”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"流动性\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0274",
+      "query_id": "qpv2-0342",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "风险点"
+      },
+      "rendered_text": "不得出现“风险点”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"风险点\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0276",
+      "query_id": "qpv2-0344",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "风险点"
+      },
+      "rendered_text": "不得出现“风险点”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"风险点\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0277",
+      "query_id": "qpv2-0345",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "FN-17",
+      "params": {
+        "condition": "资管产品底层资产出现系统性信用风险"
+      },
+      "rendered_text": "在资管产品底层资产出现系统性信用风险这一假设下进行分析",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"condition\": \"资管产品底层资产出现系统性信用风险\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0277",
+      "query_id": "qpv2-0345",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "风险"
+      },
+      "rendered_text": "不得出现“风险”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"风险\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0282",
+      "query_id": "qpv2-0350",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "监管"
+      },
+      "rendered_text": "不得出现“监管”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"监管\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0315",
+      "query_id": "qpv2-0394",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "风险排查"
+      },
+      "rendered_text": "不得出现“风险排查”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"风险排查\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0323",
+      "query_id": "qpv2-0404",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "FV-4",
+      "params": {
+        "order_field": "风险金额"
+      },
+      "rendered_text": "按风险金额从高到低排序输出",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"order_field\": \"风险金额\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0323",
+      "query_id": "qpv2-0404",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "风险点"
+      },
+      "rendered_text": "不得出现“风险点”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"风险点\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0336",
+      "query_id": "qpv2-0419",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "风险点"
+      },
+      "rendered_text": "不得出现“风险点”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"风险点\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0344",
+      "query_id": "qpv2-0429",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-3",
+      "params": {
+        "n": 4
+      },
+      "rendered_text": "回答分为4个段落",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"n\": 4}"
+    },
+    {
+      "sample_id": "train-mixed_track-0344",
+      "query_id": "qpv2-0429",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "风险点"
+      },
+      "rendered_text": "不得出现“风险点”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"风险点\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0345",
+      "query_id": "qpv2-0431",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-3",
+      "params": {
+        "n": 4
+      },
+      "rendered_text": "回答分为4个段落",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"n\": 4}"
+    },
+    {
+      "sample_id": "train-mixed_track-0345",
+      "query_id": "qpv2-0431",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "风险点"
+      },
+      "rendered_text": "不得出现“风险点”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"风险点\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0348",
+      "query_id": "qpv2-0435",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "风险点"
+      },
+      "rendered_text": "不得出现“风险点”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"风险点\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0365",
+      "query_id": "qpv2-0462",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-4b",
+      "params": {
+        "n": 3
+      },
+      "rendered_text": "包含至少3级标题层级",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"n\": 3}"
+    },
+    {
+      "sample_id": "train-mixed_track-0365",
+      "query_id": "qpv2-0462",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "赎回"
+      },
+      "rendered_text": "不得出现“赎回”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"赎回\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0465",
+      "query_id": "qpv2-0784",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "FV-4",
+      "params": {
+        "order_field": "风险等级"
+      },
+      "rendered_text": "按风险等级从高到低排序输出",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"order_field\": \"风险等级\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0465",
+      "query_id": "qpv2-0784",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "稳健"
+      },
+      "rendered_text": "不得出现“稳健”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"稳健\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0466",
+      "query_id": "qpv2-0785",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "稳健"
+      },
+      "rendered_text": "不得出现“稳健”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"稳健\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0473",
+      "query_id": "qpv2-0794",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "稳健增值"
+      },
+      "rendered_text": "不得出现“稳健增值”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"稳健增值\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0477",
+      "query_id": "qpv2-0803",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "稳健"
+      },
+      "rendered_text": "不得出现“稳健”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"稳健\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0481",
+      "query_id": "qpv2-0807",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "稳健增值"
+      },
+      "rendered_text": "不得出现“稳健增值”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"稳健增值\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0503",
+      "query_id": "qpv2-0849",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-13",
+      "params": {
+        "first_line": "## 产品卖点说明",
+        "last_line": "投资有风险，决策需谨慎。"
+      },
+      "rendered_text": "第一行必须为“## 产品卖点说明”，最后一行为“投资有风险，决策需谨慎。”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"first_line\": \"## 产品卖点说明\", \"last_line\": \"投资有风险，决策需谨慎。\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0503",
+      "query_id": "qpv2-0849",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "稳健"
+      },
+      "rendered_text": "不得出现“稳健”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"稳健\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0514",
+      "query_id": "qpv2-0883",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "FN-13",
+      "params": {
+        "n": 3
+      },
+      "rendered_text": "至少包含3个专业金融术语",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"n\": 3}"
+    },
+    {
+      "sample_id": "train-mixed_track-0514",
+      "query_id": "qpv2-0883",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "FV-4",
+      "params": {
+        "order_field": "风险等级"
+      },
+      "rendered_text": "按风险等级从高到低排序输出",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"order_field\": \"风险等级\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0514",
+      "query_id": "qpv2-0883",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "稳健增值"
+      },
+      "rendered_text": "不得出现“稳健增值”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"稳健增值\"}"
+    },
+    {
+      "sample_id": "train-mixed_track-0517",
+      "query_id": "qpv2-0892",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-2",
+      "params": {
+        "n": 5
+      },
+      "rendered_text": "至少包含5个句子",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"n\": 5}"
+    },
+    {
+      "sample_id": "train-mixed_track-0517",
+      "query_id": "qpv2-0892",
+      "split": "train",
+      "track": "Mixed-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "红利"
+      },
+      "rendered_text": "不得出现“红利”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"红利\"}"
+    },
+    {
+      "sample_id": "train-v_track-0018",
+      "query_id": "qpv2-0022",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "新兴市场"
+      },
+      "rendered_text": "不得出现“新兴市场”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"新兴市场\"}"
+    },
+    {
+      "sample_id": "train-v_track-0025",
+      "query_id": "qpv2-0032",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "科技股"
+      },
+      "rendered_text": "不得出现“科技股”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"科技股\"}"
+    },
+    {
+      "sample_id": "train-v_track-0028",
+      "query_id": "qpv2-0036",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "外汇"
+      },
+      "rendered_text": "不得出现“外汇”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"外汇\"}"
+    },
+    {
+      "sample_id": "train-v_track-0029",
+      "query_id": "qpv2-0037",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-4b",
+      "params": {
+        "n": 2
+      },
+      "rendered_text": "包含至少2级标题层级",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"n\": 2}"
+    },
+    {
+      "sample_id": "train-v_track-0029",
+      "query_id": "qpv2-0037",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "银行"
+      },
+      "rendered_text": "不得出现“银行”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"银行\"}"
+    },
+    {
+      "sample_id": "train-v_track-0039",
+      "query_id": "qpv2-0049",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-13",
+      "params": {
+        "first_line": "## 合规对话摘要",
+        "last_line": "本摘要基于对话内容整理，具体执行需经内部评估。"
+      },
+      "rendered_text": "第一行必须为“## 合规对话摘要”，最后一行为“本摘要基于对话内容整理，具体执行需经内部评估。”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\n  \"first_line\": \"## 合规对话摘要\",\n  \"last_line\": \"本摘要基于对话内容整理，具体执行需经内部评估。\"\n}"
+    },
+    {
+      "sample_id": "train-v_track-0039",
+      "query_id": "qpv2-0049",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "模型"
+      },
+      "rendered_text": "不得出现“模型”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"模型\"}"
+    },
+    {
+      "sample_id": "train-v_track-0044",
+      "query_id": "qpv2-0055",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "FV-5",
+      "params": {
+        "currency_rule": "人民币元，数字格式为阿拉伯数字，例如：100万元或1.5亿元"
+      },
+      "rendered_text": "若出现货币金额，统一使用 人民币元，数字格式为阿拉伯数字，例如：100万元或1.5亿元 表示",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"currency_rule\": \"人民币元，数字格式为阿拉伯数字，例如：100万元或1.5亿元\"}"
+    },
+    {
+      "sample_id": "train-v_track-0044",
+      "query_id": "qpv2-0055",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "股票"
+      },
+      "rendered_text": "不得出现“股票”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"股票\"}"
+    },
+    {
+      "sample_id": "train-v_track-0065",
+      "query_id": "qpv2-0081",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "yfinance"
+      },
+      "rendered_text": "不得出现“yfinance”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"yfinance\"}"
+    },
+    {
+      "sample_id": "train-v_track-0091",
+      "query_id": "qpv2-0113",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "创新药"
+      },
+      "rendered_text": "不得出现“创新药”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"创新药\"}"
+    },
+    {
+      "sample_id": "train-v_track-0113",
+      "query_id": "qpv2-0143",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "FV-5",
+      "params": {
+        "currency_rule": "人民币XX亿元，其中XX为阿拉伯数字，如“人民币69.0亿元”"
+      },
+      "rendered_text": "若出现货币金额，统一使用 人民币XX亿元，其中XX为阿拉伯数字，如“人民币69.0亿元” 表示",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"currency_rule\": \"人民币XX亿元，其中XX为阿拉伯数字，如“人民币69.0亿元”\"}"
+    },
+    {
+      "sample_id": "train-v_track-0113",
+      "query_id": "qpv2-0143",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "增长"
+      },
+      "rendered_text": "不得出现“增长”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"增长\"}"
+    },
+    {
+      "sample_id": "train-v_track-0115",
+      "query_id": "qpv2-0145",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "FV-1",
+      "params": {
+        "risk_line": "投资有风险，本点评基于公开信息，不构成对港股金融科技企业的投资建议。"
+      },
+      "rendered_text": "末尾必须包含风险提示声明：投资有风险，本点评基于公开信息，不构成对港股金融科技企业的投资建议。",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"risk_line\": \"投资有风险，本点评基于公开信息，不构成对港股金融科技企业的投资建议。\"}"
+    },
+    {
+      "sample_id": "train-v_track-0115",
+      "query_id": "qpv2-0145",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-1",
+      "params": {
+        "n": 220
+      },
+      "rendered_text": "回答不超过220个字",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"n\": 220}"
+    },
+    {
+      "sample_id": "train-v_track-0115",
+      "query_id": "qpv2-0145",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "增长"
+      },
+      "rendered_text": "不得出现“增长”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"增长\"}"
+    },
+    {
+      "sample_id": "train-v_track-0127",
+      "query_id": "qpv2-0163",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "金融科技"
+      },
+      "rendered_text": "不得出现“金融科技”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"金融科技\"}"
+    },
+    {
+      "sample_id": "train-v_track-0141",
+      "query_id": "qpv2-0179",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "增长"
+      },
+      "rendered_text": "不得出现“增长”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"增长\"}"
+    },
+    {
+      "sample_id": "train-v_track-0150",
+      "query_id": "qpv2-0190",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-10",
+      "params": {
+        "word": "核心"
+      },
+      "rendered_text": "开头第一个词必须是“核心”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"核心\"}"
+    },
+    {
+      "sample_id": "train-v_track-0150",
+      "query_id": "qpv2-0190",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-14",
+      "params": {
+        "prefix": "观点："
+      },
+      "rendered_text": "每个 bullet 必须以“观点：”开头",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"prefix\": \"观点：\"}"
+    },
+    {
+      "sample_id": "train-v_track-0150",
+      "query_id": "qpv2-0190",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "增长"
+      },
+      "rendered_text": "不得出现“增长”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"增长\"}"
+    },
+    {
+      "sample_id": "train-v_track-0152",
+      "query_id": "qpv2-0192",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "FV-4",
+      "params": {
+        "order_field": "业务收入占比"
+      },
+      "rendered_text": "按业务收入占比从高到低排序输出",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"order_field\": \"业务收入占比\"}"
+    },
+    {
+      "sample_id": "train-v_track-0152",
+      "query_id": "qpv2-0192",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-1",
+      "params": {
+        "n": 220
+      },
+      "rendered_text": "回答不超过220个字",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"n\": 220}"
+    },
+    {
+      "sample_id": "train-v_track-0152",
+      "query_id": "qpv2-0192",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "增长"
+      },
+      "rendered_text": "不得出现“增长”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"增长\"}"
+    },
+    {
+      "sample_id": "train-v_track-0171",
+      "query_id": "qpv2-0211",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "增长"
+      },
+      "rendered_text": "不得出现“增长”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"增长\"}"
+    },
+    {
+      "sample_id": "train-v_track-0179",
+      "query_id": "qpv2-0223",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "新能源"
+      },
+      "rendered_text": "不得出现“新能源”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"新能源\"}"
+    },
+    {
+      "sample_id": "train-v_track-0181",
+      "query_id": "qpv2-0225",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "稳健"
+      },
+      "rendered_text": "不得出现“稳健”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"稳健\"}"
+    },
+    {
+      "sample_id": "train-v_track-0188",
+      "query_id": "qpv2-0234",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-14",
+      "params": {
+        "prefix": "方案："
+      },
+      "rendered_text": "每个 bullet 必须以“方案：”开头",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"prefix\": \"方案：\"}"
+    },
+    {
+      "sample_id": "train-v_track-0188",
+      "query_id": "qpv2-0234",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "流动性"
+      },
+      "rendered_text": "不得出现“流动性”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"流动性\"}"
+    },
+    {
+      "sample_id": "train-v_track-0195",
+      "query_id": "qpv2-0243",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-10",
+      "params": {
+        "word": "方案"
+      },
+      "rendered_text": "开头第一个词必须是“方案”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"方案\"}"
+    },
+    {
+      "sample_id": "train-v_track-0195",
+      "query_id": "qpv2-0243",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "稳健"
+      },
+      "rendered_text": "不得出现“稳健”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"稳健\"}"
+    },
+    {
+      "sample_id": "train-v_track-0228",
+      "query_id": "qpv2-0284",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-2",
+      "params": {
+        "n": 5
+      },
+      "rendered_text": "至少包含5个句子",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"n\": 5}"
+    },
+    {
+      "sample_id": "train-v_track-0228",
+      "query_id": "qpv2-0284",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "保守"
+      },
+      "rendered_text": "不得出现“保守”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"保守\"}"
+    },
+    {
+      "sample_id": "train-v_track-0230",
+      "query_id": "qpv2-0286",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-8",
+      "params": {
+        "kw1": "久期匹配",
+        "kw2": "行业轮动"
+      },
+      "rendered_text": "必须包含关键词：久期匹配、行业轮动",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"kw1\": \"久期匹配\", \"kw2\": \"行业轮动\"}"
+    },
+    {
+      "sample_id": "train-v_track-0230",
+      "query_id": "qpv2-0286",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "方案"
+      },
+      "rendered_text": "不得出现“方案”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"方案\"}"
+    },
+    {
+      "sample_id": "train-v_track-0252",
+      "query_id": "qpv2-0312",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "流动性"
+      },
+      "rendered_text": "不得出现“流动性”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"流动性\"}"
+    },
+    {
+      "sample_id": "train-v_track-0265",
+      "query_id": "qpv2-0329",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "FV-1",
+      "params": {
+        "risk_line": "本配置建议基于当前市场环境，不构成投资建议，投资有风险，决策需谨慎。"
+      },
+      "rendered_text": "末尾必须包含风险提示声明：本配置建议基于当前市场环境，不构成投资建议，投资有风险，决策需谨慎。",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"risk_line\": \"本配置建议基于当前市场环境，不构成投资建议，投资有风险，决策需谨慎。\"}"
+    },
+    {
+      "sample_id": "train-v_track-0265",
+      "query_id": "qpv2-0329",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-4b",
+      "params": {
+        "n": 3
+      },
+      "rendered_text": "包含至少3级标题层级",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"n\": 3}"
+    },
+    {
+      "sample_id": "train-v_track-0265",
+      "query_id": "qpv2-0329",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "流动性"
+      },
+      "rendered_text": "不得出现“流动性”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"流动性\"}"
+    },
+    {
+      "sample_id": "train-v_track-0271",
+      "query_id": "qpv2-0339",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "FV-4",
+      "params": {
+        "order_field": "风险等级"
+      },
+      "rendered_text": "按风险等级从高到低排序输出",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"order_field\": \"风险等级\"}"
+    },
+    {
+      "sample_id": "train-v_track-0271",
+      "query_id": "qpv2-0339",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "供应商"
+      },
+      "rendered_text": "不得出现“供应商”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"供应商\"}"
+    },
+    {
+      "sample_id": "train-v_track-0272",
+      "query_id": "qpv2-0340",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "风险点"
+      },
+      "rendered_text": "不得出现“风险点”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"风险点\"}"
+    },
+    {
+      "sample_id": "train-v_track-0287",
+      "query_id": "qpv2-0360",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "风险点"
+      },
+      "rendered_text": "不得出现“风险点”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"风险点\"}"
+    },
+    {
+      "sample_id": "train-v_track-0292",
+      "query_id": "qpv2-0366",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "审计"
+      },
+      "rendered_text": "不得出现“审计”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"审计\"}"
+    },
+    {
+      "sample_id": "train-v_track-0294",
+      "query_id": "qpv2-0368",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "风险点"
+      },
+      "rendered_text": "不得出现“风险点”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"风险点\"}"
+    },
+    {
+      "sample_id": "train-v_track-0303",
+      "query_id": "qpv2-0380",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "供应链"
+      },
+      "rendered_text": "不得出现“供应链”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"供应链\"}"
+    },
+    {
+      "sample_id": "train-v_track-0307",
+      "query_id": "qpv2-0385",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "风险点"
+      },
+      "rendered_text": "不得出现“风险点”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"风险点\"}"
+    },
+    {
+      "sample_id": "train-v_track-0325",
+      "query_id": "qpv2-0406",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "风险点"
+      },
+      "rendered_text": "不得出现“风险点”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"风险点\"}"
+    },
+    {
+      "sample_id": "train-v_track-0351",
+      "query_id": "qpv2-0438",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "审计"
+      },
+      "rendered_text": "不得出现“审计”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"审计\"}"
+    },
+    {
+      "sample_id": "train-v_track-0356",
+      "query_id": "qpv2-0445",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "风险点"
+      },
+      "rendered_text": "不得出现“风险点”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"风险点\"}"
+    },
+    {
+      "sample_id": "train-v_track-0357",
+      "query_id": "qpv2-0446",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "净值"
+      },
+      "rendered_text": "不得出现“净值”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"净值\"}"
+    },
+    {
+      "sample_id": "train-v_track-0367",
+      "query_id": "qpv2-0465",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "波动"
+      },
+      "rendered_text": "不得出现“波动”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"波动\"}"
+    },
+    {
+      "sample_id": "train-v_track-0378",
+      "query_id": "qpv2-0547",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-1",
+      "params": {
+        "n": 220
+      },
+      "rendered_text": "回答不超过220个字",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"n\": 220}"
+    },
+    {
+      "sample_id": "train-v_track-0378",
+      "query_id": "qpv2-0547",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "风险"
+      },
+      "rendered_text": "不得出现“风险”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"风险\"}"
+    },
+    {
+      "sample_id": "train-v_track-0468",
+      "query_id": "qpv2-0787",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "FV-4",
+      "params": {
+        "order_field": "风险等级"
+      },
+      "rendered_text": "按风险等级从高到低排序输出",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"order_field\": \"风险等级\"}"
+    },
+    {
+      "sample_id": "train-v_track-0468",
+      "query_id": "qpv2-0787",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "稳健"
+      },
+      "rendered_text": "不得出现“稳健”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"稳健\"}"
+    },
+    {
+      "sample_id": "train-v_track-0474",
+      "query_id": "qpv2-0797",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-1",
+      "params": {
+        "n": 160
+      },
+      "rendered_text": "回答不超过160个字",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"n\": 160}"
+    },
+    {
+      "sample_id": "train-v_track-0474",
+      "query_id": "qpv2-0797",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "稳健增值"
+      },
+      "rendered_text": "不得出现“稳健增值”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"稳健增值\"}"
+    },
+    {
+      "sample_id": "train-v_track-0489",
+      "query_id": "qpv2-0816",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-1",
+      "params": {
+        "n": 220
+      },
+      "rendered_text": "回答不超过220个字",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"n\": 220}"
+    },
+    {
+      "sample_id": "train-v_track-0489",
+      "query_id": "qpv2-0816",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-14",
+      "params": {
+        "prefix": "卖点："
+      },
+      "rendered_text": "每个 bullet 必须以“卖点：”开头",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"prefix\": \"卖点：\"}"
+    },
+    {
+      "sample_id": "train-v_track-0489",
+      "query_id": "qpv2-0816",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "稳健增值"
+      },
+      "rendered_text": "不得出现“稳健增值”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"稳健增值\"}"
+    },
+    {
+      "sample_id": "train-v_track-0529",
+      "query_id": "qpv2-0934",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "定投"
+      },
+      "rendered_text": "不得出现“定投”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"定投\"}"
+    },
+    {
+      "sample_id": "train-v_track-0532",
+      "query_id": "qpv2-0956",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-8",
+      "params": {
+        "kw1": "现金红利",
+        "kw2": "保额分红"
+      },
+      "rendered_text": "必须包含关键词：现金红利、保额分红",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"kw1\": \"现金红利\", \"kw2\": \"保额分红\"}"
+    },
+    {
+      "sample_id": "train-v_track-0532",
+      "query_id": "qpv2-0956",
+      "split": "train",
+      "track": "V-track",
+      "constraint_id": "GV-9",
+      "params": {
+        "word": "红利"
+      },
+      "rendered_text": "不得出现“红利”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"红利\"}"
+    }
+  ]
+}

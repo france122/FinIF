@@ -1,0 +1,255 @@
+{
+  "meta": {
+    "source": "manual_gold",
+    "description": "First 20 manually authored parameterization records for high-risk parametric constraints.",
+    "record_count": 20
+  },
+  "records": [
+    {
+      "sample_id": "test-mixed_track-0001",
+      "constraint_id": "FN-17",
+      "params": {
+        "condition": "核心企业账期拉长导致供应链融资需求显著上升"
+      },
+      "rendered_text": "在核心企业账期拉长导致供应链融资需求显著上升这一假设下进行分析",
+      "model": "manual_gold",
+      "attempts": 1,
+      "raw_response": "{\"condition\": \"核心企业账期拉长导致供应链融资需求显著上升\"}",
+      "rationale": "把条件锚定在供应链金融主线，同时不重复模板词。"
+    },
+    {
+      "sample_id": "test-mixed_track-0003",
+      "constraint_id": "FN-17",
+      "params": {
+        "condition": "央行继续下调政策利率并释放宽信用信号"
+      },
+      "rendered_text": "在央行继续下调政策利率并释放宽信用信号这一假设下进行分析",
+      "model": "manual_gold",
+      "attempts": 1,
+      "raw_response": "{\"condition\": \"央行继续下调政策利率并释放宽信用信号\"}",
+      "rationale": "与宏观经济政策和货币政策关注高度一致，适合银行客户经理场景。"
+    },
+    {
+      "sample_id": "test-mixed_track-0028",
+      "constraint_id": "FN-17",
+      "params": {
+        "condition": "行业竞争加剧导致获客成本重新抬升"
+      },
+      "rendered_text": "在行业竞争加剧导致获客成本重新抬升这一假设下进行分析",
+      "model": "manual_gold",
+      "attempts": 1,
+      "raw_response": "{\"condition\": \"行业竞争加剧导致获客成本重新抬升\"}",
+      "rationale": "与互联网平台财报点评中的需求节奏和竞争格局变化直接相关。"
+    },
+    {
+      "sample_id": "test-mixed_track-0082",
+      "constraint_id": "FN-17",
+      "params": {
+        "condition": "内部审批与合同签署环节长期脱节"
+      },
+      "rendered_text": "在内部审批与合同签署环节长期脱节这一假设下进行分析",
+      "model": "manual_gold",
+      "attempts": 1,
+      "raw_response": "{\"condition\": \"内部审批与合同签署环节长期脱节\"}",
+      "rationale": "贴合“先付款后签约”的异常材料，适合风险诊断 memo。"
+    },
+    {
+      "sample_id": "test-mixed_track-0014",
+      "constraint_id": "FN-14",
+      "params": {
+        "market_env": "东南亚权益市场震荡上行阶段"
+      },
+      "rendered_text": "假设当前处于东南亚权益市场震荡上行阶段下进行分析",
+      "model": "manual_gold",
+      "attempts": 1,
+      "raw_response": "{\"market_env\": \"东南亚权益市场震荡上行阶段\"}",
+      "rationale": "与新加坡、马来西亚股指抓取任务的区域市场背景一致。"
+    },
+    {
+      "sample_id": "test-mixed_track-0024",
+      "constraint_id": "FN-14",
+      "params": {
+        "market_env": "港股成长板块估值修复阶段"
+      },
+      "rendered_text": "假设当前处于港股成长板块估值修复阶段下进行分析",
+      "model": "manual_gold",
+      "attempts": 1,
+      "raw_response": "{\"market_env\": \"港股成长板块估值修复阶段\"}",
+      "rationale": "能增强盘后点评的市场语境，同时不落成空泛的“熊市/牛市”。"
+    },
+    {
+      "sample_id": "test-mixed_track-0114",
+      "constraint_id": "FN-14",
+      "params": {
+        "market_env": "全球大宗商品高波动与期限结构切换环境"
+      },
+      "rendered_text": "假设当前处于全球大宗商品高波动与期限结构切换环境下进行分析",
+      "model": "manual_gold",
+      "attempts": 1,
+      "raw_response": "{\"market_env\": \"全球大宗商品高波动与期限结构切换环境\"}",
+      "rationale": "适合商品期货历史价格和滚动收益的 API 任务。"
+    },
+    {
+      "sample_id": "test-mixed_track-0008",
+      "constraint_id": "FV-5",
+      "params": {
+        "currency_rule": "人民币元，统一写为“X万元”或“X亿元”"
+      },
+      "rendered_text": "若出现货币金额，统一使用 人民币元，统一写为“X万元”或“X亿元” 表示",
+      "model": "manual_gold",
+      "attempts": 1,
+      "raw_response": "{\"currency_rule\": \"人民币元，统一写为“X万元”或“X亿元”\"}",
+      "rationale": "房地产投资语境偏中文本土场景，适合中文金额表达。"
+    },
+    {
+      "sample_id": "test-mixed_track-0037",
+      "constraint_id": "FV-5",
+      "params": {
+        "currency_rule": "USD + 阿拉伯数字，千位分隔"
+      },
+      "rendered_text": "若出现货币金额，统一使用 USD + 阿拉伯数字，千位分隔 表示",
+      "model": "manual_gold",
+      "attempts": 1,
+      "raw_response": "{\"currency_rule\": \"USD + 阿拉伯数字，千位分隔\"}",
+      "rationale": "美股财报点评更适合三字母货币代码格式。"
+    },
+    {
+      "sample_id": "test-mixed_track-0067",
+      "constraint_id": "FV-5",
+      "params": {
+        "currency_rule": "人民币元，统一写为“X万元”"
+      },
+      "rendered_text": "若出现货币金额，统一使用 人民币元，统一写为“X万元” 表示",
+      "model": "manual_gold",
+      "attempts": 1,
+      "raw_response": "{\"currency_rule\": \"人民币元，统一写为“X万元”\"}",
+      "rationale": "客户可投资资金已明确为 474 万元，对客建议里用“万元”最自然。"
+    },
+    {
+      "sample_id": "test-mixed_track-0069",
+      "constraint_id": "FV-5",
+      "params": {
+        "currency_rule": "人民币元，统一写为“X万元”或“X亿元”"
+      },
+      "rendered_text": "若出现货币金额，统一使用 人民币元，统一写为“X万元”或“X亿元” 表示",
+      "model": "manual_gold",
+      "attempts": 1,
+      "raw_response": "{\"currency_rule\": \"人民币元，统一写为“X万元”或“X亿元”\"}",
+      "rationale": "异常诊断材料中的金额口径应统一，便于比较历史水平。"
+    },
+    {
+      "sample_id": "test-mixed_track-0032",
+      "constraint_id": "GV-13",
+      "params": {
+        "first_line": "## 晨会前核心观点",
+        "last_line": "以上点评仅供参考，不构成投资建议。"
+      },
+      "rendered_text": "第一行必须为“## 晨会前核心观点”，最后一行为“以上点评仅供参考，不构成投资建议。”",
+      "model": "manual_gold",
+      "attempts": 1,
+      "raw_response": "{\"first_line\": \"## 晨会前核心观点\", \"last_line\": \"以上点评仅供参考，不构成投资建议。\"}",
+      "rationale": "与晨会前财报点评任务匹配，首尾行风格正式且不泄露答案。"
+    },
+    {
+      "sample_id": "test-mixed_track-0046",
+      "constraint_id": "GV-13",
+      "params": {
+        "first_line": "## 客户配置建议摘要",
+        "last_line": "请结合您的风险承受能力审慎决策。"
+      },
+      "rendered_text": "第一行必须为“## 客户配置建议摘要”，最后一行为“请结合您的风险承受能力审慎决策。”",
+      "model": "manual_gold",
+      "attempts": 1,
+      "raw_response": "{\"first_line\": \"## 客户配置建议摘要\", \"last_line\": \"请结合您的风险承受能力审慎决策。\"}",
+      "rationale": "符合银行客户经理对客说明的开头和收尾口吻。"
+    },
+    {
+      "sample_id": "test-mixed_track-0135",
+      "constraint_id": "GV-13",
+      "params": {
+        "first_line": "## 晨报发布前检查清单",
+        "last_line": "完成后请留痕并提交复核。"
+      },
+      "rendered_text": "第一行必须为“## 晨报发布前检查清单”，最后一行为“完成后请留痕并提交复核。”",
+      "model": "manual_gold",
+      "attempts": 1,
+      "raw_response": "{\"first_line\": \"## 晨报发布前检查清单\", \"last_line\": \"完成后请留痕并提交复核。\"}",
+      "rationale": "runbook/checklist 类型文档更适合明确执行性首末行。"
+    },
+    {
+      "sample_id": "test-mixed_track-0001",
+      "constraint_id": "GV-8",
+      "params": {
+        "kw1": "保理业务",
+        "kw2": "数据中台"
+      },
+      "rendered_text": "必须包含关键词：保理业务、数据中台",
+      "model": "manual_gold",
+      "attempts": 1,
+      "raw_response": "{\"kw1\": \"保理业务\", \"kw2\": \"数据中台\"}",
+      "rationale": "分别对应供应链金融和商业智能两个侧面，且不是 query 原词。"
+    },
+    {
+      "sample_id": "test-mixed_track-0033",
+      "constraint_id": "GV-8",
+      "params": {
+        "kw1": "毛利率修复",
+        "kw2": "渠道扩张"
+      },
+      "rendered_text": "必须包含关键词：毛利率修复、渠道扩张",
+      "model": "manual_gold",
+      "attempts": 1,
+      "raw_response": "{\"kw1\": \"毛利率修复\", \"kw2\": \"渠道扩张\"}",
+      "rationale": "与财报点评中最值得展开的两条线索高度相关。"
+    },
+    {
+      "sample_id": "test-mixed_track-0050",
+      "constraint_id": "GV-8",
+      "params": {
+        "kw1": "久期管理",
+        "kw2": "汇率对冲"
+      },
+      "rendered_text": "必须包含关键词：久期管理、汇率对冲",
+      "model": "manual_gold",
+      "attempts": 1,
+      "raw_response": "{\"kw1\": \"久期管理\", \"kw2\": \"汇率对冲\"}",
+      "rationale": "对现金管理 + 跨境分散配置的客户建议题都很自然，但不会直接泄露方案。"
+    },
+    {
+      "sample_id": "test-mixed_track-0009",
+      "constraint_id": "FN-16",
+      "params": {
+        "doc_style": "投教答疑纪要"
+      },
+      "rendered_text": "以投教答疑纪要的风格撰写",
+      "model": "manual_gold",
+      "attempts": 1,
+      "raw_response": "{\"doc_style\": \"投教答疑纪要\"}",
+      "rationale": "国际金融市场入门对话更适合投教型答疑纪要，而不是研报或监管公告。"
+    },
+    {
+      "sample_id": "test-mixed_track-0018",
+      "constraint_id": "FN-16",
+      "params": {
+        "doc_style": "从业培训讲义"
+      },
+      "rendered_text": "以从业培训讲义的风格撰写",
+      "model": "manual_gold",
+      "attempts": 1,
+      "raw_response": "{\"doc_style\": \"从业培训讲义\"}",
+      "rationale": "金融营销术语解释题更像培训材料，不像客户函或研报。"
+    },
+    {
+      "sample_id": "test-mixed_track-0140",
+      "constraint_id": "FN-16",
+      "params": {
+        "doc_style": "运营执行手册"
+      },
+      "rendered_text": "以运营执行手册的风格撰写",
+      "model": "manual_gold",
+      "attempts": 1,
+      "raw_response": "{\"doc_style\": \"运营执行手册\"}",
+      "rationale": "研究运营专员写晨报发布前检查任务，本质是执行型 runbook。"
+    }
+  ]
+}

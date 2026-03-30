@@ -1,0 +1,13 @@
+{
+  "target_flag": "gv9_forbidden_overlap",
+  "removed_samples": 97,
+  "removed_by_track": {
+    "V-track": 50,
+    "Mixed-track": 47
+  },
+  "removed_by_split": {
+    "train": 82,
+    "test": 15
+  },
+  "removed_param_records": 150
+}

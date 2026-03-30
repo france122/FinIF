@@ -4,6 +4,16 @@
 > 审查记录：constraint_review_decisions.md
 > 总计：46 条（GV 15 + GN 7 + FV 7 + FN 17）
 
+> 说明：本文件保留的是约束池设计阶段的原始 v2 叙述；**当前 verifier v3 的实际评测口径请以 `docs/constraint_reference_table.csv` 为准**。
+> 已在 verifier v3 中迁移编号的约束：
+> - `GN-1 -> GV-15`
+> - `GN-2 -> GV-16`
+> - `FN-4 -> FV-8`
+> - `FN-6 -> FV-9`
+> - `FN-7 -> FV-10`
+> - `FN-10 -> FV-11`
+> - `FN-11 -> FV-12`
+
 ---
 
 ## 总览

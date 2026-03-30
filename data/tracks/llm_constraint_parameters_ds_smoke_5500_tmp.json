@@ -1,0 +1,301 @@
+{
+  "meta": {
+    "started_at": "2026-03-29 15:58:55",
+    "updated_at": "2026-03-29 15:59:15",
+    "provider": "openai_compatible",
+    "model": "deepseek-chat",
+    "base_url": "https://api.deepseek.com/v1",
+    "tracks_path": "/Users/minimax/Desktop/paper_research/paper_for_financial_if_benchmark/data/tracks/id_heldout_all_tracks.json",
+    "total_requests": 20,
+    "completed_records": 20,
+    "failures": 0
+  },
+  "records": [
+    {
+      "sample_id": "test-mixed_track-0021",
+      "query_id": "qpv2-0055",
+      "split": "test",
+      "track": "Mixed-track",
+      "constraint_id": "FV-4",
+      "params": {
+        "order_field": "市场波动对算法交易策略影响的严重程度"
+      },
+      "rendered_text": "按市场波动对算法交易策略影响的严重程度从高到低排序输出",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"order_field\": \"市场波动对算法交易策略影响的严重程度\"}"
+    },
+    {
+      "sample_id": "test-mixed_track-0022",
+      "query_id": "qpv2-0055",
+      "split": "test",
+      "track": "Mixed-track",
+      "constraint_id": "FN-17",
+      "params": {
+        "condition": "社交媒体情绪指数出现极端负面波动"
+      },
+      "rendered_text": "在社交媒体情绪指数出现极端负面波动这一假设下进行分析",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"condition\": \"社交媒体情绪指数出现极端负面波动\"}"
+    },
+    {
+      "sample_id": "test-mixed_track-0023",
+      "query_id": "qpv2-0059",
+      "split": "test",
+      "track": "Mixed-track",
+      "constraint_id": "FN-17",
+      "params": {
+        "condition": "苹果公司宣布将回购股票计划规模扩大50%"
+      },
+      "rendered_text": "在苹果公司宣布将回购股票计划规模扩大50%这一假设下进行分析",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"condition\": \"苹果公司宣布将回购股票计划规模扩大50%\"}"
+    },
+    {
+      "sample_id": "test-mixed_track-0024",
+      "query_id": "qpv2-0059",
+      "split": "test",
+      "track": "Mixed-track",
+      "constraint_id": "FV-3",
+      "params": {
+        "trigger": "每股收益",
+        "followup": "历史数据不代表未来表现，投资决策需结合更多信息。"
+      },
+      "rendered_text": "若提到“每股收益”，必须同时补充“历史数据不代表未来表现，投资决策需结合更多信息。”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\n  \"trigger\": \"每股收益\",\n  \"followup\": \"历史数据不代表未来表现，投资决策需结合更多信息。\"\n}"
+    },
+    {
+      "sample_id": "test-mixed_track-0025",
+      "query_id": "qpv2-0063",
+      "split": "test",
+      "track": "Mixed-track",
+      "constraint_id": "FN-17",
+      "params": {
+        "condition": "特斯拉发布新款Model 2并宣布降价"
+      },
+      "rendered_text": "在特斯拉发布新款Model 2并宣布降价这一假设下进行分析",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"condition\": \"特斯拉发布新款Model 2并宣布降价\"}"
+    },
+    {
+      "sample_id": "test-mixed_track-0026",
+      "query_id": "qpv2-0063",
+      "split": "test",
+      "track": "Mixed-track",
+      "constraint_id": "FV-3",
+      "params": {
+        "trigger": "移动平均线",
+        "followup": "移动平均线是滞后指标，不应作为单一买卖依据"
+      },
+      "rendered_text": "若提到“移动平均线”，必须同时补充“移动平均线是滞后指标，不应作为单一买卖依据”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"trigger\": \"移动平均线\", \"followup\": \"移动平均线是滞后指标，不应作为单一买卖依据\"}"
+    },
+    {
+      "sample_id": "test-mixed_track-0027",
+      "query_id": "qpv2-0066",
+      "split": "test",
+      "track": "Mixed-track",
+      "constraint_id": "FN-13",
+      "params": {
+        "n": 5
+      },
+      "rendered_text": "至少包含5个专业金融术语",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"n\": 5}"
+    },
+    {
+      "sample_id": "test-mixed_track-0028",
+      "query_id": "qpv2-0066",
+      "split": "test",
+      "track": "Mixed-track",
+      "constraint_id": "FN-14",
+      "params": {
+        "market_env": "美联储鹰派立场导致美元流动性收紧"
+      },
+      "rendered_text": "假设当前处于美联储鹰派立场导致美元流动性收紧下进行分析",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"market_env\": \"美联储鹰派立场导致美元流动性收紧\"}"
+    },
+    {
+      "sample_id": "test-mixed_track-0028",
+      "query_id": "qpv2-0066",
+      "split": "test",
+      "track": "Mixed-track",
+      "constraint_id": "FV-3",
+      "params": {
+        "trigger": "波动率",
+        "followup": "历史波动率不代表未来表现，实际交易需考虑市场流动性风险。"
+      },
+      "rendered_text": "若提到“波动率”，必须同时补充“历史波动率不代表未来表现，实际交易需考虑市场流动性风险。”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"trigger\": \"波动率\", \"followup\": \"历史波动率不代表未来表现，实际交易需考虑市场流动性风险。\"}"
+    },
+    {
+      "sample_id": "test-mixed_track-0029",
+      "query_id": "qpv2-0068",
+      "split": "test",
+      "track": "Mixed-track",
+      "constraint_id": "FN-15",
+      "params": {
+        "goal": "代码可读性与教学清晰度"
+      },
+      "rendered_text": "以代码可读性与教学清晰度为首要考量",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"goal\": \"代码可读性与教学清晰度\"}"
+    },
+    {
+      "sample_id": "test-mixed_track-0030",
+      "query_id": "qpv2-0068",
+      "split": "test",
+      "track": "Mixed-track",
+      "constraint_id": "FN-16",
+      "params": {
+        "doc_style": "技术开发文档"
+      },
+      "rendered_text": "以技术开发文档的风格撰写",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"doc_style\": \"技术开发文档\"}"
+    },
+    {
+      "sample_id": "test-mixed_track-0030",
+      "query_id": "qpv2-0068",
+      "split": "test",
+      "track": "Mixed-track",
+      "constraint_id": "FV-3",
+      "params": {
+        "trigger": "加权移动平均",
+        "followup": "该指标对近期数据赋予更高权重，可能放大短期波动的影响。"
+      },
+      "rendered_text": "若提到“加权移动平均”，必须同时补充“该指标对近期数据赋予更高权重，可能放大短期波动的影响。”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\n  \"trigger\": \"加权移动平均\",\n  \"followup\": \"该指标对近期数据赋予更高权重，可能放大短期波动的影响。\"\n}"
+    },
+    {
+      "sample_id": "test-mixed_track-0032",
+      "query_id": "qpv2-0082",
+      "split": "test",
+      "track": "Mixed-track",
+      "constraint_id": "FV-3",
+      "params": {
+        "trigger": "贝塔系数",
+        "followup": "请注意，贝塔系数基于历史数据计算，不能保证未来表现。"
+      },
+      "rendered_text": "若提到“贝塔系数”，必须同时补充“请注意，贝塔系数基于历史数据计算，不能保证未来表现。”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\n  \"trigger\": \"贝塔系数\",\n  \"followup\": \"请注意，贝塔系数基于历史数据计算，不能保证未来表现。\"\n}"
+    },
+    {
+      "sample_id": "test-mixed_track-0034",
+      "query_id": "qpv2-0083",
+      "split": "test",
+      "track": "Mixed-track",
+      "constraint_id": "FN-17",
+      "params": {
+        "condition": "摩根大通宣布进行1:2的股票拆分"
+      },
+      "rendered_text": "在摩根大通宣布进行1:2的股票拆分这一假设下进行分析",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"condition\": \"摩根大通宣布进行1:2的股票拆分\"}"
+    },
+    {
+      "sample_id": "test-mixed_track-0034",
+      "query_id": "qpv2-0083",
+      "split": "test",
+      "track": "Mixed-track",
+      "constraint_id": "FV-3",
+      "params": {
+        "trigger": "股票拆分",
+        "followup": "请注意，历史拆分数据可能不完整，且拆分事件本身不影响股票总价值。"
+      },
+      "rendered_text": "若提到“股票拆分”，必须同时补充“请注意，历史拆分数据可能不完整，且拆分事件本身不影响股票总价值。”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\n  \"trigger\": \"股票拆分\",\n  \"followup\": \"请注意，历史拆分数据可能不完整，且拆分事件本身不影响股票总价值。\"\n}"
+    },
+    {
+      "sample_id": "test-mixed_track-0035",
+      "query_id": "qpv2-0089",
+      "split": "test",
+      "track": "Mixed-track",
+      "constraint_id": "FV-5",
+      "params": {
+        "currency_rule": "人民币元，格式为XX万元或XX亿元"
+      },
+      "rendered_text": "若出现货币金额，统一使用 人民币元，格式为XX万元或XX亿元 表示",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"currency_rule\": \"人民币元，格式为XX万元或XX亿元\"}"
+    },
+    {
+      "sample_id": "test-mixed_track-0036",
+      "query_id": "qpv2-0089",
+      "split": "test",
+      "track": "Mixed-track",
+      "constraint_id": "FV-2",
+      "params": {
+        "disclaimer": "以上内容不构成金融产品营销建议"
+      },
+      "rendered_text": "必须声明“以上内容不构成金融产品营销建议”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"disclaimer\": \"以上内容不构成金融产品营销建议\"}"
+    },
+    {
+      "sample_id": "test-mixed_track-0037",
+      "query_id": "qpv2-0090",
+      "split": "test",
+      "track": "Mixed-track",
+      "constraint_id": "GV-14",
+      "params": {
+        "prefix": "解释："
+      },
+      "rendered_text": "每个 bullet 必须以“解释：”开头",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"prefix\": \"解释：\"}"
+    },
+    {
+      "sample_id": "test-mixed_track-0038",
+      "query_id": "qpv2-0090",
+      "split": "test",
+      "track": "Mixed-track",
+      "constraint_id": "GV-10",
+      "params": {
+        "word": "定义"
+      },
+      "rendered_text": "开头第一个词必须是“定义”",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"word\": \"定义\"}"
+    },
+    {
+      "sample_id": "test-mixed_track-0039",
+      "query_id": "qpv2-0092",
+      "split": "test",
+      "track": "Mixed-track",
+      "constraint_id": "GV-3",
+      "params": {
+        "n": 4
+      },
+      "rendered_text": "回答分为4个段落",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"n\": 4}"
+    }
+  ]
+}

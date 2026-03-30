@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "started_at": "2026-03-28 20:37:44",
+    "updated_at": "2026-03-28 20:37:50",
+    "provider": "openai_compatible",
+    "model": "deepseek-chat",
+    "base_url": "https://api.deepseek.com/v1",
+    "tracks_path": "/Users/minimax/Desktop/paper_research/paper_for_financial_if_benchmark/data/tracks/id_heldout_all_tracks.json",
+    "total_requests": 6,
+    "completed_records": 6,
+    "failures": 0
+  },
+  "records": [
+    {
+      "sample_id": "test-mixed_track-0001",
+      "query_id": "qpv2-0002",
+      "split": "test",
+      "track": "Mixed-track",
+      "constraint_id": "FN-17",
+      "params": {
+        "condition": "供应链金融监管政策收紧"
+      },
+      "rendered_text": "在供应链金融监管政策收紧这一假设下进行分析",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"condition\": \"供应链金融监管政策收紧\"}"
+    },
+    {
+      "sample_id": "test-mixed_track-0001",
+      "query_id": "qpv2-0002",
+      "split": "test",
+      "track": "Mixed-track",
+      "constraint_id": "GV-8",
+      "params": {
+        "kw1": "应收账款融资",
+        "kw2": "数据可视化"
+      },
+      "rendered_text": "必须包含关键词：应收账款融资、数据可视化",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"kw1\": \"应收账款融资\", \"kw2\": \"数据可视化\"}"
+    },
+    {
+      "sample_id": "test-mixed_track-0002",
+      "query_id": "qpv2-0005",
+      "split": "test",
+      "track": "Mixed-track",
+      "constraint_id": "FV-4",
+      "params": {
+        "order_field": "情绪影响程度"
+      },
+      "rendered_text": "按情绪影响程度从高到低排序输出",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"order_field\": \"情绪影响程度\"}"
+    },
+    {
+      "sample_id": "test-mixed_track-0002",
+      "query_id": "qpv2-0005",
+      "split": "test",
+      "track": "Mixed-track",
+      "constraint_id": "GV-3",
+      "params": {
+        "n": 4
+      },
+      "rendered_text": "回答分为4个段落",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"n\": 4}"
+    },
+    {
+      "sample_id": "test-mixed_track-0003",
+      "query_id": "qpv2-0007",
+      "split": "test",
+      "track": "Mixed-track",
+      "constraint_id": "FN-17",
+      "params": {
+        "condition": "央行宣布降准0.5个百分点"
+      },
+      "rendered_text": "在央行宣布降准0.5个百分点这一假设下进行分析",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"condition\": \"央行宣布降准0.5个百分点\"}"
+    },
+    {
+      "sample_id": "test-mixed_track-0004",
+      "query_id": "qpv2-0011",
+      "split": "test",
+      "track": "Mixed-track",
+      "constraint_id": "GV-2",
+      "params": {
+        "n": 4
+      },
+      "rendered_text": "至少包含4个句子",
+      "model": "deepseek-chat",
+      "attempts": 1,
+      "raw_response": "{\"n\": 4}"
+    }
+  ]
+}

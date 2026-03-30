@@ -14,7 +14,6 @@ FINAL_JSON = DATA_DIR / "query_pool" / "query_pool_v2_final.json"
 FINAL_HTML = VIEWER_DIR / "query_pool_v2_viewer.html"
 
 RNG = random.Random(42)
-TARGET_TOTAL = 1000
 TEMPLATE_IDS = ["T1", "T2", "T4", "T5", "T7", "T9", "T10", "T11"]
 PER_TEMPLATE = 111
 
@@ -471,8 +470,6 @@ def load_fineval_records():
     records = []
     for task, path in files.items():
         data = read_json(path)
-        if task == "finsuggestion":
-            data = data[:-2]
         for example in data:
             base_input = example["input"].strip()
             if task == "finsales":
@@ -525,6 +522,19 @@ def assign_ids(records):
     return records
 
 
+def deduplicate_records(records):
+    deduped = []
+    seen_inputs = set()
+    removed = 0
+    for item in records:
+        if item["input"] in seen_inputs:
+            removed += 1
+            continue
+        seen_inputs.add(item["input"])
+        deduped.append(item)
+    return deduped, removed
+
+
 def build_viewer(records):
     data_json = json.dumps(records, ensure_ascii=False)
     html = f"""<!DOCTYPE html>
@@ -568,7 +578,7 @@ def build_viewer(records):
 <body>
   <div class="wrap">
     <h1>Query Pool v2 Final Viewer</h1>
-    <div class="sub">当前展示的是最终 query 总池：包含 `FinEval` 四类原题与 `FIFE 中文化模板` 生成题；总量约 1000 条，并已按约 1/3 注入 `CFinBench role` 作为 query 层增强。`FinEval` 原题保留原始四类来源标记，`FIFE` 生成题不再强行挂到这四类下面，只保留模板语义。</div>
+    <div class="sub">当前展示的是最终 query 总池：包含 `FinEval` 四类原题与 `FIFE 中文化模板` 生成题；在 query pool 构建阶段先按裸 `query input` 做文本去重，再按约 1/3 注入 `CFinBench role` 作为 query 层增强。`FinEval` 原题保留原始四类来源标记，`FIFE` 生成题不再强行挂到这四类下面，只保留模板语义。</div>
     <div class="stats" id="stats"></div>
     <div class="toolbar">
       <input id="search" type="text" placeholder="搜索标题、模板、来源、query 文本" />
@@ -692,13 +702,15 @@ def main():
     fineval_records = load_fineval_records()
     template_records = generate_template_records()
     records = fineval_records + template_records
-    if len(records) != TARGET_TOTAL:
-        raise ValueError(f"unexpected total: {len(records)} != {TARGET_TOTAL}")
+    candidate_total = len(records)
+    records, removed = deduplicate_records(records)
     inject_roles(records)
     assign_ids(records)
     FINAL_JSON.write_text(json.dumps(records, ensure_ascii=False, indent=2), encoding="utf-8")
     FINAL_HTML.write_text(build_viewer(records), encoding="utf-8")
-    print("generated", len(records), "records")
+    print("candidate records", candidate_total)
+    print("deduplicated records", len(records))
+    print("removed duplicates", removed)
     print("json", FINAL_JSON)
     print("html", FINAL_HTML)
 

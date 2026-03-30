@@ -1,0 +1,2756 @@
+[
+  {
+    "request": {
+      "sample_id": "test-mixed_track-0146",
+      "query_id": "qpv2-0371",
+      "split": "test",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某外贸企业近期出现“授信资料前后口径不一”相关异常。\n- 相关金额约为555万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟275天仍未完成补充说明。\n- 管理层表示将于近期准备风险排查，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=test-mixed_track-0146 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "test-mixed_track-0096",
+      "query_id": "qpv2-0227",
+      "split": "test",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T2",
+      "template_name": "资产配置建议 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "某客户提供了如下信息：风险承受能力为中等，主要目标是资产分散，可投资期限为2年，希望在兼顾流动性的前提下做好资金安排。\n\n客户信息：\n- 客户类型：留学家庭\n- 可投资资金：42万元\n- 风险偏好：中等\n- 核心目标：资产分散\n\n市场背景：\n- 海外科技资产中长期趋势较强，但短期估值扰动明显。\n- 短端利率相对稳定，债券类资产配置吸引力提升。\n\n请写一份面向客户的配置建议说明，比较至少两种可选方案，并说明主要风险与适用边界。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=test-mixed_track-0096 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'流动性'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"流动性\"}"
+  },
+  {
+    "request": {
+      "sample_id": "test-mixed_track-0079",
+      "query_id": "qpv2-0195",
+      "split": "test",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T1",
+      "template_name": "财报点评 Brief",
+      "role_mode": "with_role",
+      "role": "证券分析师",
+      "query_input": "你是一名证券分析师。请基于专业研究视角完成以下任务。\n\n请基于以下事实，为机构客户写一段简明的晨会前点评，概括核心观点、主要利多因素、主要风险点，并避免编造数据。\n\n已知事实：\n- 某跨境市场创新药企业2025年第三季度营业收入155.7亿元，同比增长22.3%。\n- 归母净利润3.5亿元，同比增长16.9%。\n- 毛利率为17.4%，较上季度改善。\n- 与“海外收入提升”相关的业务收入占比提升至40.1%。\n- 管理层强调“渠道扩张”仍是未来两个季度的重要变量。\n- 市场当前同时关注需求节奏、估值消化和行业竞争格局变化。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=test-mixed_track-0079 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'增长'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"增长\"}"
+  },
+  {
+    "request": {
+      "sample_id": "test-mixed_track-0160",
+      "query_id": "qpv2-0399",
+      "split": "test",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某银行分支机构近期出现“估值更新滞后”相关异常。\n- 相关金额约为731万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟387天仍未完成补充说明。\n- 管理层表示将于近期准备监管报送，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=test-mixed_track-0160 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "test-mixed_track-0174",
+      "query_id": "qpv2-0428",
+      "split": "test",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "with_role",
+      "role": "税务顾问",
+      "query_input": "你是一名税务顾问。请基于职责边界完成以下风险诊断任务。\n\n请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某电商平台近期出现“供应商集中新增”相关异常。\n- 相关金额约为944万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟98天仍未完成补充说明。\n- 管理层表示将于近期准备授信审批，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=test-mixed_track-0174 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "test-mixed_track-0218",
+      "query_id": "qpv2-0541",
+      "split": "test",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T10",
+      "template_name": "产品卖点说明",
+      "role_mode": "with_role",
+      "role": "保险顾问",
+      "query_input": "你是一名保险顾问。请在合规对客场景下完成以下任务。\n\n请根据以下产品信息，写一段面向客户的卖点说明，突出产品特点、适合人群和主要风险，避免夸大收益或做出不当承诺。\n\n产品信息：\n- 产品类型：中低波动固收增强产品\n- 适合人群：希望稳健增值的客户\n- 主要特点：可作为组合配置工具，帮助客户在既定目标下进行资产安排。\n- 风险提示：收益不确定，不承诺保本保收益\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=test-mixed_track-0218 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'稳健增值'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"稳健增值\"}"
+  },
+  {
+    "request": {
+      "sample_id": "test-mixed_track-0210",
+      "query_id": "qpv2-0523",
+      "split": "test",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T10",
+      "template_name": "产品卖点说明",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下产品信息，写一段面向客户的卖点说明，突出产品特点、适合人群和主要风险，避免夸大收益或做出不当承诺。\n\n产品信息：\n- 产品类型：可转债基金\n- 适合人群：希望稳健增值的客户\n- 主要特点：可作为组合配置工具，帮助客户在既定目标下进行资产安排。\n- 风险提示：净值会波动，短期表现可能受市场影响\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=test-mixed_track-0210 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'稳健'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"稳健\"}"
+  },
+  {
+    "request": {
+      "sample_id": "test-v_track-0050",
+      "query_id": "qpv2-0052",
+      "split": "test",
+      "track": "V-track",
+      "source_type": "fineval_original",
+      "origin_task": "findiag",
+      "template_id": null,
+      "template_name": "FinEval 原题",
+      "role_mode": "with_role",
+      "role": "银行客户经理",
+      "query_input": "你是一名银行客户经理。请阅读以下材料并回答问题。\n\n对话：\n用户: 我听说比特币最近价格波动很大，这是怎么回事？\n\nBOT: 是的，比特币和其他加密货币的价格通常会受到多种因素的影响，包括市场需求、全球政策变化、挖矿成本、以及投资者情绪等。最近，一些国家对加密货币的监管政策发生了变化，这可能是导致价格波动的一个原因。\n\n用户: 那么，对于普通投资者来说，投资加密货币安全吗？\n\nBOT: 投资加密货币既有机会也有风险。加密货币市场是高度波动的，可能会带来高收益，但也可能导致资金损失。普通投资者在投资前应该充分了解加密货币的特性，考虑个人的风险承受能力，并可能寻求专业的财务咨询。\n\n用户: 我还听说了一些关于区块链技术的事情，这和加密货币有什么关系？\n\nBOT: 区块链技术是加密货币的基础。比特币和其他加密货币都是基于区块链技术的，它是一种分布式账本技术，能够确保交易的安全性、透明性和不可篡改性。区块链技术的应用不仅限于加密货币，还包括金融、供应链管理、智能合约等多个领域。\n\n用户: 那么，区块链技术在金融领域有哪些具体应用？\n\nBOT: 在金融领域，区块链技术被用于改善支付系统、提高交易效率和降低成本。例如，使用区块链技术可以实现跨境支付的快速处理，同时减少交易成本。此外，区块链还被用于发行数字货币、股票交易、债券发行等。\n\n用户: 听起来很有前途。你认为区块链技术的未来发展方向是什么？\n\nBOT: 区块链技术的潜力巨大，未来可能会在更多领域得到应用。除了金融领域外，区块链可以用于提高供应链的透明度、确保数据的安全和隐私、以及在政府服务中提高效率等。随着技术的不断成熟和应用案例的增加，区块链技术可能会带来更广泛的社会和经济影响。\n\n问题: \n根据上述对话，用户最初是因为什么而对加密货币感兴趣？",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=test-v_track-0050 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'波动'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"波动\"}"
+  },
+  {
+    "request": {
+      "sample_id": "test-v_track-0094",
+      "query_id": "qpv2-0090",
+      "split": "test",
+      "track": "V-track",
+      "source_type": "fineval_original",
+      "origin_task": "finsales",
+      "template_id": null,
+      "template_name": "FinEval 原题",
+      "role_mode": "with_role",
+      "role": "保险顾问",
+      "query_input": "你是一名保险顾问。请从对客解释或培训场景出发完成以下任务。\n\n请解释下面金融营销术语，并结合金融业务场景说明它的含义、常见使用场景和注意事项：\n客户关系管理",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=test-v_track-0094 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'客户'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"客户\"}"
+  },
+  {
+    "request": {
+      "sample_id": "test-v_track-0174",
+      "query_id": "qpv2-0162",
+      "split": "test",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T1",
+      "template_name": "财报点评 Brief",
+      "role_mode": "with_role",
+      "role": "券商行业分析师",
+      "query_input": "你是一名券商行业分析师。请基于专业研究视角完成以下任务。\n\n请基于以下事实，为机构客户写一段简明的盘前点评，概括核心观点、主要利多因素、主要风险点，并避免编造数据。\n\n已知事实：\n- 某新兴市场物流科技企业2025年第三季度营业收入99.6亿元，同比增长14.4%。\n- 归母净利润9.8亿元，同比增长10.2%。\n- 毛利率为25.2%，较上季度改善。\n- 与“订单增长”相关的业务收入占比提升至40.8%。\n- 管理层强调“毛利率修复”仍是未来两个季度的重要变量。\n- 市场当前同时关注需求节奏、估值消化和行业竞争格局变化。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=test-v_track-0174 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'增长'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"增长\"}"
+  },
+  {
+    "request": {
+      "sample_id": "test-v_track-0224",
+      "query_id": "qpv2-0220",
+      "split": "test",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T1",
+      "template_name": "财报点评 Brief",
+      "role_mode": "with_role",
+      "role": "证券分析师",
+      "query_input": "你是一名证券分析师。请基于专业研究视角完成以下任务。\n\n请基于以下事实，为机构客户写一段简明的收盘后点评，概括核心观点、主要利多因素、主要风险点，并避免编造数据。\n\n已知事实：\n- 某跨境市场游戏传媒企业2025年第三季度营业收入58.2亿元，同比增长11.8%。\n- 归母净利润8.0亿元，同比增长8.4%。\n- 毛利率为16.4%，较上季度改善。\n- 与“产品结构优化”相关的业务收入占比提升至22.6%。\n- 管理层强调“毛利率修复”仍是未来两个季度的重要变量。\n- 市场当前同时关注需求节奏、估值消化和行业竞争格局变化。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=test-v_track-0224 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'增长'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"增长\"}"
+  },
+  {
+    "request": {
+      "sample_id": "test-v_track-0238",
+      "query_id": "qpv2-0227",
+      "split": "test",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T2",
+      "template_name": "资产配置建议 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "某客户提供了如下信息：风险承受能力为中等，主要目标是资产分散，可投资期限为2年，希望在兼顾流动性的前提下做好资金安排。\n\n客户信息：\n- 客户类型：留学家庭\n- 可投资资金：42万元\n- 风险偏好：中等\n- 核心目标：资产分散\n\n市场背景：\n- 海外科技资产中长期趋势较强，但短期估值扰动明显。\n- 短端利率相对稳定，债券类资产配置吸引力提升。\n\n请写一份面向客户的配置建议说明，比较至少两种可选方案，并说明主要风险与适用边界。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=test-v_track-0238 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'流动性'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"流动性\"}"
+  },
+  {
+    "request": {
+      "sample_id": "test-v_track-0293",
+      "query_id": "qpv2-0292",
+      "split": "test",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T2",
+      "template_name": "资产配置建议 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "某客户提供了如下信息：风险承受能力为中低，主要目标是稳健增值，可投资期限为5年以上，希望在兼顾流动性的前提下做好资金安排。\n\n客户信息：\n- 客户类型：高净值家庭\n- 可投资资金：177万元\n- 风险偏好：中低\n- 核心目标：稳健增值\n\n市场背景：\n- 银行理财、债券基金和存款类工具各有适用边界。\n- 权益市场波动较大，但高股息板块受到稳健资金关注。\n\n请写一份面向客户的配置建议说明，比较至少两种可选方案，并说明主要风险与适用边界。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=test-v_track-0293 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'稳健'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"稳健\"}"
+  },
+  {
+    "request": {
+      "sample_id": "test-v_track-0305",
+      "query_id": "qpv2-0303",
+      "split": "test",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T2",
+      "template_name": "资产配置建议 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "某客户提供了如下信息：风险承受能力为中等，主要目标是长期增值，可投资期限为18个月，希望在兼顾流动性的前提下做好资金安排。\n\n客户信息：\n- 客户类型：中小企业主\n- 可投资资金：298万元\n- 风险偏好：中等\n- 核心目标：长期增值\n\n市场背景：\n- 短端利率相对稳定，债券类资产配置吸引力提升。\n- 海外科技资产中长期趋势较强，但短期估值扰动明显。\n\n请写一份面向客户的配置建议说明，比较至少两种可选方案，并说明主要风险与适用边界。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=test-v_track-0305 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'资产配置'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"资产配置\"}"
+  },
+  {
+    "request": {
+      "sample_id": "test-v_track-0316",
+      "query_id": "qpv2-0316",
+      "split": "test",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T2",
+      "template_name": "资产配置建议 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "某客户提供了如下信息：风险承受能力为中低，主要目标是稳健增值，可投资期限为5年以上，希望在兼顾流动性的前提下做好资金安排。\n\n客户信息：\n- 客户类型：高净值家庭\n- 可投资资金：441万元\n- 风险偏好：中低\n- 核心目标：稳健增值\n\n市场背景：\n- 银行理财、债券基金和存款类工具各有适用边界。\n- 权益市场波动较大，但高股息板块受到稳健资金关注。\n\n请写一份面向客户的配置建议说明，比较至少两种可选方案，并说明主要风险与适用边界。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=test-v_track-0316 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'理财'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"理财\"}"
+  },
+  {
+    "request": {
+      "sample_id": "test-v_track-0348",
+      "query_id": "qpv2-0345",
+      "split": "test",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "with_role",
+      "role": "初级会计人员",
+      "query_input": "你是一名初级会计人员。请基于职责边界完成以下风险诊断任务。\n\n请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某医药公司近期出现“报关与台账不一致”相关异常。\n- 相关金额约为453万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟201天仍未完成补充说明。\n- 管理层表示将于近期准备监管报送，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=test-v_track-0348 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "test-v_track-0383",
+      "query_id": "qpv2-0385",
+      "split": "test",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "with_role",
+      "role": "初级审计人员",
+      "query_input": "你是一名初级审计人员。请基于职责边界完成以下风险诊断任务。\n\n请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某医药公司近期出现“报关与台账不一致”相关异常。\n- 相关金额约为213万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟121天仍未完成补充说明。\n- 管理层表示将于近期准备年末审计，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=test-v_track-0383 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'审计'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"审计\"}"
+  },
+  {
+    "request": {
+      "sample_id": "test-v_track-0371",
+      "query_id": "qpv2-0376",
+      "split": "test",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某制造企业近期出现“发票与合同不一致”相关异常。\n- 相关金额约为740万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟370天仍未完成补充说明。\n- 管理层表示将于近期启动流程复盘，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=test-v_track-0371 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "test-v_track-0393",
+      "query_id": "qpv2-0393",
+      "split": "test",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某医药公司近期出现“报关与台账不一致”相关异常。\n- 相关金额约为509万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟273天仍未完成补充说明。\n- 管理层表示将于近期准备监管报送，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=test-v_track-0393 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "test-v_track-0408",
+      "query_id": "qpv2-0407",
+      "split": "test",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某银行分支机构近期出现“估值更新滞后”相关异常。\n- 相关金额约为167万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟119天仍未完成补充说明。\n- 管理层表示将于近期准备风险排查，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=test-v_track-0408 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "test-v_track-0417",
+      "query_id": "qpv2-0412",
+      "split": "test",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某电商平台近期出现“供应商集中新增”相关异常。\n- 相关金额约为352万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟214天仍未完成补充说明。\n- 管理层表示将于近期启动流程复盘，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=test-v_track-0417 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "test-v_track-0430",
+      "query_id": "qpv2-0419",
+      "split": "test",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某外贸企业近期出现“授信资料前后口径不一”相关异常。\n- 相关金额约为611万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟347天仍未完成补充说明。\n- 管理层表示将于近期准备风险排查，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=test-v_track-0430 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "test-v_track-0443",
+      "query_id": "qpv2-0445",
+      "split": "test",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "with_role",
+      "role": "风控专员",
+      "query_input": "你是一名风控专员。请基于职责边界完成以下风险诊断任务。\n\n请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某供应链公司近期出现“存货库龄异常”相关异常。\n- 相关金额约为713万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟421天仍未完成补充说明。\n- 管理层表示将于近期准备年末审计，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=test-v_track-0443 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'异常点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"异常点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "test-v_track-0528",
+      "query_id": "qpv2-0530",
+      "split": "test",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T10",
+      "template_name": "产品卖点说明",
+      "role_mode": "with_role",
+      "role": "银行客户经理",
+      "query_input": "你是一名银行客户经理。请在合规对客场景下完成以下任务。\n\n请根据以下产品信息，写一段面向客户的卖点说明，突出产品特点、适合人群和主要风险，避免夸大收益或做出不当承诺。\n\n产品信息：\n- 产品类型：黄金ETF联接基金\n- 适合人群：希望稳健增值的客户\n- 主要特点：可作为组合配置工具，帮助客户在既定目标下进行资产安排。\n- 风险提示：产品更适合中长期持有，不适合短期停放资金\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=test-v_track-0528 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'稳健'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"稳健\"}"
+  },
+  {
+    "request": {
+      "sample_id": "test-v_track-0521",
+      "query_id": "qpv2-0523",
+      "split": "test",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T10",
+      "template_name": "产品卖点说明",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下产品信息，写一段面向客户的卖点说明，突出产品特点、适合人群和主要风险，避免夸大收益或做出不当承诺。\n\n产品信息：\n- 产品类型：可转债基金\n- 适合人群：希望稳健增值的客户\n- 主要特点：可作为组合配置工具，帮助客户在既定目标下进行资产安排。\n- 风险提示：净值会波动，短期表现可能受市场影响\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=test-v_track-0521 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'稳健'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"稳健\"}"
+  },
+  {
+    "request": {
+      "sample_id": "test-v_track-0539",
+      "query_id": "qpv2-0536",
+      "split": "test",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T10",
+      "template_name": "产品卖点说明",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下产品信息，写一段面向客户的卖点说明，突出产品特点、适合人群和主要风险，避免夸大收益或做出不当承诺。\n\n产品信息：\n- 产品类型：公募REIT\n- 适合人群：希望稳健增值的客户\n- 主要特点：可作为组合配置工具，帮助客户在既定目标下进行资产安排。\n- 风险提示：收益不确定，不承诺保本保收益\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=test-v_track-0539 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'稳健'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"稳健\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0050",
+      "query_id": "qpv2-0031",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fineval_original",
+      "origin_task": "findiag",
+      "template_id": null,
+      "template_name": "FinEval 原题",
+      "role_mode": "with_role",
+      "role": "初级会计人员",
+      "query_input": "你是一名初级会计人员。请阅读以下材料并回答问题。\n\n用户: 我正在考虑购买保险，但不确定应该怎么选择。你有什么建议吗？\nBOT: 当选择保险时，重要的是考虑你的个人需求和风险。比如，生命保险、健康保险和财产保险都针对不同的风险和需求。另外，比较不同保险公司的报价和覆盖范围也很重要。\n用户: 理解保险政策的细节有什么重要性？\nBOT: 理解保险政策的细节非常重要，因为这决定了什么情况下你可以获得赔偿，赔偿的金额是多少，以及你需要承担的费用。确保你完全明白保险条款，如有疑问要及时咨询保险公司。\n用户: 我该如何评估不同的保险产品？\nBOT: 评估保险产品时，考虑保险的覆盖范围、排除条款、保费成本、保险公司的信誉和客户服务。在线比较工具和独立保险代理可以帮助你做出更明智的选择。\n用户: 如果我的生活状况发生变化，我应该怎么处理我的保险政策？\nBOT: 如果你的生活状况发生变化，比如结婚、有了孩子或换了工作，你应该重新评估你的保险需求，并相应地调整保险政策。定期审查你的保险，确保它仍然符合你的需求。\n用户: 有没有好的资源来帮助我更深入地了解不同类型的保险？\nBOT: 当然，你可以阅读关于保险的书籍和在线文章，参加有关保险的研讨会，或咨询保险专业人士。许多保险公司也提供详细的指南和资源来帮助消费者了解不同的保险产品。\n问题\n\n在这次对话的开头，用户询问的是关于什么类型的保险选择的问题？",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0050 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'保险产品'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"保险产品\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0064",
+      "query_id": "qpv2-0039",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fineval_original",
+      "origin_task": "findiag",
+      "template_id": null,
+      "template_name": "FinEval 原题",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "用户: 我最近开设了一个银行账户，但不太清楚应该如何利用它进行投资。你有什么建议吗？\nBOT: 当然。首先，你可以利用银行提供的储蓄账户或定期存款来存储资金。这些通常有固定的利息收益，风险较低。此外，许多银行也提供投资咨询服务。\n用户: 对于初学者来说，投资股市安全吗？\nBOT: 股市投资通常伴随较高风险，尤其是对于初学者。建议在进行股市投资前，先了解基本的市场知识，逐渐建立投资组合，并考虑分散风险。\n用户: 那怎样构建一个好的投资组合呢？\nBOT: 一个好的投资组合应该根据个人的风险承受能力和投资目标进行构建。通常包括股票、债券、现金等多种资产，以达到风险分散的目的。\n用户: 市场的宏观经济因素怎样影响我的投资？\nBOT: 宏观经济因素，如利率、通货膨胀、政治稳定性等，都会影响股市和其他金融市场。了解这些因素有助于做出更明智的投资决策。\n用户: 了解了。还有，哪些资源可以帮助我更好地了解市场和投资？\nBOT: 你可以关注财经新闻、阅读金融市场分析报告，参加投资相关的在线课程和研讨会。这些资源都能帮助你获得有价值的市场信息和投资知识。\n用户: 太棒了，谢谢你的帮助。我会进一步研究这些内容的。\nBOT: 不客气，祝你投资之路顺利。\n问题\n\n根据上述对话，用户对于银行账户的主要疑问是什么？在对话中，BOT提到了哪些宏观经济因素可能影响用户的投资？",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0064 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0078",
+      "query_id": "qpv2-0048",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fineval_original",
+      "origin_task": "findiag",
+      "template_id": null,
+      "template_name": "FinEval 原题",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "用户: 我们正在考虑利用场外衍生品来对冲我们的货币风险，特别是考虑到我们在多个国家的业务展开。在这种情况下，我们应该如何设计我们的对冲策略？\nBOT: 在设计用于对冲货币风险的场外衍生品策略时，首先需要确定您希望对冲的风险敞口范围和期限。然后，选择合适的衍生品工具，如外汇远期合约、外汇期权或货币掉期。接下来，基于预期的货币波动率和风险偏好，确定合约的规模和条款。重要的是要持续监控外汇市场的变动，并根据市场情况调整对冲策略。\n用户: 在选择对冲工具时，我们应该关注哪些关键因素？\nBOT: 在选择对冲工具时，关键因素包括成本、流动性、复杂性以及工具与风险敞口的匹配度。成本是一个重要考虑因素，因为不同的对冲工具会带来不同的费用结构。流动性也很重要，因为高流动性的工具更容易进入和退出。此外，选择的工具应该能精确匹配您需要对冲的风险类型和期限。\n用户: 对于跨国公司来说，管理多币种的风险还有什么特别的考虑吗？\nBOT: 对于跨国公司管理多币种风险，特别的考虑包括考虑货币之间的相关性，以及潜在的货币转换成本。多币种风险管理策略应当考虑到不同货币之间可能的相互影响，以及如何利用这种相关性来优化对冲效果。此外，货币转换成本也可能影响对冲策略的总体效率，因此在设计策略时需要考虑这些因素。\n用户: 在实施对冲策略时，如何评估和监控其效果？\nBOT: 评估和监控对冲策略的效果需要定期进行风险敞口的重新评估和对冲效果的回顾分析。这包括比较对冲前后的风险敞口变化、对冲成本以及任何未对冲风险的影响。使用有效的风险管理软件可以帮助跟踪这些指标，并提供实时的数据分析，以便及时调整策略。此外，重要的是要确保对冲策略与公司的整体风险管理框架和政策相一致。\n\n问题：\n根据上述对话，请问他们讨论的第一个主要挑战是什么？",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0078 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'衍生品'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"衍生品\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0092",
+      "query_id": "qpv2-0057",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fineval_original",
+      "origin_task": "findiag",
+      "template_id": null,
+      "template_name": "FinEval 原题",
+      "role_mode": "with_role",
+      "role": "税务顾问",
+      "query_input": "你是一名税务顾问。请阅读以下材料并回答问题。\n\n用户: 我对金融领域的投资很感兴趣，你能给我介绍一下股票和债券的区别吗？\nBOT: 当然可以。股票和债券是两种不同的投资工具。股票代表了对公司所有权的一部分，持有股票意味着你成为了公司的股东，享有公司利润分配和投票权。而债券则是一种债务工具，购买债券就相当于向公司或政府借钱，债券持有者会获得固定的利息收入和到期时的本金偿还。\n用户: 非常清楚，那么在投资组合中如何平衡股票和债券的比例呢？\nBOT: 投资组合中股票和债券的比例取决于个人的风险偏好和投资目标。一般来说，股票具有较高的风险和回报，适合追求长期增长的投资者；而债券则相对稳定，适合追求稳定收益和保值的投资者。根据个人的情况可以选择适合自己的股债比例。\n用户: 我明白了，谢谢你的解释。那么，我想了解一下如何评估一家公司的价值？\nBOT: 评估一家公司的价值可以通过多种方法，比如基本面分析、技术分析和市场情绪等。基本面分析包括研究公司的财务报表、行业地位和管理团队等，以确定公司的内在价值。技术分析则是通过研究股票价格走势和交易量等图表数据来预测未来价格走势。市场情绪则是指投资者对公司的情绪和市场预期，也会影响股价。\n用户: 这些方法都很有用。我还有一个问题，你能告诉我什么是资产配置吗？\nBOT: 当然。资产配置是指根据投资者的风险偏好和投资目标，在不同资产类别之间分配资金的过程。常见的资产类别包括股票、债券、房地产和现金等。通过合理的资产配置，投资者可以实现风险分散和收益最大化的目标。\n用户: 明白了，资产配置很重要。谢谢你的解释。\nBOT: 不客气，如果你有任何其他问题，都可以随时问我。祝你投资顺利！\n问题: 根据上述对话，他们讨论的第一个主题是什么?\n追问: 在后续的对话中他们讨论的资产配置的重要性体现在哪些方面？",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0092 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0092",
+      "query_id": "qpv2-0057",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fineval_original",
+      "origin_task": "findiag",
+      "template_id": null,
+      "template_name": "FinEval 原题",
+      "role_mode": "with_role",
+      "role": "税务顾问",
+      "query_input": "你是一名税务顾问。请阅读以下材料并回答问题。\n\n用户: 我对金融领域的投资很感兴趣，你能给我介绍一下股票和债券的区别吗？\nBOT: 当然可以。股票和债券是两种不同的投资工具。股票代表了对公司所有权的一部分，持有股票意味着你成为了公司的股东，享有公司利润分配和投票权。而债券则是一种债务工具，购买债券就相当于向公司或政府借钱，债券持有者会获得固定的利息收入和到期时的本金偿还。\n用户: 非常清楚，那么在投资组合中如何平衡股票和债券的比例呢？\nBOT: 投资组合中股票和债券的比例取决于个人的风险偏好和投资目标。一般来说，股票具有较高的风险和回报，适合追求长期增长的投资者；而债券则相对稳定，适合追求稳定收益和保值的投资者。根据个人的情况可以选择适合自己的股债比例。\n用户: 我明白了，谢谢你的解释。那么，我想了解一下如何评估一家公司的价值？\nBOT: 评估一家公司的价值可以通过多种方法，比如基本面分析、技术分析和市场情绪等。基本面分析包括研究公司的财务报表、行业地位和管理团队等，以确定公司的内在价值。技术分析则是通过研究股票价格走势和交易量等图表数据来预测未来价格走势。市场情绪则是指投资者对公司的情绪和市场预期，也会影响股价。\n用户: 这些方法都很有用。我还有一个问题，你能告诉我什么是资产配置吗？\nBOT: 当然。资产配置是指根据投资者的风险偏好和投资目标，在不同资产类别之间分配资金的过程。常见的资产类别包括股票、债券、房地产和现金等。通过合理的资产配置，投资者可以实现风险分散和收益最大化的目标。\n用户: 明白了，资产配置很重要。谢谢你的解释。\nBOT: 不客气，如果你有任何其他问题，都可以随时问我。祝你投资顺利！\n问题: 根据上述对话，他们讨论的第一个主题是什么?\n追问: 在后续的对话中他们讨论的资产配置的重要性体现在哪些方面？",
+      "constraint_id": "GV-8"
+    },
+    "error": "sample_id=train-mixed_track-0092 constraint_id=GV-8 连续失败，最后错误：GV-8 关键词 kw1='投资组合'直接出现在 query 题干中，请换一个不在题干里的词；最后输出：{\n  \"kw1\": \"投资组合\",\n  \"kw2\": \"风险分散\"\n}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0130",
+      "query_id": "qpv2-0080",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fineval_original",
+      "origin_task": "apiutil",
+      "template_id": null,
+      "template_name": "FinEval 原题",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "yfinance 是一个Python库，专用于从Yahoo Finance获取金融市场数据。除了提供个股的历史价格和实时数据，yfinance 也支持获取全球主要货币对的汇率、商品价格，以及全球主要股指的数据。这使得它成为分析全球金融市场趋势的有力工具。\n\n现在，你的任务是使用 yfinance 获取黄金（标识：GC=F）和白银（标识：SI=F）过去五年的月度收盘价格。请问根据API描述，你会怎么操作来实现这个需求？",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0130 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'数据'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"数据\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0207",
+      "query_id": "qpv2-0132",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T1",
+      "template_name": "财报点评 Brief",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请基于以下事实，为机构客户写一段简明的收盘后点评，概括核心观点、主要利多因素、主要风险点，并避免编造数据。\n\n已知事实：\n- 某新兴市场创新药企业2025年第三季度营业收入48.6亿元，同比增长13.4%。\n- 归母净利润18.8亿元，同比增长9.2%。\n- 毛利率为19.2%，较上季度改善。\n- 与“产品结构优化”相关的业务收入占比提升至12.8%。\n- 管理层强调“毛利率修复”仍是未来两个季度的重要变量。\n- 市场当前同时关注需求节奏、估值消化和行业竞争格局变化。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0207 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'增长'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"增长\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0240",
+      "query_id": "qpv2-0153",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T1",
+      "template_name": "财报点评 Brief",
+      "role_mode": "with_role",
+      "role": "证券分析师",
+      "query_input": "你是一名证券分析师。请基于专业研究视角完成以下任务。\n\n请基于以下事实，为机构客户写一段简明的盘后点评，概括核心观点、主要利多因素、主要风险点，并避免编造数据。\n\n已知事实：\n- 某美股物流科技企业2025年第三季度营业收入84.3亿元，同比增长27.7%。\n- 归母净利润19.7亿元，同比增长21.1%。\n- 毛利率为12.6%，较上季度改善。\n- 与“研发投入增加”相关的业务收入占比提升至21.9%。\n- 管理层强调“渠道扩张”仍是未来两个季度的重要变量。\n- 市场当前同时关注需求节奏、估值消化和行业竞争格局变化。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0240 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'增长'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"增长\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0257",
+      "query_id": "qpv2-0164",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T1",
+      "template_name": "财报点评 Brief",
+      "role_mode": "with_role",
+      "role": "证券分析师",
+      "query_input": "你是一名证券分析师。请基于专业研究视角完成以下任务。\n\n请基于以下事实，为机构客户写一段简明的收盘后点评，概括核心观点、主要利多因素、主要风险点，并避免编造数据。\n\n已知事实：\n- 某A股金融科技企业2025年第三季度营业收入103.0亿元，同比增长19.0%。\n- 归母净利润11.6亿元，同比增长14.0%。\n- 毛利率为28.0%，较上季度改善。\n- 与“产品结构优化”相关的业务收入占比提升至10.0%。\n- 管理层强调“毛利率修复”仍是未来两个季度的重要变量。\n- 市场当前同时关注需求节奏、估值消化和行业竞争格局变化。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0257 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'增长'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"增长\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0290",
+      "query_id": "qpv2-0183",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T1",
+      "template_name": "财报点评 Brief",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请基于以下事实，为机构客户写一段简明的晨会前点评，概括核心观点、主要利多因素、主要风险点，并避免编造数据。\n\n已知事实：\n- 某美股消费电子企业2025年第三季度营业收入135.3亿元，同比增长28.7%。\n- 归母净利润10.7亿元，同比增长22.1%。\n- 毛利率为18.6%，较上季度改善。\n- 与“海外收入提升”相关的业务收入占比提升至14.9%。\n- 管理层强调“渠道扩张”仍是未来两个季度的重要变量。\n- 市场当前同时关注需求节奏、估值消化和行业竞争格局变化。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0290 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'改善'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"改善\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0306",
+      "query_id": "qpv2-0192",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T1",
+      "template_name": "财报点评 Brief",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请基于以下事实，为机构客户写一段简明的收盘后点评，概括核心观点、主要利多因素、主要风险点，并避免编造数据。\n\n已知事实：\n- 某新兴市场消费电子企业2025年第三季度营业收入150.6亿元，同比增长15.4%。\n- 归母净利润18.8亿元，同比增长11.2%。\n- 毛利率为13.2%，较上季度改善。\n- 与“产品结构优化”相关的业务收入占比提升至33.8%。\n- 管理层强调“毛利率修复”仍是未来两个季度的重要变量。\n- 市场当前同时关注需求节奏、估值消化和行业竞争格局变化。\n",
+      "constraint_id": "GV-8"
+    },
+    "error": "sample_id=train-mixed_track-0306 constraint_id=GV-8 连续失败，最后错误：GV-8 关键词 kw1='估值消化'直接出现在 query 题干中，请换一个不在题干里的词；最后输出：{\n  \"kw1\": \"估值消化\",\n  \"kw2\": \"产品结构优化\"\n}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0324",
+      "query_id": "qpv2-0203",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T1",
+      "template_name": "财报点评 Brief",
+      "role_mode": "with_role",
+      "role": "宏观研究员",
+      "query_input": "你是一名宏观研究员。请基于专业研究视角完成以下任务。\n\n请基于以下事实，为机构客户写一段简明的晨会前点评，概括核心观点、主要利多因素、主要风险点，并避免编造数据。\n\n已知事实：\n- 某美股高端制造企业2025年第三季度营业收入29.3亿元，同比增长6.7%。\n- 归母净利润10.7亿元，同比增长4.1%。\n- 毛利率为28.6%，较上季度改善。\n- 与“海外收入提升”相关的业务收入占比提升至21.9%。\n- 管理层强调“渠道扩张”仍是未来两个季度的重要变量。\n- 市场当前同时关注需求节奏、估值消化和行业竞争格局变化。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0324 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'增长'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"增长\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0340",
+      "query_id": "qpv2-0212",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T1",
+      "template_name": "财报点评 Brief",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请基于以下事实，为机构客户写一段简明的收盘后点评，概括核心观点、主要利多因素、主要风险点，并避免编造数据。\n\n已知事实：\n- 某新兴市场高端制造企业2025年第三季度营业收入44.6亿元，同比增长27.4%。\n- 归母净利润18.8亿元，同比增长21.2%。\n- 毛利率为23.2%，较上季度改善。\n- 与“产品结构优化”相关的业务收入占比提升至40.8%。\n- 管理层强调“毛利率修复”仍是未来两个季度的重要变量。\n- 市场当前同时关注需求节奏、估值消化和行业竞争格局变化。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0340 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'增长'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"增长\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0390",
+      "query_id": "qpv2-0246",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T2",
+      "template_name": "资产配置建议 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "某客户提供了如下信息：风险承受能力为中等偏上，主要目标是现金管理，可投资期限为18个月，希望在兼顾流动性的前提下做好资金安排。\n\n客户信息：\n- 客户类型：创业者\n- 可投资资金：251万元\n- 风险偏好：中等偏上\n- 核心目标：现金管理\n\n市场背景：\n- 短端利率相对稳定，债券类资产配置吸引力提升。\n- 跨境资产配置可以增强分散性，但汇率波动不可忽视。\n\n请写一份面向客户的配置建议说明，比较至少两种可选方案，并说明主要风险与适用边界。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0390 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'流动性'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"流动性\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0407",
+      "query_id": "qpv2-0256",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T2",
+      "template_name": "资产配置建议 Memo",
+      "role_mode": "with_role",
+      "role": "投资顾问",
+      "query_input": "你是一名投资顾问。请在对客沟通场景下完成以下任务。\n\n某客户提供了如下信息：风险承受能力为中低，主要目标是稳健增值，可投资期限为5年以上，希望在兼顾流动性的前提下做好资金安排。\n\n客户信息：\n- 客户类型：自由职业者\n- 可投资资金：361万元\n- 风险偏好：中低\n- 核心目标：稳健增值\n\n市场背景：\n- 银行理财、债券基金和存款类工具各有适用边界。\n- 权益市场波动较大，但高股息板块受到稳健资金关注。\n\n请写一份面向客户的配置建议说明，比较至少两种可选方案，并说明主要风险与适用边界。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0407 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'稳健'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"稳健\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0457",
+      "query_id": "qpv2-0287",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T2",
+      "template_name": "资产配置建议 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "某客户提供了如下信息：风险承受能力为中等，主要目标是资产分散，可投资期限为2年，希望在兼顾流动性的前提下做好资金安排。\n\n客户信息：\n- 客户类型：中小企业主\n- 可投资资金：122万元\n- 风险偏好：中等\n- 核心目标：资产分散\n\n市场背景：\n- 海外科技资产中长期趋势较强，但短期估值扰动明显。\n- 短端利率相对稳定，债券类资产配置吸引力提升。\n\n请写一份面向客户的配置建议说明，比较至少两种可选方案，并说明主要风险与适用边界。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0457 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'配置'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"配置\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0440",
+      "query_id": "qpv2-0273",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T2",
+      "template_name": "资产配置建议 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "某客户提供了如下信息：风险承受能力为偏保守，主要目标是长期增值，可投资期限为18个月，希望在兼顾流动性的前提下做好资金安排。\n\n客户信息：\n- 客户类型：年轻白领\n- 可投资资金：548万元\n- 风险偏好：偏保守\n- 核心目标：长期增值\n\n市场背景：\n- 短端利率相对稳定，债券类资产配置吸引力提升。\n- 海外科技资产中长期趋势较强，但短期估值扰动明显。\n\n请写一份面向客户的配置建议说明，比较至少两种可选方案，并说明主要风险与适用边界。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0440 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'增值'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"增值\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0524",
+      "query_id": "qpv2-0328",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T2",
+      "template_name": "资产配置建议 Memo",
+      "role_mode": "with_role",
+      "role": "投资顾问",
+      "query_input": "你是一名投资顾问。请在对客沟通场景下完成以下任务。\n\n某客户提供了如下信息：风险承受能力为中低，主要目标是稳健增值，可投资期限为5年以上，希望在兼顾流动性的前提下做好资金安排。\n\n客户信息：\n- 客户类型：自由职业者\n- 可投资资金：573万元\n- 风险偏好：中低\n- 核心目标：稳健增值\n\n市场背景：\n- 银行理财、债券基金和存款类工具各有适用边界。\n- 权益市场波动较大，但高股息板块受到稳健资金关注。\n\n请写一份面向客户的配置建议说明，比较至少两种可选方案，并说明主要风险与适用边界。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0524 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'稳健'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"稳健\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0507",
+      "query_id": "qpv2-0318",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T2",
+      "template_name": "资产配置建议 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "某客户提供了如下信息：风险承受能力为中等偏上，主要目标是现金管理，可投资期限为18个月，希望在兼顾流动性的前提下做好资金安排。\n\n客户信息：\n- 客户类型：创业者\n- 可投资资金：463万元\n- 风险偏好：中等偏上\n- 核心目标：现金管理\n\n市场背景：\n- 短端利率相对稳定，债券类资产配置吸引力提升。\n- 跨境资产配置可以增强分散性，但汇率波动不可忽视。\n\n请写一份面向客户的配置建议说明，比较至少两种可选方案，并说明主要风险与适用边界。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0507 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'流动性'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"流动性\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0568",
+      "query_id": "qpv2-0354",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某资管产品近期出现“应收账款回款延迟”相关异常。\n- 相关金额约为786万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟372天仍未完成补充说明。\n- 管理层表示将于近期开展内部自查，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0568 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0540",
+      "query_id": "qpv2-0338",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某资管产品近期出现“应收账款回款延迟”相关异常。\n- 相关金额约为194万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟68天仍未完成补充说明。\n- 管理层表示将于近期准备授信审批，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0540 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0553",
+      "query_id": "qpv2-0347",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某外贸企业近期出现“授信资料前后口径不一”相关异常。\n- 相关金额约为527万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟239天仍未完成补充说明。\n- 管理层表示将于近期准备风险排查，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0553 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险排查'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险排查\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0582",
+      "query_id": "qpv2-0361",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "with_role",
+      "role": "税务顾问",
+      "query_input": "你是一名税务顾问。请基于职责边界完成以下风险诊断任务。\n\n请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某医药公司近期出现“报关与台账不一致”相关异常。\n- 相关金额约为185万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟85天仍未完成补充说明。\n- 管理层表示将于近期准备年末审计，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0582 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0610",
+      "query_id": "qpv2-0381",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某供应链公司近期出现“存货库龄异常”相关异常。\n- 相关金额约为925万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟45天仍未完成补充说明。\n- 管理层表示将于近期准备监管报送，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0610 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0596",
+      "query_id": "qpv2-0370",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "with_role",
+      "role": "初级会计人员",
+      "query_input": "你是一名初级会计人员。请基于职责边界完成以下风险诊断任务。\n\n请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某资管产品近期出现“应收账款回款延迟”相关异常。\n- 相关金额约为518万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟256天仍未完成补充说明。\n- 管理层表示将于近期启动流程复盘，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0596 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0624",
+      "query_id": "qpv2-0390",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "with_role",
+      "role": "初级审计人员",
+      "query_input": "你是一名初级审计人员。请基于职责边界完成以下风险诊断任务。\n\n请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某消费电子企业近期出现“费用先付款后签约”相关异常。\n- 相关金额约为398万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟216天仍未完成补充说明。\n- 管理层表示将于近期开展内部自查，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0624 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'审计'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"审计\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0638",
+      "query_id": "qpv2-0398",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "with_role",
+      "role": "税务顾问",
+      "query_input": "你是一名税务顾问。请基于职责边界完成以下风险诊断任务。\n\n请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某消费电子企业近期出现“费用先付款后签约”相关异常。\n- 相关金额约为694万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟368天仍未完成补充说明。\n- 管理层表示将于近期准备授信审批，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0638 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0652",
+      "query_id": "qpv2-0409",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某医药公司近期出现“报关与台账不一致”相关异常。\n- 相关金额约为241万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟157天仍未完成补充说明。\n- 管理层表示将于近期准备年末审计，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0652 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'异常点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"异常点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0679",
+      "query_id": "qpv2-0426",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某资管产品近期出现“应收账款回款延迟”相关异常。\n- 相关金额约为870万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟60天仍未完成补充说明。\n- 管理层表示将于近期开展内部自查，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0679 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0666",
+      "query_id": "qpv2-0418",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某资管产品近期出现“应收账款回款延迟”相关异常。\n- 相关金额约为574万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟328天仍未完成补充说明。\n- 管理层表示将于近期启动流程复盘，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0666 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0694",
+      "query_id": "qpv2-0435",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某外贸企业近期出现“授信资料前后口径不一”相关异常。\n- 相关金额约为343万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟231天仍未完成补充说明。\n- 管理层表示将于近期准备监管报送，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0694 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0708",
+      "query_id": "qpv2-0442",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "with_role",
+      "role": "税务顾问",
+      "query_input": "你是一名税务顾问。请基于职责边界完成以下风险诊断任务。\n\n请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某资管产品近期出现“应收账款回款延迟”相关异常。\n- 相关金额约为602万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟364天仍未完成补充说明。\n- 管理层表示将于近期启动流程复盘，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0708 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0721",
+      "query_id": "qpv2-0452",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T5",
+      "template_name": "对话后问题诊断与建议",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "阅读以下对话后，请总结当前暴露出的核心问题，说明原因，并给出下一步建议。若信息不足，请明确指出。\n\n对话背景：外汇风险，团队担心汇率波动影响投资组合\n\n对话记录：\n用户: 保费涨了不少，我还需要继续续保吗？\nBOT: 是否续保需要结合你的保障缺口、预算和现有保障情况综合看。\n用户: 我理解了一部分，但还是担心自己判断失误。\nBOT: 你的担心是合理的，很多决策都需要结合更多背景信息来判断。\n用户: 我现在应该补哪些材料？\nBOT: 一般需要先补充能证明业务真实性、资金流和责任边界的核心材料。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0721 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0827",
+      "query_id": "qpv2-0517",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T10",
+      "template_name": "产品卖点说明",
+      "role_mode": "with_role",
+      "role": "银行客户经理",
+      "query_input": "你是一名银行客户经理。请在合规对客场景下完成以下任务。\n\n请根据以下产品信息，写一段面向客户的卖点说明，突出产品特点、适合人群和主要风险，避免夸大收益或做出不当承诺。\n\n产品信息：\n- 产品类型：中低波动固收增强产品\n- 适合人群：希望稳健增值的客户\n- 主要特点：可作为组合配置工具，帮助客户在既定目标下进行资产安排。\n- 风险提示：汇率、利率或权益市场变化可能带来波动\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0827 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'稳健'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"稳健\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0836",
+      "query_id": "qpv2-0522",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T10",
+      "template_name": "产品卖点说明",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下产品信息，写一段面向客户的卖点说明，突出产品特点、适合人群和主要风险，避免夸大收益或做出不当承诺。\n\n产品信息：\n- 产品类型：黄金ETF联接基金\n- 适合人群：希望稳健增值的客户\n- 主要特点：可作为组合配置工具，帮助客户在既定目标下进行资产安排。\n- 风险提示：汇率、利率或权益市场变化可能带来波动\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0836 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'稳健'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"稳健\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0844",
+      "query_id": "qpv2-0527",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T10",
+      "template_name": "产品卖点说明",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下产品信息，写一段面向客户的卖点说明，突出产品特点、适合人群和主要风险，避免夸大收益或做出不当承诺。\n\n产品信息：\n- 产品类型：养老目标FOF\n- 适合人群：希望稳健增值的客户\n- 主要特点：可作为组合配置工具，帮助客户在既定目标下进行资产安排。\n- 风险提示：汇率、利率或权益市场变化可能带来波动\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0844 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'稳健'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"稳健\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0851",
+      "query_id": "qpv2-0532",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T10",
+      "template_name": "产品卖点说明",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下产品信息，写一段面向客户的卖点说明，突出产品特点、适合人群和主要风险，避免夸大收益或做出不当承诺。\n\n产品信息：\n- 产品类型：跨境债券基金\n- 适合人群：希望稳健增值的客户\n- 主要特点：可作为组合配置工具，帮助客户在既定目标下进行资产安排。\n- 风险提示：汇率、利率或权益市场变化可能带来波动\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0851 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'稳健'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"稳健\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-mixed_track-0870",
+      "query_id": "qpv2-0545",
+      "split": "train",
+      "track": "Mixed-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T11",
+      "template_name": "客户 FAQ",
+      "role_mode": "with_role",
+      "role": "证券投教专员",
+      "query_input": "你是一名证券投教专员。请面向客户完成以下说明任务。\n\n请围绕以下主题，为客户整理一份简明 FAQ，帮助客户快速理解核心问题、常见误区和需要注意的事项。\n\n主题：\n分红型保险红利机制\n\n材料：\n- 客户通常会围绕定义、适用人群、收益风险、持有周期和常见误解进行提问。\n- 希望回答既通俗又保留专业性，便于客户快速建立正确认知。\n- 需要强调不同产品规则可能存在差异，应以具体合同约定为准。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-mixed_track-0870 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'红利'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"红利\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0125",
+      "query_id": "qpv2-0031",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fineval_original",
+      "origin_task": "findiag",
+      "template_id": null,
+      "template_name": "FinEval 原题",
+      "role_mode": "with_role",
+      "role": "初级会计人员",
+      "query_input": "你是一名初级会计人员。请阅读以下材料并回答问题。\n\n用户: 我正在考虑购买保险，但不确定应该怎么选择。你有什么建议吗？\nBOT: 当选择保险时，重要的是考虑你的个人需求和风险。比如，生命保险、健康保险和财产保险都针对不同的风险和需求。另外，比较不同保险公司的报价和覆盖范围也很重要。\n用户: 理解保险政策的细节有什么重要性？\nBOT: 理解保险政策的细节非常重要，因为这决定了什么情况下你可以获得赔偿，赔偿的金额是多少，以及你需要承担的费用。确保你完全明白保险条款，如有疑问要及时咨询保险公司。\n用户: 我该如何评估不同的保险产品？\nBOT: 评估保险产品时，考虑保险的覆盖范围、排除条款、保费成本、保险公司的信誉和客户服务。在线比较工具和独立保险代理可以帮助你做出更明智的选择。\n用户: 如果我的生活状况发生变化，我应该怎么处理我的保险政策？\nBOT: 如果你的生活状况发生变化，比如结婚、有了孩子或换了工作，你应该重新评估你的保险需求，并相应地调整保险政策。定期审查你的保险，确保它仍然符合你的需求。\n用户: 有没有好的资源来帮助我更深入地了解不同类型的保险？\nBOT: 当然，你可以阅读关于保险的书籍和在线文章，参加有关保险的研讨会，或咨询保险专业人士。许多保险公司也提供详细的指南和资源来帮助消费者了解不同的保险产品。\n问题\n\n在这次对话的开头，用户询问的是关于什么类型的保险选择的问题？",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-0125 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'保险产品'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"保险产品\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0149",
+      "query_id": "qpv2-0036",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fineval_original",
+      "origin_task": "findiag",
+      "template_id": null,
+      "template_name": "FinEval 原题",
+      "role_mode": "with_role",
+      "role": "税务顾问",
+      "query_input": "你是一名税务顾问。请阅读以下材料并回答问题。\n\n用户: 我正在考虑购买保险，但不确定应该怎么选择。你有什么建议吗？\nBOT: 当选择保险时，重要的是考虑你的个人需求和风险。比如，生命保险、健康保险和财产保险都针对不同的风险和需求。另外，比较不同保险公司的报价和覆盖范围也很重要。\n用户: 理解保险政策的细节有什么重要性？\nBOT: 理解保险政策的细节非常重要，因为这决定了什么情况下你可以获得赔偿，赔偿的金额是多少，以及你需要承担的费用。确保你完全明白保险条款，如有疑问要及时咨询保险公司。\n用户: 我该如何评估不同的保险产品？\nBOT: 评估保险产品时，考虑保险的覆盖范围、排除条款、保费成本、保险公司的信誉和客户服务。在线比较工具和独立保险代理可以帮助你做出更明智的选择。\n用户: 如果我的生活状况发生变化，我应该怎么处理我的保险政策？\nBOT: 如果你的生活状况发生变化，比如结婚、有了孩子或换了工作，你应该重新评估你的保险需求，并相应地调整保险政策。定期审查你的保险，确保它仍然符合你的需求。\n用户: 有没有好的资源来帮助我更深入地了解不同类型的保险？\nBOT: 当然，你可以阅读关于保险的书籍和在线文章，参加有关保险的研讨会，或咨询保险专业人士。许多保险公司也提供详细的指南和资源来帮助消费者了解不同的保险产品。\n问题\n\n在这次对话的开头，用户询问的是关于什么类型的保险选择的问题？对话中，BOT提到了哪些因素需要考虑来评估不同的保险产品？",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-0149 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'保险产品'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"保险产品\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0160",
+      "query_id": "qpv2-0039",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fineval_original",
+      "origin_task": "findiag",
+      "template_id": null,
+      "template_name": "FinEval 原题",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "用户: 我最近开设了一个银行账户，但不太清楚应该如何利用它进行投资。你有什么建议吗？\nBOT: 当然。首先，你可以利用银行提供的储蓄账户或定期存款来存储资金。这些通常有固定的利息收益，风险较低。此外，许多银行也提供投资咨询服务。\n用户: 对于初学者来说，投资股市安全吗？\nBOT: 股市投资通常伴随较高风险，尤其是对于初学者。建议在进行股市投资前，先了解基本的市场知识，逐渐建立投资组合，并考虑分散风险。\n用户: 那怎样构建一个好的投资组合呢？\nBOT: 一个好的投资组合应该根据个人的风险承受能力和投资目标进行构建。通常包括股票、债券、现金等多种资产，以达到风险分散的目的。\n用户: 市场的宏观经济因素怎样影响我的投资？\nBOT: 宏观经济因素，如利率、通货膨胀、政治稳定性等，都会影响股市和其他金融市场。了解这些因素有助于做出更明智的投资决策。\n用户: 了解了。还有，哪些资源可以帮助我更好地了解市场和投资？\nBOT: 你可以关注财经新闻、阅读金融市场分析报告，参加投资相关的在线课程和研讨会。这些资源都能帮助你获得有价值的市场信息和投资知识。\n用户: 太棒了，谢谢你的帮助。我会进一步研究这些内容的。\nBOT: 不客气，祝你投资之路顺利。\n问题\n\n根据上述对话，用户对于银行账户的主要疑问是什么？在对话中，BOT提到了哪些宏观经济因素可能影响用户的投资？",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-0160 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'银行'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"银行\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0138",
+      "query_id": "qpv2-0034",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fineval_original",
+      "origin_task": "findiag",
+      "template_id": null,
+      "template_name": "FinEval 原题",
+      "role_mode": "with_role",
+      "role": "税务顾问",
+      "query_input": "你是一名税务顾问。请阅读以下材料并回答问题。\n\n对话：\n用户: 我最近对股市很感兴趣，特别是科技股。科技股为什么近期这么受关注？\nBOT: 科技股近期之所以受到广泛关注，主要是因为科技公司通常代表着创新和未来的发展趋势。随着技术的快速发展，许多科技公司展现出了强大的增长潜力和盈利能力，尤其在人工智能、云计算和移动互联网等领域。\n用户: 有哪些科技公司是投资者特别关注的？\nBOT: 投资者通常会关注那些大型科技公司，如苹果、亚马逊、谷歌、微软和Facebook等。这些公司在其领域内占据领先地位，且经营模式成熟，市值巨大。\n用户: 这些大公司除了股票，还有其他投资机会吗？\nBOT: 除了直接购买股票，投资者还可以通过购买与这些科技公司相关的共同基金或交易所交易基金（ETFs）来间接投资。此外，一些大公司还发行债券，这也是投资者可以考虑的一种方式。\n用户: 说到ETFs，它们是如何工作的？\nBOT: 交易所交易基金（ETFs）是一种跟踪某个指数、商品、债券或一篮子资产的基金，但它们像股票一样在交易所交易。ETFs结合了共同基金和普通股票的特点，提供了一种较为灵活且成本效益较高的投资方式。\n用户: 我对金融市场的波动性有些担心，应该如何进行风险管理？\nBOT: 进行有效的风险管理，首先需要多元化投资组合，不要将所有资金投入单一资产。其次，了解和评估投资产品的风险水平，并根据自己的风险承受能力做出选择。另外，定期审视和调整投资组合，以应对市场变化，也是风险管理的重要部分。\n\n问题：\n在这次对话中，用户首先提出了哪个关于金融的问题？",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-0138 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'关注'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"关注\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0137",
+      "query_id": "qpv2-0034",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fineval_original",
+      "origin_task": "findiag",
+      "template_id": null,
+      "template_name": "FinEval 原题",
+      "role_mode": "with_role",
+      "role": "税务顾问",
+      "query_input": "你是一名税务顾问。请阅读以下材料并回答问题。\n\n对话：\n用户: 我最近对股市很感兴趣，特别是科技股。科技股为什么近期这么受关注？\nBOT: 科技股近期之所以受到广泛关注，主要是因为科技公司通常代表着创新和未来的发展趋势。随着技术的快速发展，许多科技公司展现出了强大的增长潜力和盈利能力，尤其在人工智能、云计算和移动互联网等领域。\n用户: 有哪些科技公司是投资者特别关注的？\nBOT: 投资者通常会关注那些大型科技公司，如苹果、亚马逊、谷歌、微软和Facebook等。这些公司在其领域内占据领先地位，且经营模式成熟，市值巨大。\n用户: 这些大公司除了股票，还有其他投资机会吗？\nBOT: 除了直接购买股票，投资者还可以通过购买与这些科技公司相关的共同基金或交易所交易基金（ETFs）来间接投资。此外，一些大公司还发行债券，这也是投资者可以考虑的一种方式。\n用户: 说到ETFs，它们是如何工作的？\nBOT: 交易所交易基金（ETFs）是一种跟踪某个指数、商品、债券或一篮子资产的基金，但它们像股票一样在交易所交易。ETFs结合了共同基金和普通股票的特点，提供了一种较为灵活且成本效益较高的投资方式。\n用户: 我对金融市场的波动性有些担心，应该如何进行风险管理？\nBOT: 进行有效的风险管理，首先需要多元化投资组合，不要将所有资金投入单一资产。其次，了解和评估投资产品的风险水平，并根据自己的风险承受能力做出选择。另外，定期审视和调整投资组合，以应对市场变化，也是风险管理的重要部分。\n\n问题：\n在这次对话中，用户首先提出了哪个关于金融的问题？",
+      "constraint_id": "GV-8"
+    },
+    "error": "sample_id=train-v_track-0137 constraint_id=GV-8 连续失败，最后错误：GV-8 关键词 kw2='风险承受能力'直接出现在 query 题干中，请换一个不在题干里的词；最后输出：{\n  \"kw1\": \"投资组合多元化\",\n  \"kw2\": \"风险承受能力\"\n}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0171",
+      "query_id": "qpv2-0042",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fineval_original",
+      "origin_task": "findiag",
+      "template_id": null,
+      "template_name": "FinEval 原题",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "用户: 我注意到我们的量化交易模型最近表现不佳，尤其是在高波动性市场条件下，你认为是什么原因？\nBOT: 高波动性市场条件下，许多传统的量化交易模型可能会遇到困难，因为这些模型通常基于历史数据进行预测。在波动性增大的情况下，历史模式可能无法有效预测未来的市场走向，导致模型表现不佳。\n用户: 有没有办法改进我们的模型，以适应这种高波动性的市场环境？\nBOT: 一种方法是引入机器学习和人工智能技术来增强我们的模型。这些技术可以帮助模型更好地理解和适应市场的动态变化，例如通过实时分析大量数据来识别市场趋势和异常模式。\n用户: 这听起来很有前景。但是，引入这些新技术会不会增加模型的复杂性和运行成本？\nBOT: 确实，引入机器学习和AI技术可能会增加模型的复杂性和运行成本。但是，考虑到潜在的收益提升，这些成本可能是合理的。当然，我们需要仔细评估这些技术的实际效果，并持续监控成本效益比。\n用户: 明白了，那我们是否已经开始测试这些新技术了？\nBOT: 是的，我们的团队已经开始对几种机器学习算法进行初步测试，以评估它们在不同市场条件下的表现。初步结果是有希望的，但我们还需要更多的时间和数据来进行全面评估。\n用户: 很好，那么我们如何确保这些新技术的引入不会对现有交易策略产生负面影响？\nBOT: 我们正在采用渐进式的方法来引入这些技术，首先在受控环境中进行测试，然后逐步扩展到实际交易中。此外，我们也在建立相应的风险管理措施，以监控和控制新技术可能带来的风险。\n\n问题：\n根据上述对话，请问他们讨论的第一个问题是什么？追问：\n在对话中，他们提到了哪种技术可以帮助量化交易模型更好地适应高波动性市场环境？",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-0171 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'机器学习'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"机器学习\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0183",
+      "query_id": "qpv2-0045",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fineval_original",
+      "origin_task": "findiag",
+      "template_id": null,
+      "template_name": "FinEval 原题",
+      "role_mode": "with_role",
+      "role": "银行客户经理",
+      "query_input": "你是一名银行客户经理。请阅读以下材料并回答问题。\n\n用户: 我对个人理财很感兴趣，想要了解一下如何制定一个有效的理财计划。你能给我一些建议吗？\n\nBot: 当然可以。制定个人理财计划首先需要明确你的财务目标，比如短期目标可能是购买一辆车，长期目标可能是退休规划。然后，你需要了解自己的收入和支出，制定预算，并设定储蓄和投资计划。同时，建立紧急基金也是非常重要的，它可以帮助你应对意外支出。\n\n用户: 我听说过资产配置，这是什么意思？它在理财计划中扮演什么角色？\n\nBot: 资产配置是指你如何分配投资到不同类型的资产，如股票、债券、现金等。合理的资产配置可以帮助你分散风险，同时根据你的风险承受能力和投资目标来优化投资回报。在理财计划中，资产配置是确保你的投资组合与你的整体财务目标和风险偏好相匹配的关键。\n\n用户: 那么，我应该如何选择合适的投资产品呢？\n\nBot: 选择合适的投资产品需要考虑多个因素。首先，了解每种投资产品的特点和风险水平。其次，确保所选产品与你的投资目标、投资期限和风险承受能力相匹配。此外，研究市场趋势和经济环境也很重要，因为它们会影响投资产品的表现。\n\n用户: 我听说投资债券相对安全，你能解释一下债券投资的基本原理吗？\n\nBot: 债券是一种借款证券，投资者购买债券相当于向发行方借款。债券发行方承诺在债券到期时归还本金，并在此期间支付利息。债券的风险相对较低，因为即使公司破产，债券持有者在清算过程中的偿还顺序通常高于股东。不过，债券价格会受利率变动的影响，利率上升时，债券价格可能下跌。\n\n用户: 听起来债券是一个不错的投资选择。你能推荐一些学习债券投资的资源吗？\n\nBot: 学习债券投资，你可以从阅读一些基础的金融书籍开始，比如《债券投资指南》。此外，关注金融新闻网站和订阅债券相关的新闻简报也是很好的方式。还有一些在线课程，如Coursera和Udemy上提供的金融课程，可以帮助你更深入地理解债券市场。\n\n用户: 非常感谢你的建议，我会开始我的理财规划。如果有任何问题，我会再来咨询你的。\n\nBot: 不客气，祝你理财顺利。有任何问题，随时欢迎回来咨询。\n提出的问题\n\n问题: 在上述对话中，用户最初询问的是如何制定有效的个人理财计划。追问: 在对话中，Bot提到了一种投资产品，它在公司破产时的偿还顺序高于股东，这种投资产品是什么？",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-0183 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'债券'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"债券\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0195",
+      "query_id": "qpv2-0048",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fineval_original",
+      "origin_task": "findiag",
+      "template_id": null,
+      "template_name": "FinEval 原题",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "用户: 我们正在考虑利用场外衍生品来对冲我们的货币风险，特别是考虑到我们在多个国家的业务展开。在这种情况下，我们应该如何设计我们的对冲策略？\nBOT: 在设计用于对冲货币风险的场外衍生品策略时，首先需要确定您希望对冲的风险敞口范围和期限。然后，选择合适的衍生品工具，如外汇远期合约、外汇期权或货币掉期。接下来，基于预期的货币波动率和风险偏好，确定合约的规模和条款。重要的是要持续监控外汇市场的变动，并根据市场情况调整对冲策略。\n用户: 在选择对冲工具时，我们应该关注哪些关键因素？\nBOT: 在选择对冲工具时，关键因素包括成本、流动性、复杂性以及工具与风险敞口的匹配度。成本是一个重要考虑因素，因为不同的对冲工具会带来不同的费用结构。流动性也很重要，因为高流动性的工具更容易进入和退出。此外，选择的工具应该能精确匹配您需要对冲的风险类型和期限。\n用户: 对于跨国公司来说，管理多币种的风险还有什么特别的考虑吗？\nBOT: 对于跨国公司管理多币种风险，特别的考虑包括考虑货币之间的相关性，以及潜在的货币转换成本。多币种风险管理策略应当考虑到不同货币之间可能的相互影响，以及如何利用这种相关性来优化对冲效果。此外，货币转换成本也可能影响对冲策略的总体效率，因此在设计策略时需要考虑这些因素。\n用户: 在实施对冲策略时，如何评估和监控其效果？\nBOT: 评估和监控对冲策略的效果需要定期进行风险敞口的重新评估和对冲效果的回顾分析。这包括比较对冲前后的风险敞口变化、对冲成本以及任何未对冲风险的影响。使用有效的风险管理软件可以帮助跟踪这些指标，并提供实时的数据分析，以便及时调整策略。此外，重要的是要确保对冲策略与公司的整体风险管理框架和政策相一致。\n\n问题：\n根据上述对话，请问他们讨论的第一个主要挑战是什么？",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-0195 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险敞口'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险敞口\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0207",
+      "query_id": "qpv2-0051",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fineval_original",
+      "origin_task": "findiag",
+      "template_id": null,
+      "template_name": "FinEval 原题",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "用户: 最近的市场波动对我们的算法交易策略影响很大，尤其是在遇到未预期事件时。你认为我们的模型缺少什么关键因素？\nBOT: 市场波动确实是一个挑战，特别是在突发事件下。我们的模型可能缺少对市场情绪和非结构化信息的处理能力。这些因素往往在未预期事件发生时对市场有即时和显著的影响。\n用户: 那我们如何改进模型，让它能够捕捉到这类信息呢？\nBOT: 一种方法是通过自然语言处理（NLP）技术，分析新闻头条、社交媒体等非结构化数据源，以捕捉市场情绪和潜在的影响因素。此外，实时监测和分析这些数据源可以让我们的模型更快地响应市场变化。\n用户: 实施这种策略需要哪些资源？我们是否有足够的技术和数据支持？\nBOT: 实施这种策略确实需要大量的数据处理和分析能力，包括高性能的计算资源和对大数据的实时访问。我们可能需要投资于更强大的硬件和软件，以及获取相关的数据订阅服务。我们的团队也需要具备相关的技术知识和经验。\n用户: 听起来我们需要进行一些投资。这种策略的潜在回报是什么？\nBOT: 虽然前期需要一定的投资，但通过更准确地预测市场动态和更快地响应市场变化，我们可以显著提高交易策略的表现。长期来看，这将帮助我们在竞争激烈的量化交易市场中保持领先地位。\n用户: 了解了，那我们接下来应该如何计划和实施这个策略？\nBOT: 我们需要从确定具体的技术需求和数据源开始，然后评估我们目前的资源和技术能力。接下来，我们可以开始小规模的试验和测试，以评估这种策略的有效性。基于试验结果，我们再决定是否全面实施。\n\n问题：\n根据上述对话，请问他们讨论的第一个关键问题是什么？",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-0207 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'模型'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"模型\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0218",
+      "query_id": "qpv2-0054",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fineval_original",
+      "origin_task": "findiag",
+      "template_id": null,
+      "template_name": "FinEval 原题",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "用户: 我们面临着一个挑战，即如何为一项新技术的独家授权协议进行估值。这项技术尚未商用，但潜力巨大。你认为我们应该怎样进行估值？\nBOT: 对于这种情况，我们可以考虑使用期权定价模型来估值，如实物期权评估（Real Options Valuation，ROV）。这种方法可以帮助我们评估未来不确定性下的投资机会。实物期权方法考虑了持有或放弃投资项目的选项价值，这对于评估新技术投资特别有用，因为它们通常涉及高度的不确定性和灵活性。\n用户: 实物期权评估听起来很有意思，能详细解释一下它是如何工作的吗？\nBOT: 实物期权评估类似于金融期权评估，它将投资决策视为一种期权。这意味着投资者可以选择在未来某个时点根据市场情况和技术发展来执行投资（类似于行权）。这种方法通过考虑项目未来发展路径上的不同可能性和相关的收益，来计算这种选择权的价值。我们通常会使用Black-Scholes模型或二叉树模型来估算这种期权的价值。\n用户: 这种估值方法是否需要特别的数据或假设？\nBOT: 是的，实物期权评估需要一些特定的数据和假设，包括项目的预期寿命、预期现金流、无风险利率和项目特有的风险等。此外，我们还需要对技术发展和市场接受度的不确定性有一个合理的预估，以便于模型中的变量设定。\n用户: 一旦我们得到了期权的价值，我们应该如何使用这个信息？\nBOT: 期权的价值提供了一个有力的参考点，表明了投资项目在当前条件下的潜在价值。我们可以使用这个信息来支持投资决策，进行谈判或制定进一步的研发和市场推广策略。此外，这也可以作为与潜在投资者沟通的依据，展示项目的价值和未来增长潜力。\n用户: 了解了，这对我们评估这项新技术的独家授权协议非常有帮助。谢谢你的建议。\nBOT: 不用谢，很高兴能帮到你。如果有更多问题或需要进一步讨论，随时欢迎。\n\n问题：\n根据上述对话，请问他们讨论的第一个主要挑战是什么？",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-0218 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'估值'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"估值\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0229",
+      "query_id": "qpv2-0057",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fineval_original",
+      "origin_task": "findiag",
+      "template_id": null,
+      "template_name": "FinEval 原题",
+      "role_mode": "with_role",
+      "role": "税务顾问",
+      "query_input": "你是一名税务顾问。请阅读以下材料并回答问题。\n\n用户: 我对金融领域的投资很感兴趣，你能给我介绍一下股票和债券的区别吗？\nBOT: 当然可以。股票和债券是两种不同的投资工具。股票代表了对公司所有权的一部分，持有股票意味着你成为了公司的股东，享有公司利润分配和投票权。而债券则是一种债务工具，购买债券就相当于向公司或政府借钱，债券持有者会获得固定的利息收入和到期时的本金偿还。\n用户: 非常清楚，那么在投资组合中如何平衡股票和债券的比例呢？\nBOT: 投资组合中股票和债券的比例取决于个人的风险偏好和投资目标。一般来说，股票具有较高的风险和回报，适合追求长期增长的投资者；而债券则相对稳定，适合追求稳定收益和保值的投资者。根据个人的情况可以选择适合自己的股债比例。\n用户: 我明白了，谢谢你的解释。那么，我想了解一下如何评估一家公司的价值？\nBOT: 评估一家公司的价值可以通过多种方法，比如基本面分析、技术分析和市场情绪等。基本面分析包括研究公司的财务报表、行业地位和管理团队等，以确定公司的内在价值。技术分析则是通过研究股票价格走势和交易量等图表数据来预测未来价格走势。市场情绪则是指投资者对公司的情绪和市场预期，也会影响股价。\n用户: 这些方法都很有用。我还有一个问题，你能告诉我什么是资产配置吗？\nBOT: 当然。资产配置是指根据投资者的风险偏好和投资目标，在不同资产类别之间分配资金的过程。常见的资产类别包括股票、债券、房地产和现金等。通过合理的资产配置，投资者可以实现风险分散和收益最大化的目标。\n用户: 明白了，资产配置很重要。谢谢你的解释。\nBOT: 不客气，如果你有任何其他问题，都可以随时问我。祝你投资顺利！\n问题: 根据上述对话，他们讨论的第一个主题是什么?\n追问: 在后续的对话中他们讨论的资产配置的重要性体现在哪些方面？",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-0229 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'比例'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"比例\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0280",
+      "query_id": "qpv2-0071",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fineval_original",
+      "origin_task": "apiutil",
+      "template_id": null,
+      "template_name": "FinEval 原题",
+      "role_mode": "with_role",
+      "role": "初级统计分析人员",
+      "query_input": "你是一名初级统计分析人员。请在金融数据工作场景中完成以下任务。\n\nyfinance 是一个Python库，用于下载Yahoo Finance数据。它支持获取多种金融信息，包括但不限于股票价格、市值、股息和财务报表。此外，yfinance允许用户获取特定时间段内的股票数据，包括开盘价、最高价、最低价和收盘价。\n\n现在，你的任务是使用 yfinance 获取微软公司（股票代码：MSFT）最近三个月的周收盘价数据。请问根据API描述，你会怎么操作来实现这个需求？",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-0280 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'获取'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"获取\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0230",
+      "query_id": "qpv2-0057",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fineval_original",
+      "origin_task": "findiag",
+      "template_id": null,
+      "template_name": "FinEval 原题",
+      "role_mode": "with_role",
+      "role": "税务顾问",
+      "query_input": "你是一名税务顾问。请阅读以下材料并回答问题。\n\n用户: 我对金融领域的投资很感兴趣，你能给我介绍一下股票和债券的区别吗？\nBOT: 当然可以。股票和债券是两种不同的投资工具。股票代表了对公司所有权的一部分，持有股票意味着你成为了公司的股东，享有公司利润分配和投票权。而债券则是一种债务工具，购买债券就相当于向公司或政府借钱，债券持有者会获得固定的利息收入和到期时的本金偿还。\n用户: 非常清楚，那么在投资组合中如何平衡股票和债券的比例呢？\nBOT: 投资组合中股票和债券的比例取决于个人的风险偏好和投资目标。一般来说，股票具有较高的风险和回报，适合追求长期增长的投资者；而债券则相对稳定，适合追求稳定收益和保值的投资者。根据个人的情况可以选择适合自己的股债比例。\n用户: 我明白了，谢谢你的解释。那么，我想了解一下如何评估一家公司的价值？\nBOT: 评估一家公司的价值可以通过多种方法，比如基本面分析、技术分析和市场情绪等。基本面分析包括研究公司的财务报表、行业地位和管理团队等，以确定公司的内在价值。技术分析则是通过研究股票价格走势和交易量等图表数据来预测未来价格走势。市场情绪则是指投资者对公司的情绪和市场预期，也会影响股价。\n用户: 这些方法都很有用。我还有一个问题，你能告诉我什么是资产配置吗？\nBOT: 当然。资产配置是指根据投资者的风险偏好和投资目标，在不同资产类别之间分配资金的过程。常见的资产类别包括股票、债券、房地产和现金等。通过合理的资产配置，投资者可以实现风险分散和收益最大化的目标。\n用户: 明白了，资产配置很重要。谢谢你的解释。\nBOT: 不客气，如果你有任何其他问题，都可以随时问我。祝你投资顺利！\n问题: 根据上述对话，他们讨论的第一个主题是什么?\n追问: 在后续的对话中他们讨论的资产配置的重要性体现在哪些方面？",
+      "constraint_id": "GV-8"
+    },
+    "error": "sample_id=train-v_track-0230 constraint_id=GV-8 连续失败，最后错误：GV-8 关键词 kw1='投资组合'直接出现在 query 题干中，请换一个不在题干里的词；最后输出：{\n  \"kw1\": \"投资组合\",\n  \"kw2\": \"风险分散\"\n}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0289",
+      "query_id": "qpv2-0073",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fineval_original",
+      "origin_task": "apiutil",
+      "template_id": null,
+      "template_name": "FinEval 原题",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "编写一个Python程序，使用 `pandas` 和 `yfinance` 包来进行股票的波动性分析。选择一个具体的公司（例如微软，代号MSFT），并使用 `yfinance` 从Yahoo Finance获取其历史股价数据。分析这些数据以计算股票的历史波动性，特别是标准差和年化波动率。你的代码中应包含对数据获取、处理和波动性计算的分析。请分段展示代码及其相应的分析，使用markdown格式展示代码，并确保不执行代码。",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-0289 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'标准差'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"标准差\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0324",
+      "query_id": "qpv2-0080",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fineval_original",
+      "origin_task": "apiutil",
+      "template_id": null,
+      "template_name": "FinEval 原题",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "yfinance 是一个Python库，专用于从Yahoo Finance获取金融市场数据。除了提供个股的历史价格和实时数据，yfinance 也支持获取全球主要货币对的汇率、商品价格，以及全球主要股指的数据。这使得它成为分析全球金融市场趋势的有力工具。\n\n现在，你的任务是使用 yfinance 获取黄金（标识：GC=F）和白银（标识：SI=F）过去五年的月度收盘价格。请问根据API描述，你会怎么操作来实现这个需求？",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-0324 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'获取'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"获取\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0333",
+      "query_id": "qpv2-0084",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fineval_original",
+      "origin_task": "apiutil",
+      "template_id": null,
+      "template_name": "FinEval 原题",
+      "role_mode": "with_role",
+      "role": "证券分析师",
+      "query_input": "你是一名证券分析师。请在金融数据工作场景中完成以下任务。\n\n编写一个Python程序来计算特定公司（如：Microsoft Corporation）股票的移动平均收敛散布指标（MACD）。你将需要使用一个金融数据API（例如Alpha Vantage或Yahoo Finance）来获取股票数据，并利用`pandas`库来处理数据。你的任务是展示如何获取数据、计算MACD，然后将这些步骤以代码的形式呈现，但请不要执行代码，仅以markdown格式展示。请按步骤给出解释及对应代码",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-0333 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'数据'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"数据\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0530",
+      "query_id": "qpv2-0134",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T1",
+      "template_name": "财报点评 Brief",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请基于以下事实，为机构客户写一段简明的盘前点评，概括核心观点、主要利多因素、主要风险点，并避免编造数据。\n\n已知事实：\n- 某A股新能源企业2025年第三季度营业收入52.0亿元，同比增长18.0%。\n- 归母净利润2.6亿元，同比增长13.0%。\n- 毛利率为22.0%，较上季度改善。\n- 与“订单增长”相关的业务收入占比提升至17.0%。\n- 管理层强调“毛利率修复”仍是未来两个季度的重要变量。\n- 市场当前同时关注需求节奏、估值消化和行业竞争格局变化。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-0530 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'改善'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"改善\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0515",
+      "query_id": "qpv2-0131",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T1",
+      "template_name": "财报点评 Brief",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请基于以下事实，为机构客户写一段简明的晨会前点评，概括核心观点、主要利多因素、主要风险点，并避免编造数据。\n\n已知事实：\n- 某港股高端制造企业2025年第三季度营业收入46.9亿元，同比增长11.1%。\n- 归母净利润17.9亿元，同比增长7.3%。\n- 毛利率为17.8%，较上季度改善。\n- 与“海外收入提升”相关的业务收入占比提升至10.7%。\n- 管理层强调“渠道扩张”仍是未来两个季度的重要变量。\n- 市场当前同时关注需求节奏、估值消化和行业竞争格局变化。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-0515 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'增长'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"增长\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0585",
+      "query_id": "qpv2-0150",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T1",
+      "template_name": "财报点评 Brief",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请基于以下事实，为机构客户写一段简明的盘前点评，概括核心观点、主要利多因素、主要风险点，并避免编造数据。\n\n已知事实：\n- 某跨境市场创新药企业2025年第三季度营业收入79.2亿元，同比增长20.8%。\n- 归母净利润17.0亿元，同比增长15.4%。\n- 毛利率为26.4%，较上季度改善。\n- 与“订单增长”相关的业务收入占比提升至15.6%。\n- 管理层强调“毛利率修复”仍是未来两个季度的重要变量。\n- 市场当前同时关注需求节奏、估值消化和行业竞争格局变化。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-0585 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'增长'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"增长\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0626",
+      "query_id": "qpv2-0159",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T1",
+      "template_name": "财报点评 Brief",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请基于以下事实，为机构客户写一段简明的晨会前点评，概括核心观点、主要利多因素、主要风险点，并避免编造数据。\n\n已知事实：\n- 某A股创新药企业2025年第三季度营业收入94.5亿元，同比增长7.5%。\n- 归母净利润7.1亿元，同比增长4.5%。\n- 毛利率为21.0%，较上季度改善。\n- 与“海外收入提升”相关的业务收入占比提升至34.5%。\n- 管理层强调“渠道扩张”仍是未来两个季度的重要变量。\n- 市场当前同时关注需求节奏、估值消化和行业竞争格局变化。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-0626 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'增长'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"增长\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0640",
+      "query_id": "qpv2-0163",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T1",
+      "template_name": "财报点评 Brief",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请基于以下事实，为机构客户写一段简明的晨会前点评，概括核心观点、主要利多因素、主要风险点，并避免编造数据。\n\n已知事实：\n- 某美股半导体企业2025年第三季度营业收入101.3亿元，同比增长16.7%。\n- 归母净利润10.7亿元，同比增长12.1%。\n- 毛利率为26.6%，较上季度改善。\n- 与“海外收入提升”相关的业务收入占比提升至42.9%。\n- 管理层强调“渠道扩张”仍是未来两个季度的重要变量。\n- 市场当前同时关注需求节奏、估值消化和行业竞争格局变化。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-0640 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'改善'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"改善\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0668",
+      "query_id": "qpv2-0170",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T1",
+      "template_name": "财报点评 Brief",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请基于以下事实，为机构客户写一段简明的盘前点评，概括核心观点、主要利多因素、主要风险点，并避免编造数据。\n\n已知事实：\n- 某跨境市场新能源企业2025年第三季度营业收入113.2亿元，同比增长32.8%。\n- 归母净利润17.0亿元，同比增长25.4%。\n- 毛利率为18.4%，较上季度改善。\n- 与“订单增长”相关的业务收入占比提升至22.6%。\n- 管理层强调“毛利率修复”仍是未来两个季度的重要变量。\n- 市场当前同时关注需求节奏、估值消化和行业竞争格局变化。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-0668 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'增长'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"增长\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0654",
+      "query_id": "qpv2-0167",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T1",
+      "template_name": "财报点评 Brief",
+      "role_mode": "with_role",
+      "role": "宏观研究员",
+      "query_input": "你是一名宏观研究员。请基于专业研究视角完成以下任务。\n\n请基于以下事实，为机构客户写一段简明的晨会前点评，概括核心观点、主要利多因素、主要风险点，并避免编造数据。\n\n已知事实：\n- 某新兴市场高端制造企业2025年第三季度营业收入108.1亿元，同比增长25.9%。\n- 归母净利润14.3亿元，同比增长19.7%。\n- 毛利率为14.2%，较上季度改善。\n- 与“海外收入提升”相关的业务收入占比提升至16.3%。\n- 管理层强调“渠道扩张”仍是未来两个季度的重要变量。\n- 市场当前同时关注需求节奏、估值消化和行业竞争格局变化。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-0654 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'增长'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"增长\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0669",
+      "query_id": "qpv2-0170",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T1",
+      "template_name": "财报点评 Brief",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请基于以下事实，为机构客户写一段简明的盘前点评，概括核心观点、主要利多因素、主要风险点，并避免编造数据。\n\n已知事实：\n- 某跨境市场新能源企业2025年第三季度营业收入113.2亿元，同比增长32.8%。\n- 归母净利润17.0亿元，同比增长25.4%。\n- 毛利率为18.4%，较上季度改善。\n- 与“订单增长”相关的业务收入占比提升至22.6%。\n- 管理层强调“毛利率修复”仍是未来两个季度的重要变量。\n- 市场当前同时关注需求节奏、估值消化和行业竞争格局变化。\n",
+      "constraint_id": "GV-8"
+    },
+    "error": "sample_id=train-v_track-0669 constraint_id=GV-8 连续失败，最后错误：GV-8 关键词 kw1='订单增长'直接出现在 query 题干中，请换一个不在题干里的词；最后输出：{\n  \"kw1\": \"订单增长\",\n  \"kw2\": \"估值消化\"\n}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0738",
+      "query_id": "qpv2-0186",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T1",
+      "template_name": "财报点评 Brief",
+      "role_mode": "with_role",
+      "role": "宏观研究员",
+      "query_input": "你是一名宏观研究员。请基于专业研究视角完成以下任务。\n\n请基于以下事实，为机构客户写一段简明的盘前点评，概括核心观点、主要利多因素、主要风险点，并避免编造数据。\n\n已知事实：\n- 某港股创新药企业2025年第三季度营业收入140.4亿元，同比增长35.6%。\n- 归母净利润13.4亿元，同比增长27.8%。\n- 毛利率为22.8%，较上季度改善。\n- 与“订单增长”相关的业务收入占比提升至21.2%。\n- 管理层强调“毛利率修复”仍是未来两个季度的重要变量。\n- 市场当前同时关注需求节奏、估值消化和行业竞争格局变化。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-0738 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'增长'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"增长\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0752",
+      "query_id": "qpv2-0190",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T1",
+      "template_name": "财报点评 Brief",
+      "role_mode": "with_role",
+      "role": "证券分析师",
+      "query_input": "你是一名证券分析师。请基于专业研究视角完成以下任务。\n\n请基于以下事实，为机构客户写一段简明的盘前点评，概括核心观点、主要利多因素、主要风险点，并避免编造数据。\n\n已知事实：\n- 某跨境市场半导体企业2025年第三季度营业收入147.2亿元，同比增长10.8%。\n- 归母净利润17.0亿元，同比增长7.4%。\n- 毛利率为28.4%，较上季度改善。\n- 与“订单增长”相关的业务收入占比提升至29.6%。\n- 管理层强调“毛利率修复”仍是未来两个季度的重要变量。\n- 市场当前同时关注需求节奏、估值消化和行业竞争格局变化。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-0752 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'增长'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"增长\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0764",
+      "query_id": "qpv2-0192",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T1",
+      "template_name": "财报点评 Brief",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请基于以下事实，为机构客户写一段简明的收盘后点评，概括核心观点、主要利多因素、主要风险点，并避免编造数据。\n\n已知事实：\n- 某新兴市场消费电子企业2025年第三季度营业收入150.6亿元，同比增长15.4%。\n- 归母净利润18.8亿元，同比增长11.2%。\n- 毛利率为13.2%，较上季度改善。\n- 与“产品结构优化”相关的业务收入占比提升至33.8%。\n- 管理层强调“毛利率修复”仍是未来两个季度的重要变量。\n- 市场当前同时关注需求节奏、估值消化和行业竞争格局变化。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-0764 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'改善'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"改善\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0779",
+      "query_id": "qpv2-0196",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T1",
+      "template_name": "财报点评 Brief",
+      "role_mode": "with_role",
+      "role": "宏观研究员",
+      "query_input": "你是一名宏观研究员。请基于专业研究视角完成以下任务。\n\n请基于以下事实，为机构客户写一段简明的收盘后点评，概括核心观点、主要利多因素、主要风险点，并避免编造数据。\n\n已知事实：\n- 某港股互联网平台企业2025年第三季度营业收入157.4亿元，同比增长24.6%。\n- 归母净利润4.4亿元，同比增长18.8%。\n- 毛利率为18.8%，较上季度改善。\n- 与“产品结构优化”相关的业务收入占比提升至42.2%。\n- 管理层强调“毛利率修复”仍是未来两个季度的重要变量。\n- 市场当前同时关注需求节奏、估值消化和行业竞争格局变化。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-0779 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'增长'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"增长\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0807",
+      "query_id": "qpv2-0203",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T1",
+      "template_name": "财报点评 Brief",
+      "role_mode": "with_role",
+      "role": "宏观研究员",
+      "query_input": "你是一名宏观研究员。请基于专业研究视角完成以下任务。\n\n请基于以下事实，为机构客户写一段简明的晨会前点评，概括核心观点、主要利多因素、主要风险点，并避免编造数据。\n\n已知事实：\n- 某美股高端制造企业2025年第三季度营业收入29.3亿元，同比增长6.7%。\n- 归母净利润10.7亿元，同比增长4.1%。\n- 毛利率为28.6%，较上季度改善。\n- 与“海外收入提升”相关的业务收入占比提升至21.9%。\n- 管理层强调“渠道扩张”仍是未来两个季度的重要变量。\n- 市场当前同时关注需求节奏、估值消化和行业竞争格局变化。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-0807 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'增长'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"增长\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0848",
+      "query_id": "qpv2-0212",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T1",
+      "template_name": "财报点评 Brief",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请基于以下事实，为机构客户写一段简明的收盘后点评，概括核心观点、主要利多因素、主要风险点，并避免编造数据。\n\n已知事实：\n- 某新兴市场高端制造企业2025年第三季度营业收入44.6亿元，同比增长27.4%。\n- 归母净利润18.8亿元，同比增长21.2%。\n- 毛利率为23.2%，较上季度改善。\n- 与“产品结构优化”相关的业务收入占比提升至40.8%。\n- 管理层强调“毛利率修复”仍是未来两个季度的重要变量。\n- 市场当前同时关注需求节奏、估值消化和行业竞争格局变化。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-0848 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'增长'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"增长\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0863",
+      "query_id": "qpv2-0215",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T1",
+      "template_name": "财报点评 Brief",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请基于以下事实，为机构客户写一段简明的晨会前点评，概括核心观点、主要利多因素、主要风险点，并避免编造数据。\n\n已知事实：\n- 某跨境市场新能源企业2025年第三季度营业收入49.7亿元，同比增长34.3%。\n- 归母净利润3.5亿元，同比增长26.9%。\n- 毛利率为27.4%，较上季度改善。\n- 与“海外收入提升”相关的业务收入占比提升至12.1%。\n- 管理层强调“渠道扩张”仍是未来两个季度的重要变量。\n- 市场当前同时关注需求节奏、估值消化和行业竞争格局变化。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-0863 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'增长'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"增长\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0888",
+      "query_id": "qpv2-0224",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T1",
+      "template_name": "财报点评 Brief",
+      "role_mode": "with_role",
+      "role": "宏观研究员",
+      "query_input": "你是一名宏观研究员。请基于专业研究视角完成以下任务。\n\n请基于以下事实，为机构客户写一段简明的收盘后点评，概括核心观点、主要利多因素、主要风险点，并避免编造数据。\n\n已知事实：\n- 某A股新能源企业2025年第三季度营业收入65.0亿元，同比增长21.0%。\n- 归母净利润11.6亿元，同比增长16.0%。\n- 毛利率为22.0%，较上季度改善。\n- 与“产品结构优化”相关的业务收入占比提升至31.0%。\n- 管理层强调“毛利率修复”仍是未来两个季度的重要变量。\n- 市场当前同时关注需求节奏、估值消化和行业竞争格局变化。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-0888 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'增长'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"增长\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0873",
+      "query_id": "qpv2-0218",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T1",
+      "template_name": "财报点评 Brief",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请基于以下事实，为机构客户写一段简明的盘前点评，概括核心观点、主要利多因素、主要风险点，并避免编造数据。\n\n已知事实：\n- 某美股金融科技企业2025年第三季度营业收入54.8亿元，同比增长7.2%。\n- 归母净利润6.2亿元，同比增长4.6%。\n- 毛利率为13.6%，较上季度改善。\n- 与“订单增长”相关的业务收入占比提升至18.4%。\n- 管理层强调“毛利率修复”仍是未来两个季度的重要变量。\n- 市场当前同时关注需求节奏、估值消化和行业竞争格局变化。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-0873 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'修复'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"修复\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0902",
+      "query_id": "qpv2-0230",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T2",
+      "template_name": "资产配置建议 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "某客户提供了如下信息：风险承受能力为中等偏上，主要目标是教育储备，可投资期限为2年，希望在兼顾流动性的前提下做好资金安排。\n\n客户信息：\n- 客户类型：创业者\n- 可投资资金：75万元\n- 风险偏好：中等偏上\n- 核心目标：教育储备\n\n市场背景：\n- 海外科技资产中长期趋势较强，但短期估值扰动明显。\n- 黄金在大类资产配置中的对冲价值仍被关注。\n\n请写一份面向客户的配置建议说明，比较至少两种可选方案，并说明主要风险与适用边界。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-0902 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'流动性'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"流动性\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0986",
+      "query_id": "qpv2-0250",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T2",
+      "template_name": "资产配置建议 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "某客户提供了如下信息：风险承受能力为中等偏上，主要目标是稳健增值，可投资期限为5年以上，希望在兼顾流动性的前提下做好资金安排。\n\n客户信息：\n- 客户类型：三口之家\n- 可投资资金：295万元\n- 风险偏好：中等偏上\n- 核心目标：稳健增值\n\n市场背景：\n- 银行理财、债券基金和存款类工具各有适用边界。\n- 权益市场波动较大，但高股息板块受到稳健资金关注。\n\n请写一份面向客户的配置建议说明，比较至少两种可选方案，并说明主要风险与适用边界。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-0986 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'稳健'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"稳健\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1019",
+      "query_id": "qpv2-0256",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T2",
+      "template_name": "资产配置建议 Memo",
+      "role_mode": "with_role",
+      "role": "投资顾问",
+      "query_input": "你是一名投资顾问。请在对客沟通场景下完成以下任务。\n\n某客户提供了如下信息：风险承受能力为中低，主要目标是稳健增值，可投资期限为5年以上，希望在兼顾流动性的前提下做好资金安排。\n\n客户信息：\n- 客户类型：自由职业者\n- 可投资资金：361万元\n- 风险偏好：中低\n- 核心目标：稳健增值\n\n市场背景：\n- 银行理财、债券基金和存款类工具各有适用边界。\n- 权益市场波动较大，但高股息板块受到稳健资金关注。\n\n请写一份面向客户的配置建议说明，比较至少两种可选方案，并说明主要风险与适用边界。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1019 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'稳健'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"稳健\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1123",
+      "query_id": "qpv2-0280",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T2",
+      "template_name": "资产配置建议 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "某客户提供了如下信息：风险承受能力为中低，主要目标是稳健增值，可投资期限为5年以上，希望在兼顾流动性的前提下做好资金安排。\n\n客户信息：\n- 客户类型：自由职业者\n- 可投资资金：45万元\n- 风险偏好：中低\n- 核心目标：稳健增值\n\n市场背景：\n- 银行理财、债券基金和存款类工具各有适用边界。\n- 权益市场波动较大，但高股息板块受到稳健资金关注。\n\n请写一份面向客户的配置建议说明，比较至少两种可选方案，并说明主要风险与适用边界。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1123 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'稳健'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"稳健\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-0973",
+      "query_id": "qpv2-0246",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T2",
+      "template_name": "资产配置建议 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "某客户提供了如下信息：风险承受能力为中等偏上，主要目标是现金管理，可投资期限为18个月，希望在兼顾流动性的前提下做好资金安排。\n\n客户信息：\n- 客户类型：创业者\n- 可投资资金：251万元\n- 风险偏好：中等偏上\n- 核心目标：现金管理\n\n市场背景：\n- 短端利率相对稳定，债券类资产配置吸引力提升。\n- 跨境资产配置可以增强分散性，但汇率波动不可忽视。\n\n请写一份面向客户的配置建议说明，比较至少两种可选方案，并说明主要风险与适用边界。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-0973 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'流动性'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"流动性\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1138",
+      "query_id": "qpv2-0286",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T2",
+      "template_name": "资产配置建议 Memo",
+      "role_mode": "with_role",
+      "role": "银行客户经理",
+      "query_input": "你是一名银行客户经理。请在对客沟通场景下完成以下任务。\n\n某客户提供了如下信息：风险承受能力为中等偏上，主要目标是稳健增值，可投资期限为5年以上，希望在兼顾流动性的前提下做好资金安排。\n\n客户信息：\n- 客户类型：创业者\n- 可投资资金：111万元\n- 风险偏好：中等偏上\n- 核心目标：稳健增值\n\n市场背景：\n- 银行理财、债券基金和存款类工具各有适用边界。\n- 权益市场波动较大，但高股息板块受到稳健资金关注。\n\n请写一份面向客户的配置建议说明，比较至少两种可选方案，并说明主要风险与适用边界。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1138 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'理财'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"理财\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1196",
+      "query_id": "qpv2-0299",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T2",
+      "template_name": "资产配置建议 Memo",
+      "role_mode": "with_role",
+      "role": "财富管理顾问",
+      "query_input": "你是一名财富管理顾问。请在对客沟通场景下完成以下任务。\n\n某客户提供了如下信息：风险承受能力为中等，主要目标是资产分散，可投资期限为2年，希望在兼顾流动性的前提下做好资金安排。\n\n客户信息：\n- 客户类型：留学家庭\n- 可投资资金：254万元\n- 风险偏好：中等\n- 核心目标：资产分散\n\n市场背景：\n- 海外科技资产中长期趋势较强，但短期估值扰动明显。\n- 短端利率相对稳定，债券类资产配置吸引力提升。\n\n请写一份面向客户的配置建议说明，比较至少两种可选方案，并说明主要风险与适用边界。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1196 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'流动性'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"流动性\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1210",
+      "query_id": "qpv2-0302",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T2",
+      "template_name": "资产配置建议 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "某客户提供了如下信息：风险承受能力为中等偏上，主要目标是教育储备，可投资期限为2年，希望在兼顾流动性的前提下做好资金安排。\n\n客户信息：\n- 客户类型：创业者\n- 可投资资金：287万元\n- 风险偏好：中等偏上\n- 核心目标：教育储备\n\n市场背景：\n- 海外科技资产中长期趋势较强，但短期估值扰动明显。\n- 黄金在大类资产配置中的对冲价值仍被关注。\n\n请写一份面向客户的配置建议说明，比较至少两种可选方案，并说明主要风险与适用边界。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1210 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'流动性'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"流动性\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1238",
+      "query_id": "qpv2-0310",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T2",
+      "template_name": "资产配置建议 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "某客户提供了如下信息：风险承受能力为中等偏上，主要目标是稳健增值，可投资期限为5年以上，希望在兼顾流动性的前提下做好资金安排。\n\n客户信息：\n- 客户类型：创业者\n- 可投资资金：375万元\n- 风险偏好：中等偏上\n- 核心目标：稳健增值\n\n市场背景：\n- 银行理财、债券基金和存款类工具各有适用边界。\n- 权益市场波动较大，但高股息板块受到稳健资金关注。\n\n请写一份面向客户的配置建议说明，比较至少两种可选方案，并说明主要风险与适用边界。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1238 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'稳健'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"稳健\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1265",
+      "query_id": "qpv2-0317",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T2",
+      "template_name": "资产配置建议 Memo",
+      "role_mode": "with_role",
+      "role": "投资顾问",
+      "query_input": "你是一名投资顾问。请在对客沟通场景下完成以下任务。\n\n某客户提供了如下信息：风险承受能力为偏保守，主要目标是资产分散，可投资期限为2年，希望在兼顾流动性的前提下做好资金安排。\n\n客户信息：\n- 客户类型：临近退休客户\n- 可投资资金：452万元\n- 风险偏好：偏保守\n- 核心目标：资产分散\n\n市场背景：\n- 海外科技资产中长期趋势较强，但短期估值扰动明显。\n- 短端利率相对稳定，债券类资产配置吸引力提升。\n\n请写一份面向客户的配置建议说明，比较至少两种可选方案，并说明主要风险与适用边界。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1265 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'建议'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"建议\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1286",
+      "query_id": "qpv2-0323",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T2",
+      "template_name": "资产配置建议 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "某客户提供了如下信息：风险承受能力为中等，主要目标是资产分散，可投资期限为2年，希望在兼顾流动性的前提下做好资金安排。\n\n客户信息：\n- 客户类型：留学家庭\n- 可投资资金：518万元\n- 风险偏好：中等\n- 核心目标：资产分散\n\n市场背景：\n- 海外科技资产中长期趋势较强，但短期估值扰动明显。\n- 短端利率相对稳定，债券类资产配置吸引力提升。\n\n请写一份面向客户的配置建议说明，比较至少两种可选方案，并说明主要风险与适用边界。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1286 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'分散'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"分散\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1070",
+      "query_id": "qpv2-0267",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T2",
+      "template_name": "资产配置建议 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "某客户提供了如下信息：风险承受能力为中等，主要目标是长期增值，可投资期限为18个月，希望在兼顾流动性的前提下做好资金安排。\n\n客户信息：\n- 客户类型：留学家庭\n- 可投资资金：482万元\n- 风险偏好：中等\n- 核心目标：长期增值\n\n市场背景：\n- 短端利率相对稳定，债券类资产配置吸引力提升。\n- 海外科技资产中长期趋势较强，但短期估值扰动明显。\n\n请写一份面向客户的配置建议说明，比较至少两种可选方案，并说明主要风险与适用边界。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1070 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'流动性'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"流动性\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1304",
+      "query_id": "qpv2-0327",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T2",
+      "template_name": "资产配置建议 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "某客户提供了如下信息：风险承受能力为中等，主要目标是长期增值，可投资期限为18个月，希望在兼顾流动性的前提下做好资金安排。\n\n客户信息：\n- 客户类型：中小企业主\n- 可投资资金：562万元\n- 风险偏好：中等\n- 核心目标：长期增值\n\n市场背景：\n- 短端利率相对稳定，债券类资产配置吸引力提升。\n- 海外科技资产中长期趋势较强，但短期估值扰动明显。\n\n请写一份面向客户的配置建议说明，比较至少两种可选方案，并说明主要风险与适用边界。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1304 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'增值'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"增值\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1335",
+      "query_id": "qpv2-0335",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T2",
+      "template_name": "资产配置建议 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "某客户提供了如下信息：风险承受能力为中等，主要目标是资产分散，可投资期限为2年，希望在兼顾流动性的前提下做好资金安排。\n\n客户信息：\n- 客户类型：中小企业主\n- 可投资资金：70万元\n- 风险偏好：中等\n- 核心目标：资产分散\n\n市场背景：\n- 海外科技资产中长期趋势较强，但短期估值扰动明显。\n- 短端利率相对稳定，债券类资产配置吸引力提升。\n\n请写一份面向客户的配置建议说明，比较至少两种可选方案，并说明主要风险与适用边界。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1335 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'流动性'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"流动性\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1320",
+      "query_id": "qpv2-0331",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T2",
+      "template_name": "资产配置建议 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "某客户提供了如下信息：风险承受能力为中等，主要目标是退休规划，可投资期限为5年以上，希望在兼顾流动性的前提下做好资金安排。\n\n客户信息：\n- 客户类型：留学家庭\n- 可投资资金：26万元\n- 风险偏好：中等\n- 核心目标：退休规划\n\n市场背景：\n- 银行理财、债券基金和存款类工具各有适用边界。\n- 银行理财、债券基金和存款类工具各有适用边界。\n\n请写一份面向客户的配置建议说明，比较至少两种可选方案，并说明主要风险与适用边界。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1320 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'流动性'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"流动性\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1342",
+      "query_id": "qpv2-0337",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某医药公司近期出现“报关与台账不一致”相关异常。\n- 相关金额约为157万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟49天仍未完成补充说明。\n- 管理层表示将于近期准备年末审计，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1342 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'异常点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"异常点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1358",
+      "query_id": "qpv2-0340",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某电商平台近期出现“供应商集中新增”相关异常。\n- 相关金额约为268万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟106天仍未完成补充说明。\n- 管理层表示将于近期启动流程复盘，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1358 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1382",
+      "query_id": "qpv2-0347",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某外贸企业近期出现“授信资料前后口径不一”相关异常。\n- 相关金额约为527万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟239天仍未完成补充说明。\n- 管理层表示将于近期准备风险排查，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1382 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险排查'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险排查\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1370",
+      "query_id": "qpv2-0342",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某消费电子企业近期出现“费用先付款后签约”相关异常。\n- 相关金额约为342万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟144天仍未完成补充说明。\n- 管理层表示将于近期开展内部自查，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1370 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1394",
+      "query_id": "qpv2-0349",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "with_role",
+      "role": "初级审计人员",
+      "query_input": "你是一名初级审计人员。请基于职责边界完成以下风险诊断任务。\n\n请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某供应链公司近期出现“存货库龄异常”相关异常。\n- 相关金额约为601万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟277天仍未完成补充说明。\n- 管理层表示将于近期准备年末审计，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1394 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1405",
+      "query_id": "qpv2-0351",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "with_role",
+      "role": "税务顾问",
+      "query_input": "你是一名税务顾问。请基于职责边界完成以下风险诊断任务。\n\n请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某银行分支机构近期出现“估值更新滞后”相关异常。\n- 相关金额约为675万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟315天仍未完成补充说明。\n- 管理层表示将于近期准备监管报送，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1405 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1429",
+      "query_id": "qpv2-0356",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某电商平台近期出现“供应商集中新增”相关异常。\n- 相关金额约为860万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟410天仍未完成补充说明。\n- 管理层表示将于近期准备授信审批，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1429 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1414",
+      "query_id": "qpv2-0353",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "with_role",
+      "role": "初级审计人员",
+      "query_input": "你是一名初级审计人员。请基于职责边界完成以下风险诊断任务。\n\n请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某医药公司近期出现“报关与台账不一致”相关异常。\n- 相关金额约为749万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟353天仍未完成补充说明。\n- 管理层表示将于近期准备风险排查，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1414 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1464",
+      "query_id": "qpv2-0363",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某外贸企业近期出现“授信资料前后口径不一”相关异常。\n- 相关金额约为259万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟123天仍未完成补充说明。\n- 管理层表示将于近期准备监管报送，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1464 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1474",
+      "query_id": "qpv2-0366",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某消费电子企业近期出现“费用先付款后签约”相关异常。\n- 相关金额约为370万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟180天仍未完成补充说明。\n- 管理层表示将于近期开展内部自查，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1474 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'异常点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"异常点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1440",
+      "query_id": "qpv2-0358",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某消费电子企业近期出现“费用先付款后签约”相关异常。\n- 相关金额约为934万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟448天仍未完成补充说明。\n- 管理层表示将于近期启动流程复盘，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1440 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1483",
+      "query_id": "qpv2-0368",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "with_role",
+      "role": "初级会计人员",
+      "query_input": "你是一名初级会计人员。请基于职责边界完成以下风险诊断任务。\n\n请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某制造企业近期出现“发票与合同不一致”相关异常。\n- 相关金额约为444万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟218天仍未完成补充说明。\n- 管理层表示将于近期准备授信审批，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1483 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1494",
+      "query_id": "qpv2-0372",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某电商平台近期出现“供应商集中新增”相关异常。\n- 相关金额约为592万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟294天仍未完成补充说明。\n- 管理层表示将于近期开展内部自查，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1494 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1506",
+      "query_id": "qpv2-0377",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某医药公司近期出现“报关与台账不一致”相关异常。\n- 相关金额约为777万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟389天仍未完成补充说明。\n- 管理层表示将于近期准备风险排查，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1506 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险排查'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险排查\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1519",
+      "query_id": "qpv2-0380",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某电商平台近期出现“供应商集中新增”相关异常。\n- 相关金额约为888万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟446天仍未完成补充说明。\n- 管理层表示将于近期准备授信审批，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1519 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1532",
+      "query_id": "qpv2-0383",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "with_role",
+      "role": "初级审计人员",
+      "query_input": "你是一名初级审计人员。请基于职责边界完成以下风险诊断任务。\n\n请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某银行分支机构近期出现“估值更新滞后”相关异常。\n- 相关金额约为139万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟83天仍未完成补充说明。\n- 管理层表示将于近期准备风险排查，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1532 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1544",
+      "query_id": "qpv2-0386",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某资管产品近期出现“应收账款回款延迟”相关异常。\n- 相关金额约为250万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟140天仍未完成补充说明。\n- 管理层表示将于近期准备授信审批，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1544 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1580",
+      "query_id": "qpv2-0395",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某外贸企业近期出现“授信资料前后口径不一”相关异常。\n- 相关金额约为583万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟311天仍未完成补充说明。\n- 管理层表示将于近期准备风险排查，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1580 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险排查'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险排查\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1569",
+      "query_id": "qpv2-0392",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "with_role",
+      "role": "税务顾问",
+      "query_input": "你是一名税务顾问。请基于职责边界完成以下风险诊断任务。\n\n请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某制造企业近期出现“发票与合同不一致”相关异常。\n- 相关金额约为472万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟254天仍未完成补充说明。\n- 管理层表示将于近期准备授信审批，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1569 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'异常点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"异常点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1590",
+      "query_id": "qpv2-0397",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某供应链公司近期出现“存货库龄异常”相关异常。\n- 相关金额约为657万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟349天仍未完成补充说明。\n- 管理层表示将于近期准备年末审计，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1590 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'异常点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"异常点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1604",
+      "query_id": "qpv2-0401",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某医药公司近期出现“报关与台账不一致”相关异常。\n- 相关金额约为805万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟425天仍未完成补充说明。\n- 管理层表示将于近期准备风险排查，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1604 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险排查'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险排查\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1615",
+      "query_id": "qpv2-0403",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "with_role",
+      "role": "税务顾问",
+      "query_input": "你是一名税务顾问。请基于职责边界完成以下风险诊断任务。\n\n请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某外贸企业近期出现“授信资料前后口径不一”相关异常。\n- 相关金额约为879万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟43天仍未完成补充说明。\n- 管理层表示将于近期准备年末审计，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1615 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1639",
+      "query_id": "qpv2-0411",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某外贸企业近期出现“授信资料前后口径不一”相关异常。\n- 相关金额约为315万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟195天仍未完成补充说明。\n- 管理层表示将于近期准备监管报送，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1639 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1650",
+      "query_id": "qpv2-0415",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某银行分支机构近期出现“估值更新滞后”相关异常。\n- 相关金额约为463万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟271天仍未完成补充说明。\n- 管理层表示将于近期准备年末审计，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1650 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'异常点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"异常点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1660",
+      "query_id": "qpv2-0417",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某医药公司近期出现“报关与台账不一致”相关异常。\n- 相关金额约为537万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟309天仍未完成补充说明。\n- 管理层表示将于近期准备监管报送，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1660 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1673",
+      "query_id": "qpv2-0421",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "with_role",
+      "role": "税务顾问",
+      "query_input": "你是一名税务顾问。请基于职责边界完成以下风险诊断任务。\n\n请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某供应链公司近期出现“存货库龄异常”相关异常。\n- 相关金额约为685万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟385天仍未完成补充说明。\n- 管理层表示将于近期准备年末审计，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1673 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'审计'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"审计\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1685",
+      "query_id": "qpv2-0423",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某银行分支机构近期出现“估值更新滞后”相关异常。\n- 相关金额约为759万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟423天仍未完成补充说明。\n- 管理层表示将于近期准备监管报送，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1685 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'异常点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"异常点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1689",
+      "query_id": "qpv2-0424",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "with_role",
+      "role": "初级审计人员",
+      "query_input": "你是一名初级审计人员。请基于职责边界完成以下风险诊断任务。\n\n请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某制造企业近期出现“发票与合同不一致”相关异常。\n- 相关金额约为796万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟442天仍未完成补充说明。\n- 管理层表示将于近期启动流程复盘，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1689 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'审计'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"审计\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1709",
+      "query_id": "qpv2-0429",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某供应链公司近期出现“存货库龄异常”相关异常。\n- 相关金额约为121万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟117天仍未完成补充说明。\n- 管理层表示将于近期准备监管报送，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1709 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1726",
+      "query_id": "qpv2-0434",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某资管产品近期出现“应收账款回款延迟”相关异常。\n- 相关金额约为306万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟212天仍未完成补充说明。\n- 管理层表示将于近期准备授信审批，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1726 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1718",
+      "query_id": "qpv2-0431",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某银行分支机构近期出现“估值更新滞后”相关异常。\n- 相关金额约为195万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟155天仍未完成补充说明。\n- 管理层表示将于近期准备风险排查，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1718 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1743",
+      "query_id": "qpv2-0437",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某供应链公司近期出现“存货库龄异常”相关异常。\n- 相关金额约为417万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟269天仍未完成补充说明。\n- 管理层表示将于近期准备风险排查，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1743 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1779",
+      "query_id": "qpv2-0444",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "with_role",
+      "role": "初级会计人员",
+      "query_input": "你是一名初级会计人员。请基于职责边界完成以下风险诊断任务。\n\n请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某电商平台近期出现“供应商集中新增”相关异常。\n- 相关金额约为676万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟402天仍未完成补充说明。\n- 管理层表示将于近期开展内部自查，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1779 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1755",
+      "query_id": "qpv2-0439",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某银行分支机构近期出现“估值更新滞后”相关异常。\n- 相关金额约为491万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟307天仍未完成补充说明。\n- 管理层表示将于近期准备年末审计，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1755 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'审计'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"审计\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1766",
+      "query_id": "qpv2-0442",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T4",
+      "template_name": "风险诊断 Memo",
+      "role_mode": "with_role",
+      "role": "税务顾问",
+      "query_input": "你是一名税务顾问。请基于职责边界完成以下风险诊断任务。\n\n请根据以下材料，识别其中最关键的风险点或异常点，分析原因，并提出后续处理建议。回答应只基于给定材料，不要补充未提供的事实。\n\n材料：\n- 某资管产品近期出现“应收账款回款延迟”相关异常。\n- 相关金额约为602万元，较历史水平明显提升。\n- 部分记录与内部台账或合同节点存在时间差。\n- 有资料显示个别业务环节已延迟364天仍未完成补充说明。\n- 管理层表示将于近期启动流程复盘，希望先形成初步诊断意见。\n- 当前已知材料不足以完全还原全部事实链条，需要明确指出仍待核实部分。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1766 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险点'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险点\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1790",
+      "query_id": "qpv2-0449",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T5",
+      "template_name": "对话后问题诊断与建议",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "阅读以下对话后，请总结当前暴露出的核心问题，说明原因，并给出下一步建议。若信息不足，请明确指出。\n\n对话背景：房地产投资，客户不确定地区选择和风险管理\n\n对话记录：\n用户: 我们公司流水最近波动比较大，会不会影响贷款审批？\nBOT: 银行通常会综合看企业经营、流水、纳税和还款能力。\n用户: 我理解了一部分，但还是担心自己判断失误。\nBOT: 你的担心是合理的，很多决策都需要结合更多背景信息来判断。\n用户: 这件事里最大的风险是什么？\nBOT: 目前最大的风险在于信息不足导致判断偏差，因此需要先补足关键事实。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1790 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'风险'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"风险\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-1811",
+      "query_id": "qpv2-0454",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T5",
+      "template_name": "对话后问题诊断与建议",
+      "role_mode": "with_role",
+      "role": "初级会计人员",
+      "query_input": "你是一名初级会计人员。请阅读以下材料并给出专业判断。\n\n阅读以下对话后，请总结当前暴露出的核心问题，说明原因，并给出下一步建议。若信息不足，请明确指出。\n\n对话背景：企业报销，员工想在票据未齐的情况下先付款\n\n对话记录：\n用户: 我们的模型在高波动市场表现不好，可能是什么原因？\nBOT: 高波动环境下，历史模式的稳定性下降，传统模型容易失效。\n用户: 我理解了一部分，但还是担心自己判断失误。\nBOT: 你的担心是合理的，很多决策都需要结合更多背景信息来判断。\n用户: 如果情况继续变化，我应该怎么调整？\nBOT: 可以根据新的信息重新评估，并适时调整策略或方案。\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-1811 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'模型'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"模型\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-2024",
+      "query_id": "qpv2-0507",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T10",
+      "template_name": "产品卖点说明",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下产品信息，写一段面向客户的卖点说明，突出产品特点、适合人群和主要风险，避免夸大收益或做出不当承诺。\n\n产品信息：\n- 产品类型：可转债基金\n- 适合人群：希望稳健增值的客户\n- 主要特点：可作为组合配置工具，帮助客户在既定目标下进行资产安排。\n- 风险提示：汇率、利率或权益市场变化可能带来波动\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-2024 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'收益'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"收益\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-2045",
+      "query_id": "qpv2-0511",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T10",
+      "template_name": "产品卖点说明",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下产品信息，写一段面向客户的卖点说明，突出产品特点、适合人群和主要风险，避免夸大收益或做出不当承诺。\n\n产品信息：\n- 产品类型：养老目标FOF\n- 适合人群：希望稳健增值的客户\n- 主要特点：可作为组合配置工具，帮助客户在既定目标下进行资产安排。\n- 风险提示：收益不确定，不承诺保本保收益\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-2045 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'稳健'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"稳健\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-2079",
+      "query_id": "qpv2-0520",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T10",
+      "template_name": "产品卖点说明",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下产品信息，写一段面向客户的卖点说明，突出产品特点、适合人群和主要风险，避免夸大收益或做出不当承诺。\n\n产品信息：\n- 产品类型：公募REIT\n- 适合人群：希望稳健增值的客户\n- 主要特点：可作为组合配置工具，帮助客户在既定目标下进行资产安排。\n- 风险提示：产品更适合中长期持有，不适合短期停放资金\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-2079 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'稳健'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"稳健\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-2088",
+      "query_id": "qpv2-0522",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T10",
+      "template_name": "产品卖点说明",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下产品信息，写一段面向客户的卖点说明，突出产品特点、适合人群和主要风险，避免夸大收益或做出不当承诺。\n\n产品信息：\n- 产品类型：黄金ETF联接基金\n- 适合人群：希望稳健增值的客户\n- 主要特点：可作为组合配置工具，帮助客户在既定目标下进行资产安排。\n- 风险提示：汇率、利率或权益市场变化可能带来波动\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-2088 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'稳健'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"稳健\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-2086",
+      "query_id": "qpv2-0522",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T10",
+      "template_name": "产品卖点说明",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下产品信息，写一段面向客户的卖点说明，突出产品特点、适合人群和主要风险，避免夸大收益或做出不当承诺。\n\n产品信息：\n- 产品类型：黄金ETF联接基金\n- 适合人群：希望稳健增值的客户\n- 主要特点：可作为组合配置工具，帮助客户在既定目标下进行资产安排。\n- 风险提示：汇率、利率或权益市场变化可能带来波动\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-2086 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'稳健'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"稳健\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-2108",
+      "query_id": "qpv2-0527",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T10",
+      "template_name": "产品卖点说明",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下产品信息，写一段面向客户的卖点说明，突出产品特点、适合人群和主要风险，避免夸大收益或做出不当承诺。\n\n产品信息：\n- 产品类型：养老目标FOF\n- 适合人群：希望稳健增值的客户\n- 主要特点：可作为组合配置工具，帮助客户在既定目标下进行资产安排。\n- 风险提示：汇率、利率或权益市场变化可能带来波动\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-2108 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'稳健增值'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"稳健增值\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-2115",
+      "query_id": "qpv2-0528",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T10",
+      "template_name": "产品卖点说明",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下产品信息，写一段面向客户的卖点说明，突出产品特点、适合人群和主要风险，避免夸大收益或做出不当承诺。\n\n产品信息：\n- 产品类型：公募REIT\n- 适合人群：希望稳健增值的客户\n- 主要特点：可作为组合配置工具，帮助客户在既定目标下进行资产安排。\n- 风险提示：净值会波动，短期表现可能受市场影响\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-2115 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'稳健'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"稳健\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-2123",
+      "query_id": "qpv2-0531",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T10",
+      "template_name": "产品卖点说明",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下产品信息，写一段面向客户的卖点说明，突出产品特点、适合人群和主要风险，避免夸大收益或做出不当承诺。\n\n产品信息：\n- 产品类型：可转债基金\n- 适合人群：希望稳健增值的客户\n- 主要特点：可作为组合配置工具，帮助客户在既定目标下进行资产安排。\n- 风险提示：收益不确定，不承诺保本保收益\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-2123 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'稳健'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"稳健\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-2130",
+      "query_id": "qpv2-0532",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T10",
+      "template_name": "产品卖点说明",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下产品信息，写一段面向客户的卖点说明，突出产品特点、适合人群和主要风险，避免夸大收益或做出不当承诺。\n\n产品信息：\n- 产品类型：跨境债券基金\n- 适合人群：希望稳健增值的客户\n- 主要特点：可作为组合配置工具，帮助客户在既定目标下进行资产安排。\n- 风险提示：汇率、利率或权益市场变化可能带来波动\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-2130 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'稳健'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"稳健\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-2144",
+      "query_id": "qpv2-0537",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T10",
+      "template_name": "产品卖点说明",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下产品信息，写一段面向客户的卖点说明，突出产品特点、适合人群和主要风险，避免夸大收益或做出不当承诺。\n\n产品信息：\n- 产品类型：红利低波策略基金\n- 适合人群：希望稳健增值的客户\n- 主要特点：可作为组合配置工具，帮助客户在既定目标下进行资产安排。\n- 风险提示：汇率、利率或权益市场变化可能带来波动\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-2144 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'稳健'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"稳健\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-2150",
+      "query_id": "qpv2-0538",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T10",
+      "template_name": "产品卖点说明",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下产品信息，写一段面向客户的卖点说明，突出产品特点、适合人群和主要风险，避免夸大收益或做出不当承诺。\n\n产品信息：\n- 产品类型：黄金ETF联接基金\n- 适合人群：希望稳健增值的客户\n- 主要特点：可作为组合配置工具，帮助客户在既定目标下进行资产安排。\n- 风险提示：净值会波动，短期表现可能受市场影响\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-2150 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'稳健'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"稳健\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-2159",
+      "query_id": "qpv2-0540",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T10",
+      "template_name": "产品卖点说明",
+      "role_mode": "no_role",
+      "role": null,
+      "query_input": "请根据以下产品信息，写一段面向客户的卖点说明，突出产品特点、适合人群和主要风险，避免夸大收益或做出不当承诺。\n\n产品信息：\n- 产品类型：跨境债券基金\n- 适合人群：希望稳健增值的客户\n- 主要特点：可作为组合配置工具，帮助客户在既定目标下进行资产安排。\n- 风险提示：产品更适合中长期持有，不适合短期停放资金\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-2159 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'稳健增值'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"稳健增值\"}"
+  },
+  {
+    "request": {
+      "sample_id": "train-v_track-2165",
+      "query_id": "qpv2-0542",
+      "split": "train",
+      "track": "V-track",
+      "source_type": "fife_template",
+      "origin_task": null,
+      "template_id": "T10",
+      "template_name": "产品卖点说明",
+      "role_mode": "with_role",
+      "role": "基金销售",
+      "query_input": "你是一名基金销售。请在合规对客场景下完成以下任务。\n\n请根据以下产品信息，写一段面向客户的卖点说明，突出产品特点、适合人群和主要风险，避免夸大收益或做出不当承诺。\n\n产品信息：\n- 产品类型：分红型保险产品\n- 适合人群：希望稳健增值的客户\n- 主要特点：可作为组合配置工具，帮助客户在既定目标下进行资产安排。\n- 风险提示：汇率、利率或权益市场变化可能带来波动\n",
+      "constraint_id": "GV-9"
+    },
+    "error": "sample_id=train-v_track-2165 constraint_id=GV-9 连续失败，最后错误：GV-9 禁词'稳健'出现在 query 题干中，请换一个不在题干里的词；最后输出：{\"word\": \"稳健\"}"
+  }
+]

@@ -1,0 +1,47 @@
+constraint_id,module,verifiability,check_mode,score_type,constraint_text,description,source
+GV-1,GV,verifiable,rule,binary_10,回答不超过{N}个字,限制回答总长度上限，强调简洁和压缩表达,IFEval length_constraints:number_words
+GV-2,GV,verifiable,rule,binary_10,至少包含{N}个句子,限制回答至少展开到若干完整句，避免过短回答,IFEval length_constraints:number_sentences
+GV-3,GV,verifiable,rule,binary_10,回答分为{N}个段落,限制回答的段落组织结构，要求分段展开,IFEval length_constraints:number_paragraphs
+GV-4a,GV,verifiable,rule,binary_10,使用 Markdown 格式,要求输出整体采用 Markdown 标记组织内容,IFEval detectable_format:title
+GV-4b,GV,verifiable,rule,binary_10,包含至少{N}级标题层级,要求输出包含多级标题结构而非单层标题,FIFE L1-7 Heading/Section
+GV-5,GV,verifiable,rule,binary_10,使用编号列表组织回答,要求输出采用 1. 2. 3. 的有序列表形式,IFEval detectable_format:number_bullet_lists
+GV-6,GV,verifiable,rule,binary_10,使用表格形式呈现关键信息,要求用表格承载核心字段或比较信息,FIFE L1-1 表格约束
+GV-7,GV,verifiable,rule,binary_10,以 JSON 格式输出,要求回答可被直接解析为合法 JSON 对象,IFEval detectable_format:json_format
+GV-8,GV,verifiable,rule,binary_10,必须包含关键词：{kw1}、{kw2},要求回答显式包含两个指定关键词,IFEval keywords:existence
+GV-9,GV,verifiable,rule,binary_10,不得出现“{forbidden_word}”,要求回答显式规避指定词或短语,IFEval keywords:forbidden_words
+GV-10,GV,verifiable,rule,binary_10,开头第一个词必须是“{word}”,要求回答首词精确匹配指定词语,IFEval startend:end_checker
+GV-11,GV,verifiable,rule,binary_10,使用 Checkbox 格式 [ ]/[x],要求输出中出现 checkbox 任务清单格式,FIFE L1-6 Checkbox
+GV-12,GV,verifiable,rule,binary_10,输出必须包含代码块/公式块,要求回答至少包含一个代码块或公式块,FIFE L1-11 代码块
+GV-13,GV,verifiable,rule,binary_10,第一行必须为“{first_line}”，最后一行为“{last_line}”,要求首行和末行都与指定文本精确匹配,FIFE L1-2 精确文本匹配
+GV-14,GV,verifiable,rule,binary_10,每个 bullet 必须以“{prefix}”开头,要求每个列表项共享统一前缀,FIFE L1-5.4 指定前缀
+GV-15,GV,verifiable,rubric,ternary_10,先给出结论，再给出分析过程,要求内容顺序满足先结论后分析的结构安排,FollowBench Content Constraint
+GV-16,GV,verifiable,rubric,ternary_10,回答末尾必须包含一段总结,要求回答在尾部补充总结性收束段落,FollowBench Content Constraint
+GN-3,GN,non_verifiable,rubric,continuous_10,使用正式书面语，不得口语化,要求整体文风保持正式书面表达,FollowBench Style Constraint
+GN-4,GN,non_verifiable,rubric,continuous_10,使用客观中立的语气，不带主观倾向,要求避免情绪化和立场化表达,FollowBench Style Constraint
+GN-5,GN,non_verifiable,rubric,continuous_10,段落间必须逻辑连贯，有明确过渡,要求段落衔接自然并具有清晰过渡,FollowBench Content Constraint
+GN-6,GN,non_verifiable,rubric,continuous_10,避免重复内容，每段应提供新信息,要求信息增量明显，避免段落内容重复,通用写作质量规范
+GN-7,GN,non_verifiable,rubric,ternary_10,使用类比或举例来辅助解释,要求至少引入类比或例子帮助说明,FollowBench Content Constraint
+FV-1,FV,verifiable,rule,binary_10,末尾必须包含风险提示声明：{risk_line},要求回答末尾出现完整风险提示语句,FIFE L1-2.2 免责声明 + 中国金融合规
+FV-2,FV,verifiable,rule,binary_10,必须声明“{disclaimer}”,要求回答中出现明确免责声明短句,FIFE L1-2.4 精确引用 + 中国监管要求
+FV-3,FV,verifiable,rule,binary_10,若提到“{trigger}”，必须同时补充“{followup}”,要求满足条件触发后的补充披露逻辑,FIFE L1-12 条件逻辑
+FV-4,FV,verifiable,rule,binary_10,按{order_field}从高到低排序输出,要求输出内容按照指定维度降序排列,FIFE L1-10 排序/过滤
+FV-5,FV,verifiable,rule,binary_10,若出现金额，统一使用 {currency_rule} 表示,要求所有货币金额遵循统一格式规范,FIFE L1-9 货币格式
+FV-6,FV,verifiable,rule,binary_10,必须标注风险等级（R1-R5）,要求回答显式给出规范化风险等级标签,中国银行理财产品说明书规范
+FV-7,FV,verifiable,rule,binary_10,必须包含投资评级词,要求回答中出现买入/增持/中性/减持/卖出等评级词,券商研报行业惯例
+FV-8,FV,verifiable,rubric,ternary_10,从 ESG 角度评价,要求从环境、社会和治理维度展开评价,FollowBench Content Constraint + FollowSoftConstraint Situation: Specify Role
+FV-9,FV,verifiable,rubric,ternary_10,注明所引用信息的来源,要求显式交代信息或结论所依据的来源,SciIF Generate-then-Audit
+FV-10,FV,verifiable,rubric,ternary_10,专业术语缩写需给全称,要求首次出现术语缩写时补充完整全称,SciIF Terminology
+FV-11,FV,verifiable,rubric,ternary_10,必须引用具体财务指标数据,要求给出明确财务指标及其数值,SciIF Numerical Methods
+FV-12,FV,verifiable,rubric,ternary_10,必须包含定量分析,要求回答包含趋势、比较、比例或数值推演等定量内容,SciIF Numerical Methods
+FN-1,FN,non_verifiable,rubric,continuous_10,从风险管理的角度分析,要求从风险识别和控制视角组织分析,FollowBench Content Constraint + FollowSoftConstraint Situation: Specify Role
+FN-2,FN,non_verifiable,rubric,continuous_10,站在监管机构的立场回答,要求采用监管者立场关注合规与稳定性,FollowBench Content Constraint + FollowSoftConstraint Situation: Specify Role
+FN-3,FN,non_verifiable,rubric,continuous_10,从零售投资者的视角分析,要求回答面向普通投资者的决策关切,FollowBench Content Constraint + FollowSoftConstraint Situation: Specify Role
+FN-5,FN,non_verifiable,rubric,continuous_10,从宏观经济的角度分析,要求从宏观变量和经济周期视角分析问题,FollowBench Content Constraint + FollowSoftConstraint Situation: Specify Role
+FN-8,FN,non_verifiable,rubric,continuous_10,用通俗语言，避免专业术语,要求尽量降低专业术语密度并提高可读性,FollowBench Style Constraint
+FN-9,FN,non_verifiable,rubric,continuous_10,仅基于提供的材料作答,要求回答不越界，不引入材料外事实,SciIF Boundary Conditions
+FN-12,FN,non_verifiable,rubric,ternary_10,非金融领域术语不得使用英文,要求仅保留必要金融术语英文，其他表达尽量中文化,原 GV-11（项目规则转入）
+FN-13,FN,non_verifiable,rubric,ternary_10,至少包含{N}个专业金融术语,要求回答达到一定金融术语密度,原 FV-3（项目规则转入）
+FN-14,FN,non_verifiable,rubric,ternary_10,假设当前处于{市场环境}下进行分析,要求在指定市场环境前提下给出分析,Ren et al. ACL 2025 Findings / FollowSoftConstraint Situation: Define Context
+FN-15,FN,non_verifiable,rubric,ternary_10,以{目标}为首要考量,要求将指定目标设为分析或建议的最高优先级,Ren et al. ACL 2025 Findings / FollowSoftConstraint Situation: Prioritize Outcomes
+FN-16,FN,non_verifiable,rubric,continuous_10,以{文档类型}的风格撰写,要求模仿指定文档体裁或写作风格,Ren et al. ACL 2025 Findings / FollowSoftConstraint Style: Writing Mimicry
+FN-17,FN,non_verifiable,rubric,ternary_10,在{条件}这一假设下进行分析,要求在指定附加条件成立时展开分析,Ren et al. ACL 2025 Findings / FollowSoftConstraint Situation: Add Dependencies

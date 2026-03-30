@@ -1,0 +1,13 @@
+{
+  "target_flag": "gv9_forbidden_overlap",
+  "removed_samples": 97,
+  "clean_samples": 1925,
+  "clean_track_counts": {
+    "V-track": 624,
+    "NV-track": 674,
+    "Mixed-track": 627
+  },
+  "archive_dir": "/Users/minimax/Desktop/paper_research/paper_for_financial_if_benchmark/data/tracks/constraint_conflict_data",
+  "clean_dir": "/Users/minimax/Desktop/paper_research/paper_for_financial_if_benchmark/data/tracks/cleaned",
+  "viewer": "/Users/minimax/Desktop/paper_research/paper_for_financial_if_benchmark/viewer/id_heldout_tracks_viewer_clean.html"
+}
