@@ -2,65 +2,52 @@
 """
 生成 Vulcan Track 生成任务的输入 JSONL。
 
-502 queries × 9 tracks = 4,518 行
+502 queries × 3 批次（hard/soft/mixed）= 1,506 行
+每批生成 4 条 track，总计 502 × 12 = 6,024 条 track。
 
-9 tracks per query:
-  hard_1:    1 Hard, 0 Soft
-  hard_2:    2 Hard, 0 Soft
-  hard_3:    3 Hard, 0 Soft
-  soft_1:    0 Hard, 1 Soft
-  soft_2:    0 Hard, 2 Soft
-  soft_3:    0 Hard, 3 Soft
-  mixed_1h1s: 1 Hard, 1 Soft
-  mixed_1h2s: 1 Hard, 2 Soft
-  mixed_2h1s: 2 Hard, 1 Soft
+3 批次:
+  hard:  SP=track_gen_sp_hard.md   → hard_1a, hard_1b, hard_2, hard_3
+  soft:  SP=track_gen_sp_soft.md   → soft_1a, soft_1b, soft_2, soft_3
+  mixed: SP=track_gen_sp_mixed.md  → mixed_1h1s_a, mixed_1h1s_b, mixed_1h2s, mixed_2h1s
 
 用法:
   python scripts/gen_track_vulcan_input.py \
     --query-pool data/query_pool/query_pool_v3.json \
-    --system-prompt prompts/track_gen_system_prompt.md \
-    --user-template prompts/track_gen_user_template.md \
+    --prompt-dir prompts \
     --output data/tracks/vulcan_track_gen_input.jsonl
 """
 import argparse, json
 from pathlib import Path
 
-TRACK_CONFIGS = [
-    ("hard_1",    1, 0),
-    ("hard_2",    2, 0),
-    ("hard_3",    3, 0),
-    ("soft_1",    0, 1),
-    ("soft_2",    0, 2),
-    ("soft_3",    0, 3),
-    ("mixed_1h1s", 1, 1),
-    ("mixed_1h2s", 1, 2),
-    ("mixed_2h1s", 2, 1),
+BATCHES = [
+    ("hard",  "track_gen_sp_hard.md"),
+    ("soft",  "track_gen_sp_soft.md"),
+    ("mixed", "track_gen_sp_mixed.md"),
 ]
 
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--query-pool", required=True)
-    parser.add_argument("--system-prompt", required=True)
-    parser.add_argument("--user-template", required=True)
+    parser.add_argument("--prompt-dir", required=True)
     parser.add_argument("--output", required=True)
     args = parser.parse_args()
 
     with open(args.query_pool) as f:
         queries = json.load(f)
-    system_prompt = Path(args.system_prompt).read_text(encoding="utf-8")
-    user_template = Path(args.user_template).read_text(encoding="utf-8")
+
+    prompt_dir = Path(args.prompt_dir)
+    user_template = (prompt_dir / "track_gen_user_template.md").read_text(encoding="utf-8")
 
     rows = []
-    for q in queries:
-        qid = q.get("query_id", q.get("id", ""))
-        query_text = q.get("input", q.get("query_text", ""))
+    for batch_name, sp_file in BATCHES:
+        system_prompt = (prompt_dir / sp_file).read_text(encoding="utf-8")
 
-        for track_type, n_hard, n_soft in TRACK_CONFIGS:
+        for q in queries:
+            qid = q.get("query_id", q.get("id", ""))
+            query_text = q.get("input", q.get("query_text", ""))
+
             user_content = user_template.format(
-                track_type=track_type,
-                n_hard=n_hard,
-                n_soft=n_soft,
                 query_id=qid,
                 query_text=query_text,
             )
@@ -71,9 +58,7 @@ def main():
                     {"role": "user", "content": user_content},
                 ],
                 "query_id": qid,
-                "track_type": track_type,
-                "n_hard": n_hard,
-                "n_soft": n_soft,
+                "batch": batch_name,
             }
             rows.append(row)
 
@@ -83,7 +68,11 @@ def main():
         for row in rows:
             f.write(json.dumps(row, ensure_ascii=False) + "\n")
 
-    print(f"Generated {len(rows)} rows ({len(queries)} queries × {len(TRACK_CONFIGS)} tracks)")
+    print(f"Generated {len(rows)} rows ({len(queries)} queries × {len(BATCHES)} batches)")
+    print(f"  hard:  {len(queries)} rows → {len(queries)*4} tracks")
+    print(f"  soft:  {len(queries)} rows → {len(queries)*4} tracks")
+    print(f"  mixed: {len(queries)} rows → {len(queries)*4} tracks")
+    print(f"  total: {len(queries)*12} tracks")
     print(f"Output: {out_path}")
 
 

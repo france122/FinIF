@@ -1,8 +1,5 @@
 """
-Vulcan preprocess handler — Stage 1 response generation.
-
-Outputs `input` and `reasoning` to match Vulcan model request template:
-  {"model": "gpt-5.4", "input": "{{json_dumps .input}}", "reasoning": "{{json_dumps .reasoning}}"}
+Vulcan preprocess — Test response generation (GPT-5).
 """
 
 
@@ -21,9 +18,10 @@ def _content_to_text(content) -> str:
 
 
 def handler(data):
+    import json
+
     raw = data.input
     if isinstance(raw, str):
-        import json
         raw = json.loads(raw)
 
     messages = raw.get("messages", [])

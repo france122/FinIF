@@ -1,8 +1,8 @@
-# 约束池 v3
+# Constraint Pool v3
 
-> 更新时间：2026-04-09
+> 更新时间：2026-04-11
 > 权威元数据：`docs/constraint_reference_table.csv`
-> 总计：59 条（GH 19 + GS 8 + FH 10 + FS 22）
+> 总计：60 条（GH 19 + GS 8 + FH 9 + FS 24）
 > 评分：全部 binary 1/0
 > 每条约束标注 InfoBench Type（Content / Format / Style / Number / Linguistic），支持多标签
 
@@ -13,8 +13,8 @@
 |  | Hard（规则验证） | Soft（LLM judge） | 合计 |
 |---|---|---|---|
 | **通用 (G)** | GH × 19 | GS × 8 | 27 |
-| **金融 (F)** | FH × 10 | FS × 22 | 32 |
-| **合计** | 29 | 30 | **59** |
+| **金融 (F)** | FH × 9 | FS × 24 | 33 |
+| **合计** | 28 | 32 | **60** |
 
 ---
 

@@ -1,0 +1,600 @@
+{"sample_id": "WB_0229_mixed_1h1s_b", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "WB_0228_mixed_1h1s_a", "constraint_id": "GH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 表格"}
+{"sample_id": "qpv2-0090_hard_2", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "qpv2-0090_hard_2", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "qpv2-0135_hard_3", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "qpv2-0135_hard_3", "constraint_id": "FH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到风险等级"}
+{"sample_id": "qpv2-0135_hard_3", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "DISC_0013_mixed_1h1s_a", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0530_mixed_1h1s_b", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "qpv2-0017_hard_3", "constraint_id": "GH-20", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到第三人称客观表述"}
+{"sample_id": "qpv2-0017_hard_3", "constraint_id": "FH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到风险等级"}
+{"sample_id": "qpv2-0017_hard_3", "constraint_id": "FH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到投资评级词"}
+{"sample_id": "DISC_0080_hard_1a", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "qpv2-0090_mixed_1h1s_a", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "WB_0200_hard_3", "constraint_id": "GH-20", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到第三人称客观表述"}
+{"sample_id": "WB_0200_hard_3", "constraint_id": "FH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到风险等级"}
+{"sample_id": "WB_0200_hard_3", "constraint_id": "FH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到投资评级词"}
+{"sample_id": "DISC_0124_mixed_1h1s_a", "constraint_id": "GH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 表格"}
+{"sample_id": "qpv2-0549_hard_3", "constraint_id": "GH-4", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 结构"}
+{"sample_id": "qpv2-0549_hard_3", "constraint_id": "GH-12", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 checkbox"}
+{"sample_id": "qpv2-0549_hard_3", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "qpv2-0031_hard_3", "constraint_id": "FH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到阿拉伯数字"}
+{"sample_id": "qpv2-0031_hard_3", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "qpv2-0031_hard_3", "constraint_id": "GH-14", "hardness": "hard", "score": 1.0, "passed": true, "message": "首末行均匹配"}
+{"sample_id": "DISC_0098_hard_1a", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 以上内容仅供参考，不构成投资建议，投资有风险，入市需谨慎。..."}
+{"sample_id": "WB_0224_mixed_1h2s", "constraint_id": "GH-3", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "DISC_0029_mixed_1h2s", "constraint_id": "GH-13", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到代码块或公式块"}
+{"sample_id": "qpv2-0416_hard_1b", "constraint_id": "FH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到风险等级"}
+{"sample_id": "DISC_0108_hard_1b", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "qpv2-0027_hard_1b", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "DISC_0098_mixed_2h1s", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "DISC_0098_mixed_2h1s", "constraint_id": "FH-2", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到免责声明"}
+{"sample_id": "qpv2-0010_mixed_1h2s", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "qpv2-0108_hard_1b", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "DISC_0105_mixed_1h2s", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "WB_0183_mixed_1h1s_a", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "qpv2-0146_mixed_2h1s", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "qpv2-0146_mixed_2h1s", "constraint_id": "FH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到投资评级词"}
+{"sample_id": "DISC_0119_mixed_1h2s", "constraint_id": "GH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到编号列表"}
+{"sample_id": "qpv2-0504_mixed_1h1s_a", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "DISC_0003_mixed_2h1s", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "DISC_0003_mixed_2h1s", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "qpv2-0416_mixed_1h2s", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0458_hard_1b", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "DISC_0105_hard_2", "constraint_id": "GH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到编号列表"}
+{"sample_id": "DISC_0105_hard_2", "constraint_id": "FH-4", "hardness": "hard", "score": 1.0, "passed": true, "message": "全部15个数值均保留1位小数"}
+{"sample_id": "DISC_0108_mixed_1h2s", "constraint_id": "GH-4", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 结构"}
+{"sample_id": "qpv2-0467_mixed_2h1s", "constraint_id": "GH-4", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 结构"}
+{"sample_id": "qpv2-0467_mixed_2h1s", "constraint_id": "GH-18", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到表格"}
+{"sample_id": "WB_0196_hard_1a", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "WB_0228_hard_3", "constraint_id": "GH-20", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到第三人称客观表述"}
+{"sample_id": "WB_0228_hard_3", "constraint_id": "FH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到风险等级"}
+{"sample_id": "WB_0228_hard_3", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "qpv2-0396_hard_1a", "constraint_id": "GH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到编号列表"}
+{"sample_id": "DISC_0074_hard_3", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "DISC_0074_hard_3", "constraint_id": "GH-20", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到第三人称客观表述"}
+{"sample_id": "DISC_0074_hard_3", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 以上建议不构成任何法律、合规或投资意见，技术选型需结合场景谨..."}
+{"sample_id": "DISC_0039_mixed_1h2s", "constraint_id": "FH-4", "hardness": "hard", "score": 1.0, "passed": true, "message": "全部24个数值均保留2位小数"}
+{"sample_id": "WB_0200_mixed_1h1s_b", "constraint_id": "GH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 表格"}
+{"sample_id": "qpv2-0048_mixed_1h2s", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "WB_0187_mixed_1h1s_b", "constraint_id": "GH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 表格"}
+{"sample_id": "qpv2-0320_mixed_1h2s", "constraint_id": "GH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到编号列表"}
+{"sample_id": "DISC_0126_mixed_1h1s_b", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "DISC_0079_mixed_1h1s_a", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0022_hard_1b", "constraint_id": "GH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到编号列表"}
+{"sample_id": "qpv2-0027_mixed_1h1s_a", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 风险提示：上述内容不构成个性化税务或投资建议，政策因地区与个..."}
+{"sample_id": "DISC_0124_hard_1b", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "DISC_0046_hard_3", "constraint_id": "GH-3", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "DISC_0046_hard_3", "constraint_id": "GH-20", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到第三人称客观表述"}
+{"sample_id": "DISC_0046_hard_3", "constraint_id": "FH-2", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到免责声明"}
+{"sample_id": "qpv2-0458_mixed_1h1s_a", "constraint_id": "GH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到编号列表"}
+{"sample_id": "qpv2-0530_hard_2", "constraint_id": "FH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到风险等级"}
+{"sample_id": "qpv2-0530_hard_2", "constraint_id": "GH-18", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到表格"}
+{"sample_id": "qpv2-0135_mixed_1h1s_b", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "DISC_0125_hard_3", "constraint_id": "GH-11", "hardness": "hard", "score": 1.0, "passed": true, "message": "首词匹配: 结论："}
+{"sample_id": "DISC_0125_hard_3", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "DISC_0125_hard_3", "constraint_id": "FH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到风险等级"}
+{"sample_id": "WB_0224_hard_1b", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "qpv2-0460_mixed_1h1s_a", "constraint_id": "GH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到编号列表"}
+{"sample_id": "qpv2-0130_mixed_2h1s", "constraint_id": "FH-2", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到免责声明"}
+{"sample_id": "qpv2-0130_mixed_2h1s", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "qpv2-0320_hard_3", "constraint_id": "GH-20", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到第三人称客观表述"}
+{"sample_id": "qpv2-0320_hard_3", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "qpv2-0320_hard_3", "constraint_id": "FH-5", "hardness": "hard", "score": 0.0, "passed": false, "message": "金额格式不符合规则"}
+{"sample_id": "qpv2-0071_hard_3", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "qpv2-0071_hard_3", "constraint_id": "GH-11", "hardness": "hard", "score": 1.0, "passed": true, "message": "首词匹配: 代码"}
+{"sample_id": "qpv2-0071_hard_3", "constraint_id": "GH-20", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到第三人称客观表述"}
+{"sample_id": "DISC_0074_mixed_1h1s_a", "constraint_id": "GH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到编号列表"}
+{"sample_id": "WB_0159_mixed_2h1s", "constraint_id": "GH-4", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 结构"}
+{"sample_id": "WB_0159_mixed_2h1s", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "qpv2-0031_mixed_1h1s_a", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0048_hard_1a", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "DISC_0013_mixed_1h1s_b", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "qpv2-0530_mixed_1h1s_a", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "WB_0187_hard_3", "constraint_id": "GH-18", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到表格"}
+{"sample_id": "WB_0187_hard_3", "constraint_id": "GH-5", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "WB_0187_hard_3", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "DISC_0125_mixed_1h1s_a", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 以上观点仅供参考，不构成投资建议。投资有风险，入市需谨慎。..."}
+{"sample_id": "WB_0183_hard_3", "constraint_id": "GH-20", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到第三人称客观表述"}
+{"sample_id": "WB_0183_hard_3", "constraint_id": "GH-14", "hardness": "hard", "score": 1.0, "passed": true, "message": "首末行均匹配"}
+{"sample_id": "WB_0183_hard_3", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "DISC_0124_mixed_1h1s_b", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "qpv2-0031_hard_2", "constraint_id": "GH-2", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0031_hard_2", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 保险有风险，投保需谨慎。..."}
+{"sample_id": "qpv2-0549_hard_2", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0549_hard_2", "constraint_id": "FH-2", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到免责声明"}
+{"sample_id": "DISC_0098_hard_1b", "constraint_id": "GH-2", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "DISC_0003_hard_1a", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0176_mixed_1h2s", "constraint_id": "GH-18", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到表格"}
+{"sample_id": "DISC_0119_hard_3", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "DISC_0119_hard_3", "constraint_id": "GH-20", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到第三人称客观表述"}
+{"sample_id": "DISC_0119_hard_3", "constraint_id": "FH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到风险等级"}
+{"sample_id": "qpv2-0108_mixed_2h1s", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "qpv2-0108_mixed_2h1s", "constraint_id": "FH-2", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到免责声明"}
+{"sample_id": "DISC_0029_mixed_2h1s", "constraint_id": "GH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "JSON 解析成功: dict"}
+{"sample_id": "DISC_0029_mixed_2h1s", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "qpv2-0027_hard_1a", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。税务政策可能变化，请以当地最新规定为..."}
+{"sample_id": "DISC_0098_mixed_1h2s", "constraint_id": "GH-18", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到表格"}
+{"sample_id": "qpv2-0416_hard_1a", "constraint_id": "GH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到编号列表"}
+{"sample_id": "DISC_0108_hard_1a", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "DISC_0029_hard_1b", "constraint_id": "FH-5", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到明显金额格式冲突"}
+{"sample_id": "qpv2-0071_mixed_1h2s", "constraint_id": "GH-4", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 结构"}
+{"sample_id": "DISC_0039_hard_1b", "constraint_id": "FH-5", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到明显金额格式冲突"}
+{"sample_id": "WB_0183_mixed_1h1s_b", "constraint_id": "FH-2", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到免责声明"}
+{"sample_id": "qpv2-0146_mixed_1h2s", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "DISC_0119_mixed_2h1s", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "DISC_0119_mixed_2h1s", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "qpv2-0016_mixed_1h1s_b", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "qpv2-0461_hard_1a", "constraint_id": "GH-4", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 结构"}
+{"sample_id": "qpv2-0042_mixed_1h2s", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "WB_0229_hard_3", "constraint_id": "GH-14", "hardness": "hard", "score": 0.0, "passed": false, "message": "首行或末行不匹配"}
+{"sample_id": "WB_0229_hard_3", "constraint_id": "GH-2", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "WB_0229_hard_3", "constraint_id": "FH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到阿拉伯数字"}
+{"sample_id": "qpv2-0458_hard_1a", "constraint_id": "GH-4", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 结构"}
+{"sample_id": "DISC_0108_mixed_2h1s", "constraint_id": "GH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 表格"}
+{"sample_id": "DISC_0108_mixed_2h1s", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 本内容仅供参考，投资有风险，入市需谨慎。..."}
+{"sample_id": "qpv2-0467_mixed_1h2s", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "qpv2-0042_hard_1b", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "WB_0196_hard_1b", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 以上内容为个人观点，仅供参考，不构成政策建议或执法依据。..."}
+{"sample_id": "WB_0223_mixed_1h2s", "constraint_id": "GH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 表格"}
+{"sample_id": "DISC_0079_hard_2", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "DISC_0079_hard_2", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "DISC_0126_hard_1b", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "qpv2-0048_mixed_2h1s", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "qpv2-0048_mixed_2h1s", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "WB_0187_mixed_1h1s_a", "constraint_id": "GH-17", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到文档要素: ['封面', '目录', '附件', '签章']"}
+{"sample_id": "qpv2-0320_mixed_2h1s", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "qpv2-0320_mixed_2h1s", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，过往业绩不代表未来表现，入市需谨慎。..."}
+{"sample_id": "DISC_0126_mixed_1h1s_a", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "qpv2-0022_hard_1a", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "DISC_0079_mixed_1h1s_b", "constraint_id": "GH-11", "hardness": "hard", "score": 1.0, "passed": true, "message": "首词匹配: 菜单"}
+{"sample_id": "DISC_0046_mixed_2h1s", "constraint_id": "GH-12", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 checkbox"}
+{"sample_id": "DISC_0046_mixed_2h1s", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "qpv2-0016_hard_2", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "qpv2-0016_hard_2", "constraint_id": "FH-5", "hardness": "hard", "score": 1.0, "passed": true, "message": "回答未出现金额表达，条件约束未触发"}
+{"sample_id": "qpv2-0022_mixed_1h1s_a", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 以上内容仅供参考，不构成投资建议。投资有风险，入市需谨慎。..."}
+{"sample_id": "qpv2-0458_mixed_1h1s_b", "constraint_id": "GH-13", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到代码块或公式块"}
+{"sample_id": "qpv2-0530_hard_3", "constraint_id": "GH-14", "hardness": "hard", "score": 1.0, "passed": true, "message": "首末行均匹配"}
+{"sample_id": "qpv2-0530_hard_3", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "qpv2-0530_hard_3", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "DISC_0125_hard_2", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "DISC_0125_hard_2", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "qpv2-0135_mixed_1h1s_a", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "WB_0224_hard_1a", "constraint_id": "GH-3", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0017_mixed_1h1s_a", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "DISC_0013_hard_3", "constraint_id": "FH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到阿拉伯数字"}
+{"sample_id": "DISC_0013_hard_3", "constraint_id": "GH-11", "hardness": "hard", "score": 1.0, "passed": true, "message": "首词匹配: 答案"}
+{"sample_id": "DISC_0013_hard_3", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "qpv2-0031_mixed_2h1s", "constraint_id": "GH-2", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0031_mixed_2h1s", "constraint_id": "GH-11", "hardness": "hard", "score": 1.0, "passed": true, "message": "首词匹配: 结论"}
+{"sample_id": "qpv2-0130_hard_1a", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 以上观点仅供参考，不构成投资建议，市场有风险，投资需谨慎。..."}
+{"sample_id": "WB_0229_mixed_2h1s", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "WB_0229_mixed_2h1s", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "qpv2-0090_hard_1a", "constraint_id": "GH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到编号列表"}
+{"sample_id": "qpv2-0461_mixed_2h1s", "constraint_id": "GH-18", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到表格"}
+{"sample_id": "qpv2-0461_mixed_2h1s", "constraint_id": "FH-5", "hardness": "hard", "score": 0.0, "passed": false, "message": "金额格式不符合规则"}
+{"sample_id": "DISC_0080_hard_2", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "DISC_0080_hard_2", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "WB_0187_hard_1a", "constraint_id": "GH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 表格"}
+{"sample_id": "qpv2-0396_mixed_2h1s", "constraint_id": "GH-18", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到表格"}
+{"sample_id": "qpv2-0396_mixed_2h1s", "constraint_id": "FH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到风险等级"}
+{"sample_id": "qpv2-0048_hard_2", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "qpv2-0048_hard_2", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "qpv2-0090_mixed_1h2s", "constraint_id": "GH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到编号列表"}
+{"sample_id": "WB_0183_hard_1a", "constraint_id": "GH-12", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 checkbox"}
+{"sample_id": "DISC_0098_mixed_1h1s_b", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "DISC_0098_hard_2", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "DISC_0098_hard_2", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "DISC_0119_hard_1a", "constraint_id": "GH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到编号列表"}
+{"sample_id": "qpv2-0176_mixed_1h1s_b", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "qpv2-0460_hard_2", "constraint_id": "GH-4", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 结构"}
+{"sample_id": "qpv2-0460_hard_2", "constraint_id": "GH-13", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到代码块或公式块"}
+{"sample_id": "DISC_0108_hard_3", "constraint_id": "GH-20", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到第三人称客观表述"}
+{"sample_id": "DISC_0108_hard_3", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "DISC_0108_hard_3", "constraint_id": "FH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到阿拉伯数字"}
+{"sample_id": "qpv2-0071_mixed_1h1s_b", "constraint_id": "GH-13", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到代码块或公式块"}
+{"sample_id": "DISC_0003_hard_2", "constraint_id": "FH-5", "hardness": "hard", "score": 1.0, "passed": true, "message": "回答未出现金额表达，条件约束未触发"}
+{"sample_id": "DISC_0003_hard_2", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "qpv2-0549_mixed_1h1s_b", "constraint_id": "GH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 表格"}
+{"sample_id": "qpv2-0146_hard_1b", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "DISC_0080_mixed_1h1s_a", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "DISC_0029_hard_2", "constraint_id": "GH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到编号列表"}
+{"sample_id": "DISC_0029_hard_2", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "WB_0229_hard_1a", "constraint_id": "GH-5", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0458_hard_3", "constraint_id": "GH-5", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0458_hard_3", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "qpv2-0458_hard_3", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "WB_0183_mixed_1h2s", "constraint_id": "GH-4", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 结构"}
+{"sample_id": "qpv2-0042_mixed_1h1s_b", "constraint_id": "GH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "JSON 解析成功: dict"}
+{"sample_id": "qpv2-0016_mixed_1h2s", "constraint_id": "FH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到风险等级"}
+{"sample_id": "DISC_0003_mixed_1h1s_b", "constraint_id": "FH-4", "hardness": "hard", "score": 0.0, "passed": false, "message": "小数位数不符: 1(0位), 100(0位), 100(0位), 100(0位)"}
+{"sample_id": "DISC_0108_mixed_1h1s_a", "constraint_id": "GH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到编号列表"}
+{"sample_id": "WB_0239_hard_1a", "constraint_id": "GH-17", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到文档要素: ['目录', '附件', '签章']"}
+{"sample_id": "WB_0187_mixed_2h1s", "constraint_id": "FH-5", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到明显金额格式冲突"}
+{"sample_id": "WB_0187_mixed_2h1s", "constraint_id": "GH-5", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "DISC_0126_hard_2", "constraint_id": "GH-4", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 结构"}
+{"sample_id": "DISC_0126_hard_2", "constraint_id": "FH-2", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到免责声明"}
+{"sample_id": "qpv2-0467_mixed_1h1s_b", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 本流程文档仅供内部使用，操作须遵循合规与风控要求，重要变更需..."}
+{"sample_id": "DISC_0074_hard_1b", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "DISC_0079_hard_1b", "constraint_id": "GH-20", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到第三人称客观表述"}
+{"sample_id": "qpv2-0461_hard_2", "constraint_id": "GH-13", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到代码块或公式块"}
+{"sample_id": "qpv2-0461_hard_2", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 以上内容不构成投资建议，股市有风险，投资需谨慎。..."}
+{"sample_id": "qpv2-0010_hard_3", "constraint_id": "GH-14", "hardness": "hard", "score": 1.0, "passed": true, "message": "首末行均匹配"}
+{"sample_id": "qpv2-0010_hard_3", "constraint_id": "FH-4", "hardness": "hard", "score": 1.0, "passed": true, "message": "全部20个数值均保留2位小数"}
+{"sample_id": "qpv2-0010_hard_3", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "WB_0223_mixed_1h1s_b", "constraint_id": "FH-5", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到明显金额格式冲突"}
+{"sample_id": "WB_0228_hard_1b", "constraint_id": "GH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 表格"}
+{"sample_id": "DISC_0039_mixed_1h1s_a", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 市场有风险，投资需谨慎。..."}
+{"sample_id": "qpv2-0504_mixed_2h1s", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0504_mixed_2h1s", "constraint_id": "FH-2", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到免责声明"}
+{"sample_id": "qpv2-0416_mixed_1h1s_b", "constraint_id": "FH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到风险等级"}
+{"sample_id": "DISC_0046_mixed_1h1s_a", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "DISC_0126_mixed_2h1s", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "DISC_0126_mixed_2h1s", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "qpv2-0031_hard_1b", "constraint_id": "GH-11", "hardness": "hard", "score": 1.0, "passed": true, "message": "首词匹配: 答案"}
+{"sample_id": "WB_0239_mixed_1h1s_a", "constraint_id": "GH-17", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到文档要素: ['目录', '附件', '签章']"}
+{"sample_id": "qpv2-0022_mixed_2h1s", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0022_mixed_2h1s", "constraint_id": "FH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到投资评级词"}
+{"sample_id": "qpv2-0027_mixed_1h2s", "constraint_id": "GH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 表格"}
+{"sample_id": "qpv2-0467_hard_1a", "constraint_id": "GH-12", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 checkbox"}
+{"sample_id": "DISC_0124_hard_3", "constraint_id": "GH-4", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 结构"}
+{"sample_id": "DISC_0124_hard_3", "constraint_id": "FH-2", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到免责声明"}
+{"sample_id": "DISC_0124_hard_3", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "qpv2-0504_hard_1b", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0016_hard_1b", "constraint_id": "GH-20", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到第三人称客观表述"}
+{"sample_id": "DISC_0079_mixed_2h1s", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "DISC_0079_mixed_2h1s", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "qpv2-0022_hard_2", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "qpv2-0022_hard_2", "constraint_id": "FH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到风险等级"}
+{"sample_id": "DISC_0013_hard_1a", "constraint_id": "GH-13", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到代码块或公式块"}
+{"sample_id": "qpv2-0135_mixed_2h1s", "constraint_id": "FH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到投资评级词"}
+{"sample_id": "qpv2-0135_mixed_2h1s", "constraint_id": "FH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到风险等级"}
+{"sample_id": "WB_0196_mixed_1h2s", "constraint_id": "GH-3", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0130_mixed_1h1s_b", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 市场有风险，投资需谨慎。..."}
+{"sample_id": "WB_0159_hard_1b", "constraint_id": "GH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到编号列表"}
+{"sample_id": "qpv2-0017_mixed_2h1s", "constraint_id": "GH-18", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到表格"}
+{"sample_id": "qpv2-0017_mixed_2h1s", "constraint_id": "FH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到投资评级词"}
+{"sample_id": "qpv2-0071_hard_1b", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "qpv2-0130_hard_1b", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "WB_0229_mixed_1h2s", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "qpv2-0090_hard_1b", "constraint_id": "FH-2", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到免责声明"}
+{"sample_id": "WB_0228_mixed_2h1s", "constraint_id": "GH-18", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到表格"}
+{"sample_id": "WB_0228_mixed_2h1s", "constraint_id": "FH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到风险等级"}
+{"sample_id": "qpv2-0048_hard_3", "constraint_id": "GH-2", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0048_hard_3", "constraint_id": "GH-20", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到第三人称客观表述"}
+{"sample_id": "qpv2-0048_hard_3", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "qpv2-0396_mixed_1h2s", "constraint_id": "GH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 表格"}
+{"sample_id": "qpv2-0090_mixed_2h1s", "constraint_id": "GH-3", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0090_mixed_2h1s", "constraint_id": "GH-18", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到表格"}
+{"sample_id": "WB_0183_hard_1b", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 本材料仅供人力资源合规参考，不构成法律意见，具体以最新法律及..."}
+{"sample_id": "qpv2-0017_hard_1a", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "DISC_0124_mixed_2h1s", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "DISC_0124_mixed_2h1s", "constraint_id": "FH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到阿拉伯数字"}
+{"sample_id": "qpv2-0135_hard_1b", "constraint_id": "FH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到投资评级词"}
+{"sample_id": "WB_0200_hard_1a", "constraint_id": "GH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 表格"}
+{"sample_id": "qpv2-0176_mixed_1h1s_a", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "DISC_0119_hard_1b", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "qpv2-0460_hard_3", "constraint_id": "GH-5", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0460_hard_3", "constraint_id": "FH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到风险等级"}
+{"sample_id": "qpv2-0460_hard_3", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "DISC_0108_hard_2", "constraint_id": "GH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "JSON 解析成功: dict"}
+{"sample_id": "DISC_0108_hard_2", "constraint_id": "FH-2", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到免责声明"}
+{"sample_id": "qpv2-0108_mixed_1h1s_b", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "qpv2-0027_hard_2", "constraint_id": "GH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 表格"}
+{"sample_id": "qpv2-0027_hard_2", "constraint_id": "FH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到风险等级"}
+{"sample_id": "qpv2-0549_mixed_1h1s_a", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "DISC_0080_mixed_1h1s_b", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "DISC_0029_hard_3", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "DISC_0029_hard_3", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 以上内容不构成投资建议，投资有风险，入市需谨慎。..."}
+{"sample_id": "DISC_0029_hard_3", "constraint_id": "GH-20", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到第三人称客观表述"}
+{"sample_id": "qpv2-0146_hard_1a", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 本材料不构成投资建议，投资有风险，入市需谨慎。..."}
+{"sample_id": "qpv2-0010_mixed_1h1s_b", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "DISC_0039_hard_3", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "DISC_0039_hard_3", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "DISC_0039_hard_3", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "qpv2-0108_hard_2", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "qpv2-0108_hard_2", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "DISC_0029_mixed_1h1s_a", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0016_mixed_2h1s", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "qpv2-0016_mixed_2h1s", "constraint_id": "FH-2", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到免责声明"}
+{"sample_id": "DISC_0003_mixed_1h1s_a", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "DISC_0108_mixed_1h1s_b", "constraint_id": "GH-18", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到表格"}
+{"sample_id": "WB_0239_hard_1b", "constraint_id": "GH-11", "hardness": "hard", "score": 1.0, "passed": true, "message": "首词匹配: 招标书"}
+{"sample_id": "qpv2-0396_hard_2", "constraint_id": "GH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 表格"}
+{"sample_id": "qpv2-0396_hard_2", "constraint_id": "FH-5", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到明显金额格式冲突"}
+{"sample_id": "DISC_0119_mixed_1h1s_b", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "DISC_0074_hard_1a", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "qpv2-0010_hard_2", "constraint_id": "GH-20", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到第三人称客观表述"}
+{"sample_id": "qpv2-0010_hard_2", "constraint_id": "FH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到风险等级"}
+{"sample_id": "WB_0223_mixed_1h1s_a", "constraint_id": "GH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到编号列表"}
+{"sample_id": "DISC_0039_mixed_1h1s_b", "constraint_id": "GH-13", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到代码块或公式块"}
+{"sample_id": "qpv2-0504_mixed_1h2s", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "WB_0228_hard_1a", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "qpv2-0416_mixed_1h1s_a", "constraint_id": "GH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 表格"}
+{"sample_id": "DISC_0105_hard_1a", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "qpv2-0048_mixed_1h1s_b", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，衍生品可能导致损失扩大，请谨慎使用。..."}
+{"sample_id": "WB_0200_mixed_1h2s", "constraint_id": "FH-4", "hardness": "hard", "score": 0.0, "passed": false, "message": "小数位数不符: 13(0位), 1(0位), 2(0位)"}
+{"sample_id": "qpv2-0042_hard_3", "constraint_id": "GH-4", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到明显 Markdown 结构"}
+{"sample_id": "qpv2-0042_hard_3", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "qpv2-0042_hard_3", "constraint_id": "FH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到风险等级"}
+{"sample_id": "WB_0239_mixed_1h1s_b", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "qpv2-0022_mixed_1h2s", "constraint_id": "GH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 表格"}
+{"sample_id": "qpv2-0031_hard_1a", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0467_hard_1b", "constraint_id": "GH-3", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "DISC_0124_hard_2", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "DISC_0124_hard_2", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "qpv2-0027_mixed_2h1s", "constraint_id": "FH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到风险等级"}
+{"sample_id": "qpv2-0027_mixed_2h1s", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "qpv2-0016_hard_1a", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "qpv2-0176_hard_3", "constraint_id": "GH-4", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 结构"}
+{"sample_id": "qpv2-0176_hard_3", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "qpv2-0176_hard_3", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "qpv2-0504_hard_1a", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "qpv2-0458_mixed_2h1s", "constraint_id": "GH-4", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 结构"}
+{"sample_id": "qpv2-0458_mixed_2h1s", "constraint_id": "GH-18", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到表格"}
+{"sample_id": "WB_0223_hard_1a", "constraint_id": "GH-17", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到文档要素: ['目录', '附件', '签章']"}
+{"sample_id": "qpv2-0135_mixed_1h2s", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "WB_0196_mixed_2h1s", "constraint_id": "FH-1", "hardness": "hard", "score": 0.0, "passed": false, "message": "末尾未包含风险提示声明"}
+{"sample_id": "WB_0196_mixed_2h1s", "constraint_id": "GH-9", "hardness": "hard", "score": 0.0, "passed": false, "message": "缺少关键词"}
+{"sample_id": "qpv2-0130_mixed_1h1s_a", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0071_hard_1a", "constraint_id": "GH-13", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到代码块或公式块"}
+{"sample_id": "WB_0159_hard_1a", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0017_mixed_1h2s", "constraint_id": "FH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到风险等级"}
+{"sample_id": "WB_0224_hard_2", "constraint_id": "GH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 表格"}
+{"sample_id": "WB_0224_hard_2", "constraint_id": "FH-4", "hardness": "hard", "score": 0.0, "passed": false, "message": "小数位数不符: 2(0位)"}
+{"sample_id": "qpv2-0460_mixed_2h1s", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "qpv2-0460_mixed_2h1s", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 市场有风险，投资需谨慎。..."}
+{"sample_id": "WB_0159_mixed_1h1s_a", "constraint_id": "GH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到编号列表"}
+{"sample_id": "DISC_0046_hard_1b", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "DISC_0125_hard_1a", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "qpv2-0320_hard_1a", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "qpv2-0017_mixed_1h1s_b", "constraint_id": "GH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到编号列表"}
+{"sample_id": "qpv2-0396_mixed_1h1s_b", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 本分析仅基于题述材料，存在不确定性，非投资建议，风险自担。..."}
+{"sample_id": "qpv2-0130_hard_3", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0130_hard_3", "constraint_id": "FH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到投资评级词"}
+{"sample_id": "qpv2-0130_hard_3", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "qpv2-0017_hard_2", "constraint_id": "GH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 表格"}
+{"sample_id": "qpv2-0017_hard_2", "constraint_id": "FH-2", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到免责声明"}
+{"sample_id": "DISC_0080_hard_1b", "constraint_id": "GH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 表格"}
+{"sample_id": "qpv2-0460_hard_1b", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "DISC_0080_mixed_1h2s", "constraint_id": "GH-12", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 checkbox"}
+{"sample_id": "DISC_0119_hard_2", "constraint_id": "GH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 表格"}
+{"sample_id": "DISC_0119_hard_2", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "DISC_0003_hard_1b", "constraint_id": "GH-13", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到代码块或公式块"}
+{"sample_id": "DISC_0029_hard_1a", "constraint_id": "GH-13", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到代码块或公式块"}
+{"sample_id": "qpv2-0071_mixed_2h1s", "constraint_id": "GH-3", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0071_mixed_2h1s", "constraint_id": "GH-20", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到第三人称客观表述"}
+{"sample_id": "DISC_0105_mixed_1h1s_b", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "qpv2-0416_hard_3", "constraint_id": "FH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到阿拉伯数字"}
+{"sample_id": "qpv2-0416_hard_3", "constraint_id": "GH-20", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到第三人称客观表述"}
+{"sample_id": "qpv2-0416_hard_3", "constraint_id": "FH-3", "hardness": "hard", "score": 1.0, "passed": true, "message": "触发词与补充说明均出现"}
+{"sample_id": "DISC_0074_mixed_2h1s", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "DISC_0074_mixed_2h1s", "constraint_id": "GH-12", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 checkbox"}
+{"sample_id": "qpv2-0320_mixed_1h1s_a", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "qpv2-0549_hard_1a", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 以上内容仅供参考，不构成投资建议，市场有风险，投资需谨慎。..."}
+{"sample_id": "DISC_0125_mixed_1h2s", "constraint_id": "GH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到编号列表"}
+{"sample_id": "qpv2-0530_mixed_2h1s", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0530_mixed_2h1s", "constraint_id": "FH-2", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到免责声明"}
+{"sample_id": "WB_0224_mixed_1h1s_b", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "qpv2-0146_mixed_1h1s_b", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "qpv2-0010_mixed_1h1s_a", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "DISC_0039_hard_2", "constraint_id": "GH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "JSON 解析成功: dict"}
+{"sample_id": "DISC_0039_hard_2", "constraint_id": "FH-4", "hardness": "hard", "score": 1.0, "passed": true, "message": "全部9个数值均保留2位小数"}
+{"sample_id": "qpv2-0396_hard_3", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "qpv2-0396_hard_3", "constraint_id": "GH-14", "hardness": "hard", "score": 1.0, "passed": true, "message": "首末行均匹配"}
+{"sample_id": "qpv2-0396_hard_3", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "DISC_0119_mixed_1h1s_a", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0176_hard_2", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0176_hard_2", "constraint_id": "FH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到投资评级词"}
+{"sample_id": "qpv2-0458_mixed_1h2s", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "WB_0224_hard_3", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "WB_0224_hard_3", "constraint_id": "GH-14", "hardness": "hard", "score": 1.0, "passed": true, "message": "首末行均匹配"}
+{"sample_id": "WB_0224_hard_3", "constraint_id": "FH-2", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到免责声明"}
+{"sample_id": "qpv2-0460_mixed_1h2s", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "WB_0159_mixed_1h1s_b", "constraint_id": "GH-8", "hardness": "hard", "score": 0.0, "passed": false, "message": "JSON 解析失败"}
+{"sample_id": "DISC_0046_hard_1a", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "qpv2-0320_hard_1b", "constraint_id": "GH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 表格"}
+{"sample_id": "qpv2-0504_mixed_1h1s_b", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "DISC_0003_mixed_1h2s", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "WB_0239_mixed_2h1s", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "WB_0239_mixed_2h1s", "constraint_id": "FH-2", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到免责声明"}
+{"sample_id": "WB_0223_hard_2", "constraint_id": "GH-4", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 结构"}
+{"sample_id": "WB_0223_hard_2", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "qpv2-0176_hard_1b", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "WB_0196_mixed_1h1s_a", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "qpv2-0504_hard_2", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "qpv2-0504_hard_2", "constraint_id": "FH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到风险等级"}
+{"sample_id": "qpv2-0467_hard_2", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "qpv2-0467_hard_2", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "WB_0159_hard_2", "constraint_id": "GH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 表格"}
+{"sample_id": "WB_0159_hard_2", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "DISC_0125_mixed_1h1s_b", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "WB_0183_hard_2", "constraint_id": "GH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 表格"}
+{"sample_id": "WB_0183_hard_2", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "qpv2-0461_mixed_1h1s_b", "constraint_id": "GH-13", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到代码块或公式块"}
+{"sample_id": "qpv2-0176_mixed_2h1s", "constraint_id": "FH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到风险等级"}
+{"sample_id": "qpv2-0176_mixed_2h1s", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "qpv2-0108_mixed_1h2s", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "qpv2-0460_hard_1a", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "qpv2-0146_hard_2", "constraint_id": "GH-20", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到第三人称客观表述"}
+{"sample_id": "qpv2-0146_hard_2", "constraint_id": "FH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到风险等级"}
+{"sample_id": "DISC_0080_mixed_2h1s", "constraint_id": "GH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 表格"}
+{"sample_id": "DISC_0080_mixed_2h1s", "constraint_id": "GH-14", "hardness": "hard", "score": 1.0, "passed": true, "message": "首末行均匹配"}
+{"sample_id": "qpv2-0010_hard_1a", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "DISC_0039_mixed_2h1s", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "DISC_0039_mixed_2h1s", "constraint_id": "FH-5", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到明显金额格式冲突"}
+{"sample_id": "WB_0200_mixed_1h1s_a", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "WB_0228_hard_2", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "WB_0228_hard_2", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "qpv2-0396_hard_1b", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 风险提示：以上诊断为初步意见，仅基于所提供材料，需结合后续自..."}
+{"sample_id": "DISC_0074_hard_2", "constraint_id": "GH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 表格"}
+{"sample_id": "DISC_0074_hard_2", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "qpv2-0027_hard_3", "constraint_id": "FH-2", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到免责声明"}
+{"sample_id": "qpv2-0027_hard_3", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "qpv2-0027_hard_3", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "WB_0224_mixed_1h1s_a", "constraint_id": "GH-11", "hardness": "hard", "score": 1.0, "passed": true, "message": "首词匹配: 尊敬的"}
+{"sample_id": "WB_0196_hard_2", "constraint_id": "GH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到编号列表"}
+{"sample_id": "WB_0196_hard_2", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "qpv2-0146_mixed_1h1s_a", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "DISC_0105_hard_1b", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "qpv2-0048_mixed_1h1s_a", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "WB_0200_mixed_2h1s", "constraint_id": "GH-18", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到表格"}
+{"sample_id": "WB_0200_mixed_2h1s", "constraint_id": "FH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到投资评级词"}
+{"sample_id": "qpv2-0042_hard_2", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "qpv2-0042_hard_2", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "qpv2-0530_hard_1a", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "WB_0229_hard_2", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "WB_0229_hard_2", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "qpv2-0016_mixed_1h1s_a", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0461_hard_1b", "constraint_id": "GH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到编号列表"}
+{"sample_id": "qpv2-0042_mixed_2h1s", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "qpv2-0042_mixed_2h1s", "constraint_id": "FH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到阿拉伯数字"}
+{"sample_id": "WB_0239_hard_2", "constraint_id": "GH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 表格"}
+{"sample_id": "WB_0239_hard_2", "constraint_id": "FH-5", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到明显金额格式冲突"}
+{"sample_id": "DISC_0079_hard_3", "constraint_id": "GH-3", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "DISC_0079_hard_3", "constraint_id": "GH-11", "hardness": "hard", "score": 1.0, "passed": true, "message": "首词匹配: 开胃"}
+{"sample_id": "DISC_0079_hard_3", "constraint_id": "FH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到阿拉伯数字"}
+{"sample_id": "DISC_0126_hard_1a", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 以上内容仅供参考，市场有风险，投资需谨慎。..."}
+{"sample_id": "qpv2-0010_hard_1b", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "qpv2-0022_mixed_1h1s_b", "constraint_id": "FH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到风险等级"}
+{"sample_id": "qpv2-0504_hard_3", "constraint_id": "FH-2", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到免责声明"}
+{"sample_id": "qpv2-0504_hard_3", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "qpv2-0504_hard_3", "constraint_id": "GH-2", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "WB_0239_mixed_1h2s", "constraint_id": "GH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 表格"}
+{"sample_id": "WB_0223_hard_3", "constraint_id": "GH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 表格"}
+{"sample_id": "WB_0223_hard_3", "constraint_id": "FH-4", "hardness": "hard", "score": 0.0, "passed": false, "message": "小数位数不符: 77(0位), 8(0位), 77(0位), 77(0位)"}
+{"sample_id": "WB_0223_hard_3", "constraint_id": "GH-14", "hardness": "hard", "score": 1.0, "passed": true, "message": "首末行均匹配"}
+{"sample_id": "qpv2-0176_hard_1a", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 以上内容不构成投资建议，市场有风险，投资需谨慎。..."}
+{"sample_id": "WB_0196_mixed_1h1s_b", "constraint_id": "GH-19", "hardness": "hard", "score": 0.0, "passed": false, "message": "检测到 12 处列表标记，违反禁列表约束"}
+{"sample_id": "DISC_0013_hard_2", "constraint_id": "GH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "JSON 解析成功: dict"}
+{"sample_id": "DISC_0013_hard_2", "constraint_id": "FH-5", "hardness": "hard", "score": 1.0, "passed": true, "message": "回答未出现金额表达，条件约束未触发"}
+{"sample_id": "WB_0159_hard_3", "constraint_id": "GH-4", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 结构"}
+{"sample_id": "WB_0159_hard_3", "constraint_id": "GH-5", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "WB_0159_hard_3", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "qpv2-0467_hard_3", "constraint_id": "GH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 表格"}
+{"sample_id": "qpv2-0467_hard_3", "constraint_id": "GH-14", "hardness": "hard", "score": 1.0, "passed": true, "message": "首末行均匹配"}
+{"sample_id": "qpv2-0467_hard_3", "constraint_id": "GH-20", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到第三人称客观表述"}
+{"sample_id": "WB_0229_mixed_1h1s_a", "constraint_id": "GH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 表格"}
+{"sample_id": "WB_0228_mixed_1h1s_b", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 基金有风险，过往业绩不代表未来表现，投资需谨慎。..."}
+{"sample_id": "qpv2-0090_hard_3", "constraint_id": "GH-5", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0090_hard_3", "constraint_id": "GH-20", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到第三人称客观表述"}
+{"sample_id": "qpv2-0090_hard_3", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "qpv2-0135_hard_2", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "qpv2-0135_hard_2", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 市场有风险，投资需谨慎。..."}
+{"sample_id": "qpv2-0108_hard_3", "constraint_id": "GH-4", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 结构"}
+{"sample_id": "qpv2-0108_hard_3", "constraint_id": "GH-5", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0108_hard_3", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "DISC_0029_mixed_1h1s_b", "constraint_id": "FH-4", "hardness": "hard", "score": 0.0, "passed": false, "message": "小数位数不符: 2(0位), 1(0位), 8(0位), 12(0位), 1(0位)...等22处"}
+{"sample_id": "qpv2-0416_hard_2", "constraint_id": "GH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 表格"}
+{"sample_id": "qpv2-0416_hard_2", "constraint_id": "FH-5", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到明显金额格式冲突"}
+{"sample_id": "DISC_0105_mixed_1h1s_a", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0461_mixed_1h1s_a", "constraint_id": "GH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到编号列表"}
+{"sample_id": "qpv2-0090_mixed_1h1s_b", "constraint_id": "FH-2", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到免责声明"}
+{"sample_id": "WB_0200_hard_2", "constraint_id": "GH-4", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 结构"}
+{"sample_id": "WB_0200_hard_2", "constraint_id": "GH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到编号列表"}
+{"sample_id": "qpv2-0146_hard_3", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "qpv2-0146_hard_3", "constraint_id": "GH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 表格"}
+{"sample_id": "qpv2-0146_hard_3", "constraint_id": "GH-10", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'word'"}
+{"sample_id": "WB_0224_mixed_2h1s", "constraint_id": "GH-18", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到表格"}
+{"sample_id": "WB_0224_mixed_2h1s", "constraint_id": "FH-4", "hardness": "hard", "score": 0.0, "passed": false, "message": "小数位数不符: 1(0位), 2(0位), 3(0位), 1(0位), 2(0位)...等9处"}
+{"sample_id": "qpv2-0010_mixed_2h1s", "constraint_id": "GH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到编号列表"}
+{"sample_id": "qpv2-0010_mixed_2h1s", "constraint_id": "FH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到风险等级"}
+{"sample_id": "qpv2-0108_hard_1a", "constraint_id": "GH-3", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "DISC_0105_mixed_2h1s", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "DISC_0105_mixed_2h1s", "constraint_id": "GH-18", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到表格"}
+{"sample_id": "WB_0239_hard_3", "constraint_id": "GH-5", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "WB_0239_hard_3", "constraint_id": "FH-2", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到免责声明"}
+{"sample_id": "WB_0239_hard_3", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "qpv2-0416_mixed_2h1s", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "qpv2-0416_mixed_2h1s", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 风险提示：以上结论基于有限材料，需待进一步核实后方可用于授信..."}
+{"sample_id": "DISC_0105_hard_3", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "DISC_0105_hard_3", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "DISC_0105_hard_3", "constraint_id": "FH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到风险等级"}
+{"sample_id": "DISC_0124_hard_1a", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "qpv2-0027_mixed_1h1s_b", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "DISC_0046_hard_2", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "DISC_0046_hard_2", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "qpv2-0460_mixed_1h1s_b", "constraint_id": "GH-13", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到代码块或公式块"}
+{"sample_id": "qpv2-0130_mixed_1h2s", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "qpv2-0071_hard_2", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "qpv2-0071_hard_2", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "qpv2-0320_hard_2", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "qpv2-0320_hard_2", "constraint_id": "FH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到风险等级"}
+{"sample_id": "DISC_0074_mixed_1h1s_b", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "WB_0159_mixed_1h2s", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "DISC_0013_mixed_1h2s", "constraint_id": "GH-13", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到代码块或公式块"}
+{"sample_id": "DISC_0124_mixed_1h2s", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "qpv2-0135_hard_1a", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0549_hard_1b", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "DISC_0125_mixed_2h1s", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "DISC_0125_mixed_2h1s", "constraint_id": "FH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到风险等级"}
+{"sample_id": "WB_0200_hard_1b", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "qpv2-0530_mixed_1h2s", "constraint_id": "GH-3", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "WB_0183_mixed_2h1s", "constraint_id": "FH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到阿拉伯数字"}
+{"sample_id": "WB_0183_mixed_2h1s", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "qpv2-0042_mixed_1h1s_a", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "WB_0229_hard_1b", "constraint_id": "GH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 表格"}
+{"sample_id": "qpv2-0458_hard_2", "constraint_id": "GH-13", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到代码块或公式块"}
+{"sample_id": "qpv2-0458_hard_2", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 风险提示：历史业绩不代表未来表现，投资需谨慎。..."}
+{"sample_id": "WB_0187_mixed_1h2s", "constraint_id": "GH-18", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到表格"}
+{"sample_id": "DISC_0126_hard_3", "constraint_id": "GH-18", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到表格"}
+{"sample_id": "DISC_0126_hard_3", "constraint_id": "FH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到风险等级"}
+{"sample_id": "DISC_0126_hard_3", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "WB_0196_hard_3", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "WB_0196_hard_3", "constraint_id": "GH-14", "hardness": "hard", "score": 1.0, "passed": true, "message": "首末行均匹配"}
+{"sample_id": "WB_0196_hard_3", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "qpv2-0467_mixed_1h1s_a", "constraint_id": "GH-12", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 checkbox"}
+{"sample_id": "DISC_0079_hard_1a", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0461_hard_3", "constraint_id": "GH-5", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0461_hard_3", "constraint_id": "FH-5", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到明显金额格式冲突"}
+{"sample_id": "qpv2-0461_hard_3", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "WB_0228_mixed_1h2s", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "qpv2-0017_hard_1b", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "qpv2-0108_mixed_1h1s_a", "constraint_id": "GH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到编号列表"}
+{"sample_id": "qpv2-0031_mixed_1h1s_b", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "qpv2-0396_mixed_1h1s_a", "constraint_id": "GH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到编号列表"}
+{"sample_id": "qpv2-0130_hard_2", "constraint_id": "FH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到风险等级"}
+{"sample_id": "qpv2-0130_hard_2", "constraint_id": "GH-20", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到第三人称客观表述"}
+{"sample_id": "qpv2-0048_hard_1b", "constraint_id": "FH-2", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到免责声明"}
+{"sample_id": "WB_0187_hard_2", "constraint_id": "GH-17", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到文档要素: ['封面', '目录', '附件', '签章']"}
+{"sample_id": "WB_0187_hard_2", "constraint_id": "GH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到编号列表"}
+{"sample_id": "WB_0223_mixed_2h1s", "constraint_id": "GH-20", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到第三人称客观表述"}
+{"sample_id": "WB_0223_mixed_2h1s", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "qpv2-0042_hard_1a", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "qpv2-0022_hard_3", "constraint_id": "GH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 表格"}
+{"sample_id": "qpv2-0022_hard_3", "constraint_id": "FH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到投资评级词"}
+{"sample_id": "qpv2-0022_hard_3", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "DISC_0079_mixed_1h2s", "constraint_id": "GH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到编号列表"}
+{"sample_id": "DISC_0013_hard_1b", "constraint_id": "FH-4", "hardness": "hard", "score": 0.0, "passed": false, "message": "小数位数不符: 1(0位)"}
+{"sample_id": "DISC_0046_mixed_1h2s", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "qpv2-0016_hard_3", "constraint_id": "GH-5", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0016_hard_3", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "qpv2-0016_hard_3", "constraint_id": "FH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到百分号"}
+{"sample_id": "qpv2-0549_mixed_1h2s", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "qpv2-0530_hard_1b", "constraint_id": "GH-10", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'word'"}
+{"sample_id": "DISC_0046_mixed_1h1s_b", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "DISC_0126_mixed_1h2s", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "DISC_0098_mixed_1h1s_a", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "DISC_0098_hard_3", "constraint_id": "GH-20", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到第三人称客观表述"}
+{"sample_id": "DISC_0098_hard_3", "constraint_id": "FH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到风险等级"}
+{"sample_id": "DISC_0098_hard_3", "constraint_id": "FH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到投资评级词"}
+{"sample_id": "qpv2-0071_mixed_1h1s_a", "constraint_id": "GH-6", "hardness": "hard", "score": 0.0, "passed": false, "message": "未检测到编号列表"}
+{"sample_id": "DISC_0003_hard_3", "constraint_id": "GH-8", "hardness": "hard", "score": 1.0, "passed": true, "message": "JSON 解析成功: dict"}
+{"sample_id": "DISC_0003_hard_3", "constraint_id": "FH-4", "hardness": "hard", "score": 0.0, "passed": false, "message": "小数位数不符: 2018(0位), 2019(0位)"}
+{"sample_id": "DISC_0003_hard_3", "constraint_id": "GH-9", "hardness": "hard", "score": 1.0, "passed": true, "message": "关键词齐全"}
+{"sample_id": "DISC_0125_hard_1b", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "qpv2-0031_mixed_1h2s", "constraint_id": "GH-18", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到表格"}
+{"sample_id": "DISC_0013_mixed_2h1s", "constraint_id": "GH-19", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到列表标记"}
+{"sample_id": "DISC_0013_mixed_2h1s", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "DISC_0080_hard_3", "constraint_id": "GH-14", "hardness": "hard", "score": 1.0, "passed": true, "message": "首末行均匹配"}
+{"sample_id": "DISC_0080_hard_3", "constraint_id": "GH-20", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到第三人称客观表述"}
+{"sample_id": "DISC_0080_hard_3", "constraint_id": "GH-1", "hardness": "hard", "score": 0, "passed": false, "message": "checker error: 'n'"}
+{"sample_id": "qpv2-0461_mixed_1h2s", "constraint_id": "GH-4", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 结构"}
+{"sample_id": "WB_0187_hard_1b", "constraint_id": "FH-5", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到明显金额格式冲突"}
+{"sample_id": "DISC_0039_hard_1a", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "qpv2-0549_mixed_2h1s", "constraint_id": "FH-1", "hardness": "hard", "score": 1.0, "passed": true, "message": "末尾包含风险提示: 投资有风险，入市需谨慎。..."}
+{"sample_id": "qpv2-0549_mixed_2h1s", "constraint_id": "FH-2", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到免责声明"}
+{"sample_id": "WB_0223_hard_1b", "constraint_id": "FH-5", "hardness": "hard", "score": 1.0, "passed": true, "message": "未检测到明显金额格式冲突"}
+{"sample_id": "DISC_0074_mixed_1h2s", "constraint_id": "GH-7", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到 Markdown 表格"}
+{"sample_id": "qpv2-0320_mixed_1h1s_b", "constraint_id": "FH-6", "hardness": "hard", "score": 1.0, "passed": true, "message": "检测到风险等级"}

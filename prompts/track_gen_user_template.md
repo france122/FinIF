@@ -1,10 +1,4 @@
-请为以下 query 选择约束并参数化。
-
-## 配置
-
-- track_type: {track_type}
-- 需要选择的 Hard 约束数量: {n_hard}
-- 需要选择的 Soft 约束数量: {n_soft}
+请为以下 query 生成 4 条 track（约束组合）。
 
 ## Query
 
@@ -14,4 +8,4 @@ query_id: {query_id}
 
 ## 要求
 
-从约束池中选择 {n_hard} 个 Hard 约束（GH/FH）和 {n_soft} 个 Soft 约束（GS/FS），使其与上述 query 语义适配。对含参数的约束进行参数化填充。遵守互斥规则。严格输出 JSON。
+按系统指令中定义的 4 种 track type，各生成 1 条 track。从约束池中选择与该 query 语义适配的约束，确保 4 条 track 之间约束覆盖尽可能多样化。对含参数的约束进行参数化填充。遵守互斥规则和多样性规则。严格输出 JSON 数组。

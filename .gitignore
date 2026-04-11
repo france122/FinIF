@@ -14,6 +14,11 @@ nohup.out
 # Large data files (>100MB, GitHub limit)
 data/tracks/all_tracks.jsonl
 data/tracks/train_tracks.jsonl
+data/tracks/raw_gpt5_output.jsonl
+data/tracks/vulcan_track_gen_input.jsonl
+
+# Response files (large, local only)
+data/scores/*_responses.jsonl
 
 # Scores raw (only keep clean version)
 data/scores/soft_scores_raw.jsonl

@@ -75,6 +75,19 @@ def sentence_count(text: str) -> int:
 
 def paragraph_count(text: str) -> int:
     parts = [part.strip() for part in re.split(r"\n\s*\n", text.strip()) if part.strip()]
+    # 跳过开头的称呼/问候行（如 "尊敬的XX：" "您好！"）
+    # 这些在信件/演讲稿中不算正文段落
+    while parts:
+        first = parts[0]
+        # 称呼行：以 "：" 或 ":" 结尾的短行（≤30字），如 "尊敬的贵司负责人："
+        if len(first) <= 30 and first.rstrip().endswith(("：", ":")):
+            parts.pop(0)
+            continue
+        # 问候行：纯问候语（≤10字），如 "您好！" "你好！"
+        if len(first) <= 10 and re.match(r"^[您你]好[！!]?$", first):
+            parts.pop(0)
+            continue
+        break
     return len(parts)
 
 
