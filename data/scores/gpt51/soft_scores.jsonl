@@ -1,124 +1,114 @@
-{"sample_id": "qpv2-0320_soft_1b", "constraint_id": "GS-1", "hardness": "soft", "score": 1, "passed": true, "message": "开头先给出结论与配置建议，随后单独展开分析过程，顺序符合先结论后分析。"}
-{"sample_id": "DISC_0029_soft_3", "constraint_id": "FS-5", "hardness": "soft", "score": 1, "passed": true, "message": "回答包含明确的数值计算、比较与推导，符合定量分析要求"}
-{"sample_id": "WB_0196_soft_1a", "constraint_id": "FS-7", "hardness": "soft", "score": 1, "passed": true, "message": "回答明确以监管机构视角展开，强调合规、法定职责、编制财力约束、统一制度与风险控制。"}
-{"sample_id": "DISC_0029_soft_3", "constraint_id": "FS-24", "hardness": "soft", "score": 1, "passed": true, "message": "明确按重要性从低到高排列，最不重要在前、最重要在后。"}
-{"sample_id": "DISC_0105_mixed_1h2s", "constraint_id": "GS-2", "hardness": "soft", "score": 1, "passed": true, "message": "回答末尾包含明确的总结段落，对前文进行了归纳收束。"}
-{"sample_id": "DISC_0029_soft_3", "constraint_id": "FS-20", "hardness": "soft", "score": 1, "passed": true, "message": "已详细列明并展开所有指定要素，包括输入参数、单位与年化换算、定价公式、d1/d2计算、正态累积分布取值来源、数值中间步骤与四舍五入规则。"}
-{"sample_id": "DISC_0105_mixed_1h2s", "constraint_id": "FS-9", "hardness": "soft", "score": 1, "passed": true, "message": "回答从宏观角度展开，讨论PMI对GDP、就业、投资、政策与经济周期回暖的传导关系。"}
-{"sample_id": "qpv2-0467_soft_2", "constraint_id": "GS-3", "hardness": "soft", "score": 0, "passed": false, "message": "出现口语化表述，未保持全篇正式书面语"}
-{"sample_id": "qpv2-0461_soft_1a", "constraint_id": "FS-16", "hardness": "soft", "score": 1, "passed": true, "message": "回答以数据工程实施方案体裁组织，包含架构、数据模型、ETL步骤、调度与质量控制等要素，术语与语气匹配。"}
-{"sample_id": "qpv2-0031_soft_3", "constraint_id": "GS-3", "hardness": "soft", "score": 1, "passed": true, "message": "全文采用正式书面语，未出现口语化、网络用语或语气词。"}
-{"sample_id": "qpv2-0031_soft_3", "constraint_id": "GS-5", "hardness": "soft", "score": 1, "passed": true, "message": "段落由主题识别过渡到关键词分析，使用明确过渡语，整体逻辑连贯。"}
-{"sample_id": "qpv2-0467_soft_2", "constraint_id": "FS-20", "hardness": "soft", "score": 1, "passed": true, "message": "回答逐项且详细覆盖了角色与职责、系统入口与权限、数据字段清单、时间节点与SLA、留痕与证据保存、升级路径与联系人、回滚与重试、审计与归档要求。"}
-{"sample_id": "qpv2-0010_mixed_1h2s", "constraint_id": "FS-14", "hardness": "soft", "score": 1, "passed": true, "message": "回答明确以“加息周期后期、通胀回落但利率高位”的环境为前提并据此展开分析"}
-{"sample_id": "qpv2-0031_soft_3", "constraint_id": "FS-18", "hardness": "soft", "score": 1, "passed": true, "message": "覆盖了主题识别、是否涉及具体险种与关键词分析，且有实质性讨论。"}
-{"sample_id": "qpv2-0010_mixed_1h2s", "constraint_id": "GS-2", "hardness": "soft", "score": 1, "passed": true, "message": "最后一段以总结形式对前文要点进行归纳收束"}
-{"sample_id": "DISC_0124_soft_2", "constraint_id": "FS-19", "hardness": "soft", "score": 1, "passed": true, "message": "包含技术路线对比、商业化可行性评估、风险评估、实施建议等板块，且有总结，内容实质充分。"}
-{"sample_id": "DISC_0124_soft_2", "constraint_id": "GS-2", "hardness": "soft", "score": 1, "passed": true, "message": "回答末尾包含明确的“总结”段落，对前文进行归纳收束。"}
-{"sample_id": "DISC_0098_mixed_2h1s", "constraint_id": "FS-11", "hardness": "soft", "score": 0, "passed": false, "message": "回答包含材料外的推断与信息，未完全基于提供材料。"}
-{"sample_id": "DISC_0029_mixed_1h2s", "constraint_id": "FS-5", "hardness": "soft", "score": 1, "passed": true, "message": "包含明确的数值计算与推导（如d1、d2、正态分布值与价格计算）"}
-{"sample_id": "DISC_0074_soft_1b", "constraint_id": "FS-16", "hardness": "soft", "score": 1, "passed": true, "message": "回答整体以技术选型建议书体例呈现，结构化章节、正式语气与术语使用匹配该文体"}
-{"sample_id": "DISC_0029_mixed_1h2s", "constraint_id": "GS-2", "hardness": "soft", "score": 1, "passed": true, "message": "回答末尾有明确标注的总结段对前文进行归纳。"}
-{"sample_id": "WB_0228_soft_1a", "constraint_id": "FS-8", "hardness": "soft", "score": 1, "passed": true, "message": "回答以散户为对象，围绕定投比例、波动承受、仓位控制与执行规则等实际关切给出可操作建议。"}
-{"sample_id": "WB_0224_mixed_1h2s", "constraint_id": "FS-14", "hardness": "soft", "score": 1, "passed": true, "message": "明确在原材料价格上行周期前提下展开分析并据此提出测算与调价方案"}
-{"sample_id": "qpv2-0461_mixed_1h1s_b", "constraint_id": "GS-3", "hardness": "soft", "score": 1, "passed": true, "message": "全文采用正式书面语，未出现口语化或网络用语。"}
-{"sample_id": "WB_0224_mixed_1h2s", "constraint_id": "FS-20", "hardness": "soft", "score": 1, "passed": true, "message": "已详细列明涨价品类与幅度、生效日期、成本测算方法及沟通安排（联系人与时间窗口），均有展开说明。"}
-{"sample_id": "DISC_0124_mixed_1h1s_a", "constraint_id": "GS-1", "hardness": "soft", "score": 1, "passed": true, "message": "开头先给出明确结论，随后再展开分析过程，顺序符合要求。"}
-{"sample_id": "qpv2-0017_soft_3", "constraint_id": "FS-6", "hardness": "soft", "score": 1, "passed": true, "message": "回答以风险识别与控制为框架，逐类列出风险并给出相应风险管理建议，符合从风险管理角度分析。"}
-{"sample_id": "qpv2-0017_soft_3", "constraint_id": "GS-5", "hardness": "soft", "score": 1, "passed": true, "message": "段落按重要性自下而上组织，使用明确过渡语连接，整体逻辑连贯"}
-{"sample_id": "qpv2-0017_soft_3", "constraint_id": "FS-24", "hardness": "soft", "score": 1, "passed": true, "message": "风险因素按从低到高的顺序排列，最后给出最关键风险，且有明确排序信号与过渡。"}
-{"sample_id": "qpv2-0090_mixed_1h1s_a", "constraint_id": "GS-1", "hardness": "soft", "score": 1, "passed": true, "message": "开头先给出结论，随后再展开分析过程，顺序符合要求"}
-{"sample_id": "qpv2-0530_mixed_1h1s_b", "constraint_id": "GS-8", "hardness": "soft", "score": 1, "passed": true, "message": "用词通俗谨慎、解释到位，风险提示充分，语气适合稳健型零售客户。"}
-{"sample_id": "WB_0229_mixed_1h1s_b", "constraint_id": "FS-16", "hardness": "soft", "score": 1, "passed": true, "message": "包含摘要、关键词、分节论述与参考文献，语气与术语符合学术论文风格。"}
-{"sample_id": "qpv2-0416_soft_3", "constraint_id": "FS-16", "hardness": "soft", "score": 1, "passed": true, "message": "结构、语气与术语均符合授信前风险初步诊断备忘录体裁。"}
-{"sample_id": "qpv2-0416_soft_3", "constraint_id": "FS-18", "hardness": "soft", "score": 1, "passed": true, "message": "覆盖并实质分析了所有指定方向，且提供待核实清单与后续处理建议。"}
-{"sample_id": "qpv2-0416_soft_3", "constraint_id": "FS-20", "hardness": "soft", "score": 0, "passed": false, "message": "未详细列明合同编号与关键条款、发票号码与金额差异、关键时间节点、责任部门/经办人、当前状态等要素，仅提出清单与建议时限，未给出具体展开说明。"}
-{"sample_id": "DISC_0013_mixed_1h1s_a", "constraint_id": "GS-1", "hardness": "soft", "score": 1, "passed": true, "message": "回答先给结论，后给分析过程，符合顺序要求"}
-{"sample_id": "qpv2-0135_soft_1b", "constraint_id": "FS-16", "hardness": "soft", "score": 1, "passed": true, "message": "结构化、简明，以“核心观点/主要利多因素/主要风险点”呈现，符合晨会前点评风格。"}
-{"sample_id": "DISC_0105_soft_1b", "constraint_id": "FS-24", "hardness": "soft", "score": 1, "passed": true, "message": "风险因素明确从低到高排序，最后标注为最重要"}
-{"sample_id": "WB_0228_mixed_1h1s_a", "constraint_id": "FS-4", "hardness": "soft", "score": 1, "passed": true, "message": "回答包含多项具体财务/业绩指标及其数值，如年化收益、最大回撤、任职回报与规模等。"}
-{"sample_id": "qpv2-0146_soft_1b", "constraint_id": "FS-13", "hardness": "soft", "score": 1, "passed": true, "message": "全文未出现任何金融术语英文缩写，均使用中文表述。"}
-{"sample_id": "WB_0183_soft_1b", "constraint_id": "FS-6", "hardness": "soft", "score": 1, "passed": true, "message": "明确采用风险识别-评估-控制-监控框架，并在签订/续签/解除环节逐项列出风险点与防范措施。"}
-{"sample_id": "qpv2-0130_mixed_2h1s", "constraint_id": "FS-13", "hardness": "soft", "score": 1, "passed": true, "message": "全文未出现任何金融术语英文缩写，相关概念均以中文全称表达。"}
-{"sample_id": "DISC_0039_soft_2", "constraint_id": "FS-17", "hardness": "soft", "score": 1, "passed": true, "message": "明确以年化5%假设进行并纳入定量计算"}
-{"sample_id": "qpv2-0460_mixed_1h1s_a", "constraint_id": "GS-3", "hardness": "soft", "score": 1, "passed": true, "message": "全文采用正式书面语，无口语化、网络用语或语气词。"}
-{"sample_id": "DISC_0074_mixed_1h1s_a", "constraint_id": "GS-1", "hardness": "soft", "score": 1, "passed": true, "message": "回答在每个要点中均先给出“结论”，随后再给出“分析”，开头即包含明确结论。"}
-{"sample_id": "DISC_0039_soft_2", "constraint_id": "FS-5", "hardness": "soft", "score": 1, "passed": true, "message": "包含复利计算与数值结果，进行了定量分析"}
-{"sample_id": "DISC_0119_soft_1b", "constraint_id": "FS-12", "hardness": "soft", "score": 1, "passed": true, "message": "回答明确以“按影响程度从高到低”组织，多处使用编号列表体现从高到低的排序意图。"}
+{"sample_id": "DISC_0105_mixed_1h2s", "constraint_id": "GS-2", "hardness": "soft", "score": 1, "passed": true, "message": "回答末尾含有明确标注的总结段，对前文进行归纳收束。"}
+{"sample_id": "qpv2-0320_soft_1b", "constraint_id": "GS-1", "hardness": "soft", "score": 1, "passed": true, "message": "回答开头先给出结论与建议，之后单独展开分析过程，顺序符合先结论后分析。"}
+{"sample_id": "DISC_0029_soft_3", "constraint_id": "FS-24", "hardness": "soft", "score": 1, "passed": true, "message": "回答中明确按从低到高的顺序列出风险因素，最不重要在前、最重要在后。"}
+{"sample_id": "DISC_0105_mixed_1h2s", "constraint_id": "FS-9", "hardness": "soft", "score": 1, "passed": true, "message": "回答从宏观角度分析了PMI与经济回暖的关系，涉及GDP、就业、投资、政策与金融市场等宏观因素与传导机制。"}
+{"sample_id": "DISC_0029_soft_3", "constraint_id": "FS-5", "hardness": "soft", "score": 1, "passed": true, "message": "包含基于数值的计算与推导（含d1/d2、正态CDF、折现与最终价格）"}
+{"sample_id": "DISC_0029_soft_3", "constraint_id": "FS-20", "hardness": "soft", "score": 1, "passed": true, "message": "所有指定要素均被逐项列明并展开计算说明，含参数单位/年化、公式、d1/d2、正态CDF来源、中间步骤与四舍五入规则。"}
+{"sample_id": "qpv2-0467_soft_2", "constraint_id": "GS-3", "hardness": "soft", "score": 1, "passed": true, "message": "全文采用正式书面语，无口语化、网络用语或语气词"}
+{"sample_id": "WB_0196_soft_1a", "constraint_id": "FS-7", "hardness": "soft", "score": 1, "passed": true, "message": "回答明确以监管机构视角展开，聚焦机构改革合规性、职责划转与边界、协同移送与风险控制等监管要点。"}
+{"sample_id": "qpv2-0031_soft_3", "constraint_id": "GS-5", "hardness": "soft", "score": 1, "passed": true, "message": "段落衔接自然，使用明确过渡语，整体逻辑连贯。"}
+{"sample_id": "qpv2-0031_soft_3", "constraint_id": "GS-3", "hardness": "soft", "score": 1, "passed": true, "message": "使用正式书面语，未出现口语化表达或语气词"}
+{"sample_id": "qpv2-0461_soft_1a", "constraint_id": "FS-16", "hardness": "soft", "score": 1, "passed": true, "message": "结构、语气与术语均符合数据工程实施方案风格（分层ETL、字段设计、调度与质量校验等）"}
+{"sample_id": "qpv2-0031_soft_3", "constraint_id": "FS-18", "hardness": "soft", "score": 1, "passed": true, "message": "候选回答对对话开头问题的主题识别、是否涉及具体险种以及提问中的关键关键词均进行了实质性分析，覆盖完整。"}
+{"sample_id": "qpv2-0010_mixed_1h2s", "constraint_id": "FS-14", "hardness": "soft", "score": 1, "passed": true, "message": "明确以指定市场环境为前提并据此展开具体配置建议"}
+{"sample_id": "qpv2-0010_mixed_1h2s", "constraint_id": "GS-2", "hardness": "soft", "score": 1, "passed": true, "message": "末尾有明确的总结段，对要点进行了归纳"}
+{"sample_id": "DISC_0029_mixed_1h2s", "constraint_id": "FS-5", "hardness": "soft", "score": 1, "passed": true, "message": "回答包含明确的数值计算与推导，满足定量分析要求。"}
+{"sample_id": "DISC_0098_mixed_2h1s", "constraint_id": "FS-11", "hardness": "soft", "score": 0, "passed": false, "message": "包含材料未提及的推断与细节，未完全基于提供材料作答"}
+{"sample_id": "DISC_0029_mixed_1h2s", "constraint_id": "GS-2", "hardness": "soft", "score": 1, "passed": true, "message": "回答末尾包含明确标注的总结段并对方法与结果进行了归纳。"}
+{"sample_id": "qpv2-0467_soft_2", "constraint_id": "FS-20", "hardness": "soft", "score": 1, "passed": true, "message": "涵盖并详细展开了角色与职责、系统入口与权限、字段清单、时间节点与SLA、留痕、升级与联系人、回滚与重试、审计与归档等全部要素"}
+{"sample_id": "DISC_0124_soft_2", "constraint_id": "GS-2", "hardness": "soft", "score": 0, "passed": false, "message": "结尾不是总结段，末尾未以总结性段落收束"}
+{"sample_id": "DISC_0124_soft_2", "constraint_id": "FS-19", "hardness": "soft", "score": 1, "passed": true, "message": "包含技术路线对比、商业化可行性评估、风险评估、实施建议等板块，且末尾有总结，内容充实。"}
+{"sample_id": "DISC_0074_soft_1b", "constraint_id": "FS-16", "hardness": "soft", "score": 1, "passed": true, "message": "结构化、专业语气，包含目标/约束、方案比较与实施落地等版块，符合技术选型建议书风格"}
+{"sample_id": "WB_0224_mixed_1h2s", "constraint_id": "FS-14", "hardness": "soft", "score": 1, "passed": true, "message": "明确以原材料价格上行周期为前提进行说明与测算分析。"}
+{"sample_id": "WB_0228_soft_1a", "constraint_id": "FS-8", "hardness": "soft", "score": 1, "passed": true, "message": "回答以散户为对象，围绕风险承受、定投金额、仓位比例、再平衡与行为建议等做出可执行方案。"}
+{"sample_id": "DISC_0124_mixed_1h1s_a", "constraint_id": "GS-1", "hardness": "soft", "score": 1, "passed": true, "message": "回答开头先给出明确结论，随后再展开表格与分析过程，顺序符合先结论后分析。"}
+{"sample_id": "qpv2-0090_mixed_1h1s_a", "constraint_id": "GS-1", "hardness": "soft", "score": 1, "passed": true, "message": "开头先给出结论，之后再展开分析过程，顺序正确。"}
+{"sample_id": "qpv2-0017_soft_3", "constraint_id": "GS-5", "hardness": "soft", "score": 1, "passed": true, "message": "段落按风险由低到高递进，含多处明确过渡和承接，逻辑连贯。"}
+{"sample_id": "qpv2-0461_mixed_1h1s_b", "constraint_id": "GS-3", "hardness": "soft", "score": 1, "passed": true, "message": "全文采用正式书面语表达，未出现口语化、网络用语或语气词。"}
+{"sample_id": "WB_0224_mixed_1h2s", "constraint_id": "FS-20", "hardness": "soft", "score": 1, "passed": true, "message": "已详细列明涨价品类与幅度、生效日期、成本测算方法及沟通安排（联系人与时间窗口）"}
+{"sample_id": "WB_0229_mixed_1h1s_b", "constraint_id": "FS-16", "hardness": "soft", "score": 1, "passed": true, "message": "结构完整且语气正式，包含摘要、关键词、分节论述与参考文献，术语使用规范，符合学术论文风格。"}
+{"sample_id": "qpv2-0530_mixed_1h1s_b", "constraint_id": "GS-8", "hardness": "soft", "score": 1, "passed": true, "message": "语气稳健、用词清晰，含必要风险提示与持有期限说明，面向稳健型零售客户可读性高。"}
+{"sample_id": "qpv2-0017_soft_3", "constraint_id": "FS-24", "hardness": "soft", "score": 0, "passed": false, "message": "排序未严格从低到高，存在重要性由“高”降为“较高”的逆转"}
+{"sample_id": "qpv2-0416_soft_3", "constraint_id": "FS-16", "hardness": "soft", "score": 1, "passed": true, "message": "结构化备忘录体例，语气正式，使用授信风控术语，含总体判断、风险分析、仍待核实事项清单与后续处理建议等模块，符合授信前风险初步诊断备忘录风格。"}
+{"sample_id": "qpv2-0017_soft_3", "constraint_id": "FS-6", "hardness": "soft", "score": 1, "passed": true, "message": "回答以风险识别与控制为主线，按重要性从低到高排列，并给出风险管理建议与连贯过渡。"}
+{"sample_id": "DISC_0105_soft_1b", "constraint_id": "FS-24", "hardness": "soft", "score": 1, "passed": true, "message": "明确声明并按从低到高排序，最不重要在前、最重要在后"}
+{"sample_id": "DISC_0013_mixed_1h1s_a", "constraint_id": "GS-1", "hardness": "soft", "score": 1, "passed": true, "message": "开头先给出结论，随后再进行分析，符合先结论后分析要求"}
+{"sample_id": "WB_0228_mixed_1h1s_a", "constraint_id": "FS-4", "hardness": "soft", "score": 1, "passed": true, "message": "回答引用了多项具体财务指标及其数值，如年化收益、最大回撤、任职回报和管理规模等。"}
+{"sample_id": "qpv2-0416_soft_3", "constraint_id": "FS-20", "hardness": "soft", "score": 0, "passed": false, "message": "未详细列明合同编号、关键条款、发票号码与金额差异、关键时间节点、责任部门/经办人与当前状态，仅说明这些要素缺失并提出获取建议，且截止时间不具体。"}
+{"sample_id": "qpv2-0135_soft_1b", "constraint_id": "FS-16", "hardness": "soft", "score": 1, "passed": true, "message": "结构化简明，呈现核心观点、利多与风险，语气专业，符合晨会前点评风格。"}
+{"sample_id": "qpv2-0146_soft_1b", "constraint_id": "FS-13", "hardness": "soft", "score": 1, "passed": true, "message": "未出现金融术语英文缩写，术语均以中文表述。"}
+{"sample_id": "DISC_0074_mixed_1h1s_a", "constraint_id": "GS-1", "hardness": "soft", "score": 1, "passed": true, "message": "回答各条目均先给出“结论”再给出“分析”，开头即出现明确结论，符合先结论后分析。"}
+{"sample_id": "qpv2-0416_soft_3", "constraint_id": "FS-18", "hardness": "soft", "score": 1, "passed": true, "message": "回答对六个指定方向均有实质性分析与清单/建议，覆盖全面。"}
+{"sample_id": "DISC_0039_soft_2", "constraint_id": "FS-5", "hardness": "soft", "score": 1, "passed": true, "message": "包含明确的数值计算与收益率推导，满足定量分析要求"}
+{"sample_id": "qpv2-0460_mixed_1h1s_a", "constraint_id": "GS-3", "hardness": "soft", "score": 1, "passed": true, "message": "全文为正式书面表达，未出现口语化、网络用语或语气词。"}
+{"sample_id": "qpv2-0130_mixed_2h1s", "constraint_id": "FS-13", "hardness": "soft", "score": 1, "passed": true, "message": "全文未出现任何金融术语英文缩写，均使用中文表述"}
+{"sample_id": "WB_0183_soft_1b", "constraint_id": "FS-6", "hardness": "soft", "score": 1, "passed": true, "message": "采用风险识别-评估-控制-监控框架，并在各环节列出风险点与防范措施"}
+{"sample_id": "qpv2-0130_soft_1a", "constraint_id": "GS-8", "hardness": "soft", "score": 1, "passed": true, "message": "专业用词与结构化呈现，深度与语气均符合机构客户阅读场景。"}
+{"sample_id": "WB_0196_mixed_1h1s_b", "constraint_id": "FS-6", "hardness": "soft", "score": 0, "passed": false, "message": "未从风险识别、评估、控制的风险管理视角展开分析。"}
+{"sample_id": "WB_0239_mixed_1h2s", "constraint_id": "GS-3", "hardness": "soft", "score": 1, "passed": true, "message": "全文保持正式书面语，无口语化或网络用语。"}
 {"sample_id": "qpv2-0027_mixed_1h1s_a", "constraint_id": "GS-1", "hardness": "soft", "score": 1, "passed": true, "message": "开头先给出结论性建议，随后再展开分析说明，顺序符合先结论后分析。"}
-{"sample_id": "WB_0196_mixed_1h1s_b", "constraint_id": "FS-6", "hardness": "soft", "score": 0, "passed": false, "message": "未从风险识别/评估/应对框架进行分析，仅做内容概述与加工建议。"}
-{"sample_id": "qpv2-0130_soft_1a", "constraint_id": "GS-8", "hardness": "soft", "score": 1, "passed": true, "message": "用词专业、结构清晰、深度与机构客户匹配，聚焦结论、利多与风险，语气稳健。"}
-{"sample_id": "WB_0239_mixed_1h2s", "constraint_id": "GS-3", "hardness": "soft", "score": 1, "passed": true, "message": "全文采用正式书面语，无口语化、网络用语或语气词。"}
-{"sample_id": "WB_0223_mixed_2h1s", "constraint_id": "FS-14", "hardness": "soft", "score": 1, "passed": true, "message": "明确以“消费复苏不均衡、同城商圈促销同质化”为前提展开分析与策略设计"}
-{"sample_id": "WB_0239_mixed_1h2s", "constraint_id": "FS-15", "hardness": "soft", "score": 1, "passed": true, "message": "明确将数据安全与合规性设为最高优先级，并在多处以合规为前提展开要求与方案。"}
-{"sample_id": "qpv2-0016_soft_1b", "constraint_id": "FS-8", "hardness": "soft", "score": 1, "passed": true, "message": "回答明确以散户视角展开，聚焦风险控制、收益与操作步骤等普通投资者关切。"}
-{"sample_id": "qpv2-0549_soft_1b", "constraint_id": "FS-11", "hardness": "soft", "score": 0, "passed": false, "message": "回答大量引入材料之外的信息（定义、风险细节、产品机制对比等），未做到仅基于材料作答。"}
-{"sample_id": "DISC_0039_mixed_1h2s", "constraint_id": "GS-3", "hardness": "soft", "score": 1, "passed": true, "message": "全文采用正式书面语表述，未出现口语化、网络用语或语气词。"}
-{"sample_id": "DISC_0039_mixed_1h2s", "constraint_id": "FS-17", "hardness": "soft", "score": 1, "passed": true, "message": "明确提出并在推导中使用了年复利且无申赎、分红与费用变动的假设进行分析"}
-{"sample_id": "WB_0200_mixed_1h1s_b", "constraint_id": "FS-21", "hardness": "soft", "score": 1, "passed": true, "message": "回答包含多处对比对象与具体维度（如营收、净利、NBV、EV、分红、偿付能力等）的同业对比，并给出差异结论。"}
-{"sample_id": "qpv2-0108_soft_2", "constraint_id": "GS-8", "hardness": "soft", "score": 1, "passed": true, "message": "专业度、术语与银行/持牌消金零售营销从业者匹配，结构清晰、场景化与合规要点全面，语气实操且不空泛。"}
-{"sample_id": "WB_0223_soft_1b", "constraint_id": "FS-16", "hardness": "soft", "score": 1, "passed": true, "message": "结构、语气与商业综合体店庆活动方案一致，包含背景、目标、内容模块、推广、预算、风险与复盘等标准板块，术语专业、格式规范。"}
-{"sample_id": "qpv2-0108_soft_2", "constraint_id": "FS-18", "hardness": "soft", "score": 1, "passed": true, "message": "覆盖并实质分析了定义、核心组件、四个典型金融场景及注意事项，内容面向银行与消金从业者"}
-{"sample_id": "qpv2-0027_soft_1a", "constraint_id": "GS-1", "hardness": "soft", "score": 1, "passed": true, "message": "回答先给出结论与建议项，随后单独展开分析过程，顺序符合要求。"}
-{"sample_id": "qpv2-0042_mixed_2h1s", "constraint_id": "GS-4", "hardness": "soft", "score": 1, "passed": true, "message": "语气客观中立，无情绪化或绝对化表述"}
-{"sample_id": "qpv2-0048_soft_2", "constraint_id": "GS-4", "hardness": "soft", "score": 1, "passed": true, "message": "语气客观中立，无情绪化或绝对化表述"}
-{"sample_id": "qpv2-0396_soft_1a", "constraint_id": "FS-11", "hardness": "soft", "score": 1, "passed": true, "message": "回答只使用材料中的事实并据此进行分析与建议，未引入外部数据或新事实，额外内容均以可能性/待核实表述。"}
-{"sample_id": "qpv2-0048_soft_2", "constraint_id": "FS-18", "hardness": "soft", "score": 1, "passed": true, "message": "候选回答明确识别了第一个主要挑战，提供了对话原句引用，并给出其成为首要挑战的充分理由，分析具有实质性。"}
-{"sample_id": "qpv2-0010_soft_1b", "constraint_id": "FS-10", "hardness": "soft", "score": 1, "passed": true, "message": "整体用词通俗、好理解，几乎没有未解释的专业术语"}
-{"sample_id": "qpv2-0416_mixed_1h2s", "constraint_id": "FS-24", "hardness": "soft", "score": 1, "passed": true, "message": "风险因素明确注明并按由低到高排序，最重要的风险放在最后。"}
-{"sample_id": "qpv2-0042_soft_2", "constraint_id": "GS-3", "hardness": "soft", "score": 1, "passed": true, "message": "全文采用正式书面语表述，未出现口语化或网络用语。"}
-{"sample_id": "qpv2-0042_soft_2", "constraint_id": "FS-18", "hardness": "soft", "score": 1, "passed": true, "message": "同时对首个问题与可提升高波动适应性的技术进行了实质性分析"}
+{"sample_id": "DISC_0119_soft_1b", "constraint_id": "FS-12", "hardness": "soft", "score": 1, "passed": true, "message": "明确按影响程度从高到低组织多项要点与关键信号，排序意图清晰"}
+{"sample_id": "DISC_0039_soft_2", "constraint_id": "FS-17", "hardness": "soft", "score": 1, "passed": true, "message": "明确在5%年化收益假设下展开并据此计算"}
+{"sample_id": "DISC_0039_mixed_1h2s", "constraint_id": "GS-3", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: Invalid \\escape: line 9 column 21 (char 278)"}
+{"sample_id": "WB_0223_mixed_2h1s", "constraint_id": "FS-14", "hardness": "soft", "score": 1, "passed": true, "message": "明确以消费复苏不均衡、同城商圈促销同质化为前提展开方案与策略。"}
+{"sample_id": "qpv2-0016_soft_1b", "constraint_id": "FS-8", "hardness": "soft", "score": 1, "passed": true, "message": "回答明确以普通散户视角展开，关注目标设定、风险控制、产品门槛与操作步骤。"}
+{"sample_id": "WB_0223_soft_1b", "constraint_id": "FS-16", "hardness": "soft", "score": 1, "passed": true, "message": "结构、语气与术语符合商业综合体店庆活动方案风格，涵盖背景、目标、活动模块、推广、预算、风险与复盘等标准板块。"}
+{"sample_id": "WB_0239_mixed_1h2s", "constraint_id": "FS-15", "hardness": "soft", "score": 1, "passed": true, "message": "回答将数据安全与合规性明确设为最高优先级并以专章和多处条款贯穿全案。"}
+{"sample_id": "qpv2-0027_soft_1a", "constraint_id": "GS-1", "hardness": "soft", "score": 1, "passed": true, "message": "回答开头先给出结论列表，随后单独展开分析过程，顺序符合要求。"}
+{"sample_id": "DISC_0039_mixed_1h2s", "constraint_id": "FS-17", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: Invalid \\escape: line 8 column 21 (char 197)"}
+{"sample_id": "WB_0200_mixed_1h1s_b", "constraint_id": "FS-21", "hardness": "soft", "score": 1, "passed": true, "message": "包含对平安与中国人寿、太保的明确竞品对比，涵盖多维度并有差异结论。"}
+{"sample_id": "qpv2-0108_soft_2", "constraint_id": "GS-8", "hardness": "soft", "score": 1, "passed": true, "message": "用词与深度贴合银行/持牌消金零售营销从业者，结构清晰、场景与合规要点完备。"}
+{"sample_id": "qpv2-0108_soft_2", "constraint_id": "FS-18", "hardness": "soft", "score": 1, "passed": true, "message": "覆盖并对定义、核心组件、四类金融场景和注意事项进行实质性分析。"}
+{"sample_id": "qpv2-0549_soft_1b", "constraint_id": "FS-11", "hardness": "soft", "score": 0, "passed": false, "message": "回答加入了材料未提供的定义、风险细节、产品机制与跨品类比较，超出材料范围"}
+{"sample_id": "qpv2-0042_mixed_2h1s", "constraint_id": "GS-4", "hardness": "soft", "score": 1, "passed": true, "message": "语气客观中立，无主观倾向或情绪化表达"}
+{"sample_id": "qpv2-0396_soft_1a", "constraint_id": "FS-11", "hardness": "soft", "score": 1, "passed": true, "message": "回答仅使用材料中的信息进行风险识别与建议，扩展内容均以“可能性/需核实”声明，未引入外部事实。"}
+{"sample_id": "qpv2-0042_soft_2", "constraint_id": "GS-3", "hardness": "soft", "score": 1, "passed": true, "message": "全文为正式书面表达，未出现口语化、网络用语或语气词。"}
+{"sample_id": "qpv2-0416_mixed_1h2s", "constraint_id": "FS-24", "hardness": "soft", "score": 1, "passed": true, "message": "明确采用由低到高的排序，最后一项被标注为影响最大，符合反向排序要求。"}
+{"sample_id": "qpv2-0042_soft_2", "constraint_id": "FS-18", "hardness": "soft", "score": 1, "passed": true, "message": "覆盖并实质分析了首个问题与提升高波动市场适应性的技术两方向。"}
+{"sample_id": "qpv2-0010_soft_1b", "constraint_id": "FS-10", "hardness": "soft", "score": 1, "passed": true, "message": "整体用词通俗，以生活化举例说明，未出现难懂专业术语"}
 {"sample_id": "DISC_0003_mixed_2h1s", "constraint_id": "FS-4", "hardness": "soft", "score": 1, "passed": true, "message": "包含具体财务指标及其数值"}
-{"sample_id": "qpv2-0416_mixed_1h2s", "constraint_id": "FS-18", "hardness": "soft", "score": 0, "passed": false, "message": "未对“金额异常提升的可能原因”进行实质分析，且对“延迟补充说明”对资金合规性的影响未直接阐述，存在指定方向缺失。"}
-{"sample_id": "DISC_0098_soft_2", "constraint_id": "FS-11", "hardness": "soft", "score": 0, "passed": false, "message": "回答包含多处材料外的推断与信息，未严格仅基于提供材料作答。"}
-{"sample_id": "DISC_0108_soft_1b", "constraint_id": "FS-10", "hardness": "soft", "score": 1, "passed": true, "message": "整体用通俗比喻和生活化表述，少量术语配有解释，非专业读者可理解。"}
-{"sample_id": "DISC_0098_soft_2", "constraint_id": "FS-18", "hardness": "soft", "score": 1, "passed": true, "message": "候选回答对五个指定方向均有实质性分析，非一句话带过。"}
-{"sample_id": "qpv2-0504_mixed_1h1s_a", "constraint_id": "GS-3", "hardness": "soft", "score": 1, "passed": true, "message": "全文使用正式书面语，无口语化或网络用语"}
-{"sample_id": "qpv2-0549_mixed_1h2s", "constraint_id": "FS-18", "hardness": "soft", "score": 1, "passed": true, "message": "对收益来源、分配规则、风险与波动、持有周期与流动性、常见误区更正五个方向均有实质性分析与举例说明。"}
-{"sample_id": "qpv2-0549_mixed_1h2s", "constraint_id": "GS-8", "hardness": "soft", "score": 1, "passed": true, "message": "语言通俗、解释充分，涵盖收益、分配、风险、流动性与常见误区，适合首次接触公募REIT的个人投资者阅读，并提醒以具体合同为准"}
-{"sample_id": "DISC_0029_soft_2", "constraint_id": "FS-3", "hardness": "soft", "score": 0, "passed": false, "message": "未对专业术语缩写 BSM 在首次出现时给出中文全称。"}
-{"sample_id": "qpv2-0467_soft_3", "constraint_id": "GS-8", "hardness": "soft", "score": 1, "passed": true, "message": "语言专业且以操作清单形式呈现，风险管理视角明确，深度与语气匹配估值复核执行与运营支持同事的阅读场景。"}
+{"sample_id": "qpv2-0048_soft_2", "constraint_id": "FS-18", "hardness": "soft", "score": 1, "passed": true, "message": "覆盖了识别首个挑战、提供原句引用，并阐明其为何为首要挑战，且有实质性分析。"}
+{"sample_id": "qpv2-0048_soft_2", "constraint_id": "GS-4", "hardness": "soft", "score": 1, "passed": true, "message": "语气客观中立，基于引用进行分析，无情绪化或绝对化措辞"}
+{"sample_id": "qpv2-0504_mixed_1h1s_a", "constraint_id": "GS-3", "hardness": "soft", "score": 1, "passed": true, "message": "全文采用正式书面语，无口语化或网络用语。"}
+{"sample_id": "DISC_0098_soft_2", "constraint_id": "FS-11", "hardness": "soft", "score": 0, "passed": false, "message": "引入材料外信息和推断，未严格基于提供材料作答"}
+{"sample_id": "qpv2-0416_mixed_1h2s", "constraint_id": "FS-18", "hardness": "soft", "score": 0, "passed": false, "message": "未对金额异常提升的可能原因进行实质分析，且延迟补充说明对资金合规性的影响未明确展开。"}
+{"sample_id": "qpv2-0467_soft_3", "constraint_id": "GS-8", "hardness": "soft", "score": 1, "passed": true, "message": "用词与深度贴合复核执行与运营支持，语气为操作性SOP，强调风险管理并按重要性排序。"}
+{"sample_id": "DISC_0108_soft_1b", "constraint_id": "FS-10", "hardness": "soft", "score": 1, "passed": true, "message": "语言通俗，多用比喻并对少量术语作解释，整体易懂。"}
 {"sample_id": "DISC_0029_soft_2", "constraint_id": "FS-4", "hardness": "soft", "score": 1, "passed": true, "message": "回答包含多项具体财务指标及其数值"}
-{"sample_id": "qpv2-0467_soft_3", "constraint_id": "FS-6", "hardness": "soft", "score": 1, "passed": true, "message": "以风险识别、分级评估与控制/应对为框架展开，并按重要性排序，符合风险管理视角。"}
-{"sample_id": "qpv2-0461_soft_1b", "constraint_id": "FS-24", "hardness": "soft", "score": 1, "passed": true, "message": "风险因素按从低到高的顺序排列，最后一项为最高重要性。"}
-{"sample_id": "qpv2-0010_mixed_2h1s", "constraint_id": "FS-15", "hardness": "soft", "score": 1, "passed": true, "message": "明确以资本保全与流动性为首要目标，配置与建议围绕该目标展开。"}
-{"sample_id": "qpv2-0467_soft_3", "constraint_id": "FS-24", "hardness": "soft", "score": 1, "passed": true, "message": "风险因素列表按重要性由低到高排序，最不重要在前、最重要在后，且有明确排序意图说明。"}
-{"sample_id": "qpv2-0031_soft_2", "constraint_id": "GS-2", "hardness": "soft", "score": 1, "passed": true, "message": "回答末尾包含明确标注的总结段，起到归纳收束作用"}
-{"sample_id": "qpv2-0031_soft_2", "constraint_id": "FS-13", "hardness": "soft", "score": 1, "passed": true, "message": "全文未出现任何金融术语英文缩写"}
-{"sample_id": "DISC_0080_mixed_1h2s", "constraint_id": "GS-7", "hardness": "soft", "score": 1, "passed": true, "message": "包含多个类比和举例辅助解释。"}
-{"sample_id": "DISC_0080_mixed_1h2s", "constraint_id": "FS-10", "hardness": "soft", "score": 1, "passed": true, "message": "语言通俗易懂，少量术语配有功能解释，并辅以类比说明，非专业人士可理解"}
-{"sample_id": "qpv2-0458_soft_1a", "constraint_id": "GS-3", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: local variable 'response' referenced before assignment"}
-{"sample_id": "qpv2-0108_mixed_2h1s", "constraint_id": "FS-15", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: local variable 'response' referenced before assignment"}
-{"sample_id": "WB_0224_soft_2", "constraint_id": "FS-19", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: local variable 'response' referenced before assignment"}
-{"sample_id": "WB_0224_soft_2", "constraint_id": "FS-5", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: local variable 'response' referenced before assignment"}
-{"sample_id": "qpv2-0176_mixed_1h2s", "constraint_id": "GS-1", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: local variable 'response' referenced before assignment"}
-{"sample_id": "DISC_0029_mixed_2h1s", "constraint_id": "GS-4", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: local variable 'response' referenced before assignment"}
-{"sample_id": "qpv2-0090_mixed_1h1s_b", "constraint_id": "FS-10", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: local variable 'response' referenced before assignment"}
-{"sample_id": "WB_0228_soft_1b", "constraint_id": "FS-13", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: local variable 'response' referenced before assignment"}
-{"sample_id": "DISC_0079_soft_1b", "constraint_id": "GS-9", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: local variable 'response' referenced before assignment"}
-{"sample_id": "WB_0224_mixed_2h1s", "constraint_id": "FS-23", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: local variable 'response' referenced before assignment"}
-{"sample_id": "qpv2-0017_soft_2", "constraint_id": "FS-13", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: local variable 'response' referenced before assignment"}
-{"sample_id": "qpv2-0176_mixed_1h2s", "constraint_id": "FS-18", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: local variable 'response' referenced before assignment"}
-{"sample_id": "qpv2-0461_mixed_1h1s_a", "constraint_id": "FS-16", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: local variable 'response' referenced before assignment"}
-{"sample_id": "DISC_0074_soft_1a", "constraint_id": "GS-1", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: local variable 'response' referenced before assignment"}
-{"sample_id": "qpv2-0017_soft_2", "constraint_id": "FS-19", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: local variable 'response' referenced before assignment"}
-{"sample_id": "qpv2-0135_soft_1a", "constraint_id": "FS-11", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: local variable 'response' referenced before assignment"}
-{"sample_id": "WB_0183_soft_1a", "constraint_id": "GS-1", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: local variable 'response' referenced before assignment"}
-{"sample_id": "DISC_0080_soft_2", "constraint_id": "GS-1", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: local variable 'response' referenced before assignment"}
-{"sample_id": "qpv2-0031_mixed_1h1s_a", "constraint_id": "GS-1", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: local variable 'response' referenced before assignment"}
-{"sample_id": "WB_0229_mixed_1h1s_a", "constraint_id": "FS-11", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: local variable 'response' referenced before assignment"}
-{"sample_id": "qpv2-0146_soft_1a", "constraint_id": "FS-11", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: local variable 'response' referenced before assignment"}
-{"sample_id": "DISC_0080_soft_2", "constraint_id": "FS-15", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: local variable 'response' referenced before assignment"}
-{"sample_id": "qpv2-0071_soft_1b", "constraint_id": "FS-16", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: local variable 'response' referenced before assignment"}
-{"sample_id": "qpv2-0396_mixed_1h1s_b", "constraint_id": "GS-1", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: local variable 'response' referenced before assignment"}
-{"sample_id": "WB_0228_mixed_1h1s_b", "constraint_id": "FS-24", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: local variable 'response' referenced before assignment"}
-{"sample_id": "qpv2-0530_soft_3", "constraint_id": "FS-20", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: local variable 'response' referenced before assignment"}
-{"sample_id": "qpv2-0530_soft_3", "constraint_id": "FS-24", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: local variable 'response' referenced before assignment"}
-{"sample_id": "qpv2-0022_soft_1a", "constraint_id": "GS-1", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: local variable 'response' referenced before assignment"}
-{"sample_id": "DISC_0039_soft_3", "constraint_id": "FS-20", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: local variable 'response' referenced before assignment"}
-{"sample_id": "WB_0187_soft_1b", "constraint_id": "FS-6", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: local variable 'response' referenced before assignment"}
-{"sample_id": "qpv2-0530_soft_3", "constraint_id": "GS-3", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: local variable 'response' referenced before assignment"}
-{"sample_id": "qpv2-0022_mixed_1h1s_a", "constraint_id": "GS-1", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: local variable 'response' referenced before assignment"}
-{"sample_id": "DISC_0039_soft_3", "constraint_id": "GS-3", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: local variable 'response' referenced before assignment"}
-{"sample_id": "DISC_0039_soft_3", "constraint_id": "FS-24", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: local variable 'response' referenced before assignment"}
-{"sample_id": "qpv2-0017_mixed_1h1s_a", "constraint_id": "GS-1", "hardness": "soft", "score": 0, "passed": false, "message": "judge error: local variable 'response' referenced before assignment"}
+{"sample_id": "qpv2-0549_mixed_1h2s", "constraint_id": "GS-8", "hardness": "soft", "score": 1, "passed": true, "message": "用语通俗、解释到位，覆盖收益来源、分配规则、风险与波动、流动性与常见误区，语气友好且多次提醒以合同为准，适合首次接触的个人投资者。"}
+{"sample_id": "DISC_0098_soft_2", "constraint_id": "FS-18", "hardness": "soft", "score": 1, "passed": true, "message": "对五个指定方向均有独立且实质性分析，非一句话带过。"}
+{"sample_id": "qpv2-0467_soft_3", "constraint_id": "FS-24", "hardness": "soft", "score": 1, "passed": true, "message": "风险因素明确声明并按重要性从低到高排序，最后一项为“极高”。"}
+{"sample_id": "qpv2-0031_soft_2", "constraint_id": "GS-2", "hardness": "soft", "score": 1, "passed": true, "message": "回答末尾包含明确的总结段并起到归纳收束作用"}
+{"sample_id": "qpv2-0010_mixed_2h1s", "constraint_id": "FS-15", "hardness": "soft", "score": 1, "passed": true, "message": "明确将资本保全与流动性设为首要目标，建议与配置围绕该目标展开"}
+{"sample_id": "DISC_0029_soft_2", "constraint_id": "FS-3", "hardness": "soft", "score": 0, "passed": false, "message": "首次出现的缩写 BSM 未给出中文全称，仅提供英文全称；虽对 CDF 给出了中文全称，但存在一处不符合即判不满足。"}
+{"sample_id": "qpv2-0461_soft_1b", "constraint_id": "FS-24", "hardness": "soft", "score": 1, "passed": true, "message": "风险因素明确从低到高排序，最不重要在前，最重要在后"}
+{"sample_id": "qpv2-0031_soft_2", "constraint_id": "FS-13", "hardness": "soft", "score": 1, "passed": true, "message": "全文未出现任何金融术语英文缩写，均使用中文表述"}
+{"sample_id": "qpv2-0467_soft_3", "constraint_id": "FS-6", "hardness": "soft", "score": 1, "passed": true, "message": "回答以风险识别、分级评估与控制/升级措施为主线展开，符合风险管理视角。"}
+{"sample_id": "DISC_0080_mixed_1h2s", "constraint_id": "GS-7", "hardness": "soft", "score": 1, "passed": true, "message": "回答包含多个类比和举例来辅助说明。"}
+{"sample_id": "qpv2-0549_mixed_1h2s", "constraint_id": "FS-18", "hardness": "soft", "score": 1, "passed": true, "message": "覆盖并有实质性分析：收益来源、分配规则、风险与波动、持有周期与流动性、常见误区更正均被详细讨论。"}
+{"sample_id": "qpv2-0458_soft_1a", "constraint_id": "GS-3", "hardness": "soft", "score": 1, "passed": true, "message": "全文保持正式书面语风格，无口语化或网络用语。"}
+{"sample_id": "qpv2-0108_mixed_2h1s", "constraint_id": "FS-15", "hardness": "soft", "score": 1, "passed": true, "message": "答案明确将合规与消费者保护设为最高优先级，并围绕该目标展开分析与注意事项。"}
+{"sample_id": "DISC_0029_mixed_2h1s", "constraint_id": "GS-4", "hardness": "soft", "score": 1, "passed": true, "message": "语气客观中立，内容为模型、假设与数值计算，无主观倾向或情绪化表达。"}
+{"sample_id": "DISC_0074_soft_1a", "constraint_id": "GS-1", "hardness": "soft", "score": 1, "passed": true, "message": "回答开头明确给出结论与步骤，随后单独展开分析部分，顺序正确。"}
+{"sample_id": "WB_0224_soft_2", "constraint_id": "FS-5", "hardness": "soft", "score": 1, "passed": true, "message": "包含多处百分比、加权计算与利润率变化等定量分析"}
+{"sample_id": "WB_0224_soft_2", "constraint_id": "FS-19", "hardness": "soft", "score": 1, "passed": true, "message": "包含情况说明、数据分析（含定量）、方案建议和面谈安排等板块且内容充实"}
+{"sample_id": "DISC_0080_mixed_1h2s", "constraint_id": "FS-10", "hardness": "soft", "score": 1, "passed": true, "message": "语言通俗易懂，大多避免或用类比解释术语，普通人可直接照做。"}
+{"sample_id": "qpv2-0176_mixed_1h2s", "constraint_id": "GS-1", "hardness": "soft", "score": 1, "passed": true, "message": "开头先给出结论，后续再展开核心观点、利多与风险分析。"}
+{"sample_id": "qpv2-0461_mixed_1h1s_a", "constraint_id": "FS-16", "hardness": "soft", "score": 1, "passed": true, "message": "结构化编号、技术语气与分步实施方案清晰，包含数据模型与示例代码，符合技术实施方案风格"}
+{"sample_id": "WB_0228_soft_1b", "constraint_id": "FS-13", "hardness": "soft", "score": 1, "passed": true, "message": "全文未使用金融术语英文缩写，相关术语均以中文表述"}
+{"sample_id": "WB_0224_mixed_2h1s", "constraint_id": "FS-23", "hardness": "soft", "score": 1, "passed": true, "message": "回答提供了具体的成本分项与金额，包含预算/成本分析。"}
+{"sample_id": "DISC_0079_soft_1b", "constraint_id": "GS-9", "hardness": "soft", "score": 1, "passed": true, "message": "整体语言俏皮诙谐、类比巧妙，幽默感充足，符合“语气幽默风趣”。"}
+{"sample_id": "qpv2-0176_mixed_1h2s", "constraint_id": "FS-18", "hardness": "soft", "score": 1, "passed": true, "message": "覆盖并有实质性分析：核心观点、利多因素与风险点均详述"}
+{"sample_id": "qpv2-0031_mixed_1h1s_a", "constraint_id": "GS-1", "hardness": "soft", "score": 1, "passed": true, "message": "开头先给出明确结论，随后再进行分析说明"}
+{"sample_id": "qpv2-0017_soft_2", "constraint_id": "FS-19", "hardness": "soft", "score": 1, "passed": true, "message": "包含风险评估、收益对比、投资建议三类板块，且均有实质内容。"}
+{"sample_id": "qpv2-0396_mixed_1h1s_b", "constraint_id": "GS-1", "hardness": "soft", "score": 1, "passed": true, "message": "回答开头先给出结论，随后再展开分析过程，顺序符合要求。"}
+{"sample_id": "DISC_0080_soft_2", "constraint_id": "GS-1", "hardness": "soft", "score": 1, "passed": true, "message": "开头先给出结论，随后单独展开分析说明，顺序符合要求。"}
+{"sample_id": "WB_0228_mixed_1h1s_b", "constraint_id": "FS-24", "hardness": "soft", "score": 1, "passed": true, "message": "风险因素明确从低到高排序，最不重要在前、最重要在后。"}
+{"sample_id": "DISC_0080_soft_2", "constraint_id": "FS-15", "hardness": "soft", "score": 1, "passed": true, "message": "回答将快速上手与最短制作时间明确设为首要目标并据此给出做法与优化。"}
+{"sample_id": "qpv2-0017_soft_2", "constraint_id": "FS-13", "hardness": "soft", "score": 1, "passed": true, "message": "全文未出现金融术语英文缩写，均以中文全称或中文表述呈现。"}
+{"sample_id": "WB_0183_soft_1a", "constraint_id": "GS-1", "hardness": "soft", "score": 1, "passed": true, "message": "开头先给出结论要点，后续再展开分析，顺序符合要求。"}
+{"sample_id": "qpv2-0090_mixed_1h1s_b", "constraint_id": "FS-10", "hardness": "soft", "score": 1, "passed": true, "message": "语言通俗，示例丰富，少量行业词有上下文解释，非专业读者可理解"}
+{"sample_id": "qpv2-0071_soft_1b", "constraint_id": "FS-16", "hardness": "soft", "score": 1, "passed": true, "message": "结构清晰、步骤化说明与代码示例，术语与语气符合开发者操作指南风格。"}
+{"sample_id": "qpv2-0022_soft_1a", "constraint_id": "GS-1", "hardness": "soft", "score": 1, "passed": true, "message": "开头明确给出结论，随后分章节展开分析与建议。"}
+{"sample_id": "qpv2-0135_soft_1a", "constraint_id": "FS-11", "hardness": "soft", "score": 0, "passed": false, "message": "包含多处超出材料的推断与判断，未完全基于提供事实作答"}
+{"sample_id": "qpv2-0017_mixed_1h1s_a", "constraint_id": "GS-1", "hardness": "soft", "score": 1, "passed": true, "message": "回答以“结论”开头，随后是“分析过程”，满足先结论后分析。"}

@@ -40,16 +40,17 @@ paper_for_financial_if_benchmark/
 │   │   └── expansion/
 │   │       └── decoupled_queries.json← 外部 query 的 constraint 解耦结果
 │   ├── tracks/
-│   │   ├── all_tracks.jsonl          ← 全量 4,611 条 track
-│   │   ├── train_tracks.jsonl        ← Train 452q, 4,147t
-│   │   ├── test_tracks.jsonl         ← Test 50q, 464t
-│   │   ├── test_response_input.jsonl ← Test 集 response 生成输入（464 条，送 Vulcan）
+│   │   ├── all_tracks.jsonl          ← 全量 6,007 条 track（12 种 type）
+│   │   ├── train_tracks.jsonl        ← Train 452q, 5,407t
+│   │   ├── test_tracks.jsonl         ← Test 50q, 600t
+│   │   ├── test_response_input.jsonl ← Test 集 response 生成输入（600 条）
+│   │   ├── raw_gpt5_output.jsonl     ← GPT-5 track 生成原始输出
 │   │   └── {all,train,test}_stats.*  ← 数据统计（JSON + PNG 图表）
 │   └── scores/
-│       ├── hard_scores.json          ← Hard 约束评分结果（rule checker 输出）
-│       ├── soft_scores_raw.jsonl     ← Soft 约束评分原始结果（含 10 条污染数据）
-│       ├── soft_scores_clean.jsonl   ← Soft 约束评分结果（排除污染，214 条有效）
-│       └── review_data.json          ← Hard+Soft 合并的评分 review 数据（供 score_review.html）
+│       ├── gpt{5,51,52,54}_responses.jsonl ← 各模型 test responses
+│       ├── gpt{5,51,52,54}/          ← 各模型评分结果（hard_scores.jsonl + soft_scores.jsonl）
+│       ├── hard_fail_review.json     ← Hard fail review 数据
+│       └── all_fail_review.json      ← 全部 fail review 数据
 │
 ├── docs/
 │   ├── constraint_pool.md            ← 60 条约束池完整文档（分类/描述/互斥对/来源）
@@ -65,9 +66,9 @@ paper_for_financial_if_benchmark/
 │   └── rubrics/*.md                  ← 32 个 Soft rubric（每个文件对应一个约束 ID）
 │
 ├── scripts/
-│   ├── gen_track_vulcan_input.py     ← 生成 Vulcan track 生成任务的输入 JSONL
-│   ├── score_responses.py            ← 评分主脚本（hard + soft）
-│   ├── score_soft_local.py           ← Soft 本地评分（3 并发调 GPT-5 via Minimax 代理）
+│   ├── gen_track_vulcan_input.py     ← 生成 Vulcan track 输入（502×3=1,506 行）
+│   ├── score_all.py                  ← 统一评分脚本（hard rule + soft LLM judge）
+│   ├── score_responses.py            ← 旧评分主脚本（保留参考）
 │   ├── generate_verifier_scaffold.py ← 约束池变更时自动生成 checker/rubric 骨架
 │   └── decouple_query_constraint.py  ← query-constraint 解耦（从外部 query 提取约束）
 │
@@ -98,21 +99,24 @@ paper_for_financial_if_benchmark/
 
 | 文件 | 内容 | 格式 | 条数 |
 |------|------|------|------|
-| `all_tracks.jsonl` | 全量 track（每条 = 1 query + N 个约束 + 参数化后的 prompt） | JSONL，每行一个 JSON | 4,611 |
-| `train_tracks.jsonl` | 训练集 track（452 个 query，与 test 零重叠） | 同上 | 4,147 |
-| `test_tracks.jsonl` | 测试集 track（50 个 query） | 同上 | 464 |
-| `test_response_input.jsonl` | 测试集 response 生成输入（送 Vulcan GPT-5.4 生成回答） | JSONL，含 messages 字段 | 464 |
+| `all_tracks.jsonl` | 全量 track（12 种 type，1:2:3 约束均匀分布） | JSONL | 6,007 |
+| `train_tracks.jsonl` | 训练集 track（452 个 query，与 test 零重叠） | JSONL | 5,407 |
+| `test_tracks.jsonl` | 测试集 track（50 个 query） | JSONL | 600 |
+| `test_response_input.jsonl` | 测试集 response 生成输入（送 Vulcan） | JSONL | 600 |
+| `raw_gpt5_output.jsonl` | GPT-5 track 生成原始 Vulcan 输出 | JSONL | 1,504 |
 | `{all,train,test}_stats.json` | 各切分的约束覆盖/分布统计 | JSON | — |
-| `{all,train,test}_stats.png` | 统计可视化图表 | PNG | — |
+| `{all,train,test}_stats.png` | 统计可视化图表（含 InfoBench Type 饼图） | PNG | — |
 
-### data/scores/ — 评分结果
+### data/scores/ — 评分数据
 
-| 文件 | 内容 | 格式 | 条数 |
-|------|------|------|------|
-| `hard_scores.json` | Hard 约束评分（rule checker 输出），每条含 constraint_id / passed / message | JSON array | 324 |
-| `soft_scores_raw.jsonl` | Soft 约束评分原始结果（GPT-5 judge），含 10 条 prompt 污染数据 | JSONL | 224 |
-| `soft_scores_clean.jsonl` | Soft 约束评分清洗版（排除污染），用于最终统计 | JSONL | 214 |
-| `review_data.json` | Hard + Soft 合并的评分数据，供 `score_review.html` 展示 review | JSON array | 245 |
+| 文件 | 内容 |
+|------|------|
+| `gpt{5,51,52,54}_responses.jsonl` | 各模型的 test response（600 条/模型） |
+| `gpt{5,51,52,54}/hard_scores.jsonl` | Hard 约束评分结果 |
+| `gpt{5,51,52,54}/soft_scores.jsonl` | Soft 约束评分结果（待代理恢复后跑） |
+| `hard_fail_review.json` | Hard fail 数据（供 `hard_fail_review.html`） |
+| `all_fail_review.json` | Hard+Soft fail 数据（供前端 review） |
+| `score_summary.json` | 各模型评分汇总统计 |
 
 ### data/fineval_raw/ — 原始数据源
 
@@ -177,7 +181,7 @@ paper_for_financial_if_benchmark/
 | FH-1 | 末尾必须包含风险提示声明：{risk_line} |
 | FH-2 | 必须声明"{disclaimer}" |
 | FH-3 | 若提到"{trigger}"，必须同时补充"{followup}" |
-| FH-4 | 所有数字保留{N}位小数 |
+| FH-4 | 回答中的数值数据统一保留{N}位小数 |
 | FH-5 | 若出现金额，统一使用{currency_rule}表示 |
 | FH-6 | 必须标注风险等级（R1-R5） |
 | FH-7 | 必须包含投资评级词 |
@@ -229,17 +233,28 @@ paper_for_financial_if_benchmark/
 2. `docs/constraint_pool.md` — 约束池文档（分类表格、条数统计）
 3. Hard 约束 → `verifier/rules/{ID}.py`（rule checker）
 4. Soft 约束 → `verifier/rubrics/{ID}.md`（rubric）
-5. `prompts/track_gen_system_prompt.md` — track 生成 prompt 中的约束池全文
+5. `prompts/track_gen_sp_{hard,soft,mixed}.md` — track 生成 prompt 中的约束池
 6. 验证：`python3 -c "from verifier.registry import load_constraint_registry; r = load_constraint_registry(); print(len(r))"` 应无报错
 
-## GPT-5 API 注意事项
+## 评分命令
 
-- Vulcan 平台 GPT 系列用 Responses API：前处理传 `input`（不是 `messages`），后处理从 `output[].type=="message" → content[].type=="output_text" → text` 提取
-- GPT-5 需要 `max_completion_tokens`（不是 `max_tokens`），且包含 reasoning tokens，需预留 +2048
-- `ref_local_gpt.py` 中已有 GPT-5 分支处理
+```bash
+# 对某模型的 response 跑 hard + soft 评分（支持断点续跑）
+python3 scripts/score_all.py \
+  --response-file data/scores/gpt5_responses.jsonl \
+  --output-dir data/scores/gpt5 \
+  --judge-model gpt-5-2025-08-07 \
+  --concurrency 10
+```
+
+## Vulcan 注意事项
+
+- GPT 系列用 Responses API：前处理传 `input`（不是 `messages`），后处理从 `output[].type=="message" → content[].type=="output_text" → text` 提取
+- Vulcan postprocess 通过 `data.steps['model_request'].output` 获取模型输出
+- GPT-5 需要 `max_completion_tokens`（不是 `max_tokens`），且包含 reasoning tokens
+- Vulcan handler 文件：`vulcan/track_gen/`（track 生成）、`vulcan/eval_response_test/`（response 生成）
 
 ## 已知问题
 
-- Soft judge 宽判：GS 模块 100% pass 可能偏高，考虑双 judge 或更严格 prompt
-- 约束数量分布不均：1约束:2约束:3约束 ≈ 2:3:4
-- Track 数据中旧 FH-4（排序）和旧 FH-10（禁英文缩写）需批量替换为 FS-12 / FS-13
+- Soft judge 宽判：LLM judge 对 soft constraint 可能偏宽，考虑双 judge 或更严格 prompt
+- Minimax 代理不稳定：`ref_local_gpt.py` 调用 `thirdpart-proxy-prod.xaminim.com` 偶尔超时

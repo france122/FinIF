@@ -26,7 +26,7 @@ from verifier.base import (
 
 RISK_LEVEL_RE = re.compile(r"\bR[1-5]\b")
 RATING_WORDS = ("买入", "增持", "中性", "减持", "卖出")
-NUMBERED_LINE_RE = re.compile(r"(?m)^\s*\d+\.\s+")
+NUMBERED_LINE_RE = re.compile(r"(?m)^\s*(?:\d+[.、)）]\s+|[（(]\d+[)）]\s*)")
 MONEY_SYMBOL_RE = re.compile(r"[¥$]")
 BULLET_OR_LIST_RE = re.compile(r"(?m)^\s*(?:[-*+•]|\d+[.)]\s)")
 TABLE_RE = re.compile(r"(?m)^\s*\|.*\|.*\|")
@@ -110,7 +110,9 @@ def check_keywords_exist(constraint_id: str, response_text: str, params: dict):
 
 
 def check_forbidden_word(constraint_id: str, response_text: str, params: dict):
-    word = params["word"]
+    word = params.get("word") or params.get("forbidden_word") or ""
+    if not word:
+        return result_fail(constraint_id, "缺少 forbidden_word 参数")
     if word in response_text:
         return result_fail(constraint_id, f"出现禁用词: {word}", word=word)
     return result_pass(constraint_id, f"未出现禁用词: {word}", word=word)
@@ -228,10 +230,21 @@ def check_currency_rule(constraint_id: str, response_text: str, params: dict):
         problems.append("存在逗号分隔数字")
     if "不使用小数点" in rule and re.search(r"\d+\.\d+", response_text):
         problems.append("存在小数金额")
-    if any(token in rule for token in ("人民币", "CNY")) and any(token in response_text for token in ("$", "USD", "美元")):
-        problems.append("出现了美元表示")
-    if any(token in rule for token in ("美元", "USD", "$")) and any(token in response_text for token in ("¥", "人民币", "CNY")):
-        problems.append("出现了人民币表示")
+    # ISO 4217 / 原币金额格式：检查金额后是否跟了货币代码
+    if "ISO" in rule or "4217" in rule or "货币代码" in rule:
+        # 要求金额后跟 ISO 货币代码（CNY/USD/HKD/EUR/JPY 等）
+        amounts = re.findall(r"[\d,.]+\s*(?:元|亿|万)", response_text)
+        iso_amounts = re.findall(r"[\d,.]+\s*(?:CNY|USD|HKD|EUR|JPY|GBP|AUD|SGD|CHF)", response_text)
+        if amounts and not iso_amounts:
+            problems.append("金额未使用ISO 4217货币代码")
+    else:
+        # 旧逻辑：限定单一币种（仅当 rule 明确只允许一种币种时）
+        rule_only_cny = ("人民币" in rule or "CNY" in rule) and not any(t in rule for t in ("USD", "美元", "$"))
+        rule_only_usd = ("美元" in rule or "USD" in rule or "$" in rule) and not any(t in rule for t in ("CNY", "人民币", "¥"))
+        if rule_only_cny and any(t in response_text for t in ("$", "USD", "美元")):
+            problems.append("出现了美元表示")
+        if rule_only_usd and any(t in response_text for t in ("¥", "人民币", "CNY")):
+            problems.append("出现了人民币表示")
     if problems:
         return result_fail(constraint_id, "金额格式不符合规则", currency_rule=rule, problems=problems)
     return result_pass(constraint_id, "未检测到明显金额格式冲突", currency_rule=rule)

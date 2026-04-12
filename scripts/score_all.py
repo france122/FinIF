@@ -32,8 +32,14 @@ def score_hard(sample_id, constraint, response_text):
     """Hard 约束评分：本地 rule checker"""
     cid = constraint["constraint_id"]
     params = constraint.get("filled_params", {})
+    # 归一化 params key 大小写（track 数据用大写 N，checker 用小写 n）
+    normalized = {}
+    for k, v in params.items():
+        normalized[k] = v
+        normalized[k.lower()] = v
+        normalized[k.upper()] = v
     try:
-        result = run_rule_check(cid, response_text, params=params)
+        result = run_rule_check(cid, response_text, params=normalized)
         return {
             "sample_id": sample_id,
             "constraint_id": cid,

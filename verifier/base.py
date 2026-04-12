@@ -11,7 +11,7 @@ HEADING_RE = re.compile(r"(?m)^(#{1,6})\s+\S")
 NUMBER_RE = re.compile(r"-?\d+(?:,\d{3})*(?:\.\d+)?%?")
 BULLET_RE = re.compile(r"^\s*(?:[-*+]|\d+\.)\s+(.*)$")
 CHECKBOX_RE = re.compile(r"(?m)^\s*[-*+]?\s*\[(?: |x|X)\]\s+")
-TABLE_SEPARATOR_RE = re.compile(r"^\s*\|?(?:\s*:?-{3,}:?\s*\|)+\s*$")
+TABLE_SEPARATOR_RE = re.compile(r"^\s*\|?(?:\s*:?-+:?\s*\|)+\s*$")
 
 
 @dataclass
@@ -100,7 +100,18 @@ def first_word(text: str) -> str:
 
 
 def markdown_heading_levels(text: str) -> set[int]:
-    return {len(match.group(1)) for match in HEADING_RE.finditer(text)}
+    levels = {len(match.group(1)) for match in HEADING_RE.finditer(text)}
+    # 兼容中文编号层级（非 Markdown 标题但表达层级结构）
+    # 一级：中文数字编号 "一、" "二、" 或 "第一章" "第二部分"
+    if re.search(r"(?m)^[一二三四五六七八九十]+[、.．]", text) or re.search(r"(?m)^第[一二三四五六七八九十\d]+[章节部]", text):
+        levels.add(1)
+    # 二级："1.1" "2.3" 或 "(一)" "（一）" 或 "1、" "2、"
+    if re.search(r"(?m)^\d+[.．]\d+\s", text) or re.search(r"(?m)^[（(][一二三四五六七八九十]+[)）]", text):
+        levels.add(2)
+    # 三级："1.1.1" "2.3.1" 或 "(1)" "（1）" 或 "①②"
+    if re.search(r"(?m)^\d+[.．]\d+[.．]\d+\s", text) or re.search(r"(?m)^[（(]\d+[)）]", text) or re.search(r"[①②③④⑤⑥⑦⑧⑨⑩]", text):
+        levels.add(3)
+    return levels
 
 
 def has_markdown_table(text: str) -> bool:

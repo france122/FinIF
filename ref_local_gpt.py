@@ -387,12 +387,18 @@ def get_gpt_response(messages, model_version, temperature=0, max_tokens=4096, ma
                         return response_text
         except Exception as e:
             print(f"*** 模型 {model_version_proxy} 发生错误，minimax token: '{minimax_token}'，在 AI 数据获取群 @庚辰 反馈 ***")
-            print(f'Status code: {response.status_code}, Response: {response.text}')
+            try:
+                print(f'Status code: {response.status_code}, Response: {response.text}')
+            except NameError:
+                print(f'Request failed before response was received')
             print(f"GPT call failed: {e},  retrying...")
             random_noise = np.random.randn() * 0.2
             sleep_time = 2 ** (np.random.uniform(attempt/max_try, 3.5)) + random_noise
             time.sleep(sleep_time)
-    print(f"GPT_CALL FAILED MINIMAX: max_try exceeded, data: {data}, response: {response.text}")
+    try:
+        print(f"GPT_CALL FAILED MINIMAX: max_try exceeded, data: {data}, response: {response.text}")
+    except NameError:
+        print(f"GPT_CALL FAILED MINIMAX: max_try exceeded, data: {data}, no response received")
     return None
     
 

@@ -28,7 +28,7 @@
 | GH-2 | 至少包含{N}个句子 | 句号计数 | Number |
 | GH-3 | 回答分为{N}个段落 | 段落分隔符计数 | Format, Number |
 | GH-4 | 使用 Markdown 格式 | 检测 `#` 标记 | Format |
-| GH-5 | 包含至少{N}级标题层级 | 检测 `#`/`##`/`###` 层级 | Format, Number |
+| GH-5 | 包含至少{N}级标题层级 | 检测 Markdown `#` 标题 + 中文编号层级（一、/1.1/1.1.1） | Format, Number |
 | GH-6 | 使用编号列表组织回答 | 检测 `1.` `2.` 格式 | Format |
 | GH-7 | 使用表格形式呈现关键信息 | 检测 Markdown 表格语法 | Format |
 | GH-8 | 以 JSON 格式输出 | JSON parse 验证 | Format |
@@ -74,7 +74,7 @@
 | FH-1 | 末尾必须包含风险提示声明：{risk_line} | regex 匹配 | Content, Format |
 | FH-2 | 必须声明"{disclaimer}" | 精确短语匹配 | Content, Linguistic |
 | FH-3 | 若提到"{trigger}"，必须同时补充"{followup}" | regex 条件检测 | Linguistic, Content |
-| FH-4 | 所有数字保留{N}位小数 | regex 提取数值+检查小数位 | Number, Format |
+| FH-4 | 回答中的数值数据统一保留{N}位小数 | regex 提取数值+检查小数位 | Number, Format |
 | FH-5 | 若出现金额，统一使用{currency_rule}表示 | regex 检测 | Linguistic |
 | FH-6 | 必须标注风险等级（R1-R5） | regex 检测 R1-R5 | Content |
 | FH-7 | 必须包含投资评级词 | regex 匹配买入/增持/中性/减持/卖出 | Content, Linguistic |

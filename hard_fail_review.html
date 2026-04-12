@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>Hard Constraint Fail Review</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, 'Segoe UI', monospace; background: #0d1117; color: #c9d1d9; padding: 20px; }
+h1 { color: #58a6ff; margin-bottom: 10px; }
+.stats { color: #8b949e; margin-bottom: 20px; font-size: 14px; }
+.filters { margin-bottom: 20px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+.filters select, .filters input { background: #161b22; color: #c9d1d9; border: 1px solid #30363d; border-radius: 6px; padding: 6px 10px; font-size: 14px; }
+.filters input { width: 200px; }
+.count { color: #58a6ff; font-size: 14px; }
+.card { background: #161b22; border: 1px solid #30363d; border-radius: 8px; margin-bottom: 16px; padding: 16px; }
+.card-header { display: flex; gap: 8px; align-items: center; margin-bottom: 10px; flex-wrap: wrap; }
+.tag { padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: 600; }
+.tag-model { background: #1f6feb; color: #fff; }
+.tag-constraint { background: #da3633; color: #fff; }
+.tag-sample { background: #30363d; color: #c9d1d9; }
+.fail-msg { color: #f85149; font-size: 13px; margin-bottom: 12px; padding: 8px; background: #1c0e0e; border-radius: 4px; }
+.section-label { color: #8b949e; font-size: 12px; font-weight: 600; text-transform: uppercase; margin: 8px 0 4px; }
+.prompt-box, .response-box { background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 12px; font-size: 13px; line-height: 1.6; max-height: 300px; overflow-y: auto; white-space: pre-wrap; word-break: break-all; }
+.response-box { border-color: #1f6feb; }
+.toggle { color: #58a6ff; cursor: pointer; font-size: 13px; text-decoration: underline; }
+.constraint-list { margin-top: 8px; }
+.constraint-item { display: inline-block; background: #21262d; border-radius: 4px; padding: 2px 6px; margin: 2px; font-size: 12px; }
+.constraint-item.fail { background: #3d1a1a; color: #f85149; }
+</style>
+</head>
+<body>
+<h1>Hard Constraint Fail Review</h1>
+<div class="stats" id="stats"></div>
+<div class="filters">
+  <select id="filterModel"><option value="">All Models</option></select>
+  <select id="filterConstraint"><option value="">All Constraints</option></select>
+  <input id="filterSearch" placeholder="Search sample_id...">
+  <span class="count" id="count"></span>
+</div>
+<div id="container"></div>
+
+<script>
+let DATA = [];
+fetch('data/scores/hard_fail_review.json').then(r=>r.json()).then(d=>{
+  DATA = d;
+  init();
+});
+
+function init() {
+  // Stats
+  const models = [...new Set(DATA.map(d=>d.model))].sort();
+  const constraints = [...new Set(DATA.map(d=>d.constraint_id))].sort();
+  
+  const statsEl = document.getElementById('stats');
+  const modelStats = models.map(m => `${m}: ${DATA.filter(d=>d.model===m).length}`).join(' | ');
+  statsEl.textContent = `Total fails: ${DATA.length} | ${modelStats}`;
+  
+  // Filters
+  const fModel = document.getElementById('filterModel');
+  models.forEach(m => { const o = document.createElement('option'); o.value=m; o.textContent=m; fModel.appendChild(o); });
+  const fConstraint = document.getElementById('filterConstraint');
+  constraints.forEach(c => { const o = document.createElement('option'); o.value=c; o.textContent=c; fConstraint.appendChild(o); });
+  
+  fModel.onchange = render;
+  fConstraint.onchange = render;
+  document.getElementById('filterSearch').oninput = render;
+  render();
+}
+
+function render() {
+  const model = document.getElementById('filterModel').value;
+  const constraint = document.getElementById('filterConstraint').value;
+  const search = document.getElementById('filterSearch').value.toLowerCase();
+  
+  let filtered = DATA;
+  if (model) filtered = filtered.filter(d => d.model === model);
+  if (constraint) filtered = filtered.filter(d => d.constraint_id === constraint);
+  if (search) filtered = filtered.filter(d => d.sample_id.toLowerCase().includes(search));
+  
+  document.getElementById('count').textContent = `Showing ${filtered.length} / ${DATA.length}`;
+  
+  const container = document.getElementById('container');
+  container.innerHTML = '';
+  
+  filtered.forEach((item, i) => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    
+    const constraintItems = (item.constraints || []).map(c => {
+      const isFail = c.constraint_id === item.constraint_id;
+      return `<span class="constraint-item ${isFail ? 'fail' : ''}">${c.constraint_id}: ${c.rendered_text || ''}</span>`;
+    }).join('');
+    
+    const promptId = `prompt-${i}`;
+    card.innerHTML = `
+      <div class="card-header">
+        <span class="tag tag-model">${item.model}</span>
+        <span class="tag tag-constraint">${item.constraint_id}</span>
+        <span class="tag tag-sample">${item.sample_id}</span>
+      </div>
+      <div class="fail-msg">${item.message}</div>
+      <div class="constraint-list">${constraintItems}</div>
+      <div class="section-label">PROMPT <span class="toggle" onclick="toggleEl('${promptId}')">展开/收起</span></div>
+      <div class="prompt-box" id="${promptId}" style="display:none">${escHtml(item.prompt)}</div>
+      <div class="section-label">RESPONSE</div>
+      <div class="response-box">${escHtml(item.response)}</div>
+    `;
+    container.appendChild(card);
+  });
+}
+
+function toggleEl(id) {
+  const el = document.getElementById(id);
+  el.style.display = el.style.display === 'none' ? 'block' : 'none';
+}
+
+function escHtml(s) {
+  if (!s) return '';
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+</script>
+</body>
+</html>

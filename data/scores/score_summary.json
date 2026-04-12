@@ -1,0 +1,32 @@
+{
+  "gpt5": {
+    "hard_total": 600,
+    "hard_pass": 578,
+    "soft_total": 600,
+    "soft_pass": 75,
+    "constraint_total": 1200,
+    "constraint_pass": 653,
+    "instruction_total": 600,
+    "instruction_pass": 235
+  },
+  "gpt51": {
+    "hard_total": 600,
+    "hard_pass": 568,
+    "soft_total": 600,
+    "soft_pass": 81,
+    "constraint_total": 1200,
+    "constraint_pass": 649,
+    "instruction_total": 600,
+    "instruction_pass": 240
+  },
+  "gpt52": {
+    "hard_total": 600,
+    "hard_pass": 575,
+    "soft_total": 600,
+    "soft_pass": 80,
+    "constraint_total": 1200,
+    "constraint_pass": 655,
+    "instruction_total": 600,
+    "instruction_pass": 238
+  }
+}
