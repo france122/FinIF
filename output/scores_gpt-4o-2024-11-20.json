@@ -1,0 +1,1958 @@
+{
+  "model": "gpt-4o-2024-11-20",
+  "results": {
+    "T1.1-001": {
+      "T1.1-001#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_value_exact"
+      },
+      "T1.1-001#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T1.1-001#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T1.1-001#C4": {
+        "pass": false,
+        "reason": "输出未提供5月15日主力资金的具体数据或计算，仅基于推测得出资金恶化结论，未满足对比分析的要求。",
+        "type": "soft"
+      }
+    },
+    "T1.1-002": {
+      "T1.1-002#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_value_exact"
+      },
+      "T1.1-002#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T1.1-002#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T1.1-002#C4": {
+        "pass": true,
+        "reason": "模型输出明确判断了投资者类型为保守型，并引用了收益率和风控数据作为理由，符合约束要求。",
+        "type": "soft"
+      }
+    },
+    "T1.1-003": {
+      "T1.1-003#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_markdown_table"
+      },
+      "T1.1-003#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T1.1-003#C3": {
+        "pass": false,
+        "reason": "模型输出未明确指出环比回落最大的月份及其回落幅度，且未与原文数据进行对比验证。",
+        "type": "soft"
+      },
+      "T1.1-003#C4": {
+        "pass": false,
+        "reason": "模型输出未完成对'前高后低'趋势的验证，仅罗列了部分数据点，且未展示推导过程或趋势分析。",
+        "type": "soft"
+      }
+    },
+    "T1.1-004": {
+      "T1.1-004#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_markdown_table"
+      },
+      "T1.1-004#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T1.1-004#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T1.1-004#C4": {
+        "pass": false,
+        "reason": "模型输出未具体说明为何央行逆回购利率下调对市场影响最大，缺乏具体论据支持，如市场反应或相关数据的直接关联性分析。",
+        "type": "soft"
+      }
+    },
+    "T1.1-005": {
+      "T1.1-005#C1": {
+        "pass": false,
+        "type": "hard",
+        "checker": "check_value_exact"
+      },
+      "T1.1-005#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T1.1-005#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T1.1-005#C4": {
+        "pass": false,
+        "reason": "输出未能解释主力减仓但散户推涨的资金博弈逻辑，仅分析了主力资金流入流出和市场情绪对股价的影响，未明确提及散户资金如何推动股价上涨。",
+        "type": "soft"
+      }
+    },
+    "T1.1-006": {
+      "T1.1-006#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_value_exact"
+      },
+      "T1.1-006#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T1.1-006#C3": {
+        "pass": false,
+        "reason": "模型输出中对投资评级的判断虽然提供了收益和风险数据，但未能完全基于这些数据进行合理推导。例如，近一周的超额收益计算错误（应为 -1.41%，而非 -1.67%），且未明确解释为何短期和长期表现不佳的情况下仍给出中性评级，缺乏充分的逻辑支撑。",
+        "type": "soft"
+      }
+    },
+    "T1.1-007": {
+      "T1.1-007#C1": {
+        "pass": false,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T1.1-007#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T1.1-007#C3": {
+        "pass": false,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T1.1-007#C4": {
+        "pass": false,
+        "reason": "模型输出未正确解释扣非净利润与归母净利润差额的性质，仅罗列了差额数值和可能的非经常性项目，但未明确说明差额代表的非经常性收益/损失的具体性质及其对财务表现的影响。",
+        "type": "soft"
+      }
+    },
+    "T1.1-008": {
+      "T1.1-008#C1": {
+        "pass": false,
+        "type": "hard",
+        "checker": "check_value_exact"
+      },
+      "T1.1-008#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T1.1-008#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T1.1-008#C4": {
+        "pass": true,
+        "reason": "模型输出对比了两日多数指数涨跌方向和个股涨跌比，并提供了具体数据和计算过程，满足约束条件。",
+        "type": "soft"
+      }
+    },
+    "T1.1-009": {
+      "T1.1-009#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_markdown_table"
+      },
+      "T1.1-009#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T1.1-009#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T1.1-009#C4": {
+        "pass": false,
+        "reason": "模型输出中提到的流动资产合计数据（5,136,449,513.46）在原始上下文中并未出现，属于编造数据，不符合约束要求。",
+        "type": "soft"
+      }
+    },
+    "T1.1-010": {
+      "T1.1-010#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_value_exact"
+      },
+      "T1.1-010#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T1.1-010#C3": {
+        "pass": false,
+        "reason": "输出未提及商誉减值或投资损失对华闻集团报表的影响，仅提到资产减值对合并报表的影响，未全面满足约束要求。",
+        "type": "soft"
+      },
+      "T1.1-010#C4": {
+        "pass": false,
+        "reason": "模型输出未明确判断完成率为-30.19%是否构成重大违约，仅罗列了数据和分析，未直接给出明确的重大违约判断。",
+        "type": "soft"
+      }
+    },
+    "T1.1-011": {
+      "T1.1-011#C1": {
+        "pass": false,
+        "type": "hard",
+        "checker": "check_markdown_table"
+      },
+      "T1.1-011#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T1.1-011#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T1.1-011#C4": {
+        "pass": false,
+        "reason": "模型输出未正确指出中央6.5%与地方3.2%的增速差异，且计算的增速差异为3.3%而非明确指出的3.2%，不符合约束要求。",
+        "type": "soft"
+      }
+    },
+    "T1.1-012": {
+      "T1.1-012#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_value_exact"
+      },
+      "T1.1-012#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T1.1-012#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T1.1-012#C4": {
+        "pass": false,
+        "reason": "模型输出未结合基本面预测数据定位当前股价，仅提及股价与悲观和乐观情景目标价的区间关系，未深入分析基本面数据对股价的影响。",
+        "type": "soft"
+      }
+    },
+    "T1.2-001": {
+      "T1.2-001#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_field_coverage"
+      },
+      "T1.2-001#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T1.2-001#C3": {
+        "pass": false,
+        "type": "hard",
+        "checker": "check_ranking"
+      },
+      "T1.2-001#C4": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      }
+    },
+    "T1.2-002": {
+      "T1.2-002#C1": {
+        "pass": false,
+        "type": "hard",
+        "checker": "check_json_format"
+      },
+      "T1.2-002#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_field_coverage"
+      },
+      "T1.2-002#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T1.2-002#C4": {
+        "pass": false,
+        "reason": "模型输出未逐一明确给出每位股东的验证结论为'一致'或'不一致'，仅以'verification: true'表示，未完全满足约束要求。",
+        "type": "soft"
+      }
+    },
+    "T1.2-003": {
+      "T1.2-003#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_field_coverage"
+      },
+      "T1.2-003#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T1.2-003#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T1.2-003#C4": {
+        "pass": false,
+        "reason": "模型输出未严格按照约束要求进行比较，虽然提到了两位股东的减持力度，但在分析中加入了减持金额区间的计算，这与约束无关，且可能导致混淆。",
+        "type": "soft"
+      }
+    },
+    "T1.2-004": {
+      "T1.2-004#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_markdown_table"
+      },
+      "T1.2-004#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_field_coverage"
+      },
+      "T1.2-004#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T1.2-004#C4": {
+        "pass": false,
+        "reason": "模型输出在对比减持规模时，虽然提到赛意信息的减持规模（占总股本比例）更大，但未严格按照约束要求仅以占总股本比例为依据，而是额外计算了减持金额和持股比例变化幅度，导致分析超出约束范围。",
+        "type": "soft"
+      }
+    },
+    "T1.2-005": {
+      "T1.2-005#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_markdown_table"
+      },
+      "T1.2-005#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T1.2-005#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T1.2-005#C4": {
+        "pass": false,
+        "reason": "模型输出中未提供贵州茅台当日收盘价1,568.50元的来源，且未明确引用原始上下文中的数据作为依据，可能存在数据编造的嫌疑。",
+        "type": "soft"
+      }
+    },
+    "T1.2-006": {
+      "T1.2-006#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_field_coverage"
+      },
+      "T1.2-006#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T1.2-006#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T1.2-006#C4": {
+        "pass": true,
+        "reason": "模型输出正确计算了北京电子控股的发行前后持股比例变化，并得出了持股比例增加0.375%的结果，符合约束要求。",
+        "type": "soft"
+      }
+    },
+    "T1.2-007": {
+      "T1.2-007#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_keyword_presence"
+      },
+      "T1.2-007#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T1.2-007#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T1.2-007#C4": {
+        "pass": true,
+        "reason": "模型输出正确计算了解除限售数量占首次授予数量的比例，并且结果与原始上下文一致，满足约束条件。",
+        "type": "soft"
+      }
+    },
+    "T1.3-001": {
+      "T1.3-001#C1": {
+        "pass": false,
+        "type": "hard",
+        "checker": "check_json_format"
+      },
+      "T1.3-001#C2": {
+        "pass": false,
+        "type": "hard",
+        "checker": "check_value_exact"
+      },
+      "T1.3-001#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T1.3-001#C4": {
+        "pass": false,
+        "reason": "模型输出未基于罚款金额和虚增规模给出合理的处罚严厉程度判断，且计算部分存在明显错误和无意义表达。",
+        "type": "soft"
+      }
+    },
+    "T1.3-002": {
+      "T1.3-002#C1": {
+        "pass": false,
+        "type": "hard",
+        "checker": "check_markdown_table"
+      },
+      "T1.3-002#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T1.3-002#C3": {
+        "pass": false,
+        "reason": "模型输出未明确判断6月30日到7月15日间隔是否满足15天的提前通知要求，仅计算了间隔天数为16天，但未直接确认是否满足约束条件。",
+        "type": "soft"
+      },
+      "T1.3-002#C4": {
+        "pass": false,
+        "reason": "模型输出未明确核实安永华明会计师事务所与公司董事、高管或股东是否存在利益关联关系，仅提出可能性，未满足约束要求的严格识别标准。",
+        "type": "soft"
+      }
+    },
+    "T1.3-003": {
+      "T1.3-003#C1": {
+        "pass": false,
+        "type": "hard",
+        "checker": "check_json_format"
+      },
+      "T1.3-003#C2": {
+        "pass": false,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T1.3-003#C3": {
+        "pass": false,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T1.3-003#C4": {
+        "pass": true,
+        "reason": "模型输出对两份文档的财务金额进行了量化比较，并明确指出了更大的金额及其来源，满足约束要求。",
+        "type": "soft"
+      }
+    },
+    "T1.3-004": {
+      "T1.3-004#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_markdown_table"
+      },
+      "T1.3-004#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T1.3-004#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T1.3-004#C4": {
+        "pass": false,
+        "reason": "模型输出未具体分析主管人员与直接责任人的罚款差异是否合理，仅笼统评价处罚力度与责任匹配，未针对主管人员与直接责任人进行对比分析。",
+        "type": "soft"
+      }
+    },
+    "T1.3-005": {
+      "T1.3-005#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_keyword_presence"
+      },
+      "T1.3-005#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T1.3-005#C3": {
+        "pass": false,
+        "reason": "模型输出未合理解释复杂度分析和难度排序的依据，尤其是关键词难度排序缺乏具体分析支撑，未满足约束要求。",
+        "type": "soft"
+      }
+    },
+    "T1.3-006": {
+      "T1.3-006#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_qa_format"
+      },
+      "T1.3-006#C2": {
+        "pass": false,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T1.3-006#C3": {
+        "pass": false,
+        "reason": "模型输出的分类未能完全反映实际问题内容，部分问题的主题分类存在不合理之处，例如Q10被归类为'其他'，但其内容涉及非主营业务毛利增长和项目进展，应该更明确分类。此外，部分问题的主题分类未覆盖主要主题，如财务数据和经营策略等。",
+        "type": "soft"
+      },
+      "T1.3-006#C4": {
+        "pass": false,
+        "reason": "模型输出未明确指出最长回复的问题字数，且未严格按照约束要求统计具体字数。",
+        "type": "soft"
+      }
+    },
+    "T1.3-007": {
+      "T1.3-007#C1": {
+        "pass": false,
+        "type": "hard",
+        "checker": "check_value_exact"
+      },
+      "T1.3-007#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T1.3-007#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T1.3-007#C4": {
+        "pass": true,
+        "reason": "模型输出对比了判决金额与诉讼请求，并通过计算展示了原告诉求满足率为100%，分析合理且符合约束要求。",
+        "type": "soft"
+      }
+    },
+    "T1.3-008": {
+      "T1.3-008#C1": {
+        "pass": false,
+        "type": "hard",
+        "checker": "check_json_format"
+      },
+      "T1.3-008#C2": {
+        "pass": false,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T1.3-008#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_arithmetic_correct"
+      },
+      "T1.3-008#C4": {
+        "pass": false,
+        "type": "hard",
+        "checker": "check_computation_result"
+      }
+    },
+    "T2.1-001": {
+      "T2.1-001#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T2.1-001#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_value_exact"
+      },
+      "T2.1-001#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T2.1-001#C4": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T2.1-001#C5": {
+        "pass": true,
+        "reason": "模型正确计算了各板块同比增速并基于排序准确判断了增速最快和最慢的板块。",
+        "type": "soft"
+      }
+    },
+    "T2.1-002": {
+      "T2.1-002#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T2.1-002#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T2.1-002#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_word_limit"
+      },
+      "T2.1-002#C4": {
+        "pass": false,
+        "reason": "模型输出未对比营收增速和费用增速得出运营杠杆效应结论，而是仅罗列了费用占比和增速，未明确展示推导过程和对比分析。",
+        "type": "soft"
+      },
+      "T2.1-002#C5": {
+        "pass": false,
+        "reason": "模型输出中盈亏平衡估算的逻辑存在问题，未基于亏损幅度和增速趋势进行合理推算，且计算步骤中假设和推导不够严谨，未能完全满足约束要求。",
+        "type": "soft"
+      }
+    },
+    "T2.1-003": {
+      "T2.1-003#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T2.1-003#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_keyword_presence"
+      },
+      "T2.1-003#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T2.1-003#C4": {
+        "pass": true,
+        "reason": "模型输出对比了各产品线2022-2023E期间的毛利率变化幅度，并正确判断出锂精矿毛利率最稳定，符合约束要求。",
+        "type": "soft"
+      }
+    },
+    "T2.2-001": {
+      "T2.2-001#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_markdown_table"
+      },
+      "T2.2-001#C2": {
+        "pass": false,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T2.2-001#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T2.2-001#C4": {
+        "pass": true,
+        "reason": "模型输出正确判断了研发人员占比68%远超行业平均30%-40%，并明确结论为研发密集型，符合约束要求。",
+        "type": "soft"
+      }
+    },
+    "T2.2-002": {
+      "T2.2-002#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T2.2-002#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T2.2-002#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T2.2-002#C4": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_ordered_list_count"
+      }
+    },
+    "T2.2-003": {
+      "T2.2-003#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_json_format"
+      },
+      "T2.2-003#C2": {
+        "pass": false,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T2.2-003#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T2.2-003#C4": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      }
+    },
+    "T2.3-001": {
+      "T2.3-001#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T2.3-001#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T2.3-001#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T2.3-001#C4": {
+        "pass": true,
+        "reason": "模型输出正确判断了房地产服务板块在主力净流出的情况下上涨的驱动力为散户资金，符合约束要求。",
+        "type": "soft"
+      }
+    },
+    "T2.3-002": {
+      "T2.3-002#C1": {
+        "pass": false,
+        "reason": "模型输出未严格按照约束要求对经济数据进行分类，部分数据指标未明确列出具体数值，且部分引用的原文内容与上下文不符或未能准确反映原文数据。",
+        "type": "soft"
+      },
+      "T2.3-002#C2": {
+        "pass": true,
+        "reason": "模型输出准确概括了委员会分歧的焦点，并清晰地列出了正反双方的核心论据。",
+        "type": "soft"
+      },
+      "T2.3-002#C3": {
+        "pass": false,
+        "reason": "模型输出中的投资建议 2 和 3 未能在原文中找到明确的引用依据，且部分引用内容与原文不符或不存在，未满足每条建议需有原文引用作为依据的约束。",
+        "type": "soft"
+      },
+      "T2.3-002#C4": {
+        "pass": true,
+        "reason": "模型输出明确指出CPI数据疲软导致市场隐含的联邦基金利率峰值下降，符合约束条件和评判标准。",
+        "type": "soft"
+      }
+    },
+    "T2.3-003": {
+      "T2.3-003#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T2.3-003#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T2.3-003#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T2.3-003#C4": {
+        "pass": false,
+        "reason": "模型输出在分析动力电池产业链中产能过剩风险时，虽然提到了磷酸铁锂电池的高渗透率和价格下降，但未明确指出具体的产能数据或供需失衡的直接证据，未完全满足需有数据佐证的约束条件。",
+        "type": "soft"
+      }
+    },
+    "T2.4-001": {
+      "T2.4-001#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T2.4-001#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T2.4-001#C3": {
+        "pass": true,
+        "reason": "模型输出正确找出了差值最大和最小的日期，并提供了具体的差值数据，符合约束要求。",
+        "type": "soft"
+      },
+      "T2.4-001#C4": {
+        "pass": true,
+        "reason": "模型输出使用了日均余额变动数据对融资融券情绪进行了分析，并明确论证了偏多的结论，符合约束条件。",
+        "type": "soft"
+      }
+    },
+    "T2.4-002": {
+      "T2.4-002#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T2.4-002#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T2.4-002#C3": {
+        "pass": true,
+        "reason": "模型正确指出了净申赎转正的月份为2024年2月，并计算了净值变化率为4.21%，符合约束要求。",
+        "type": "soft"
+      },
+      "T2.4-002#C4": {
+        "pass": true,
+        "reason": "模型输出正确计算了基金规模的缩水金额（114.27亿元）和缩水百分比（23.47%），并且计算过程清晰、符合约束要求。",
+        "type": "soft"
+      }
+    },
+    "T2.5-001": {
+      "T2.5-001#C1": {
+        "pass": false,
+        "type": "hard",
+        "checker": "check_word_limit"
+      },
+      "T2.5-001#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T2.5-001#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T2.5-001#C4": {
+        "pass": true,
+        "reason": "模型输出分析了股价下跌与散户净流入的含义，并通过数据验证和推导过程合理判断了散户接盘信号，符合约束要求。",
+        "type": "soft"
+      }
+    },
+    "T2.5-002": {
+      "T2.5-002#C1": {
+        "pass": false,
+        "type": "hard",
+        "checker": "check_word_limit"
+      },
+      "T2.5-002#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T2.5-002#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T2.5-002#C4": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_computation_result"
+      }
+    },
+    "T2.5-003": {
+      "T2.5-003#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_json_format"
+      },
+      "T2.5-003#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T2.5-003#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T2.5-003#C4": {
+        "pass": false,
+        "reason": "模型输出的市场总结认为空头占据一定优势，与原始上下文中涨停17家、跌停5家整体偏多的结论不符，未合理总结市场多空力量。",
+        "type": "soft"
+      }
+    },
+    "T2.5-004": {
+      "T2.5-004#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_json_format"
+      },
+      "T2.5-004#C2": {
+        "pass": false,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T2.5-004#C3": {
+        "pass": false,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T2.5-004#C4": {
+        "pass": true,
+        "reason": "模型输出分析了选择发行股份+现金支付的原因，包括优化财务结构、减少流动性压力、绑定股东利益等，满足约束要求。",
+        "type": "soft"
+      }
+    },
+    "T3.1-001": {
+      "T3.1-001#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_markdown_table"
+      },
+      "T3.1-001#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_keyword_presence"
+      },
+      "T3.1-001#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T3.1-001#C4": {
+        "pass": true,
+        "reason": "模型输出正确分币种统计了金额和占比，并且计算过程清晰且符合原始上下文数据。",
+        "type": "soft"
+      },
+      "T3.1-001#C5": {
+        "pass": true,
+        "reason": "模型输出明确评估了未完成的控制项（部门主管审批签字和财务总监终审）的合规影响，并指出其为高风险，符合约束要求。",
+        "type": "soft"
+      }
+    },
+    "T3.1-002": {
+      "T3.1-002#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T3.1-002#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T3.1-002#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T3.1-002#C4": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T3.1-002#C5": {
+        "pass": false,
+        "reason": "模型输出中计算的总持股比例减少值（1.19%）与公告声称的1.02%不一致，未满足约束条件中对合理性的要求。",
+        "type": "soft"
+      }
+    },
+    "T3.1-003": {
+      "T3.1-003#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T3.1-003#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T3.1-003#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T3.1-003#C4": {
+        "pass": true,
+        "reason": "模型输出基于经营性现金流与净利润比率进行了量化分析，满足利润质量评估的约束要求。",
+        "type": "soft"
+      },
+      "T3.1-003#C5": {
+        "pass": true,
+        "reason": "模型输出按照严重程度正确排列了异常项，并提供了详细的分析和计算过程，满足约束要求。",
+        "type": "soft"
+      }
+    },
+    "T3.1-004": {
+      "T3.1-004#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_arithmetic_correct"
+      },
+      "T3.1-004#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T3.1-004#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T3.1-004#C4": {
+        "pass": false,
+        "reason": "模型输出在第5部分的案件受理费计算中存在错误，未正确分段累计计算受理费，导致计算结果不准确，不满足约束要求。",
+        "type": "soft"
+      },
+      "T3.1-004#C5": {
+        "pass": false,
+        "reason": "模型输出未对风险等级的高、中、低判断提供明确的依据，且部分计算过程不完整或存在错误，例如案件受理费比例的计算未正确完成。",
+        "type": "soft"
+      }
+    },
+    "T3.2-001": {
+      "T3.2-001#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_section_count"
+      },
+      "T3.2-001#C2": {
+        "pass": false,
+        "type": "hard",
+        "checker": "check_word_range"
+      },
+      "T3.2-001#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T3.2-001#C4": {
+        "pass": true,
+        "reason": "模型输出设计了具体的百分比阈值（如80%、50%、30%）和时间窗口（如T+1日、T+3日、5个交易日），满足约束要求的具体可操作性。",
+        "type": "soft"
+      },
+      "T3.2-001#C5": {
+        "pass": true,
+        "reason": "输出明确引用了中国证监会《关于进一步加强融资融券业务监管的通知》（2024年8月）和沪深交易所《融资融券交易实施细则（修订版）》（2025年3月），满足了约束条件中提到的引用监管文件的要求。",
+        "type": "soft"
+      }
+    },
+    "T3.2-002": {
+      "T3.2-002#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_markdown_table"
+      },
+      "T3.2-002#C2": {
+        "pass": false,
+        "type": "hard",
+        "checker": "check_table_sort_alpha"
+      },
+      "T3.2-002#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T3.2-002#C4": {
+        "pass": false,
+        "reason": "模型输出未对新增限制和解除限制的数量进行详细对比分析，仅罗列了数量并简单得出结论，未展示推导过程。",
+        "type": "soft"
+      },
+      "T3.2-002#C5": {
+        "pass": true,
+        "reason": "模型输出对'非公开发行项目（保密阶段）'和'研究部深度覆盖'的法律依据进行了正确的区分和分析，满足约束要求。",
+        "type": "soft"
+      }
+    },
+    "T3.2-003": {
+      "T3.2-003#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_field_coverage"
+      },
+      "T3.2-003#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T3.2-003#C3": {
+        "pass": true,
+        "reason": "模型输出正确分析了SAQ A和SAQ D的差异，并明确说明了SAQ D要求更严格的原因，符合约束条件。",
+        "type": "soft"
+      },
+      "T3.2-003#C4": {
+        "pass": true,
+        "reason": "模型输出分析了北方零售（欧洲）AOC逾期可能面临的后果，包括支付服务中断、罚款和处罚、声誉风险以及数据安全风险，符合约束要求。",
+        "type": "soft"
+      }
+    },
+    "T3.2-004": {
+      "T3.2-004#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T3.2-004#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_arithmetic_correct"
+      },
+      "T3.2-004#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T3.2-004#C4": {
+        "pass": false,
+        "reason": "模型输出未明确指出特别顾问不等于独立董事的法律风险，仅提及潜在利益冲突，未完全满足约束要求。",
+        "type": "soft"
+      },
+      "T3.2-004#C5": {
+        "pass": false,
+        "reason": "模型输出未汇总所有风险点，仅对部分风险点进行了分析，且未明确给出高/中/低的风险等级判断，未完全满足约束要求。",
+        "type": "soft"
+      }
+    },
+    "T3.3-001": {
+      "T3.3-001#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_arithmetic_correct"
+      },
+      "T3.3-001#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_arithmetic_correct"
+      },
+      "T3.3-001#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_value_derivation"
+      },
+      "T3.3-001#C4": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      }
+    },
+    "T3.3-002": {
+      "T3.3-002#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_arithmetic_correct"
+      },
+      "T3.3-002#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_arithmetic_correct"
+      },
+      "T3.3-002#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_keyword_presence"
+      },
+      "T3.3-002#C4": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T3.3-002#C5": {
+        "pass": true,
+        "reason": "模型输出统计了不一致数量（1项）和严重程度（中等），并提供了分析和建议，满足约束要求。",
+        "type": "soft"
+      }
+    },
+    "T3.3-003": {
+      "T3.3-003#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T3.3-003#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T3.3-003#C3": {
+        "pass": false,
+        "reason": "模型输出未严格聚焦于T+3交收安排的判断，且对股权登记日到会议日间隔的分析中，未明确说明交易日计算过程是否完全符合T+3要求，仅提到符合交收安排，存在推导不充分的问题。",
+        "type": "soft"
+      },
+      "T3.3-003#C4": {
+        "pass": false,
+        "reason": "模型输出未明确判断公告日到会议日间隔15天是否满足公司法规定，仅罗列数据而未展示推导步骤。",
+        "type": "soft"
+      },
+      "T3.3-003#C5": {
+        "pass": true,
+        "reason": "模型输出对每项核查均给出了明确结论，并正确标注为正确或存疑，符合约束要求。",
+        "type": "soft"
+      }
+    },
+    "T3.3-004": {
+      "T3.3-004#C1": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T3.3-004#C2": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_has_calculation"
+      },
+      "T3.3-004#C3": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_keyword_presence"
+      },
+      "T3.3-004#C4": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_computation_result"
+      },
+      "T3.3-004#C5": {
+        "pass": true,
+        "type": "hard",
+        "checker": "check_markdown_table"
+      },
+      "T3.3-004#C6": {
+        "pass": false,
+        "reason": "模型输出未逐项列出已兑现/未兑现状态，且综合评估部分未完整汇总所有承诺项的兑现情况，未满足约束要求。",
+        "type": "soft"
+      }
+    }
+  },
+  "scores": {
+    "T1.1-001": {
+      "total": 4,
+      "passed": 3,
+      "score": 0.75,
+      "hard": {
+        "total": 3,
+        "passed": 3
+      },
+      "soft": {
+        "total": 1,
+        "passed": 0
+      }
+    },
+    "T1.1-002": {
+      "total": 4,
+      "passed": 4,
+      "score": 1.0,
+      "hard": {
+        "total": 3,
+        "passed": 3
+      },
+      "soft": {
+        "total": 1,
+        "passed": 1
+      }
+    },
+    "T1.1-003": {
+      "total": 4,
+      "passed": 2,
+      "score": 0.5,
+      "hard": {
+        "total": 2,
+        "passed": 2
+      },
+      "soft": {
+        "total": 2,
+        "passed": 0
+      }
+    },
+    "T1.1-004": {
+      "total": 4,
+      "passed": 3,
+      "score": 0.75,
+      "hard": {
+        "total": 3,
+        "passed": 3
+      },
+      "soft": {
+        "total": 1,
+        "passed": 0
+      }
+    },
+    "T1.1-005": {
+      "total": 4,
+      "passed": 2,
+      "score": 0.5,
+      "hard": {
+        "total": 3,
+        "passed": 2
+      },
+      "soft": {
+        "total": 1,
+        "passed": 0
+      }
+    },
+    "T1.1-006": {
+      "total": 3,
+      "passed": 2,
+      "score": 0.6666666666666666,
+      "hard": {
+        "total": 2,
+        "passed": 2
+      },
+      "soft": {
+        "total": 1,
+        "passed": 0
+      }
+    },
+    "T1.1-007": {
+      "total": 4,
+      "passed": 1,
+      "score": 0.25,
+      "hard": {
+        "total": 3,
+        "passed": 1
+      },
+      "soft": {
+        "total": 1,
+        "passed": 0
+      }
+    },
+    "T1.1-008": {
+      "total": 4,
+      "passed": 3,
+      "score": 0.75,
+      "hard": {
+        "total": 3,
+        "passed": 2
+      },
+      "soft": {
+        "total": 1,
+        "passed": 1
+      }
+    },
+    "T1.1-009": {
+      "total": 4,
+      "passed": 3,
+      "score": 0.75,
+      "hard": {
+        "total": 3,
+        "passed": 3
+      },
+      "soft": {
+        "total": 1,
+        "passed": 0
+      }
+    },
+    "T1.1-010": {
+      "total": 4,
+      "passed": 2,
+      "score": 0.5,
+      "hard": {
+        "total": 2,
+        "passed": 2
+      },
+      "soft": {
+        "total": 2,
+        "passed": 0
+      }
+    },
+    "T1.1-011": {
+      "total": 4,
+      "passed": 2,
+      "score": 0.5,
+      "hard": {
+        "total": 3,
+        "passed": 2
+      },
+      "soft": {
+        "total": 1,
+        "passed": 0
+      }
+    },
+    "T1.1-012": {
+      "total": 4,
+      "passed": 3,
+      "score": 0.75,
+      "hard": {
+        "total": 3,
+        "passed": 3
+      },
+      "soft": {
+        "total": 1,
+        "passed": 0
+      }
+    },
+    "T1.2-001": {
+      "total": 4,
+      "passed": 3,
+      "score": 0.75,
+      "hard": {
+        "total": 4,
+        "passed": 3
+      },
+      "soft": {
+        "total": 0,
+        "passed": 0
+      }
+    },
+    "T1.2-002": {
+      "total": 4,
+      "passed": 2,
+      "score": 0.5,
+      "hard": {
+        "total": 3,
+        "passed": 2
+      },
+      "soft": {
+        "total": 1,
+        "passed": 0
+      }
+    },
+    "T1.2-003": {
+      "total": 4,
+      "passed": 3,
+      "score": 0.75,
+      "hard": {
+        "total": 3,
+        "passed": 3
+      },
+      "soft": {
+        "total": 1,
+        "passed": 0
+      }
+    },
+    "T1.2-004": {
+      "total": 4,
+      "passed": 3,
+      "score": 0.75,
+      "hard": {
+        "total": 3,
+        "passed": 3
+      },
+      "soft": {
+        "total": 1,
+        "passed": 0
+      }
+    },
+    "T1.2-005": {
+      "total": 4,
+      "passed": 3,
+      "score": 0.75,
+      "hard": {
+        "total": 3,
+        "passed": 3
+      },
+      "soft": {
+        "total": 1,
+        "passed": 0
+      }
+    },
+    "T1.2-006": {
+      "total": 4,
+      "passed": 4,
+      "score": 1.0,
+      "hard": {
+        "total": 3,
+        "passed": 3
+      },
+      "soft": {
+        "total": 1,
+        "passed": 1
+      }
+    },
+    "T1.2-007": {
+      "total": 4,
+      "passed": 4,
+      "score": 1.0,
+      "hard": {
+        "total": 3,
+        "passed": 3
+      },
+      "soft": {
+        "total": 1,
+        "passed": 1
+      }
+    },
+    "T1.3-001": {
+      "total": 4,
+      "passed": 1,
+      "score": 0.25,
+      "hard": {
+        "total": 3,
+        "passed": 1
+      },
+      "soft": {
+        "total": 1,
+        "passed": 0
+      }
+    },
+    "T1.3-002": {
+      "total": 4,
+      "passed": 1,
+      "score": 0.25,
+      "hard": {
+        "total": 2,
+        "passed": 1
+      },
+      "soft": {
+        "total": 2,
+        "passed": 0
+      }
+    },
+    "T1.3-003": {
+      "total": 4,
+      "passed": 1,
+      "score": 0.25,
+      "hard": {
+        "total": 3,
+        "passed": 0
+      },
+      "soft": {
+        "total": 1,
+        "passed": 1
+      }
+    },
+    "T1.3-004": {
+      "total": 4,
+      "passed": 3,
+      "score": 0.75,
+      "hard": {
+        "total": 3,
+        "passed": 3
+      },
+      "soft": {
+        "total": 1,
+        "passed": 0
+      }
+    },
+    "T1.3-005": {
+      "total": 3,
+      "passed": 2,
+      "score": 0.6666666666666666,
+      "hard": {
+        "total": 2,
+        "passed": 2
+      },
+      "soft": {
+        "total": 1,
+        "passed": 0
+      }
+    },
+    "T1.3-006": {
+      "total": 4,
+      "passed": 1,
+      "score": 0.25,
+      "hard": {
+        "total": 2,
+        "passed": 1
+      },
+      "soft": {
+        "total": 2,
+        "passed": 0
+      }
+    },
+    "T1.3-007": {
+      "total": 4,
+      "passed": 3,
+      "score": 0.75,
+      "hard": {
+        "total": 3,
+        "passed": 2
+      },
+      "soft": {
+        "total": 1,
+        "passed": 1
+      }
+    },
+    "T1.3-008": {
+      "total": 4,
+      "passed": 1,
+      "score": 0.25,
+      "hard": {
+        "total": 4,
+        "passed": 1
+      },
+      "soft": {
+        "total": 0,
+        "passed": 0
+      }
+    },
+    "T2.1-001": {
+      "total": 5,
+      "passed": 5,
+      "score": 1.0,
+      "hard": {
+        "total": 4,
+        "passed": 4
+      },
+      "soft": {
+        "total": 1,
+        "passed": 1
+      }
+    },
+    "T2.1-002": {
+      "total": 5,
+      "passed": 3,
+      "score": 0.6,
+      "hard": {
+        "total": 3,
+        "passed": 3
+      },
+      "soft": {
+        "total": 2,
+        "passed": 0
+      }
+    },
+    "T2.1-003": {
+      "total": 4,
+      "passed": 4,
+      "score": 1.0,
+      "hard": {
+        "total": 3,
+        "passed": 3
+      },
+      "soft": {
+        "total": 1,
+        "passed": 1
+      }
+    },
+    "T2.2-001": {
+      "total": 4,
+      "passed": 3,
+      "score": 0.75,
+      "hard": {
+        "total": 3,
+        "passed": 2
+      },
+      "soft": {
+        "total": 1,
+        "passed": 1
+      }
+    },
+    "T2.2-002": {
+      "total": 4,
+      "passed": 4,
+      "score": 1.0,
+      "hard": {
+        "total": 4,
+        "passed": 4
+      },
+      "soft": {
+        "total": 0,
+        "passed": 0
+      }
+    },
+    "T2.2-003": {
+      "total": 4,
+      "passed": 3,
+      "score": 0.75,
+      "hard": {
+        "total": 4,
+        "passed": 3
+      },
+      "soft": {
+        "total": 0,
+        "passed": 0
+      }
+    },
+    "T2.3-001": {
+      "total": 4,
+      "passed": 4,
+      "score": 1.0,
+      "hard": {
+        "total": 3,
+        "passed": 3
+      },
+      "soft": {
+        "total": 1,
+        "passed": 1
+      }
+    },
+    "T2.3-002": {
+      "total": 4,
+      "passed": 2,
+      "score": 0.5,
+      "hard": {
+        "total": 0,
+        "passed": 0
+      },
+      "soft": {
+        "total": 4,
+        "passed": 2
+      }
+    },
+    "T2.3-003": {
+      "total": 4,
+      "passed": 3,
+      "score": 0.75,
+      "hard": {
+        "total": 3,
+        "passed": 3
+      },
+      "soft": {
+        "total": 1,
+        "passed": 0
+      }
+    },
+    "T2.4-001": {
+      "total": 4,
+      "passed": 4,
+      "score": 1.0,
+      "hard": {
+        "total": 2,
+        "passed": 2
+      },
+      "soft": {
+        "total": 2,
+        "passed": 2
+      }
+    },
+    "T2.4-002": {
+      "total": 4,
+      "passed": 4,
+      "score": 1.0,
+      "hard": {
+        "total": 2,
+        "passed": 2
+      },
+      "soft": {
+        "total": 2,
+        "passed": 2
+      }
+    },
+    "T2.5-001": {
+      "total": 4,
+      "passed": 3,
+      "score": 0.75,
+      "hard": {
+        "total": 3,
+        "passed": 2
+      },
+      "soft": {
+        "total": 1,
+        "passed": 1
+      }
+    },
+    "T2.5-002": {
+      "total": 4,
+      "passed": 3,
+      "score": 0.75,
+      "hard": {
+        "total": 4,
+        "passed": 3
+      },
+      "soft": {
+        "total": 0,
+        "passed": 0
+      }
+    },
+    "T2.5-003": {
+      "total": 4,
+      "passed": 3,
+      "score": 0.75,
+      "hard": {
+        "total": 3,
+        "passed": 3
+      },
+      "soft": {
+        "total": 1,
+        "passed": 0
+      }
+    },
+    "T2.5-004": {
+      "total": 4,
+      "passed": 2,
+      "score": 0.5,
+      "hard": {
+        "total": 3,
+        "passed": 1
+      },
+      "soft": {
+        "total": 1,
+        "passed": 1
+      }
+    },
+    "T3.1-001": {
+      "total": 5,
+      "passed": 5,
+      "score": 1.0,
+      "hard": {
+        "total": 3,
+        "passed": 3
+      },
+      "soft": {
+        "total": 2,
+        "passed": 2
+      }
+    },
+    "T3.1-002": {
+      "total": 5,
+      "passed": 4,
+      "score": 0.8,
+      "hard": {
+        "total": 4,
+        "passed": 4
+      },
+      "soft": {
+        "total": 1,
+        "passed": 0
+      }
+    },
+    "T3.1-003": {
+      "total": 5,
+      "passed": 5,
+      "score": 1.0,
+      "hard": {
+        "total": 3,
+        "passed": 3
+      },
+      "soft": {
+        "total": 2,
+        "passed": 2
+      }
+    },
+    "T3.1-004": {
+      "total": 5,
+      "passed": 3,
+      "score": 0.6,
+      "hard": {
+        "total": 3,
+        "passed": 3
+      },
+      "soft": {
+        "total": 2,
+        "passed": 0
+      }
+    },
+    "T3.2-001": {
+      "total": 5,
+      "passed": 4,
+      "score": 0.8,
+      "hard": {
+        "total": 3,
+        "passed": 2
+      },
+      "soft": {
+        "total": 2,
+        "passed": 2
+      }
+    },
+    "T3.2-002": {
+      "total": 5,
+      "passed": 3,
+      "score": 0.6,
+      "hard": {
+        "total": 3,
+        "passed": 2
+      },
+      "soft": {
+        "total": 2,
+        "passed": 1
+      }
+    },
+    "T3.2-003": {
+      "total": 4,
+      "passed": 4,
+      "score": 1.0,
+      "hard": {
+        "total": 2,
+        "passed": 2
+      },
+      "soft": {
+        "total": 2,
+        "passed": 2
+      }
+    },
+    "T3.2-004": {
+      "total": 5,
+      "passed": 3,
+      "score": 0.6,
+      "hard": {
+        "total": 3,
+        "passed": 3
+      },
+      "soft": {
+        "total": 2,
+        "passed": 0
+      }
+    },
+    "T3.3-001": {
+      "total": 4,
+      "passed": 4,
+      "score": 1.0,
+      "hard": {
+        "total": 4,
+        "passed": 4
+      },
+      "soft": {
+        "total": 0,
+        "passed": 0
+      }
+    },
+    "T3.3-002": {
+      "total": 5,
+      "passed": 5,
+      "score": 1.0,
+      "hard": {
+        "total": 4,
+        "passed": 4
+      },
+      "soft": {
+        "total": 1,
+        "passed": 1
+      }
+    },
+    "T3.3-003": {
+      "total": 5,
+      "passed": 3,
+      "score": 0.6,
+      "hard": {
+        "total": 2,
+        "passed": 2
+      },
+      "soft": {
+        "total": 3,
+        "passed": 1
+      }
+    },
+    "T3.3-004": {
+      "total": 6,
+      "passed": 5,
+      "score": 0.8333333333333334,
+      "hard": {
+        "total": 5,
+        "passed": 5
+      },
+      "soft": {
+        "total": 1,
+        "passed": 0
+      }
+    }
+  },
+  "tier_scores": {
+    "T1": 0.6141975308641976,
+    "T2": 0.8066666666666666,
+    "T3": 0.8194444444444443,
+    "overall": 0.7132716049382717
+  }
+}
