@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
 """
 批量运行 LLM Judge 评估 pending soft constraints。
-用法: OPENAI_API_KEY=sk-xxx python run_judge.py
+用法: python run_judge.py
 输入: pending_judge_tasks.jsonl (279条任务)
 输出: judge_results.jsonl (279条结果)
 """
 import json, os, re, time, sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from openai import OpenAI
 
-client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.abspath(os.path.join(CURRENT_DIR, "..", "..", "..", "..", "..", ".."))
+sys.path.insert(0, PROJECT_ROOT)
+
+from gpt_call_all import get_gpt_response
 JUDGE_MODEL = "gpt-4o-2024-11-20"
 
 JUDGE_SYSTEM_PROMPT = """你是一个金融文档评测专家。你的任务是严格判断模型输出是否满足给定的约束条件。
@@ -70,36 +73,41 @@ def judge_one(task):
         context=task["context"] or "(无)",
         output=task["output"],
     )
-    for attempt in range(3):
-        try:
-            resp = client.chat.completions.create(
-                model=JUDGE_MODEL,
-                messages=[
-                    {"role": "system", "content": JUDGE_SYSTEM_PROMPT},
-                    {"role": "user", "content": prompt},
-                ],
-                temperature=0,
-                max_tokens=256,
-            )
-            text = resp.choices[0].message.content
-            result = parse_judge_response(text)
-            result["task_id"] = task["task_id"]
-            result["constraint_id"] = task["constraint_id"]
-            result["model"] = task["model"]
-            result["type"] = "soft"
-            return result
-        except Exception as e:
-            if attempt < 2:
-                time.sleep(2 ** attempt)
-            else:
-                return {
-                    "task_id": task["task_id"],
-                    "constraint_id": task["constraint_id"],
-                    "model": task["model"],
-                    "type": "soft",
-                    "pass": None,
-                    "reason": f"API error: {e}",
-                }
+    try:
+        text = get_gpt_response(
+            messages=[
+                {"role": "system", "content": JUDGE_SYSTEM_PROMPT},
+                {"role": "user", "content": prompt},
+            ],
+            model_version=JUDGE_MODEL,
+            temperature=0,
+            max_tokens=256,
+            max_try=3,
+        )
+        if text is None:
+            return {
+                "task_id": task["task_id"],
+                "constraint_id": task["constraint_id"],
+                "model": task["model"],
+                "type": "soft",
+                "pass": None,
+                "reason": "API returned None",
+            }
+        result = parse_judge_response(text)
+        result["task_id"] = task["task_id"]
+        result["constraint_id"] = task["constraint_id"]
+        result["model"] = task["model"]
+        result["type"] = "soft"
+        return result
+    except Exception as e:
+        return {
+            "task_id": task["task_id"],
+            "constraint_id": task["constraint_id"],
+            "model": task["model"],
+            "type": "soft",
+            "pass": None,
+            "reason": f"API error: {e}",
+        }
 
 
 def main():
@@ -140,7 +148,4 @@ def main():
 
 
 if __name__ == "__main__":
-    if not os.environ.get("OPENAI_API_KEY"):
-        print("Error: set OPENAI_API_KEY environment variable")
-        sys.exit(1)
     main()
