@@ -1,0 +1,1734 @@
+{
+  "constraints": {
+    "T1.1-001#C1": {
+      "type": "hard",
+      "checker": "check_value_exact",
+      "description": "行情数据与原文一致",
+      "params": {
+        "expected_values": {
+          "当前价": "1.69",
+          "涨停价": "1.89",
+          "跌停价": "1.55"
+        }
+      }
+    },
+    "T1.1-001#C2": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "正确计算涨幅空间百分比",
+      "params": {
+        "results": [
+          {
+            "label": "涨幅空间",
+            "expected": 11.83,
+            "tolerance": 0.5
+          }
+        ]
+      }
+    },
+    "T1.1-001#C3": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "正确计算当日振幅",
+      "params": {
+        "results": [
+          {
+            "label": "振幅",
+            "expected": 2.91,
+            "tolerance": 0.3
+          }
+        ]
+      }
+    },
+    "T1.1-001#C4": {
+      "type": "soft",
+      "description": "对比14日和15日主力资金，给出改善/恶化判断且有数据支撑",
+      "rubric": "输出需对比两日主力资金数据并给出趋势判断"
+    },
+    "T1.1-002#C1": {
+      "type": "hard",
+      "checker": "check_value_exact",
+      "description": "收益率数据与原文一致",
+      "params": {
+        "expected_values": {
+          "近一周基金收益率": "0.12%",
+          "赛道基准收益率": "0.10%"
+        }
+      }
+    },
+    "T1.1-002#C2": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "正确计算基准指数年化收益",
+      "params": {
+        "results": [
+          {
+            "label": "基准",
+            "expected": 2.25,
+            "tolerance": 0.05
+          }
+        ]
+      }
+    },
+    "T1.1-002#C3": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "展示了超额收益率验证的计算过程"
+    },
+    "T1.1-002#C4": {
+      "type": "soft",
+      "description": "给出投资者类型判断且理由合理",
+      "rubric": "需明确判断保守型或稳健型，理由需引用收益率和风控数据"
+    },
+    "T1.1-003#C1": {
+      "type": "hard",
+      "checker": "check_markdown_table",
+      "description": "包含CPI数据的Markdown表格"
+    },
+    "T1.1-003#C2": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "展示了月均变动幅度的计算过程"
+    },
+    "T1.1-003#C3": {
+      "type": "soft",
+      "description": "正确找出环比回落最大的月份并给出回落幅度",
+      "rubric": "需指出具体月份和回落百分点数，与原文数据一致"
+    },
+    "T1.1-003#C4": {
+      "type": "soft",
+      "description": "用数据验证'前高后低'趋势判断",
+      "rubric": "需用提取的CPI数据点验证趋势，不能仅复述原文结论"
+    },
+    "T1.1-004#C1": {
+      "type": "hard",
+      "checker": "check_markdown_table",
+      "description": "按类别分组展示数据"
+    },
+    "T1.1-004#C2": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "正确计算逆回购利率下调幅度",
+      "params": {
+        "results": [
+          {
+            "label": "下调",
+            "expected": 20,
+            "tolerance": 0.5
+          }
+        ]
+      }
+    },
+    "T1.1-004#C3": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "展示了创业板日内最大回撤的计算过程"
+    },
+    "T1.1-004#C4": {
+      "type": "soft",
+      "description": "对市场影响最大的数据判断合理且有论据",
+      "rubric": "需选择一项数据并说明为何影响最大，理由需具体"
+    },
+    "T1.1-005#C1": {
+      "type": "hard",
+      "checker": "check_value_exact",
+      "description": "资金流向数据与原文一致",
+      "params": {
+        "expected_values": {
+          "20日主力净流入": "-5537.66",
+          "10日主力净流入": "-3536.17"
+        }
+      }
+    },
+    "T1.1-005#C2": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "展示了日均主力净流入的计算"
+    },
+    "T1.1-005#C3": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "前收盘价推算和涨跌幅验证",
+      "params": {
+        "results": [
+          {
+            "label": "前收盘价",
+            "expected": 21.45,
+            "tolerance": 0.05
+          }
+        ]
+      }
+    },
+    "T1.1-005#C4": {
+      "type": "soft",
+      "description": "分析主力净流出但股价上涨的背离现象",
+      "rubric": "需解释主力减仓但散户推涨的资金博弈逻辑"
+    },
+    "T1.1-006#C1": {
+      "type": "hard",
+      "checker": "check_value_exact",
+      "description": "收益率数据与原文一致",
+      "params": {
+        "expected_values": {
+          "近3年累计收益率": "-13.42%"
+        }
+      }
+    },
+    "T1.1-006#C2": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "展示了年化收益率的估算过程"
+    },
+    "T1.1-006#C3": {
+      "type": "soft",
+      "description": "投资评级判断合理且有依据",
+      "rubric": "评级需基于收益和风险数据，不能仅凭感觉判断"
+    },
+    "T1.1-007#C1": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "资金流向平衡验证",
+      "params": {
+        "results": [
+          {
+            "label": "差值",
+            "expected": 0,
+            "tolerance": 1.0
+          }
+        ]
+      }
+    },
+    "T1.1-007#C2": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "反推去年同期归母净利润的计算"
+    },
+    "T1.1-007#C3": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "正确计算扣非与归母的差额",
+      "params": {
+        "results": [
+          {
+            "label": "差额",
+            "expected": 3797.41,
+            "tolerance": 10
+          }
+        ]
+      }
+    },
+    "T1.1-007#C4": {
+      "type": "soft",
+      "description": "正确解读非经常性损益的性质",
+      "rubric": "需解释扣非净利润与归母净利润差额代表的非经常性收益/损失"
+    },
+    "T1.1-008#C1": {
+      "type": "hard",
+      "checker": "check_value_exact",
+      "description": "6月29日数据与原文一致",
+      "params": {
+        "expected_values": {
+          "上证指数": "0.33%",
+          "深圳成指": "-0.07%",
+          "沪深300": "-1.94%"
+        }
+      }
+    },
+    "T1.1-008#C2": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "涨跌比计算正确",
+      "params": {
+        "results": [
+          {
+            "label": "涨跌比",
+            "expected": 0.07,
+            "tolerance": 0.005
+          }
+        ]
+      }
+    },
+    "T1.1-008#C3": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "北向资金流出倍数计算正确",
+      "params": {
+        "results": [
+          {
+            "label": "倍",
+            "expected": 6.63,
+            "tolerance": 0.2
+          }
+        ]
+      }
+    },
+    "T1.1-008#C4": {
+      "type": "soft",
+      "description": "正确判断哪天更弱并用数据佐证",
+      "rubric": "需对比两日多数指数涨跌方向和个股涨跌比"
+    },
+    "T1.1-009#C1": {
+      "type": "hard",
+      "checker": "check_markdown_table",
+      "description": "包含财务数据的Markdown表格"
+    },
+    "T1.1-009#C2": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "展示了同比增减幅度的计算"
+    },
+    "T1.1-009#C3": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "展示了Q3单季度数据的推算过程"
+    },
+    "T1.1-009#C4": {
+      "type": "soft",
+      "description": "流动资产占比分析合理",
+      "rubric": "需计算比例并解读资产结构特征"
+    },
+    "T1.1-010#C1": {
+      "type": "hard",
+      "checker": "check_value_exact",
+      "description": "关键财务数据与原文一致",
+      "params": {
+        "expected_values": {
+          "实际净利润": "-13,281.57",
+          "承诺净利润": "44,000.00",
+          "完成率": "-30.19%"
+        }
+      }
+    },
+    "T1.1-010#C2": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "计算了净利润缺口的绝对值和比例"
+    },
+    "T1.1-010#C3": {
+      "type": "soft",
+      "description": "正确分析对合并报表的影响",
+      "rubric": "需提及商誉减值或投资损失对华闻集团报表的影响"
+    },
+    "T1.1-010#C4": {
+      "type": "soft",
+      "description": "重大违约判断合理",
+      "rubric": "完成率为-30.19%构成重大违约，需有明确判断"
+    },
+    "T1.1-011#C1": {
+      "type": "hard",
+      "checker": "check_markdown_table",
+      "description": "包含财政收支数据的表格"
+    },
+    "T1.1-011#C2": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "展示了反推2023年中央财政支出的计算"
+    },
+    "T1.1-011#C3": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "正确反推2023年中央支出",
+      "params": {
+        "results": [
+          {
+            "label": "2023",
+            "expected": 38234,
+            "tolerance": 200
+          }
+        ]
+      }
+    },
+    "T1.1-011#C4": {
+      "type": "soft",
+      "description": "正确对比中央与地方增速差异",
+      "rubric": "需指出中央6.5% vs 地方3.2%的差距"
+    },
+    "T1.1-012#C1": {
+      "type": "hard",
+      "checker": "check_value_exact",
+      "description": "行情数据与原文一致",
+      "params": {
+        "expected_values": {
+          "当前价": "50.150",
+          "最高价": "51.900",
+          "最低价": "49.700"
+        }
+      }
+    },
+    "T1.1-012#C2": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "展示了振幅计算过程"
+    },
+    "T1.1-012#C3": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "涨跌幅验证一致",
+      "params": {
+        "results": [
+          {
+            "label": "涨跌幅",
+            "expected": -0.5,
+            "tolerance": 0.05
+          }
+        ]
+      }
+    },
+    "T1.1-012#C4": {
+      "type": "soft",
+      "description": "判断股价在预测区间的位置",
+      "rubric": "需结合基本面预测数据定位当前股价"
+    },
+    "T1.2-001#C1": {
+      "type": "hard",
+      "checker": "check_field_coverage",
+      "description": "覆盖4位股东",
+      "params": {
+        "required_fields": [
+          "张成康",
+          "刘伟超",
+          "欧阳湘英",
+          "曹金乔"
+        ]
+      }
+    },
+    "T1.2-001#C2": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "展示了减持金额=股数×均价的计算"
+    },
+    "T1.2-001#C3": {
+      "type": "hard",
+      "checker": "check_ranking",
+      "description": "按减持金额从大到小排序正确",
+      "params": {
+        "ranking": [
+          "张成康",
+          "刘伟超",
+          "曹金乔",
+          "欧阳湘英"
+        ]
+      }
+    },
+    "T1.2-001#C4": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "展示了反推总股本的计算"
+    },
+    "T1.2-002#C1": {
+      "type": "hard",
+      "checker": "check_json_format",
+      "description": "输出为合法JSON"
+    },
+    "T1.2-002#C2": {
+      "type": "hard",
+      "checker": "check_field_coverage",
+      "description": "覆盖4位股东",
+      "params": {
+        "required_fields": [
+          "张成康",
+          "刘伟超",
+          "欧阳湘英",
+          "曹金乔"
+        ]
+      }
+    },
+    "T1.2-002#C3": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "展示了变动前-减持=变动后的验证过程"
+    },
+    "T1.2-002#C4": {
+      "type": "soft",
+      "description": "每位股东的验证结论明确（一致/不一致）",
+      "rubric": "需对每位股东逐一给出验证结论"
+    },
+    "T1.2-003#C1": {
+      "type": "hard",
+      "checker": "check_field_coverage",
+      "description": "覆盖两位股东",
+      "params": {
+        "required_fields": [
+          "鑫瑞集诚",
+          "吴亚宏"
+        ]
+      }
+    },
+    "T1.2-003#C2": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "展示了减持金额区间的计算"
+    },
+    "T1.2-003#C3": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "展示了持股比例变动验证"
+    },
+    "T1.2-003#C4": {
+      "type": "soft",
+      "description": "正确比较两位股东的减持力度",
+      "rubric": "需用占总股本比例对比，而非绝对数量"
+    },
+    "T1.2-004#C1": {
+      "type": "hard",
+      "checker": "check_markdown_table",
+      "description": "对比表格展示两家公司数据"
+    },
+    "T1.2-004#C2": {
+      "type": "hard",
+      "checker": "check_field_coverage",
+      "description": "覆盖两家公司",
+      "params": {
+        "required_fields": [
+          "赛意信息",
+          "晶升股份"
+        ]
+      }
+    },
+    "T1.2-004#C3": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "展示了减持金额计算"
+    },
+    "T1.2-004#C4": {
+      "type": "soft",
+      "description": "正确判断哪家被减持更多",
+      "rubric": "用占总股本比例比较，而非绝对股数"
+    },
+    "T1.2-005#C1": {
+      "type": "hard",
+      "checker": "check_markdown_table",
+      "description": "交易明细表格"
+    },
+    "T1.2-005#C2": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "展示了加权平均均价的计算"
+    },
+    "T1.2-005#C3": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "展示了折价率的计算"
+    },
+    "T1.2-005#C4": {
+      "type": "soft",
+      "description": "折价率计算正确且分析合理",
+      "rubric": "每笔交易折价率=(收盘价-成交价)/收盘价×100%"
+    },
+    "T1.2-006#C1": {
+      "type": "hard",
+      "checker": "check_field_coverage",
+      "description": "覆盖5个认购对象",
+      "params": {
+        "min_rows": 5
+      }
+    },
+    "T1.2-006#C2": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "验证了认购金额=股数×320"
+    },
+    "T1.2-006#C3": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "计算了稀释比例"
+    },
+    "T1.2-006#C4": {
+      "type": "soft",
+      "description": "北京电控持股变化分析正确",
+      "rubric": "需计算发行前后持股比例变化"
+    },
+    "T1.2-007#C1": {
+      "type": "hard",
+      "checker": "check_keyword_presence",
+      "description": "包含激励计划核心要素",
+      "params": {
+        "required_keywords": [
+          "2,185万",
+          "213.36"
+        ]
+      }
+    },
+    "T1.2-007#C2": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "计算了业绩完成度百分比"
+    },
+    "T1.2-007#C3": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "计算了15人对应的未解除市值"
+    },
+    "T1.2-007#C4": {
+      "type": "soft",
+      "description": "解除限售比例计算合理",
+      "rubric": "需计算解除数量占首次授予的比例"
+    },
+    "T1.3-001#C1": {
+      "type": "hard",
+      "checker": "check_json_format",
+      "description": "输出为合法JSON"
+    },
+    "T1.3-001#C2": {
+      "type": "hard",
+      "checker": "check_value_exact",
+      "description": "处罚金额与原文一致",
+      "params": {
+        "expected_values": {
+          "虚增": "3,856",
+          "虚增利润": "939"
+        }
+      }
+    },
+    "T1.3-001#C3": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "计算了罚款合计和占虚增利润的比例"
+    },
+    "T1.3-001#C4": {
+      "type": "soft",
+      "description": "处罚严厉程度判断合理",
+      "rubric": "需基于罚款金额、虚增规模等给出判断理由"
+    },
+    "T1.3-002#C1": {
+      "type": "hard",
+      "checker": "check_markdown_table",
+      "description": "包含会议信息表格"
+    },
+    "T1.3-002#C2": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "计算了日期间隔"
+    },
+    "T1.3-002#C3": {
+      "type": "soft",
+      "description": "正确判断提前通知要求是否满足",
+      "rubric": "6月30日到7月15日间隔15天，需判断是否满足要求"
+    },
+    "T1.3-002#C4": {
+      "type": "soft",
+      "description": "正确识别需要回避表决的议案",
+      "rubric": "涉及利益关联方的议案需要回避"
+    },
+    "T1.3-003#C1": {
+      "type": "hard",
+      "checker": "check_json_format",
+      "description": "输出为合法JSON"
+    },
+    "T1.3-003#C2": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "总罚款金额计算正确",
+      "params": {
+        "results": [
+          {
+            "label": "总罚款",
+            "expected": 700,
+            "tolerance": 5
+          }
+        ]
+      }
+    },
+    "T1.3-003#C3": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "虚增业务利润率计算正确",
+      "params": {
+        "results": [
+          {
+            "label": "利润率",
+            "expected": 24.35,
+            "tolerance": 1
+          }
+        ]
+      }
+    },
+    "T1.3-003#C4": {
+      "type": "soft",
+      "description": "金额对比分析合理",
+      "rubric": "需量化比较两份文档涉及的财务金额"
+    },
+    "T1.3-004#C1": {
+      "type": "hard",
+      "checker": "check_markdown_table",
+      "description": "包含处罚信息表格"
+    },
+    "T1.3-004#C2": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "计算了公司与个人罚款比例"
+    },
+    "T1.3-004#C3": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "补缴所得税计算正确",
+      "params": {
+        "results": [
+          {
+            "label": "补缴",
+            "expected": 234.75,
+            "tolerance": 5
+          }
+        ]
+      }
+    },
+    "T1.3-004#C4": {
+      "type": "soft",
+      "description": "处罚力度匹配分析合理",
+      "rubric": "需分析主管人员vs直接责任人的罚款差异是否合理"
+    },
+    "T1.3-005#C1": {
+      "type": "hard",
+      "checker": "check_keyword_presence",
+      "description": "关键要素提取正确",
+      "params": {
+        "required_keywords": [
+          "CAGR",
+          "ROE"
+        ]
+      }
+    },
+    "T1.3-005#C2": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "计算了时间跨度"
+    },
+    "T1.3-005#C3": {
+      "type": "soft",
+      "description": "复杂度分析和难度排序合理",
+      "rubric": "需识别多个独立分析维度并排序"
+    },
+    "T1.3-006#C1": {
+      "type": "hard",
+      "checker": "check_qa_format",
+      "description": "Q/A格式输出"
+    },
+    "T1.3-006#C2": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "统计了问答对数量和分类"
+    },
+    "T1.3-006#C3": {
+      "type": "soft",
+      "description": "问题分类合理且覆盖主要主题",
+      "rubric": "分类需反映实际问题内容"
+    },
+    "T1.3-006#C4": {
+      "type": "soft",
+      "description": "正确识别最长回复的问题",
+      "rubric": "需指出具体问题和字数"
+    },
+    "T1.3-007#C1": {
+      "type": "hard",
+      "checker": "check_value_exact",
+      "description": "金额数据与原文一致",
+      "params": {
+        "expected_values": {
+          "委托资产": "8,500万",
+          "损失": "1,856万"
+        }
+      }
+    },
+    "T1.3-007#C2": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "损失率计算正确",
+      "params": {
+        "results": [
+          {
+            "label": "损失率",
+            "expected": 29.48,
+            "tolerance": 1
+          }
+        ]
+      }
+    },
+    "T1.3-007#C3": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "超限幅度计算正确",
+      "params": {
+        "results": [
+          {
+            "label": "超限",
+            "expected": 17,
+            "tolerance": 0.5
+          }
+        ]
+      }
+    },
+    "T1.3-007#C4": {
+      "type": "soft",
+      "description": "诉求满足率分析合理",
+      "rubric": "需对比判决金额与诉讼请求"
+    },
+    "T1.3-008#C1": {
+      "type": "hard",
+      "checker": "check_json_format",
+      "description": "输出为合法JSON"
+    },
+    "T1.3-008#C2": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "溢价率计算正确",
+      "params": {
+        "results": [
+          {
+            "label": "溢价率",
+            "expected": 25.65,
+            "tolerance": 1
+          }
+        ]
+      }
+    },
+    "T1.3-008#C3": {
+      "type": "hard",
+      "checker": "check_arithmetic_correct",
+      "description": "资金来源合计验证",
+      "params": {
+        "expressions": [
+          {
+            "left": "15 + 8.56",
+            "expected": "23.56"
+          }
+        ]
+      }
+    },
+    "T1.3-008#C4": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "PE倍数计算正确",
+      "params": {
+        "results": [
+          {
+            "label": "PE",
+            "expected": 12.74,
+            "tolerance": 0.5
+          }
+        ]
+      }
+    },
+    "T2.1-001#C1": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "计算了各板块营收占比"
+    },
+    "T2.1-001#C2": {
+      "type": "hard",
+      "checker": "check_value_exact",
+      "description": "游戏业务同比数据与原文一致",
+      "params": {
+        "expected_values": {
+          "游戏": "9.6%"
+        }
+      }
+    },
+    "T2.1-001#C3": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "展示了净利率计算"
+    },
+    "T2.1-001#C4": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "展示了2024年Q4预测计算"
+    },
+    "T2.1-001#C5": {
+      "type": "soft",
+      "description": "增速最快/最慢板块判断正确",
+      "rubric": "需基于计算出的同比增速排序，判断正确"
+    },
+    "T2.1-002#C1": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "Q3单季度营收推算"
+    },
+    "T2.1-002#C2": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "费用占营收比例计算"
+    },
+    "T2.1-002#C3": {
+      "type": "hard",
+      "checker": "check_word_limit",
+      "description": "不超过800字",
+      "params": {
+        "max_words": 800
+      }
+    },
+    "T2.1-002#C4": {
+      "type": "soft",
+      "description": "运营杠杆效应判断合理",
+      "rubric": "需对比营收增速和费用增速得出结论"
+    },
+    "T2.1-002#C5": {
+      "type": "soft",
+      "description": "盈亏平衡估算有逻辑",
+      "rubric": "需基于亏损幅度和增速趋势推算"
+    },
+    "T2.1-003#C1": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "展示了CAGR计算公式"
+    },
+    "T2.1-003#C2": {
+      "type": "hard",
+      "checker": "check_keyword_presence",
+      "description": "识别锂化合物为核心驱动",
+      "params": {
+        "required_keywords": [
+          "锂化合物"
+        ]
+      }
+    },
+    "T2.1-003#C3": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "展示了假设下的毛利率重估"
+    },
+    "T2.1-003#C4": {
+      "type": "soft",
+      "description": "毛利率最稳定产品线判断正确",
+      "rubric": "需比较各产品线年度间毛利率的变化幅度"
+    },
+    "T2.2-001#C1": {
+      "type": "hard",
+      "checker": "check_markdown_table",
+      "description": "表格展示竞争优势"
+    },
+    "T2.2-001#C2": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "反算营业收入正确",
+      "params": {
+        "results": [
+          {
+            "label": "营业收入",
+            "expected": 44.6,
+            "tolerance": 1
+          }
+        ]
+      }
+    },
+    "T2.2-001#C3": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "PC端月活计算正确",
+      "params": {
+        "results": [
+          {
+            "label": "PC",
+            "expected": 2.4,
+            "tolerance": 0.1
+          }
+        ]
+      }
+    },
+    "T2.2-001#C4": {
+      "type": "soft",
+      "description": "研发密集型判断合理",
+      "rubric": "68%远超行业30-40%平均水平，应判断为研发密集型"
+    },
+    "T2.2-002#C1": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "反算营业收入"
+    },
+    "T2.2-002#C2": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "创新药研发投入计算正确",
+      "params": {
+        "results": [
+          {
+            "label": "创新药研发",
+            "expected": 49.2,
+            "tolerance": 1
+          }
+        ]
+      }
+    },
+    "T2.2-002#C3": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "平均每款创新药收入计算正确",
+      "params": {
+        "results": [
+          {
+            "label": "平均",
+            "expected": 8.0,
+            "tolerance": 0.5
+          }
+        ]
+      }
+    },
+    "T2.2-002#C4": {
+      "type": "hard",
+      "checker": "check_ordered_list_count",
+      "description": "3-5条有序列表",
+      "params": {
+        "min_count": 3,
+        "max_count": 5
+      }
+    },
+    "T2.2-003#C1": {
+      "type": "hard",
+      "checker": "check_json_format",
+      "description": "输出为合法JSON"
+    },
+    "T2.2-003#C2": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "金葵花客户占比计算正确",
+      "params": {
+        "results": [
+          {
+            "label": "金葵花",
+            "expected": 2.18,
+            "tolerance": 0.1
+          }
+        ]
+      }
+    },
+    "T2.2-003#C3": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "户均AUM计算正确",
+      "params": {
+        "results": [
+          {
+            "label": "户均",
+            "expected": 6.76,
+            "tolerance": 0.2
+          }
+        ]
+      }
+    },
+    "T2.2-003#C4": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "张均年交易额和贷款结构分析"
+    },
+    "T2.3-001#C1": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "计算了沪深涨跌幅差值"
+    },
+    "T2.3-001#C2": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "计算了创业板预估点位"
+    },
+    "T2.3-001#C3": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "主力净流出占比计算正确",
+      "params": {
+        "results": [
+          {
+            "label": "占",
+            "expected": 2.27,
+            "tolerance": 0.1
+          }
+        ]
+      }
+    },
+    "T2.3-001#C4": {
+      "type": "soft",
+      "description": "房地产板块驱动力判断合理",
+      "rubric": "主力净流出但板块上涨，应判断为散户驱动"
+    },
+    "T2.3-002#C1": {
+      "type": "soft",
+      "description": "经济数据分类为支持/反对加息两类",
+      "rubric": "需列出具体数据指标并归类"
+    },
+    "T2.3-002#C2": {
+      "type": "soft",
+      "description": "委员会分歧焦点概括准确",
+      "rubric": "需概括正反双方核心论据"
+    },
+    "T2.3-002#C3": {
+      "type": "soft",
+      "description": "投资建议引用了纪要原文",
+      "rubric": "3条建议，每条需有原文引用作为依据"
+    },
+    "T2.3-002#C4": {
+      "type": "soft",
+      "description": "CPI对利率峰值影响分析合理",
+      "rubric": "CPI比预期疲软应导致利率峰值预期下降"
+    },
+    "T2.3-003#C1": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "中国市占率计算正确",
+      "params": {
+        "results": [
+          {
+            "label": "市占率",
+            "expected": 68.0,
+            "tolerance": 1
+          }
+        ]
+      }
+    },
+    "T2.3-003#C2": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "比亚迪/特斯拉倍数计算正确",
+      "params": {
+        "results": [
+          {
+            "label": "倍",
+            "expected": 1.94,
+            "tolerance": 0.1
+          }
+        ]
+      }
+    },
+    "T2.3-003#C3": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "展示了销量差距计算"
+    },
+    "T2.3-003#C4": {
+      "type": "soft",
+      "description": "产能过剩风险判断有数据佐证",
+      "rubric": "需指出具体环节和数据"
+    },
+    "T2.4-001#C1": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "计算了每日融券-融资差值"
+    },
+    "T2.4-001#C2": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "计算了融券余额总变动幅度"
+    },
+    "T2.4-001#C3": {
+      "type": "soft",
+      "description": "正确找出差值最大和最小日期",
+      "rubric": "需指出具体日期和差值数据"
+    },
+    "T2.4-001#C4": {
+      "type": "soft",
+      "description": "多空情绪判断有数据支撑",
+      "rubric": "需用日均余额变动数据论证偏多或偏空"
+    },
+    "T2.4-002#C1": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "计算了最大回撤幅度"
+    },
+    "T2.4-002#C2": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "计算了月均净赎回规模"
+    },
+    "T2.4-002#C3": {
+      "type": "soft",
+      "description": "正确找出净申赎转正的月份",
+      "rubric": "需指出具体月份和净值变化率"
+    },
+    "T2.4-002#C4": {
+      "type": "soft",
+      "description": "规模缩水幅度计算正确",
+      "rubric": "需给出缩水亿元数和百分比"
+    },
+    "T2.5-001#C1": {
+      "type": "hard",
+      "checker": "check_word_limit",
+      "description": "摘要不超过100字",
+      "params": {
+        "max_words": 150
+      }
+    },
+    "T2.5-001#C2": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "计算了合计净流出和差额"
+    },
+    "T2.5-001#C3": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "成交额反算验证",
+      "params": {
+        "results": [
+          {
+            "label": "成交额",
+            "expected": 5192,
+            "tolerance": 50
+          }
+        ]
+      }
+    },
+    "T2.5-001#C4": {
+      "type": "soft",
+      "description": "散户接盘判断合理",
+      "rubric": "需分析股价下跌+散户净流入的含义"
+    },
+    "T2.5-002#C1": {
+      "type": "hard",
+      "checker": "check_word_limit",
+      "description": "标题不超过25字",
+      "params": {
+        "max_words": 30
+      }
+    },
+    "T2.5-002#C2": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "反算去年同期营收"
+    },
+    "T2.5-002#C3": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "去年Q3毛利率计算正确",
+      "params": {
+        "results": [
+          {
+            "label": "毛利率",
+            "expected": 76.77,
+            "tolerance": 0.5
+          }
+        ]
+      }
+    },
+    "T2.5-002#C4": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "利润弹性系数计算正确",
+      "params": {
+        "results": [
+          {
+            "label": "弹性",
+            "expected": 10.51,
+            "tolerance": 0.5
+          }
+        ]
+      }
+    },
+    "T2.5-003#C1": {
+      "type": "hard",
+      "checker": "check_json_format",
+      "description": "输出为合法JSON"
+    },
+    "T2.5-003#C2": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "涨停/跌停比率计算正确",
+      "params": {
+        "results": [
+          {
+            "label": "比率",
+            "expected": 3.4,
+            "tolerance": 0.2
+          }
+        ]
+      }
+    },
+    "T2.5-003#C3": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "破板数量计算正确",
+      "params": {
+        "results": [
+          {
+            "label": "破板",
+            "expected": 5.95,
+            "tolerance": 0.5
+          }
+        ]
+      }
+    },
+    "T2.5-003#C4": {
+      "type": "soft",
+      "description": "市场多空力量总结合理",
+      "rubric": "涨停17家vs跌停5家整体偏多"
+    },
+    "T2.5-004#C1": {
+      "type": "hard",
+      "checker": "check_json_format",
+      "description": "输出为合法JSON"
+    },
+    "T2.5-004#C2": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "交易金额中位数正确",
+      "params": {
+        "results": [
+          {
+            "label": "中位数",
+            "expected": 135,
+            "tolerance": 1
+          }
+        ]
+      }
+    },
+    "T2.5-004#C3": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "溢价倍数计算正确",
+      "params": {
+        "results": [
+          {
+            "label": "溢价倍数",
+            "expected": 13.5,
+            "tolerance": 0.5
+          }
+        ]
+      }
+    },
+    "T2.5-004#C4": {
+      "type": "soft",
+      "description": "支付方式选择分析合理",
+      "rubric": "需分析为何选择发行股份+现金而非全现金"
+    },
+    "T3.1-001#C1": {
+      "type": "hard",
+      "checker": "check_markdown_table",
+      "description": "有效付款批次使用表格展示"
+    },
+    "T3.1-001#C2": {
+      "type": "hard",
+      "checker": "check_keyword_presence",
+      "description": "识别全部3项应排除发票",
+      "params": {
+        "required_keywords": [
+          "INV-20251005",
+          "INV-20251006",
+          "INV-20251007"
+        ]
+      }
+    },
+    "T3.1-001#C3": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "计算了有效付款合计金额"
+    },
+    "T3.1-001#C4": {
+      "type": "soft",
+      "description": "CNY/USD占比分析正确",
+      "rubric": "需分币种统计金额和占比"
+    },
+    "T3.1-001#C5": {
+      "type": "soft",
+      "description": "合规风险评估合理",
+      "rubric": "需评估未完成控制项的合规影响"
+    },
+    "T3.1-002#C1": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "展示了逐一核验变动前-减持=变动后"
+    },
+    "T3.1-002#C2": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "核验了合计行=各分项之和"
+    },
+    "T3.1-002#C3": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "持股比例变动验证正确",
+      "params": {
+        "results": [
+          {
+            "label": "1.02",
+            "expected": 1.02,
+            "tolerance": 0.01
+          }
+        ]
+      }
+    },
+    "T3.1-002#C4": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "计算了各股东减持套现金额"
+    },
+    "T3.1-002#C5": {
+      "type": "soft",
+      "description": "个人所得税判断合理",
+      "rubric": "大额减持可能涉及个税问题"
+    },
+    "T3.1-003#C1": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "计算了各季度毛利率和净利率"
+    },
+    "T3.1-003#C2": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "量化了异常指标的偏离幅度"
+    },
+    "T3.1-003#C3": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "成本/营收增速比计算正确",
+      "params": {
+        "results": [
+          {
+            "label": "比值",
+            "expected": 4.93,
+            "tolerance": 0.3
+          }
+        ]
+      }
+    },
+    "T3.1-003#C4": {
+      "type": "soft",
+      "description": "利润质量评估有量化依据",
+      "rubric": "需基于现金流/净利润比率评估利润质量"
+    },
+    "T3.1-003#C5": {
+      "type": "soft",
+      "description": "异常项按严重程度排列",
+      "rubric": "最严重的异常排在最前面"
+    },
+    "T3.1-004#C1": {
+      "type": "hard",
+      "checker": "check_arithmetic_correct",
+      "description": "损失合计验证",
+      "params": {
+        "expressions": [
+          {
+            "left": "1856 + 650",
+            "expected": "2506"
+          }
+        ]
+      }
+    },
+    "T3.1-004#C2": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "损失率计算正确",
+      "params": {
+        "results": [
+          {
+            "label": "损失率",
+            "expected": 58.0,
+            "tolerance": 2
+          }
+        ]
+      }
+    },
+    "T3.1-004#C3": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "超限倍数计算正确",
+      "params": {
+        "results": [
+          {
+            "label": "倍",
+            "expected": 2.13,
+            "tolerance": 0.1
+          }
+        ]
+      }
+    },
+    "T3.1-004#C4": {
+      "type": "soft",
+      "description": "诉讼请求满足率分析合理",
+      "rubric": "需对比判决金额与诉讼请求各项"
+    },
+    "T3.1-004#C5": {
+      "type": "soft",
+      "description": "风险等级判断有依据",
+      "rubric": "需给出高/中/低判断并说明依据"
+    },
+    "T3.2-001#C1": {
+      "type": "hard",
+      "checker": "check_section_count",
+      "description": "包含引言、检测方法等多个章节",
+      "params": {
+        "min_sections": 3
+      }
+    },
+    "T3.2-001#C2": {
+      "type": "hard",
+      "checker": "check_word_range",
+      "description": "1000-1200字",
+      "params": {
+        "min_words": 800,
+        "max_words": 1400
+      }
+    },
+    "T3.2-001#C3": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "计算了可疑交易占比"
+    },
+    "T3.2-001#C4": {
+      "type": "soft",
+      "description": "监控指标和阈值设计具体可操作",
+      "rubric": "需设计具体的百分比阈值和时间窗口"
+    },
+    "T3.2-001#C5": {
+      "type": "soft",
+      "description": "引用了背景材料中的监管文件",
+      "rubric": "需提到证监会通知或交易所细则"
+    },
+    "T3.2-002#C1": {
+      "type": "hard",
+      "checker": "check_markdown_table",
+      "description": "受限清单使用表格展示"
+    },
+    "T3.2-002#C2": {
+      "type": "hard",
+      "checker": "check_table_sort_alpha",
+      "description": "按股票代码升序排列"
+    },
+    "T3.2-002#C3": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "统计了涉及的行业数量"
+    },
+    "T3.2-002#C4": {
+      "type": "soft",
+      "description": "管控力度判断合理",
+      "rubric": "需对比新增vs解除数量得出结论"
+    },
+    "T3.2-002#C5": {
+      "type": "soft",
+      "description": "法律依据区别分析正确",
+      "rubric": "非公开发行涉及内幕信息，深度覆盖涉及利益冲突"
+    },
+    "T3.2-003#C1": {
+      "type": "hard",
+      "checker": "check_field_coverage",
+      "description": "正确分类商户",
+      "params": {
+        "required_fields": [
+          "北方零售"
+        ]
+      }
+    },
+    "T3.2-003#C2": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "计算了年交易量合计"
+    },
+    "T3.2-003#C3": {
+      "type": "soft",
+      "description": "SAQ A/D差异分析正确",
+      "rubric": "SAQ D要求更严格，需说明原因"
+    },
+    "T3.2-003#C4": {
+      "type": "soft",
+      "description": "AOC风险分析合理",
+      "rubric": "需分析AOC逾期可能面临的后果"
+    },
+    "T3.2-004#C1": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "溢价率计算正确",
+      "params": {
+        "results": [
+          {
+            "label": "溢价率",
+            "expected": 25.65,
+            "tolerance": 1
+          }
+        ]
+      }
+    },
+    "T3.2-004#C2": {
+      "type": "hard",
+      "checker": "check_arithmetic_correct",
+      "description": "资金来源合计验证",
+      "params": {
+        "expressions": [
+          {
+            "left": "15 + 8.56",
+            "expected": "23.56"
+          }
+        ]
+      }
+    },
+    "T3.2-004#C3": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "计算了净利润增长率"
+    },
+    "T3.2-004#C4": {
+      "type": "soft",
+      "description": "独立董事身份矛盾分析正确",
+      "rubric": "特别顾问不等于独立董事，需指出法律风险"
+    },
+    "T3.2-004#C5": {
+      "type": "soft",
+      "description": "合规风险等级评估合理",
+      "rubric": "需给出高/中/低判断并汇总风险点"
+    },
+    "T3.3-001#C1": {
+      "type": "hard",
+      "checker": "check_arithmetic_correct",
+      "description": "鑫瑞集诚持股变动验证",
+      "params": {
+        "expressions": [
+          {
+            "left": "12458370 - 1126651",
+            "expected": "11331719"
+          }
+        ]
+      }
+    },
+    "T3.3-001#C2": {
+      "type": "hard",
+      "checker": "check_arithmetic_correct",
+      "description": "吴亚宏持股变动验证",
+      "params": {
+        "expressions": [
+          {
+            "left": "5145200 - 350000",
+            "expected": "4795200"
+          }
+        ]
+      }
+    },
+    "T3.3-001#C3": {
+      "type": "hard",
+      "checker": "check_value_derivation",
+      "description": "合计比例变动验证",
+      "params": {
+        "checks": [
+          {
+            "formula": "12.66 - 11.60",
+            "expected": 1.06,
+            "tolerance": 0.01,
+            "label": "1.06"
+          }
+        ]
+      }
+    },
+    "T3.3-001#C4": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "计算了减持金额"
+    },
+    "T3.3-002#C1": {
+      "type": "hard",
+      "checker": "check_arithmetic_correct",
+      "description": "分季度营收加总验证",
+      "params": {
+        "expressions": [
+          {
+            "left": "32456 + 38123 + 42567 + 43677",
+            "expected": "156823"
+          }
+        ]
+      }
+    },
+    "T3.3-002#C2": {
+      "type": "hard",
+      "checker": "check_arithmetic_correct",
+      "description": "分季度净利润加总验证",
+      "params": {
+        "expressions": [
+          {
+            "left": "3567 + 4890 + 5234 + 5265",
+            "expected": "18956"
+          }
+        ]
+      }
+    },
+    "T3.3-002#C3": {
+      "type": "hard",
+      "checker": "check_keyword_presence",
+      "description": "发现同期数据不一致",
+      "params": {
+        "required_keywords": [
+          "不一致",
+          "33,456"
+        ]
+      }
+    },
+    "T3.3-002#C4": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "反算每股收益验证"
+    },
+    "T3.3-002#C5": {
+      "type": "soft",
+      "description": "数据质量评估结论完整",
+      "rubric": "需统计不一致数量和严重程度"
+    },
+    "T3.3-003#C1": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "推算了星期几的正确性"
+    },
+    "T3.3-003#C2": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "计算了日期间隔"
+    },
+    "T3.3-003#C3": {
+      "type": "soft",
+      "description": "T+3交收安排判断合理",
+      "rubric": "股权登记日到会议日间隔需满足交收要求"
+    },
+    "T3.3-003#C4": {
+      "type": "soft",
+      "description": "提前通知要求判断正确",
+      "rubric": "15天间隔需判断是否满足公司法规定"
+    },
+    "T3.3-003#C5": {
+      "type": "soft",
+      "description": "每项核查给出明确结论",
+      "rubric": "每项需标注正确/存疑/错误"
+    },
+    "T3.3-004#C1": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "逐年计算承诺完成率"
+    },
+    "T3.3-004#C2": {
+      "type": "hard",
+      "checker": "check_has_calculation",
+      "description": "计算研发费用率变化趋势"
+    },
+    "T3.3-004#C3": {
+      "type": "hard",
+      "checker": "check_keyword_presence",
+      "description": "识别募集资金变更",
+      "params": {
+        "required_keywords": [
+          "变更",
+          "3,500"
+        ]
+      }
+    },
+    "T3.3-004#C4": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "资产负债率变动计算正确",
+      "params": {
+        "results": [
+          {
+            "label": "变动",
+            "expected": 13.3,
+            "tolerance": 0.5
+          }
+        ]
+      }
+    },
+    "T3.3-004#C5": {
+      "type": "hard",
+      "checker": "check_markdown_table",
+      "description": "承诺vs实际对比用表格展示"
+    },
+    "T3.3-004#C6": {
+      "type": "soft",
+      "description": "综合兑现率评估合理",
+      "rubric": "需逐项列出已兑现/未兑现状态并汇总"
+    }
+  },
+  "stats": {
+    "total": 227,
+    "hard": 160,
+    "soft": 67,
+    "cases": 54,
+    "avg_per_case": 4.2
+  }
+}
