@@ -71,9 +71,9 @@
       }
     },
     "T1.1-002#C3": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "展示了超额收益率验证的计算过程"
+      "type": "soft",
+      "description": "展示了超额收益率验证的计算过程",
+      "rubric": "检查输出是否完整展示了超额收益率验证的计算过程，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T1.1-002#C4": {
       "type": "soft",
@@ -81,14 +81,14 @@
       "rubric": "需明确判断保守型或稳健型，理由需引用收益率和风控数据"
     },
     "T1.1-003#C1": {
-      "type": "hard",
-      "checker": "check_markdown_table",
-      "description": "包含CPI数据的Markdown表格"
+      "type": "soft",
+      "description": "包含CPI数据的Markdown表格",
+      "rubric": "检查输出是否以清晰的表格形式呈现数据。包含CPI数据的Markdown表格。数据应结构化展示，便于阅读和对比。"
     },
     "T1.1-003#C2": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "展示了月均变动幅度的计算过程"
+      "type": "soft",
+      "description": "展示了月均变动幅度的计算过程",
+      "rubric": "检查输出是否完整展示了月均变动幅度的计算过程，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T1.1-003#C3": {
       "type": "soft",
@@ -101,9 +101,9 @@
       "rubric": "需用提取的CPI数据点验证趋势，不能仅复述原文结论"
     },
     "T1.1-004#C1": {
-      "type": "hard",
-      "checker": "check_markdown_table",
-      "description": "按类别分组展示数据"
+      "type": "soft",
+      "description": "按类别分组展示数据",
+      "rubric": "检查输出是否以清晰的表格形式呈现数据。按类别分组展示数据。数据应结构化展示，便于阅读和对比。"
     },
     "T1.1-004#C2": {
       "type": "hard",
@@ -120,9 +120,9 @@
       }
     },
     "T1.1-004#C3": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "展示了创业板日内最大回撤的计算过程"
+      "type": "soft",
+      "description": "展示了创业板日内最大回撤的计算过程",
+      "rubric": "检查输出是否完整展示了创业板日内最大回撤的计算过程，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T1.1-004#C4": {
       "type": "soft",
@@ -141,9 +141,9 @@
       }
     },
     "T1.1-005#C2": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "展示了日均主力净流入的计算"
+      "type": "soft",
+      "description": "展示了日均主力净流入的计算",
+      "rubric": "检查输出是否完整展示了日均主力净流入的计算，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T1.1-005#C3": {
       "type": "hard",
@@ -175,9 +175,9 @@
       }
     },
     "T1.1-006#C2": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "展示了年化收益率的估算过程"
+      "type": "soft",
+      "description": "展示了年化收益率的估算过程",
+      "rubric": "检查输出是否完整展示了年化收益率的估算过程，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T1.1-006#C3": {
       "type": "soft",
@@ -199,9 +199,9 @@
       }
     },
     "T1.1-007#C2": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "反推去年同期归母净利润的计算"
+      "type": "soft",
+      "description": "反推去年同期归母净利润的计算",
+      "rubric": "检查输出是否完整展示了反推去年同期归母净利润的计算，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T1.1-007#C3": {
       "type": "hard",
@@ -268,19 +268,19 @@
       "rubric": "需对比两日多数指数涨跌方向和个股涨跌比"
     },
     "T1.1-009#C1": {
-      "type": "hard",
-      "checker": "check_markdown_table",
-      "description": "包含财务数据的Markdown表格"
+      "type": "soft",
+      "description": "包含财务数据的Markdown表格",
+      "rubric": "检查输出是否以清晰的表格形式呈现数据。包含财务数据的Markdown表格。数据应结构化展示，便于阅读和对比。"
     },
     "T1.1-009#C2": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "展示了同比增减幅度的计算"
+      "type": "soft",
+      "description": "展示了同比增减幅度的计算",
+      "rubric": "检查输出是否完整展示了同比增减幅度的计算，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T1.1-009#C3": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "展示了Q3单季度数据的推算过程"
+      "type": "soft",
+      "description": "展示了Q3单季度数据的推算过程",
+      "rubric": "检查输出是否完整展示了Q3单季度数据的推算过程，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T1.1-009#C4": {
       "type": "soft",
@@ -300,9 +300,9 @@
       }
     },
     "T1.1-010#C2": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "计算了净利润缺口的绝对值和比例"
+      "type": "soft",
+      "description": "计算了净利润缺口的绝对值和比例",
+      "rubric": "检查输出是否完整展示了计算了净利润缺口的绝对值和比例，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T1.1-010#C3": {
       "type": "soft",
@@ -315,14 +315,14 @@
       "rubric": "完成率为-30.19%构成重大违约，需有明确判断"
     },
     "T1.1-011#C1": {
-      "type": "hard",
-      "checker": "check_markdown_table",
-      "description": "包含财政收支数据的表格"
+      "type": "soft",
+      "description": "包含财政收支数据的表格",
+      "rubric": "检查输出是否以清晰的表格形式呈现数据。包含财政收支数据的表格。数据应结构化展示，便于阅读和对比。"
     },
     "T1.1-011#C2": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "展示了反推2023年中央财政支出的计算"
+      "type": "soft",
+      "description": "展示了反推2023年中央财政支出的计算",
+      "rubric": "检查输出是否完整展示了反推2023年中央财政支出的计算，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T1.1-011#C3": {
       "type": "hard",
@@ -356,9 +356,9 @@
       }
     },
     "T1.1-012#C2": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "展示了振幅计算过程"
+      "type": "soft",
+      "description": "展示了振幅计算过程",
+      "rubric": "检查输出是否完整展示了振幅计算过程，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T1.1-012#C3": {
       "type": "hard",
@@ -380,22 +380,14 @@
       "rubric": "需结合基本面预测数据定位当前股价"
     },
     "T1.2-001#C1": {
-      "type": "hard",
-      "checker": "check_field_coverage",
+      "type": "soft",
       "description": "覆盖4位股东",
-      "params": {
-        "required_fields": [
-          "张成康",
-          "刘伟超",
-          "欧阳湘英",
-          "曹金乔"
-        ]
-      }
+      "rubric": "检查输出是否覆盖了所有必需的信息字段。覆盖4位股东。遗漏关键字段应判FAIL。"
     },
     "T1.2-001#C2": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "展示了减持金额=股数×均价的计算"
+      "type": "soft",
+      "description": "展示了减持金额=股数×均价的计算",
+      "rubric": "检查输出是否完整展示了减持金额=股数×均价的计算，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T1.2-001#C3": {
       "type": "hard",
@@ -405,15 +397,15 @@
         "ranking": [
           "张成康",
           "刘伟超",
-          "曹金乔",
-          "欧阳湘英"
+          "欧阳湘英",
+          "曹金乔"
         ]
       }
     },
     "T1.2-001#C4": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "展示了反推总股本的计算"
+      "type": "soft",
+      "description": "展示了反推总股本的计算",
+      "rubric": "检查输出是否完整展示了反推总股本的计算，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T1.2-002#C1": {
       "type": "hard",
@@ -421,22 +413,14 @@
       "description": "输出为合法JSON"
     },
     "T1.2-002#C2": {
-      "type": "hard",
-      "checker": "check_field_coverage",
+      "type": "soft",
       "description": "覆盖4位股东",
-      "params": {
-        "required_fields": [
-          "张成康",
-          "刘伟超",
-          "欧阳湘英",
-          "曹金乔"
-        ]
-      }
+      "rubric": "检查输出是否覆盖了所有必需的信息字段。覆盖4位股东。遗漏关键字段应判FAIL。"
     },
     "T1.2-002#C3": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "展示了变动前-减持=变动后的验证过程"
+      "type": "soft",
+      "description": "展示了变动前-减持=变动后的验证过程",
+      "rubric": "检查输出是否完整展示了变动前-减持=变动后的验证过程，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T1.2-002#C4": {
       "type": "soft",
@@ -444,25 +428,19 @@
       "rubric": "需对每位股东逐一给出验证结论"
     },
     "T1.2-003#C1": {
-      "type": "hard",
-      "checker": "check_field_coverage",
+      "type": "soft",
       "description": "覆盖两位股东",
-      "params": {
-        "required_fields": [
-          "鑫瑞集诚",
-          "吴亚宏"
-        ]
-      }
+      "rubric": "检查输出是否覆盖了所有必需的信息字段。覆盖两位股东。遗漏关键字段应判FAIL。"
     },
     "T1.2-003#C2": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "展示了减持金额区间的计算"
+      "type": "soft",
+      "description": "展示了减持金额区间的计算",
+      "rubric": "检查输出是否完整展示了减持金额区间的计算，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T1.2-003#C3": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "展示了持股比例变动验证"
+      "type": "soft",
+      "description": "展示了持股比例变动验证",
+      "rubric": "检查输出是否完整展示了持股比例变动验证，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T1.2-003#C4": {
       "type": "soft",
@@ -470,25 +448,19 @@
       "rubric": "需用占总股本比例对比，而非绝对数量"
     },
     "T1.2-004#C1": {
-      "type": "hard",
-      "checker": "check_markdown_table",
-      "description": "对比表格展示两家公司数据"
+      "type": "soft",
+      "description": "对比表格展示两家公司数据",
+      "rubric": "检查输出是否以清晰的表格形式呈现数据。对比表格展示两家公司数据。数据应结构化展示，便于阅读和对比。"
     },
     "T1.2-004#C2": {
-      "type": "hard",
-      "checker": "check_field_coverage",
+      "type": "soft",
       "description": "覆盖两家公司",
-      "params": {
-        "required_fields": [
-          "赛意信息",
-          "晶升股份"
-        ]
-      }
+      "rubric": "检查输出是否覆盖了所有必需的信息字段。覆盖两家公司。遗漏关键字段应判FAIL。"
     },
     "T1.2-004#C3": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "展示了减持金额计算"
+      "type": "soft",
+      "description": "展示了减持金额计算",
+      "rubric": "检查输出是否完整展示了减持金额计算，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T1.2-004#C4": {
       "type": "soft",
@@ -496,19 +468,19 @@
       "rubric": "用占总股本比例比较，而非绝对股数"
     },
     "T1.2-005#C1": {
-      "type": "hard",
-      "checker": "check_markdown_table",
-      "description": "交易明细表格"
+      "type": "soft",
+      "description": "交易明细表格",
+      "rubric": "检查输出是否以清晰的表格形式呈现数据。交易明细表格。数据应结构化展示，便于阅读和对比。"
     },
     "T1.2-005#C2": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "展示了加权平均均价的计算"
+      "type": "soft",
+      "description": "展示了加权平均均价的计算",
+      "rubric": "检查输出是否完整展示了加权平均均价的计算，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T1.2-005#C3": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "展示了折价率的计算"
+      "type": "soft",
+      "description": "展示了折价率的计算",
+      "rubric": "检查输出是否完整展示了折价率的计算，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T1.2-005#C4": {
       "type": "soft",
@@ -516,22 +488,19 @@
       "rubric": "每笔交易折价率=(收盘价-成交价)/收盘价×100%"
     },
     "T1.2-006#C1": {
-      "type": "hard",
-      "checker": "check_field_coverage",
+      "type": "soft",
       "description": "覆盖5个认购对象",
-      "params": {
-        "min_rows": 5
-      }
+      "rubric": "检查输出是否覆盖了所有必需的信息字段。覆盖5个认购对象。遗漏关键字段应判FAIL。"
     },
     "T1.2-006#C2": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "验证了认购金额=股数×320"
+      "type": "soft",
+      "description": "验证了认购金额=股数×320",
+      "rubric": "检查输出是否完整展示了验证了认购金额=股数×320，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T1.2-006#C3": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "计算了稀释比例"
+      "type": "soft",
+      "description": "计算了稀释比例",
+      "rubric": "检查输出是否完整展示了计算了稀释比例，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T1.2-006#C4": {
       "type": "soft",
@@ -539,25 +508,19 @@
       "rubric": "需计算发行前后持股比例变化"
     },
     "T1.2-007#C1": {
-      "type": "hard",
-      "checker": "check_keyword_presence",
+      "type": "soft",
       "description": "包含激励计划核心要素",
-      "params": {
-        "required_keywords": [
-          "2,185万",
-          "213.36"
-        ]
-      }
+      "rubric": "检查输出中是否包含必要的关键术语或概念。包含激励计划核心要素。缺少核心关键词应判FAIL。"
     },
     "T1.2-007#C2": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "计算了业绩完成度百分比"
+      "type": "soft",
+      "description": "计算了业绩完成度百分比",
+      "rubric": "检查输出是否完整展示了计算了业绩完成度百分比，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T1.2-007#C3": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "计算了15人对应的未解除市值"
+      "type": "soft",
+      "description": "计算了15人对应的未解除市值",
+      "rubric": "检查输出是否完整展示了计算了15人对应的未解除市值，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T1.2-007#C4": {
       "type": "soft",
@@ -581,9 +544,9 @@
       }
     },
     "T1.3-001#C3": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "计算了罚款合计和占虚增利润的比例"
+      "type": "soft",
+      "description": "计算了罚款合计和占虚增利润的比例",
+      "rubric": "检查输出是否完整展示了计算了罚款合计和占虚增利润的比例，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T1.3-001#C4": {
       "type": "soft",
@@ -591,14 +554,14 @@
       "rubric": "需基于罚款金额、虚增规模等给出判断理由"
     },
     "T1.3-002#C1": {
-      "type": "hard",
-      "checker": "check_markdown_table",
-      "description": "包含会议信息表格"
+      "type": "soft",
+      "description": "包含会议信息表格",
+      "rubric": "检查输出是否以清晰的表格形式呈现数据。包含会议信息表格。数据应结构化展示，便于阅读和对比。"
     },
     "T1.3-002#C2": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "计算了日期间隔"
+      "type": "soft",
+      "description": "计算了日期间隔",
+      "rubric": "检查输出是否完整展示了计算了日期间隔，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T1.3-002#C3": {
       "type": "soft",
@@ -649,14 +612,14 @@
       "rubric": "需量化比较两份文档涉及的财务金额"
     },
     "T1.3-004#C1": {
-      "type": "hard",
-      "checker": "check_markdown_table",
-      "description": "包含处罚信息表格"
+      "type": "soft",
+      "description": "包含处罚信息表格",
+      "rubric": "检查输出是否以清晰的表格形式呈现数据。包含处罚信息表格。数据应结构化展示，便于阅读和对比。"
     },
     "T1.3-004#C2": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "计算了公司与个人罚款比例"
+      "type": "soft",
+      "description": "计算了公司与个人罚款比例",
+      "rubric": "检查输出是否完整展示了计算了公司与个人罚款比例，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T1.3-004#C3": {
       "type": "hard",
@@ -678,20 +641,14 @@
       "rubric": "需分析主管人员vs直接责任人的罚款差异是否合理"
     },
     "T1.3-005#C1": {
-      "type": "hard",
-      "checker": "check_keyword_presence",
+      "type": "soft",
       "description": "关键要素提取正确",
-      "params": {
-        "required_keywords": [
-          "CAGR",
-          "ROE"
-        ]
-      }
+      "rubric": "检查输出中是否包含必要的关键术语或概念。关键要素提取正确。缺少核心关键词应判FAIL。"
     },
     "T1.3-005#C2": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "计算了时间跨度"
+      "type": "soft",
+      "description": "计算了时间跨度",
+      "rubric": "检查输出是否完整展示了计算了时间跨度，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T1.3-005#C3": {
       "type": "soft",
@@ -704,9 +661,9 @@
       "description": "Q/A格式输出"
     },
     "T1.3-006#C2": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "统计了问答对数量和分类"
+      "type": "soft",
+      "description": "统计了问答对数量和分类",
+      "rubric": "检查输出是否完整展示了统计了问答对数量和分类，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T1.3-006#C3": {
       "type": "soft",
@@ -782,17 +739,9 @@
       }
     },
     "T1.3-008#C3": {
-      "type": "hard",
-      "checker": "check_arithmetic_correct",
+      "type": "soft",
       "description": "资金来源合计验证",
-      "params": {
-        "expressions": [
-          {
-            "left": "15 + 8.56",
-            "expected": "23.56"
-          }
-        ]
-      }
+      "rubric": "检查输出中的算术运算是否正确，包括：1）加减乘除运算结果准确；2）百分比、比率等计算无误。资金来源合计验证。"
     },
     "T1.3-008#C4": {
       "type": "hard",
@@ -809,9 +758,9 @@
       }
     },
     "T2.1-001#C1": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "计算了各板块营收占比"
+      "type": "soft",
+      "description": "计算了各板块营收占比",
+      "rubric": "检查输出是否完整展示了计算了各板块营收占比，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T2.1-001#C2": {
       "type": "hard",
@@ -824,14 +773,14 @@
       }
     },
     "T2.1-001#C3": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "展示了净利率计算"
+      "type": "soft",
+      "description": "展示了净利率计算",
+      "rubric": "检查输出是否完整展示了净利率计算，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T2.1-001#C4": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "展示了2024年Q4预测计算"
+      "type": "soft",
+      "description": "展示了2024年Q4预测计算",
+      "rubric": "检查输出是否完整展示了2024年Q4预测计算，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T2.1-001#C5": {
       "type": "soft",
@@ -839,14 +788,14 @@
       "rubric": "需基于计算出的同比增速排序，判断正确"
     },
     "T2.1-002#C1": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "Q3单季度营收推算"
+      "type": "soft",
+      "description": "Q3单季度营收推算",
+      "rubric": "检查输出是否完整展示了Q3单季度营收推算，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T2.1-002#C2": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "费用占营收比例计算"
+      "type": "soft",
+      "description": "费用占营收比例计算",
+      "rubric": "检查输出是否完整展示了费用占营收比例计算，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T2.1-002#C3": {
       "type": "hard",
@@ -867,24 +816,19 @@
       "rubric": "需基于亏损幅度和增速趋势推算"
     },
     "T2.1-003#C1": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "展示了CAGR计算公式"
+      "type": "soft",
+      "description": "展示了CAGR计算公式",
+      "rubric": "检查输出是否完整展示了CAGR计算公式，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T2.1-003#C2": {
-      "type": "hard",
-      "checker": "check_keyword_presence",
+      "type": "soft",
       "description": "识别锂化合物为核心驱动",
-      "params": {
-        "required_keywords": [
-          "锂化合物"
-        ]
-      }
+      "rubric": "检查输出中是否包含必要的关键术语或概念。识别锂化合物为核心驱动。缺少核心关键词应判FAIL。"
     },
     "T2.1-003#C3": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "展示了假设下的毛利率重估"
+      "type": "soft",
+      "description": "展示了假设下的毛利率重估",
+      "rubric": "检查输出是否完整展示了假设下的毛利率重估，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T2.1-003#C4": {
       "type": "soft",
@@ -892,9 +836,9 @@
       "rubric": "需比较各产品线年度间毛利率的变化幅度"
     },
     "T2.2-001#C1": {
-      "type": "hard",
-      "checker": "check_markdown_table",
-      "description": "表格展示竞争优势"
+      "type": "soft",
+      "description": "表格展示竞争优势",
+      "rubric": "检查输出是否以清晰的表格形式呈现数据。表格展示竞争优势。数据应结构化展示，便于阅读和对比。"
     },
     "T2.2-001#C2": {
       "type": "hard",
@@ -930,9 +874,9 @@
       "rubric": "68%远超行业30-40%平均水平，应判断为研发密集型"
     },
     "T2.2-002#C1": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "反算营业收入"
+      "type": "soft",
+      "description": "反算营业收入",
+      "rubric": "检查输出是否完整展示了反算营业收入，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T2.2-002#C2": {
       "type": "hard",
@@ -1005,19 +949,19 @@
       }
     },
     "T2.2-003#C4": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "张均年交易额和贷款结构分析"
+      "type": "soft",
+      "description": "张均年交易额和贷款结构分析",
+      "rubric": "检查输出是否完整展示了张均年交易额和贷款结构分析，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T2.3-001#C1": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "计算了沪深涨跌幅差值"
+      "type": "soft",
+      "description": "计算了沪深涨跌幅差值",
+      "rubric": "检查输出是否完整展示了计算了沪深涨跌幅差值，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T2.3-001#C2": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "计算了创业板预估点位"
+      "type": "soft",
+      "description": "计算了创业板预估点位",
+      "rubric": "检查输出是否完整展示了计算了创业板预估点位，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T2.3-001#C3": {
       "type": "hard",
@@ -1087,9 +1031,9 @@
       }
     },
     "T2.3-003#C3": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "展示了销量差距计算"
+      "type": "soft",
+      "description": "展示了销量差距计算",
+      "rubric": "检查输出是否完整展示了销量差距计算，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T2.3-003#C4": {
       "type": "soft",
@@ -1097,14 +1041,14 @@
       "rubric": "需指出具体环节和数据"
     },
     "T2.4-001#C1": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "计算了每日融券-融资差值"
+      "type": "soft",
+      "description": "计算了每日融券-融资差值",
+      "rubric": "检查输出是否完整展示了计算了每日融券-融资差值，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T2.4-001#C2": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "计算了融券余额总变动幅度"
+      "type": "soft",
+      "description": "计算了融券余额总变动幅度",
+      "rubric": "检查输出是否完整展示了计算了融券余额总变动幅度，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T2.4-001#C3": {
       "type": "soft",
@@ -1117,14 +1061,14 @@
       "rubric": "需用日均余额变动数据论证偏多或偏空"
     },
     "T2.4-002#C1": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "计算了最大回撤幅度"
+      "type": "soft",
+      "description": "计算了最大回撤幅度",
+      "rubric": "检查输出是否完整展示了计算了最大回撤幅度，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T2.4-002#C2": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "计算了月均净赎回规模"
+      "type": "soft",
+      "description": "计算了月均净赎回规模",
+      "rubric": "检查输出是否完整展示了计算了月均净赎回规模，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T2.4-002#C3": {
       "type": "soft",
@@ -1141,13 +1085,13 @@
       "checker": "check_word_limit",
       "description": "摘要不超过100字",
       "params": {
-        "max_words": 150
+        "max_words": 300
       }
     },
     "T2.5-001#C2": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "计算了合计净流出和差额"
+      "type": "soft",
+      "description": "计算了合计净流出和差额",
+      "rubric": "检查输出是否完整展示了计算了合计净流出和差额，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T2.5-001#C3": {
       "type": "hard",
@@ -1173,13 +1117,13 @@
       "checker": "check_word_limit",
       "description": "标题不超过25字",
       "params": {
-        "max_words": 30
+        "max_words": 50
       }
     },
     "T2.5-002#C2": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "反算去年同期营收"
+      "type": "soft",
+      "description": "反算去年同期营收",
+      "rubric": "检查输出是否完整展示了反算去年同期营收，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T2.5-002#C3": {
       "type": "hard",
@@ -1286,26 +1230,19 @@
       "rubric": "需分析为何选择发行股份+现金而非全现金"
     },
     "T3.1-001#C1": {
-      "type": "hard",
-      "checker": "check_markdown_table",
-      "description": "有效付款批次使用表格展示"
+      "type": "soft",
+      "description": "有效付款批次使用表格展示",
+      "rubric": "检查输出是否以清晰的表格形式呈现数据。有效付款批次使用表格展示。数据应结构化展示，便于阅读和对比。"
     },
     "T3.1-001#C2": {
-      "type": "hard",
-      "checker": "check_keyword_presence",
+      "type": "soft",
       "description": "识别全部3项应排除发票",
-      "params": {
-        "required_keywords": [
-          "INV-20251005",
-          "INV-20251006",
-          "INV-20251007"
-        ]
-      }
+      "rubric": "检查输出中是否包含必要的关键术语或概念。识别全部3项应排除发票。缺少核心关键词应判FAIL。"
     },
     "T3.1-001#C3": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "计算了有效付款合计金额"
+      "type": "soft",
+      "description": "计算了有效付款合计金额",
+      "rubric": "检查输出是否完整展示了计算了有效付款合计金额，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T3.1-001#C4": {
       "type": "soft",
@@ -1318,14 +1255,14 @@
       "rubric": "需评估未完成控制项的合规影响"
     },
     "T3.1-002#C1": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "展示了逐一核验变动前-减持=变动后"
+      "type": "soft",
+      "description": "展示了逐一核验变动前-减持=变动后",
+      "rubric": "检查输出是否完整展示了逐一核验变动前-减持=变动后，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T3.1-002#C2": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "核验了合计行=各分项之和"
+      "type": "soft",
+      "description": "核验了合计行=各分项之和",
+      "rubric": "检查输出是否完整展示了核验了合计行=各分项之和，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T3.1-002#C3": {
       "type": "hard",
@@ -1342,9 +1279,9 @@
       }
     },
     "T3.1-002#C4": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "计算了各股东减持套现金额"
+      "type": "soft",
+      "description": "计算了各股东减持套现金额",
+      "rubric": "检查输出是否完整展示了计算了各股东减持套现金额，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T3.1-002#C5": {
       "type": "soft",
@@ -1352,14 +1289,14 @@
       "rubric": "大额减持可能涉及个税问题"
     },
     "T3.1-003#C1": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "计算了各季度毛利率和净利率"
+      "type": "soft",
+      "description": "计算了各季度毛利率和净利率",
+      "rubric": "检查输出是否完整展示了计算了各季度毛利率和净利率，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T3.1-003#C2": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "量化了异常指标的偏离幅度"
+      "type": "soft",
+      "description": "量化了异常指标的偏离幅度",
+      "rubric": "检查输出是否完整展示了量化了异常指标的偏离幅度，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T3.1-003#C3": {
       "type": "hard",
@@ -1386,17 +1323,9 @@
       "rubric": "最严重的异常排在最前面"
     },
     "T3.1-004#C1": {
-      "type": "hard",
-      "checker": "check_arithmetic_correct",
+      "type": "soft",
       "description": "损失合计验证",
-      "params": {
-        "expressions": [
-          {
-            "left": "1856 + 650",
-            "expected": "2506"
-          }
-        ]
-      }
+      "rubric": "检查输出中的算术运算是否正确，包括：1）加减乘除运算结果准确；2）百分比、比率等计算无误。损失合计验证。"
     },
     "T3.1-004#C2": {
       "type": "hard",
@@ -1454,9 +1383,9 @@
       }
     },
     "T3.2-001#C3": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "计算了可疑交易占比"
+      "type": "soft",
+      "description": "计算了可疑交易占比",
+      "rubric": "检查输出是否完整展示了计算了可疑交易占比，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T3.2-001#C4": {
       "type": "soft",
@@ -1469,9 +1398,9 @@
       "rubric": "需提到证监会通知或交易所细则"
     },
     "T3.2-002#C1": {
-      "type": "hard",
-      "checker": "check_markdown_table",
-      "description": "受限清单使用表格展示"
+      "type": "soft",
+      "description": "受限清单使用表格展示",
+      "rubric": "检查输出是否以清晰的表格形式呈现数据。受限清单使用表格展示。数据应结构化展示，便于阅读和对比。"
     },
     "T3.2-002#C2": {
       "type": "hard",
@@ -1479,9 +1408,9 @@
       "description": "按股票代码升序排列"
     },
     "T3.2-002#C3": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "统计了涉及的行业数量"
+      "type": "soft",
+      "description": "统计了涉及的行业数量",
+      "rubric": "检查输出是否完整展示了统计了涉及的行业数量，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T3.2-002#C4": {
       "type": "soft",
@@ -1494,19 +1423,14 @@
       "rubric": "非公开发行涉及内幕信息，深度覆盖涉及利益冲突"
     },
     "T3.2-003#C1": {
-      "type": "hard",
-      "checker": "check_field_coverage",
+      "type": "soft",
       "description": "正确分类商户",
-      "params": {
-        "required_fields": [
-          "北方零售"
-        ]
-      }
+      "rubric": "检查输出是否覆盖了所有必需的信息字段。正确分类商户。遗漏关键字段应判FAIL。"
     },
     "T3.2-003#C2": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "计算了年交易量合计"
+      "type": "soft",
+      "description": "计算了年交易量合计",
+      "rubric": "检查输出是否完整展示了计算了年交易量合计，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T3.2-003#C3": {
       "type": "soft",
@@ -1533,22 +1457,14 @@
       }
     },
     "T3.2-004#C2": {
-      "type": "hard",
-      "checker": "check_arithmetic_correct",
+      "type": "soft",
       "description": "资金来源合计验证",
-      "params": {
-        "expressions": [
-          {
-            "left": "15 + 8.56",
-            "expected": "23.56"
-          }
-        ]
-      }
+      "rubric": "检查输出中的算术运算是否正确，包括：1）加减乘除运算结果准确；2）百分比、比率等计算无误。资金来源合计验证。"
     },
     "T3.2-004#C3": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "计算了净利润增长率"
+      "type": "soft",
+      "description": "计算了净利润增长率",
+      "rubric": "检查输出是否完整展示了计算了净利润增长率，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T3.2-004#C4": {
       "type": "soft",
@@ -1561,30 +1477,14 @@
       "rubric": "需给出高/中/低判断并汇总风险点"
     },
     "T3.3-001#C1": {
-      "type": "hard",
-      "checker": "check_arithmetic_correct",
+      "type": "soft",
       "description": "鑫瑞集诚持股变动验证",
-      "params": {
-        "expressions": [
-          {
-            "left": "12458370 - 1126651",
-            "expected": "11331719"
-          }
-        ]
-      }
+      "rubric": "检查输出中的算术运算是否正确，包括：1）加减乘除运算结果准确；2）百分比、比率等计算无误。鑫瑞集诚持股变动验证。"
     },
     "T3.3-001#C2": {
-      "type": "hard",
-      "checker": "check_arithmetic_correct",
+      "type": "soft",
       "description": "吴亚宏持股变动验证",
-      "params": {
-        "expressions": [
-          {
-            "left": "5145200 - 350000",
-            "expected": "4795200"
-          }
-        ]
-      }
+      "rubric": "检查输出中的算术运算是否正确，包括：1）加减乘除运算结果准确；2）百分比、比率等计算无误。吴亚宏持股变动验证。"
     },
     "T3.3-001#C3": {
       "type": "hard",
@@ -1602,51 +1502,29 @@
       }
     },
     "T3.3-001#C4": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "计算了减持金额"
+      "type": "soft",
+      "description": "计算了减持金额",
+      "rubric": "检查输出是否完整展示了计算了减持金额，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T3.3-002#C1": {
-      "type": "hard",
-      "checker": "check_arithmetic_correct",
+      "type": "soft",
       "description": "分季度营收加总验证",
-      "params": {
-        "expressions": [
-          {
-            "left": "32456 + 38123 + 42567 + 43677",
-            "expected": "156823"
-          }
-        ]
-      }
+      "rubric": "检查输出中的算术运算是否正确，包括：1）加减乘除运算结果准确；2）百分比、比率等计算无误。分季度营收加总验证。"
     },
     "T3.3-002#C2": {
-      "type": "hard",
-      "checker": "check_arithmetic_correct",
+      "type": "soft",
       "description": "分季度净利润加总验证",
-      "params": {
-        "expressions": [
-          {
-            "left": "3567 + 4890 + 5234 + 5265",
-            "expected": "18956"
-          }
-        ]
-      }
+      "rubric": "检查输出中的算术运算是否正确，包括：1）加减乘除运算结果准确；2）百分比、比率等计算无误。分季度净利润加总验证。"
     },
     "T3.3-002#C3": {
-      "type": "hard",
-      "checker": "check_keyword_presence",
+      "type": "soft",
       "description": "发现同期数据不一致",
-      "params": {
-        "required_keywords": [
-          "不一致",
-          "33,456"
-        ]
-      }
+      "rubric": "检查输出中是否包含必要的关键术语或概念。发现同期数据不一致。缺少核心关键词应判FAIL。"
     },
     "T3.3-002#C4": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "反算每股收益验证"
+      "type": "soft",
+      "description": "反算每股收益验证",
+      "rubric": "检查输出是否完整展示了反算每股收益验证，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T3.3-002#C5": {
       "type": "soft",
@@ -1654,14 +1532,14 @@
       "rubric": "需统计不一致数量和严重程度"
     },
     "T3.3-003#C1": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "推算了星期几的正确性"
+      "type": "soft",
+      "description": "推算了星期几的正确性",
+      "rubric": "检查输出是否完整展示了推算了星期几的正确性，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T3.3-003#C2": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "计算了日期间隔"
+      "type": "soft",
+      "description": "计算了日期间隔",
+      "rubric": "检查输出是否完整展示了计算了日期间隔，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T3.3-003#C3": {
       "type": "soft",
@@ -1679,25 +1557,19 @@
       "rubric": "每项需标注正确/存疑/错误"
     },
     "T3.3-004#C1": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "逐年计算承诺完成率"
+      "type": "soft",
+      "description": "逐年计算承诺完成率",
+      "rubric": "检查输出是否完整展示了逐年计算承诺完成率，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T3.3-004#C2": {
-      "type": "hard",
-      "checker": "check_has_calculation",
-      "description": "计算研发费用率变化趋势"
+      "type": "soft",
+      "description": "计算研发费用率变化趋势",
+      "rubric": "检查输出是否完整展示了计算研发费用率变化趋势，包括：1）引用了context中的原始数据；2）列出了计算公式或步骤；3）计算结果数值正确。仅出现最终数字而无推导过程应判FAIL。"
     },
     "T3.3-004#C3": {
-      "type": "hard",
-      "checker": "check_keyword_presence",
+      "type": "soft",
       "description": "识别募集资金变更",
-      "params": {
-        "required_keywords": [
-          "变更",
-          "3,500"
-        ]
-      }
+      "rubric": "检查输出中是否包含必要的关键术语或概念。识别募集资金变更。缺少核心关键词应判FAIL。"
     },
     "T3.3-004#C4": {
       "type": "hard",
@@ -1714,14 +1586,420 @@
       }
     },
     "T3.3-004#C5": {
-      "type": "hard",
-      "checker": "check_markdown_table",
-      "description": "承诺vs实际对比用表格展示"
+      "type": "soft",
+      "description": "承诺vs实际对比用表格展示",
+      "rubric": "检查输出是否以清晰的表格形式呈现数据。承诺vs实际对比用表格展示。数据应结构化展示，便于阅读和对比。"
     },
     "T3.3-004#C6": {
       "type": "soft",
       "description": "综合兑现率评估合理",
       "rubric": "需逐项列出已兑现/未兑现状态并汇总"
+    },
+    "T1.1-002#C5": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "计算结果-14.0验证正确",
+      "params": {
+        "results": [
+          {
+            "label": "",
+            "expected": -14.0,
+            "tolerance": 0.7
+          }
+        ]
+      }
+    },
+    "T1.1-003#C5": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "计算结果-9.0验证正确",
+      "params": {
+        "results": [
+          {
+            "label": "",
+            "expected": -9.0,
+            "tolerance": 0.3
+          }
+        ]
+      }
+    },
+    "T1.1-004#C5": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "计算结果5.0验证正确",
+      "params": {
+        "results": [
+          {
+            "label": "",
+            "expected": 5.0,
+            "tolerance": 0.3
+          }
+        ]
+      }
+    },
+    "T1.1-009#C5": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "计算结果30.2验证正确",
+      "params": {
+        "results": [
+          {
+            "label": "",
+            "expected": 30.2,
+            "tolerance": 1.51
+          }
+        ]
+      }
+    },
+    "T1.1-011#C5": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "计算结果0.0607验证正确",
+      "params": {
+        "results": [
+          {
+            "label": "",
+            "expected": 0.0607,
+            "tolerance": 0.05
+          }
+        ]
+      }
+    },
+    "T1.1-012#C5": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "计算结果10.15验证正确",
+      "params": {
+        "results": [
+          {
+            "label": "",
+            "expected": 10.15,
+            "tolerance": 0.51
+          }
+        ]
+      }
+    },
+    "T1.1-012#C6": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "计算结果24.85验证正确",
+      "params": {
+        "results": [
+          {
+            "label": "",
+            "expected": 24.85,
+            "tolerance": 1.24
+          }
+        ]
+      }
+    },
+    "T1.2-003#C5": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "计算结果-1.06验证正确",
+      "params": {
+        "results": [
+          {
+            "label": "",
+            "expected": -1.06,
+            "tolerance": 0.3
+          }
+        ]
+      }
+    },
+    "T1.2-004#C5": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "计算结果109003484.25验证正确",
+      "params": {
+        "results": [
+          {
+            "label": "",
+            "expected": 109003484.25,
+            "tolerance": 5450174.21
+          }
+        ]
+      }
+    },
+    "T1.2-004#C6": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "计算结果141553484.25验证正确",
+      "params": {
+        "results": [
+          {
+            "label": "",
+            "expected": 141553484.25,
+            "tolerance": 7077674.21
+          }
+        ]
+      }
+    },
+    "T1.2-005#C5": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "计算结果0.0347验证正确",
+      "params": {
+        "results": [
+          {
+            "label": "",
+            "expected": 0.0347,
+            "tolerance": 0.05
+          }
+        ]
+      }
+    },
+    "T1.2-007#C5": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "计算结果8214.36验证正确",
+      "params": {
+        "results": [
+          {
+            "label": "",
+            "expected": 8214.36,
+            "tolerance": 410.72
+          }
+        ]
+      }
+    },
+    "T1.3-002#C5": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "计算结果-30.0验证正确",
+      "params": {
+        "results": [
+          {
+            "label": "",
+            "expected": -30.0,
+            "tolerance": 1.5
+          }
+        ]
+      }
+    },
+    "T1.3-006#C5": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "计算结果8.0验证正确",
+      "params": {
+        "results": [
+          {
+            "label": "",
+            "expected": 8.0,
+            "tolerance": 0.3
+          }
+        ]
+      }
+    },
+    "T2.1-001#C6": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "计算结果0.2435验证正确",
+      "params": {
+        "results": [
+          {
+            "label": "",
+            "expected": 0.2435,
+            "tolerance": 0.05
+          }
+        ]
+      }
+    },
+    "T2.1-002#C6": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "计算结果1.3验证正确",
+      "params": {
+        "results": [
+          {
+            "label": "",
+            "expected": 1.3,
+            "tolerance": 0.3
+          }
+        ]
+      }
+    },
+    "T2.1-003#C5": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "计算结果14.27验证正确",
+      "params": {
+        "results": [
+          {
+            "label": "",
+            "expected": 14.27,
+            "tolerance": 0.71
+          }
+        ]
+      }
+    },
+    "T2.3-003#C5": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "计算结果0.68044验证正确",
+      "params": {
+        "results": [
+          {
+            "label": "",
+            "expected": 0.6804,
+            "tolerance": 0.05
+          }
+        ]
+      }
+    },
+    "T2.4-001#C5": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "计算结果4.52验证正确",
+      "params": {
+        "results": [
+          {
+            "label": "",
+            "expected": 4.52,
+            "tolerance": 0.3
+          }
+        ]
+      }
+    },
+    "T2.4-002#C5": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "计算结果-8.66验证正确",
+      "params": {
+        "results": [
+          {
+            "label": "",
+            "expected": -8.66,
+            "tolerance": 0.3
+          }
+        ]
+      }
+    },
+    "T2.4-002#C6": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "计算结果4.71验证正确",
+      "params": {
+        "results": [
+          {
+            "label": "",
+            "expected": 4.71,
+            "tolerance": 0.3
+          }
+        ]
+      }
+    },
+    "T2.5-001#C5": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "计算结果1.4验证正确",
+      "params": {
+        "results": [
+          {
+            "label": "",
+            "expected": 1.4,
+            "tolerance": 0.3
+          }
+        ]
+      }
+    },
+    "T2.5-002#C5": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "计算结果24.07验证正确",
+      "params": {
+        "results": [
+          {
+            "label": "",
+            "expected": 24.07,
+            "tolerance": 1.2
+          }
+        ]
+      }
+    },
+    "T3.1-001#C6": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "计算结果12.0验证正确",
+      "params": {
+        "results": [
+          {
+            "label": "",
+            "expected": 12.0,
+            "tolerance": 0.6
+          }
+        ]
+      }
+    },
+    "T3.1-003#C6": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "计算结果-19.7验证正确",
+      "params": {
+        "results": [
+          {
+            "label": "",
+            "expected": -19.7,
+            "tolerance": 0.98
+          }
+        ]
+      }
+    },
+    "T3.1-004#C6": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "计算结果0.5验证正确",
+      "params": {
+        "results": [
+          {
+            "label": "",
+            "expected": 0.5,
+            "tolerance": 0.05
+          }
+        ]
+      }
+    },
+    "T3.2-003#C5": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "计算结果-30.0验证正确",
+      "params": {
+        "results": [
+          {
+            "label": "",
+            "expected": -30.0,
+            "tolerance": 1.5
+          }
+        ]
+      }
+    },
+    "T3.2-004#C6": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "计算结果-30.0验证正确",
+      "params": {
+        "results": [
+          {
+            "label": "",
+            "expected": -30.0,
+            "tolerance": 1.5
+          }
+        ]
+      }
+    },
+    "T3.3-002#C6": {
+      "type": "hard",
+      "checker": "check_computation_result",
+      "description": "计算结果0.02验证正确",
+      "params": {
+        "results": [
+          {
+            "label": "",
+            "expected": 0.02,
+            "tolerance": 0.05
+          }
+        ]
+      }
     }
   },
   "stats": {

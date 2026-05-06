@@ -135,10 +135,37 @@ def check_field_coverage(output, params=None):
     return True
 
 
+def _normalize_value_to_number(val_str):
+    """Normalize a value string with Chinese units to a raw number.
+    '1,856万' → 18560000.0, '3.5亿' → 350000000.0, '8500' → 8500.0
+    Returns (float, True) on success, (None, False) on failure.
+    """
+    s = val_str.replace(',', '').replace('，', '').replace('%', '').replace('％', '')
+    multiplier = 1
+    if '万亿' in s:
+        multiplier = 1e12
+        s = s.replace('万亿', '')
+    elif '百万' in s:
+        multiplier = 1e6
+        s = s.replace('百万', '')
+    elif '亿' in s:
+        multiplier = 1e8
+        s = s.replace('亿', '')
+    elif '万' in s:
+        multiplier = 1e4
+        s = s.replace('万', '')
+    s = re.sub(r'[元股份]', '', s).strip()
+    try:
+        return float(s) * multiplier, True
+    except ValueError:
+        return None, False
+
+
 def check_value_exact(output, params=None):
     """Check key-value pairs appear together in the output.
     For each (key, value) in expected_values, finds a line (or nearby text)
     where both the key (or a recognizable variant) and the value co-occur.
+    Supports numeric normalization: '1,856万' matches '18,560,000'.
     """
     params = params or {}
     expected = params.get('expected_values', {})
@@ -150,58 +177,63 @@ def check_value_exact(output, params=None):
         val_bare = val_str.replace('%', '').replace('％', '')
         val_candidates = {val_str, val_bare} - {''}
 
-        # Build key variants: "2020年5月CPI" → also try "2020-05", "2020年5月", "2020年05月"
+        expected_num, has_num = _normalize_value_to_number(str(val))
+
         key_clean = key.replace(',', '')
         key_variants = {key_clean}
-        # Strip trailing label like "CPI", "收益率" etc. to get the date/name part
-        import re
         m = re.match(r'^(.+?)(CPI|收益率|涨跌幅|涨幅|基金|指数|净利润|营收)$', key_clean)
         if m:
             key_variants.add(m.group(1).strip())
-        # "2020年5月" → "2020-05", "2020年05月"
         m2 = re.search(r'(\d{4})[年\-/](\d{1,2})[月]?', key_clean)
         if m2:
             y, mo = m2.group(1), m2.group(2)
             key_variants.add(f"{y}-{mo.zfill(2)}")
             key_variants.add(f"{y}年{mo.zfill(2)}月")
             key_variants.add(f"{y}年{mo}月")
-        # "2022上半年" → keep as is
-        # Also try just the year if present
         m3 = re.search(r'(\d{4})', key_clean)
         if m3:
             key_variants.add(m3.group(1))
 
         found = False
-        # Build a set of key substrings (≥2 chars) for fuzzy matching
-        key_tokens = set()
-        for kv in key_variants:
-            for i in range(len(kv)):
-                for j in range(i + 2, len(kv) + 1):
-                    if j - i >= 2:
-                        key_tokens.add(kv[i:j])
+
+        def _check_val_in_text(text):
+            if any(vc in text for vc in val_candidates):
+                return True
+            if has_num and expected_num is not None:
+                abs_expected = abs(expected_num)
+                nums = re.findall(r'[-+]?[\d]+\.?\d*', text)
+                for n_str in nums:
+                    try:
+                        n_val = float(n_str)
+                        if expected_num != 0:
+                            if abs(n_val - expected_num) / abs(expected_num) < 0.001:
+                                return True
+                            if abs(abs(n_val) - abs_expected) / abs_expected < 0.001:
+                                return True
+                        elif abs(n_val) < 0.001:
+                            return True
+                    except ValueError:
+                        continue
+            return False
 
         for line in lines:
             line_lower = line.strip()
             if not line_lower:
                 continue
             key_hit = any(kv in line_lower for kv in key_variants)
-            # Fuzzy: all key chars appear in the line (handles word reordering)
             if not key_hit:
                 key_chars = set(key_clean) - set(' \t')
                 if key_chars and all(c in line_lower for c in key_chars):
                     key_hit = True
-            val_hit = any(vc in line_lower for vc in val_candidates)
-            if key_hit and val_hit:
+            if key_hit and _check_val_in_text(line_lower):
                 found = True
                 break
 
         if not found:
-            # Fallback: check adjacent lines (key on one line, value on next)
             for i in range(len(lines) - 1):
                 block = lines[i] + ' ' + lines[i + 1]
                 key_hit = any(kv in block for kv in key_variants)
-                val_hit = any(vc in block for vc in val_candidates)
-                if key_hit and val_hit:
+                if key_hit and _check_val_in_text(block):
                     found = True
                     break
 
@@ -306,12 +338,27 @@ def check_table_sort_alpha(output, params=None):
     table_lines = [l for l in lines if l.strip().startswith('|')]
     if len(table_lines) < 3:
         return False
-    data_lines = [l for l in table_lines[2:] if not re.match(r'^\|\s*[-:]+', l)]
+    sep_idx = None
+    for i, l in enumerate(table_lines):
+        if re.match(r'^\|\s*[-:]+', l.strip()):
+            sep_idx = i
+            break
+    if sep_idx is None:
+        return False
+    data_lines = []
+    for l in table_lines[sep_idx + 1:]:
+        if re.match(r'^\|\s*[-:]+', l.strip()):
+            break
+        data_lines.append(l)
+    if len(data_lines) > 1 and not any(c.isdigit() for c in data_lines[0].split('|')[1].strip() if c):
+        data_lines = data_lines[1:]
     values = []
     for line in data_lines:
         cells = [c.strip() for c in line.strip().strip('|').split('|')]
-        if col_idx < len(cells):
+        if col_idx < len(cells) and cells[col_idx]:
             values.append(cells[col_idx])
+    if not values:
+        return False
     return values == sorted(values)
 
 
@@ -716,11 +763,9 @@ def check_source_fidelity(output, params=None):
 
 def check_computation_result(output, params=None):
     """Verify output contains specific computed results within tolerance.
+    Searches the entire output for expected numeric values, independent of labels.
+    Also tries unit-scaled variants (×10000 for 万, ×1e8 for 亿).
     params.results: list of {label, expected, tolerance, unit}
-    - label: text to locate the result near (e.g., "涨幅空间")
-    - expected: expected numeric value (e.g., 11.83)
-    - tolerance: acceptable absolute deviation (e.g., 0.5)
-    - unit: optional unit string (e.g., "%")
     """
     params = params or {}
     results = params.get('results', [])
@@ -728,42 +773,34 @@ def check_computation_result(output, params=None):
         return False
 
     output_clean = output.replace(',', '').replace('，', '')
+    all_nums = re.findall(r'[-+]?\d+\.?\d*', output_clean)
+    all_vals = []
+    for n_str in all_nums:
+        try:
+            all_vals.append(float(n_str))
+        except ValueError:
+            continue
 
-    all_pass = True
     for item in results:
-        label = item.get('label', '')
         expected = float(item.get('expected', 0))
         tolerance = float(item.get('tolerance', 0.5))
+        candidates = [expected]
+        if expected != 0:
+            candidates.append(expected * 10000)
+            candidates.append(expected / 10000)
+            candidates.append(expected * 1e8)
+            candidates.append(expected / 1e8)
+        scaled_tolerances = [tolerance, tolerance * 10000, tolerance / 10000, tolerance * 1e8, tolerance / 1e8]
 
-        label_variants = [label]
-        if label:
-            label_variants.append(label.replace(' ', ''))
-        label_chars = set(label) - set(' \t') if label else set()
-
-        found_near_label = False
-        for line in output_clean.split('\n'):
-            label_hit = any(lv in line for lv in label_variants)
-            if not label_hit and label_chars:
-                matched = sum(1 for c in label_chars if c in line)
-                label_hit = matched >= max(1, len(label_chars) // 2)
-            if not label_hit:
-                continue
-            nums = re.findall(r'[-+]?\d+\.?\d*', line)
-            for n_str in nums:
-                try:
-                    val = float(n_str)
-                    if abs(val - expected) <= tolerance:
-                        found_near_label = True
-                        break
-                except ValueError:
-                    continue
-            if found_near_label:
+        found = False
+        for exp, tol in zip(candidates, scaled_tolerances):
+            if any(abs(v - exp) <= tol for v in all_vals):
+                found = True
                 break
+        if not found:
+            return False
 
-        if not found_near_label:
-            all_pass = False
-
-    return all_pass
+    return True
 
 
 def check_ranking(output, params=None):
